@@ -1,0 +1,47 @@
+\begin{table}[!htbp]
+\centering
+\caption{Extreme-heat thresholds: heat $\times$ stressor decomposition by daytime peak and overnight low}
+\label{tab:cdd}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & (1) & (2) & (3) \\
+ & Job loss & Palm shock & Fuel cut \\
+ & (within 12 mo) & (price decline $\times$ palm-farmer HH) & (post-cut $\times$ transport share) \\
+\midrule
+\multicolumn{4}{l}{\textit{Dependent variable: CES-D total, z-standardised within wave}} \\
+\multicolumn{4}{l}{\textit{Each cell: heat-CDD $\times$ stressor coefficient from a separate full-spec regression}} \\
+\midrule
+\multicolumn{4}{l}{\textit{Panel A: Daytime extreme heat (Tmax-based CDD)}} \\
+\addlinespace[2pt]
+\quad CDD Tmax $> 30^{\circ}$C $\times$ Stressor & $+0.033$ & $+0.470^{***}$ & $+0.412^{**}$ \\
+ & $(0.034)$ & $(0.140)$ & $(0.189)$ \\
+\addlinespace[3pt]
+\quad CDD Tmax $> 32^{\circ}$C $\times$ Stressor & $+0.098^{*}$ & $+0.813^{***}$ & $+1.442^{*}$ \\
+ & $(0.054)$ & $(0.286)$ & $(0.763)$ \\
+\addlinespace[3pt]
+\addlinespace[3pt]
+\multicolumn{4}{l}{\textit{Panel B: Warm nights (Tmin-based CDD)}} \\
+\addlinespace[2pt]
+\quad CDD Tmin $> 23^{\circ}$C $\times$ Stressor & $+0.058$ & $+0.101$ & $+0.129$ \\
+ & $(0.046)$ & $(0.380)$ & $(0.198)$ \\
+\addlinespace[3pt]
+\quad CDD Tmin $> 24^{\circ}$C $\times$ Stressor & $+0.101$ & $-0.190$ & $+0.195$ \\
+ & $(0.080)$ & $(0.822)$ & $(0.268)$ \\
+\addlinespace[3pt]
+\midrule
+Demographic controls & Yes & Yes & Yes \\
+Kabupaten FE & Yes & Yes & Yes \\
+Month + Year FE & Yes & Yes & Yes \\
+Wave FE & Yes & Yes & --- \\
+\addlinespace[3pt]
+Sample & Pooled & Pooled & IFLS5 only \\
+Observations & 59,944 & 59,944 & 31,071 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} The dependent variable is the 10-item Andresen CES-D score, z-standardised within wave. Each cell reports the interaction coefficient from a separate full-specification regression of CES-D z on a heat-threshold cooling-degree-day (CDD) measure interacted with the stressor, plus the same demographic controls and fixed effects as Table~\ref{tab:headline}. CDD measures equal $\max(T - \tau, 0)$ for the given threshold $\tau$, capturing the magnitude of heat exposure above the threshold on the interview date. Threshold choices follow the heat-health and heat-labour literature: $30^{\circ}$C Tmax is the outdoor-labour productivity threshold (ILO 2019; Park, Pankratz and Behrer 2021); $32^{\circ}$C Tmax is the NIOSH/ACGIH heat-stress threshold for moderate-intensity work and the primary Tmax spec in Mullins and White (2019); $23^{\circ}$C Tmin is the sleep-disruption threshold in tropical-acclimated samples (Okamoto-Mizuno and Mizuno 2012); $24^{\circ}$C Tmin is the WHO tropical-night definition. The share of observations with CDD $> 0$ is $17.2\%$ (Tmax $> 30$), $4.4\%$ (Tmax $> 32$), $39.2\%$ (Tmin $> 23$) and $11.7\%$ (Tmin $> 24$). Stressor definitions are identical to Table~\ref{tab:headline}. Standard errors clustered at the kabupaten level are reported in parentheses. Significance: $^{*}$ $p<0.10$, $^{**}$ $p<0.05$, $^{***}$ $p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

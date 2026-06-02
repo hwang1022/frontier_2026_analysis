@@ -1,0 +1,51 @@
+\begin{table}[!htbp]
+\centering
+\caption{Appendix: Linear Tmax / Tmin decomposition (robustness)}
+\label{tab:appendix_linear_daynight}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & (1) & (2) & (3) \\
+ & Job loss & Palm shock & Fuel cut \\
+ & (within 12 mo) & (price decline $\times$ palm-farmer HH) & (post-cut $\times$ transport share) \\
+\midrule
+\multicolumn{4}{l}{\textit{Dependent variable: CES-D total, z-standardised within wave}} \\
+\midrule
+\multicolumn{4}{l}{\textit{Panel A: Daytime peak temperature (Tmax)}} \\
+\addlinespace[2pt]
+\quad Tmax $\times$ Stressor & $+0.031^{**}$ & $+0.261^{***}$ & $+0.120^{***}$ \\
+ & $(0.013)$ & $(0.072)$ & $(0.045)$ \\
+\addlinespace[3pt]
+\quad Tmax & $+0.003$ & $+0.002$ & $-0.009$ \\
+ & $(0.005)$ & $(0.005)$ & $(0.006)$ \\
+\addlinespace[3pt]
+\quad Tmax slope $|$ exposed$^{\dagger}$ & $+0.034^{**}$ & $+0.028^{***}$ & $+0.003$ \\
+ & $(0.014)$ & $(0.008)$ & $(0.007)$ \\
+\addlinespace[6pt]
+\multicolumn{4}{l}{\textit{Panel B: Overnight low temperature (Tmin)}} \\
+\addlinespace[2pt]
+\quad Tmin $\times$ Stressor & $+0.033^{**}$ & $+0.232^{**}$ & $+0.046$ \\
+ & $(0.015)$ & $(0.105)$ & $(0.070)$ \\
+\addlinespace[3pt]
+\quad Tmin & $+0.003$ & $+0.003$ & $+0.014$ \\
+ & $(0.009)$ & $(0.009)$ & $(0.009)$ \\
+\addlinespace[3pt]
+\quad Tmin slope $|$ exposed$^{\dagger}$ & $+0.036^{**}$ & $+0.026^{**}$ & $+0.018^{*}$ \\
+ & $(0.016)$ & $(0.013)$ & $(0.011)$ \\
+\addlinespace[6pt]
+\midrule
+Demographic controls & Yes & Yes & Yes \\
+Kabupaten FE & Yes & Yes & Yes \\
+Month + Year FE & Yes & Yes & Yes \\
+Wave FE & Yes & Yes & --- \\
+\addlinespace[3pt]
+Sample & Pooled & Pooled & IFLS5 only \\
+Observations & 59,944 & 59,944 & 31,071 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Linear day/night decomposition of Table~\ref{tab:headline}: the daily mean temperature is replaced with the daily maximum temperature (Tmax, Panel A) and daily minimum temperature (Tmin, Panel B) respectively, on the interview date (ERA5-Land kabupaten polygon mean), each mean-centred on the pooled sample. The dependent variable is the 10-item Andresen CES-D score, z-standardised within wave. Stressor definitions and the demographic-control set are identical to Table~\ref{tab:headline}. A joint Wald test on the equality of Tmax $\times$ Stressor and Tmin $\times$ Stressor (within a single regression containing both) cannot reject equality for any stressor (p = 0.82 for job loss, 0.15 for palm shock, 0.18 for fuel cut), because Tmax and Tmin are 54\% correlated. See Table~\ref{tab:cdd} for the CDD-threshold specification, which yields the cleaner day-vs-night asymmetry test. $^{\dagger}$The exposed-respondent marginal heat slope is evaluated at Stressor $= 1$ in column (1), Stressor $= 0.10$ in column (2) (a 10-percentage-point palm-price decline for a palm farmer), and Stressor $= 0.10$ in column (3) (a 10-percentage-point transport-spending share post-cut), computed via the delta method on the kabupaten-clustered covariance matrix. Column (3) is identified within IFLS5 only, so Wave FE is omitted. Standard errors clustered at the kabupaten level are in parentheses. Significance: $^{*}$ $p<0.10$, $^{**}$ $p<0.05$, $^{***}$ $p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

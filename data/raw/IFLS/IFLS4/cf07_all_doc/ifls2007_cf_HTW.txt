@@ -1,0 +1,852 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       HTW                                            
+ T O P I C :     PRICES: WARUNG (SHOP/STALL)                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       HTW
+ T O P I C :     Prices: Warung (Shop/Stall)
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      HTW                                                     645
+      HTW_H                                                 16075
+      HTW_HOUR                                                313
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       HTW
+ T O P I C :     Prices: Warung (Shop/Stall)
+
+--------------------------------------------------------------------------------
+NOTES ABOUT BOOK HTW                                                       
+--------------------                                                       
+Book HTW contains prices from visiting 2 local shops and street stalls.    
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   HTW                                            645    100.00
+                   total                                          645    100.00
+
+BEGHR1             Time interview began (hour)
+
+                   min:                                          6.00
+                   mean:                                        13.20
+                   max:                                         21.00
+                   #obs                                           645
+                   #miss:                                           0
+
+BEGHR2             Time interview began (minute)
+
+                   min:                                          0.00
+                   mean:                                        19.25
+                   max:                                         59.00
+                   #obs                                           645
+                   #miss:                                           0
+
+CO10               CP10
+
+                   A. Not applicable                              339     52.56
+                   B. Customer                                    281     43.57
+                   BC                                              15      2.33
+                   C. Family                                        9      1.40
+                   D. Others                                        1      0.16
+                   total                                          645    100.00
+
+CO11               CP11
+
+                   1. Very God                                    197     30.54
+                   2. Good                                        392     60.78
+                   3. Fair                                         56      8.68
+                   total                                          645    100.00
+
+COMMID07           2007 community ID
+
+
+COV6TOKO           Sex
+
+                   1. Male                                        184     28.53
+                   3. Female                                      461     71.47
+                   total                                          645    100.00
+
+COV7TOKO           Age
+
+                   min:                                          6.00
+                   mean:                                        41.30
+                   max:                                         90.00
+                   #obs                                           645
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+CP12               Seriousness/attentivness of respondant
+
+                   1. Very God                                    207     32.09
+                   2. Good                                        377     58.45
+                   3. Fair                                         60      9.30
+                   4. Bad                                           1      0.16
+                   total                                          645    100.00
+
+EDITOR             Code of Editor book Warung/Toko Price
+
+
+EDITORCK           Checking status
+
+                   1. Edited,no correction necessary              203     31.47
+                   2. Edited and corrected                        440     68.22
+                   4. Edited,but not corrected                      2      0.31
+                   total                                          645    100.00
+
+ENDHR1             Time interview ended (hour)
+
+                   min:                                          7.00
+                   mean:                                        13.54
+                   max:                                         22.00
+                   #obs                                           645
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (minute)
+
+                   min:                                          0.00
+                   mean:                                        25.74
+                   max:                                         59.00
+                   #obs                                           645
+                   #miss:                                           0
+
+HTWCODE            Code name of desa/kelurahan book
+
+
+IDIVWR             Code of Interviewer book Warung/Toko
+
+
+IDW                IDW
+
+
+IVWDAY1            Date of interview (day of month)
+
+                   min:                                          1.00
+                   mean:                                        15.69
+                   max:                                         31.00
+                   #obs                                           645
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IVWMTH1            Date of interview (month)
+
+                   2. February                                    158     24.50
+                   3. March                                       210     32.56
+                   4. April                                       189     29.30
+                   5. May                                          87     13.49
+                   6. June                                          1      0.16
+                   total                                          645    100.00
+
+IVWYR1             Date of interview(Year)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                           645
+                   #miss:                                           0
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   min:                                         12.00
+                   mean:                                        34.00
+                   max:                                         73.00
+                   #obs                                           645
+                   #miss:                                           0
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   min:                                         12.00
+                   mean:                                        34.01
+                   max:                                         76.00
+                   #obs                                           645
+                   #miss:                                           0
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        32.76
+                   max:                                         78.00
+                   #obs                                           645
+                   #miss:                                           0
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        34.39
+                   max:                                         78.00
+                   #obs                                           645
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        87.52
+                   max:                                        730.00
+                   #obs                                           645
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        75.54
+                   max:                                        730.00
+                   #obs                                           645
+                   #miss:                                           0
+
+LK05               Urban/rural
+
+                   1. Urban                                       407     63.10
+                   2. Rural                                       238     36.90
+                   total                                          645    100.00
+
+LK15               Code of interviewer
+
+
+LK16               Code of editor
+
+
+LK17               Code of local supervisor
+
+
+LK19               Code of field coordinator
+
+
+NUMVIS             Number of visits
+
+                   min:                                          1.00
+                   mean:                                         1.01
+                   max:                                          2.00
+                   #obs                                           645
+                   #miss:                                           0
+
+REASON             Reason of FP3
+
+                   missing                                        645    100.00
+                   total                                          645    100.00
+
+RELATION           Relation Status
+
+                   missing                                        477     73.95
+                   1. Couple                                       74     11.47
+                   2. Parent                                        8      1.24
+                   3. Child                                        49      7.60
+                   4. Brother/Sister                               14      2.17
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(RELATION  continued)
+
+                   5. Others Family                                14      2.17
+                   6. Worker                                        9      1.40
+                   total                                          645    100.00
+
+RESPNDNT           Respondent Status
+
+                   1. Owner                                       477     73.95
+                   2. Others                                      168     26.05
+                   total                                          645    100.00
+
+RESULT             Interview result
+
+                   1. Completed                                   645    100.00
+                   total                                          645    100.00
+
+SUPVERIF           Monitoring by local supervisor
+
+                   1. Yes                                          23      3.57
+                   3. No                                          622     96.43
+                   total                                          645    100.00
+
+SUP_EDIT           Monitoring by local supervisor
+
+                   1. Yes                                          87     13.49
+                   3. No                                          558     86.51
+                   total                                          645    100.00
+
+SUP_OBS            Monitoring by local supervisor
+
+                   1. Yes                                          39      6.05
+                   3. No                                          606     93.95
+                   total                                          645    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW_H                
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+COMMID07           2007 community ID
+
+
+H01                Price per unit
+
+                   min:                                         20.00
+                   mean:                                      5407.86
+                   max:                                      90000.00
+                   #obs                                         8,822
+                   #miss:                                       7,253
+
+H02                Unit for H01
+
+                   missing                                      8,377     52.11
+                   1. Kg                                        1,656     10.30
+                   2. Litre                                       695      4.32
+                   3. Bottle                                      490      3.05
+                   4. Pieces                                      620      3.86
+                   11. Box                                        181      1.13
+                   12. Can                                        537      3.34
+                   13. Pack                                     2,068     12.86
+                   95. Others                                   1,451      9.03
+                   total                                       16,075    100.00
+
+H03                How much contained in 1 unit
+
+                   min:                                          0.04
+                   mean:                                       125.76
+                   max:                                        999.99
+                   #obs                                         4,727
+                   #miss:                                      11,348
+
+H03A               Is it available for sale
+
+                   1                                            6,204     38.59
+                   2                                            1,195      7.43
+                   3                                              447      2.78
+                   4                                                2      0.01
+                   5. Others                                      974      6.06
+                   6. Not Applicable                              664      4.13
+                   8. Can't sell                                6,562     40.82
+                   9. Missing                                      27      0.17
+                   total                                       16,075    100.00
+
+H04                In what units is it measured
+
+                   missing                                     11,348     70.59
+                   1. Kg                                        1,402      8.72
+                   2. Litre                                       618      3.84
+                   8. Gram                                      2,706     16.83
+                   98. Don't know                                   1      0.01
+                   total                                       16,075    100.00
+
+HTWCODE            Code name of desa/kelurahan book
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW_H                
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+HTYPE              Type of Product
+
+                   2. Rice: average quality                       643      4.00
+                   7. Beef (good quality, boneless)               643      4.00
+                   11.Dried or salted fish                        643      4.00
+                   13.Cooking oil                                 643      4.00
+                   14.White sugar                                 643      4.00
+                   15.Salt                                        643      4.00
+                   18.Sweetened condensed milk                    643      4.00
+                   19.Powdered Milk                               643      4.00
+                   20.Noodles                                     643      4.00
+                   21.Tofu                                        643      4.00
+                   22.Bean Curd                                   643      4.00
+                   23.Filtered clove cigarettes                   643      4.00
+                   24.Filtered cigarettes                         643      4.00
+                   26.Kangkung (Water Spinach)                    643      4.00
+                   29.Bananas                                     643      4.00
+                   30.Papaya                                      643      4.00
+                   31.Bottled Drinking water                      643      4.00
+                   32.Kerosene                                    643      4.00
+                   35.Bath soap                                   643      4.00
+                   36.Cotton cloth                                643      4.00
+                   37.Women’s blouse                              643      4.00
+                   38.Men’s trousers                              643      4.00
+                   39.Women’s skirt                               643      4.00
+                   40.Plastic sandals (for children)              643      4.00
+                   41.Writing book                                643      4.00
+                   total                                       16,075    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+CLOSHR_1            
+
+                   min:                                          0.00
+                   mean:                                        19.42
+                   max:                                         23.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSHR_2            
+
+                   min:                                          0.00
+                   mean:                                        19.45
+                   max:                                         23.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSHR_3            
+
+                   min:                                          0.00
+                   mean:                                        19.45
+                   max:                                         23.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSHR_4            
+
+                   min:                                          0.00
+                   mean:                                        19.45
+                   max:                                         23.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSHR_5            
+
+                   min:                                          0.00
+                   mean:                                        19.45
+                   max:                                         23.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSHR_6            
+
+                   min:                                          0.00
+                   mean:                                        19.47
+                   max:                                         23.00
+                   #obs                                           312
+                   #miss:                                           1
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+CLOSHR_7            
+
+                   min:                                          0.00
+                   mean:                                        19.41
+                   max:                                         23.00
+                   #obs                                           310
+                   #miss:                                           3
+
+CLOSMNT1            
+
+                   min:                                          0.00
+                   mean:                                         4.06
+                   max:                                         59.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSMNT2            
+
+                   min:                                          0.00
+                   mean:                                         4.06
+                   max:                                         59.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSMNT3            
+
+                   min:                                          0.00
+                   mean:                                         3.96
+                   max:                                         59.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSMNT4            
+
+                   min:                                          0.00
+                   mean:                                         4.04
+                   max:                                         59.00
+                   #obs                                           313
+                   #miss:                                           0
+
+CLOSMNT5            
+
+                   min:                                          0.00
+                   mean:                                         3.96
+                   max:                                         59.00
+                   #obs                                           313
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+CLOSMNT6            
+
+                   min:                                          0.00
+                   mean:                                         3.98
+                   max:                                         59.00
+                   #obs                                           312
+                   #miss:                                           1
+
+CLOSMNT7            
+
+                   min:                                          0.00
+                   mean:                                         3.91
+                   max:                                         59.00
+                   #obs                                           310
+                   #miss:                                           3
+
+COMMID07           2007 community ID
+
+
+HTWCODE            Code name of desa/kelurahan book price
+
+
+OPENHR_1            
+
+                   min:                                          0.00
+                   mean:                                         6.48
+                   max:                                         16.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENHR_2            
+
+                   min:                                          0.00
+                   mean:                                         6.48
+                   max:                                         16.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENHR_3            
+
+                   min:                                          0.00
+                   mean:                                         6.51
+                   max:                                         16.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENHR_4            
+
+                   min:                                          0.00
+                   mean:                                         6.45
+                   max:                                         15.00
+                   #obs                                           313
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+OPENHR_5            
+
+                   min:                                          0.00
+                   mean:                                         6.45
+                   max:                                         15.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENHR_6            
+
+                   min:                                          0.00
+                   mean:                                         6.73
+                   max:                                         96.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENHR_7            
+
+                   min:                                          0.00
+                   mean:                                         7.27
+                   max:                                         96.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENMNT1            
+
+                   min:                                          0.00
+                   mean:                                         5.27
+                   max:                                         45.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENMNT2            
+
+                   min:                                          0.00
+                   mean:                                         5.27
+                   max:                                         45.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENMNT3            
+
+                   min:                                          0.00
+                   mean:                                         5.18
+                   max:                                         45.00
+                   #obs                                           313
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    HTW  - Prices: Warung (Shop/Stall)                                   
+module:  HTW_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+OPENMNT4            
+
+                   min:                                          0.00
+                   mean:                                         5.18
+                   max:                                         45.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENMNT5            
+
+                   min:                                          0.00
+                   mean:                                         5.18
+                   max:                                         45.00
+                   #obs                                           313
+                   #miss:                                           0
+
+OPENMNT6            
+
+                   min:                                          0.00
+                   mean:                                         5.19
+                   max:                                         45.00
+                   #obs                                           312
+                   #miss:                                           1
+
+OPENMNT7            
+
+                   min:                                          0.00
+                   mean:                                         5.05
+                   max:                                         45.00
+                   #obs                                           310
+                   #miss:                                           3

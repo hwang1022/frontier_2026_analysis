@@ -1,0 +1,2868 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       INF                                            
+ T O P I C :     PUBLIC PERCEPTION                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       INF
+ T O P I C :     Public Perception
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      INF                                                     644
+      INF_PAP0                                                628
+      INF_PAP1                                               5652
+      INF_PAP2                                                128
+      INF_PAP5                                               3768
+      INF_TR1                                                3768
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       INF
+ T O P I C :     Public Perception
+
+--------------------------------------------------------------------------------
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+BOOK INF-PUBLIC PERCEPTION OF GOVERNMENT PROGRAMS AND SERVICES             
+---------------------------------------------------------------            
+This book asked informants to judge the statte of public infrastructure and
+whether it has gotten better or worse.  Governance and corruption questions
+are also included.                                                         
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   INF                                            644    100.00
+                   total                                          644    100.00
+
+BEGHR1             Time interview began (hour)(1)
+
+                   min:                                          7.00
+                   mean:                                        15.52
+                   max:                                         21.00
+                   #obs                                           644
+                   #miss:                                           0
+
+BEGHR2             Time interview began (hour)(2)
+
+                   min:                                          9.00
+                   mean:                                        15.50
+                   max:                                         19.00
+                   #obs                                             4
+                   #miss:                                         640
+
+BEGHR3             Time interview began (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         644
+
+BEGMIN1            Time interview began (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        21.16
+                   max:                                         59.00
+                   #obs                                           644
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        18.75
+                   max:                                         40.00
+                   #obs                                             4
+                   #miss:                                         640
+
+BEGMIN3            Time interview began (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         644
+
+COMMID07           2007 community ID
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+CP1A               Questions with doubtful answers
+
+
+CP1B               Questions with doubtful answers
+
+
+CP1C               Questions with doubful answers
+
+
+CP2A               Questions needing unit conversion
+
+
+CP2B               Questions needing unit conversion
+
+
+CP2C               Questions needing unit conversion
+
+
+CP3A               Questions using secondary data source
+
+
+CP3B               Questions using secondary data source
+
+
+CP3C               Questions using secondary data source
+
+
+CP4A               Others problems
+
+
+CP4B               Others problems
+
+
+CP4C               Others problems
+
+
+EDITOR             Code of Editor book Informant
+
+
+EDITORCK           Checking status
+
+                   1. Edited,no correction necessary              183     28.42
+                   2. Edited and corrected                        458     71.12
+                   3. Edited,but not corrected                      3      0.47
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+ENDHR1             Time interview ended (hour)(1)
+
+                   min:                                          7.00
+                   mean:                                        16.44
+                   max:                                         22.00
+                   #obs                                           644
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)(2)
+
+                   min:                                         10.00
+                   mean:                                        16.50
+                   max:                                         20.00
+                   #obs                                             4
+                   #miss:                                         640
+
+ENDHR3             Time interview ended (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         644
+
+ENDMIN1            Time interview ended (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        24.82
+                   max:                                         59.00
+                   #obs                                           644
+                   #miss:                                           0
+
+ENDMIN2            Time interview ended (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        15.00
+                   max:                                         45.00
+                   #obs                                             4
+                   #miss:                                         640
+
+ENDMIN3            Time interview ended (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         644
+
+FP3_EA             EA Duplicate
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+GD05               How is the goverment in this village?
+
+                   missing                                         16      2.48
+                   1. Very good                                    24      3.73
+                   2. Good                                        533     82.76
+                   3. Bad                                          68     10.56
+                   4. Very Bad                                      3      0.47
+                   total                                          644    100.00
+
+GD06               Compared to 2000, how is the goverment?
+
+                   missing                                         16      2.48
+                   1. Much Better                                  22      3.42
+                   2. Better                                      549     85.25
+                   3. Worst                                        53      8.23
+                   4. Much Worst                                    3      0.47
+                   9. Missing                                       1      0.16
+                   total                                          644    100.00
+
+GD07               How is goverment in this kabupaten/kota?
+
+                   missing                                         16      2.48
+                   1. Very good                                    27      4.19
+                   2. Good                                        543     84.32
+                   3. Bad                                          55      8.54
+                   4. Very Bad                                      3      0.47
+                   total                                          644    100.00
+
+GD08               Compared to 2000, kabupaten/kota gov?
+
+                   missing                                         16      2.48
+                   1. Much Better                                  24      3.73
+                   2. Better                                      549     85.25
+                   3. Worst                                        53      8.23
+                   4. Much Worst                                    2      0.31
+                   total                                          644    100.00
+
+GD09A              Corruption: Village Goverment Office
+
+                   missing                                         16      2.48
+                   1. Yes                                         113     17.55
+                   3. No                                          415     64.44
+                   7. Refused to Answer                            17      2.64
+                   8. Don't know                                   83     12.89
+                   total                                          644    100.00
+
+GD09B              Corruption: Kecamatan Office
+
+                   missing                                         16      2.48
+                   1. Yes                                         102     15.84
+                   3. No                                          353     54.81
+                   7. Refused to Answer                            14      2.17
+                   8. Don't know                                  159     24.69
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+GD09C              Corruption: Kabupaten/Kota Goverment
+
+                   missing                                         16      2.48
+                   1. Yes                                         213     33.07
+                   3. No                                          207     32.14
+                   7. Refused to Answer                            24      3.73
+                   8. Don't know                                  184     28.57
+                   total                                          644    100.00
+
+GD09D              Corruption: Local Parliament Kabupaten
+
+                   missing                                         16      2.48
+                   1. Yes                                         241     37.42
+                   3. No                                          167     25.93
+                   7. Refused to Answer                            20      3.11
+                   8. Don't know                                  200     31.06
+                   total                                          644    100.00
+
+GD09E              Corruption: District Police Headquarter
+
+                   missing                                         16      2.48
+                   1. Yes                                         206     31.99
+                   3. No                                          200     31.06
+                   7. Refused to Answer                            23      3.57
+                   8. Don't know                                  199     30.90
+                   total                                          644    100.00
+
+GD09F              Corruption: Hospital/Puskesmas/Pustu
+
+                   missing                                         16      2.48
+                   1. Yes                                          84     13.04
+                   3. No                                          375     58.23
+                   7. Refused to Answer                            17      2.64
+                   8. Don't know                                  152     23.60
+                   total                                          644    100.00
+
+GD09G              Corruption: State Schools
+
+                   missing                                         16      2.48
+                   1. Yes                                         115     17.86
+                   3. No                                          371     57.61
+                   7. Refused to Answer                            13      2.02
+                   8. Don't know                                  129     20.03
+                   total                                          644    100.00
+
+GD10A              Since 2000, corruption: Village Gov
+
+                   missing                                         16      2.48
+                   1. Increasing                                   27      4.19
+                   2. Same                                        339     52.64
+                   3. Decreasing                                  119     18.48
+                   7. Refused to Answer                            29      4.50
+                   8. Don't know                                  114     17.70
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          644    100.00
+
+GD10B              Since 2000, corruption: Kecamatan Office
+
+                   missing                                         16      2.48
+                   1. Increasing                                   20      3.11
+                   2. Same                                        333     51.71
+                   3. Decreasing                                   86     13.35
+                   7. Refused to Answer                            25      3.88
+                   8. Don't know                                  164     25.47
+                   total                                          644    100.00
+
+GD10C              Since 2000, corruption: Kabupaten/Kota
+
+                   missing                                         16      2.48
+                   1. Increasing                                   73     11.34
+                   2. Same                                        272     42.24
+                   3. Decreasing                                   93     14.44
+                   7. Refused to Answer                            22      3.42
+                   8. Don't know                                  168     26.09
+                   total                                          644    100.00
+
+GD10D              Since 2000, corruption: Local Parliament
+
+                   missing                                         16      2.48
+                   1. Increasing                                   79     12.27
+                   2. Same                                        259     40.22
+                   3. Decreasing                                   76     11.80
+                   7. Refused to Answer                            25      3.88
+                   8. Don't know                                  189     29.35
+                   total                                          644    100.00
+
+GD10E              Since 2000, corruption: District Police
+
+                   missing                                         16      2.48
+                   1. Increasing                                   64      9.94
+                   2. Same                                        286     44.41
+                   3. Decreasing                                   61      9.47
+                   7. Refused to Answer                            28      4.35
+                   8. Don't know                                  189     29.35
+                   total                                          644    100.00
+
+GD10F              Since 2000, corruption: Hospital
+
+                   missing                                         16      2.48
+                   1. Increasing                                   24      3.73
+                   2. Same                                        320     49.69
+                   3. Decreasing                                   78     12.11
+                   7. Refused to Answer                            29      4.50
+                   8. Don't know                                  177     27.48
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+GD10G              Since 2000, corruption: State School
+
+                   missing                                         16      2.48
+                   1. Increasing                                   35      5.43
+                   2. Same                                        327     50.78
+                   3. Decreasing                                   88     13.66
+                   7. Refused to Answer                            24      3.73
+                   8. Don't know                                  154     23.91
+                   total                                          644    100.00
+
+GD11               Process for village head election
+
+                   missing                                         16      2.48
+                   01. Consensus among all villagers               32      4.97
+                   02. Decided by village officials                 1      0.16
+                   03. Decided by village board                     2      0.31
+                   04. Voting                                     352     54.66
+                   05. Appointed by higher level goverment        236     36.65
+                   95. Others                                       5      0.78
+                   total                                          644    100.00
+
+GD12               Who most often resolves conflict?
+
+                   missing                                         16      2.48
+                   01. Community Leader                           167     25.93
+                   02. Religious Leader                            20      3.11
+                   03. All Villagers                               14      2.17
+                   04. Village Staff                              239     37.11
+                   05. Family                                     127     19.72
+                   07. Court                                       15      2.33
+                   95. Others                                      46      7.14
+                   total                                          644    100.00
+
+GD13               Qualifications of a leader in community
+
+                   Variable GD13 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, GD13 will have the value ACF.  If the       
+                   interviewee selected D and E, GD13 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: GD13      A =  Knowledge and Expertise                        
+                                               B =  Voting                                         
+                                               C =  Wealth                                         
+                                               D =  Social Spirit                                  
+                                               E =  Inherited                                      
+                                               F =  Character/Leadership/Charisma                  
+                                               V =  Others                                         
+
+
+IDIVWR             Code of Interviewer book Informant
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+INFCODE            Informant Code
+
+
+IVWDAY1            Date of interview (day of month)(1)
+
+                   min:                                          1.00
+                   mean:                                        15.40
+                   max:                                         31.00
+                   #obs                                           644
+                   #miss:                                           0
+
+IVWDAY2            Date of interview (day of month)(2)
+
+                   min:                                          1.00
+                   mean:                                        12.50
+                   max:                                         19.00
+                   #obs                                             4
+                   #miss:                                         640
+
+IVWDAY3            Date of interview (day of month)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         644
+
+IVWMTH1            Date of interview (month)(1)
+
+                   min:                                          2.00
+                   mean:                                         3.36
+                   max:                                          6.00
+                   #obs                                           644
+                   #miss:                                           0
+
+IVWMTH2            Date of interview (month)(2)
+
+                   min:                                          2.00
+                   mean:                                         2.25
+                   max:                                          3.00
+                   #obs                                             4
+                   #miss:                                         640
+
+IVWMTH3            Date of interview (month)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         644
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IVWYR1             Date of interview (Year)(1)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                           644
+                   #miss:                                           0
+
+IVWYR2             Date of interview (Year)(2)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                             4
+                   #miss:                                         640
+
+IVWYR3             Date of interview (Year)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         644
+
+K2                 Age
+
+                   min:                                          1.00
+                   mean:                                        45.60
+                   max:                                         80.00
+                   #obs                                           628
+                   #miss:                                          16
+
+K4                 Position in the village/community
+
+                   missing                                         16      2.48
+                   1. Comunity leader                              94     14.60
+                   2. Religious leader                            107     16.61
+                   3. Youth Activist                              133     20.65
+                   4. Religious Leader                            108     16.77
+                   5. Party Activist on Village Level              88     13.66
+                   6. Local Businessman                            97     15.06
+                   9. Missing                                       1      0.16
+                   total                                          644    100.00
+
+K5MTH              Length of tenure in the position (month)
+
+                   missing                                         16      2.48
+                   1. January                                      52      8.07
+                   2. February                                     25      3.88
+                   3. March                                        39      6.06
+                   4. April                                        28      4.35
+                   5. May                                          33      5.12
+                   6. June                                         43      6.68
+                   7. July                                         56      8.70
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(K5MTH  continued)
+
+                   8. August                                       57      8.85
+                   9. September                                    31      4.81
+                   10. October                                     30      4.66
+                   11. November                                    20      3.11
+                   12. December                                    18      2.80
+                   98. DK                                         196     30.43
+                   total                                          644    100.00
+
+K5YR               Length of tenure in the position (year)
+
+                   min:                                       1945.00
+                   mean:                                      1992.47
+                   max:                                       2008.00
+                   #obs                                           628
+                   #miss:                                          16
+
+K6                 Highest level of education attended
+
+                   missing                                         16      2.48
+                   01. No school/not yet in school                  4      0.62
+                   02. Elementary school                           46      7.14
+                   03. Junior High-general                         30      4.66
+                   04. Junior High-vocational                      17      2.64
+                   05. High School-general                        130     20.19
+                   06. High School-vocational                      59      9.16
+                   12. Kejar Paket B                                1      0.16
+                   14. Islamic School                               5      0.78
+                   60. D1,D2,D3                                   126     19.57
+                   61. University S1                              179     27.80
+                   62. University S2                               14      2.17
+                   72. Islamic Elementary School                    2      0.31
+                   73. Islamic Junior/Senior High School            1      0.16
+                   74                                               6      0.93
+                   95. Other                                        6      0.93
+                   98. Don't know                                   1      0.16
+                   99. Missing                                      1      0.16
+                   total                                          644    100.00
+
+K7                 Highest class completed
+
+                   missing                                         16      2.48
+                   00. Never completed class 1                      5      0.78
+                   01. 1                                            5      0.78
+                   02. 2                                           14      2.17
+                   03. 3                                           10      1.55
+                   04. 4                                            7      1.09
+                   05. 5                                            6      0.93
+                   06. 6                                            5      0.78
+                   07. Graduated                                  571     88.66
+                   96. No school                                    3      0.47
+                   98. Don't know                                   1      0.16
+                   99. Missing                                      1      0.16
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+K8X                Do you know length of time lived here
+
+                   missing                                         16      2.48
+                   1. Yes                                         619     96.12
+                   6. Don't live in the village                     8      1.24
+                   9. Missing                                       1      0.16
+                   total                                          644    100.00
+
+K8MTH              Month
+
+                   missing                                         25      3.88
+                   1. January                                      38      5.90
+                   2. February                                     48      7.45
+                   3. March                                        55      8.54
+                   4. April                                        37      5.75
+                   5. May                                          26      4.04
+                   6. June                                         48      7.45
+                   7. July                                         43      6.68
+                   8. August                                       47      7.30
+                   9. September                                    40      6.21
+                   10. October                                     42      6.52
+                   11. November                                    23      3.57
+                   12. December                                    42      6.52
+                   98. DK                                         130     20.19
+                   total                                          644    100.00
+
+K8YR               Year
+
+                   min:                                       1928.00
+                   mean:                                      1978.34
+                   max:                                       2007.00
+                   #obs                                           619
+                   #miss:                                          25
+
+LANGMAIN           Interview in what language?
+
+                   0. Indonesian                                  620     96.27
+                   1. Javanese                                     14      2.17
+                   2. Sundanese                                     2      0.31
+                   9. Minang                                        5      0.78
+                   10. Banjar                                       1      0.16
+                   14. Palembang                                    2      0.31
+                   total                                          644    100.00
+
+LANGOTHR           Other language used if any
+
+                   0. Indonesian                                   17      2.64
+                   1. Javanese                                    106     16.46
+                   2. Sundanese                                     9      1.40
+                   8. Sasak                                        10      1.55
+                   9. Minang                                       20      3.11
+                   10. Banjar                                       5      0.78
+                   14. Palembang                                   12      1.86
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(LANGOTHR  continued)
+
+                   19. Betawi                                       1      0.16
+                   96. No other                                   464     72.05
+                   total                                          644    100.00
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   12. North Sumatra                               54      8.39
+                   13. West Sumatra                                28      4.35
+                   16. South Sumatra                               24      3.73
+                   18. Lampung                                     22      3.42
+                   19. Bangka Belitung                              6      0.93
+                   31. Jakarta                                     78     12.11
+                   32. West Java                                   94     14.60
+                   33. Central Java                                74     11.49
+                   34. D.I. Yogyakarta                             43      6.68
+                   35. East Java                                   90     13.98
+                   36. Banten                                      13      2.02
+                   51. Bali                                        28      4.35
+                   52. West Nusa Tenggara                          32      4.97
+                   63. South Kalimantan                            26      4.04
+                   73. South Sulawesi                              32      4.97
+                   total                                          644    100.00
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   12. North Sumatra                               54      8.39
+                   13. West Sumatra                                28      4.35
+                   16. South Sumatra                               24      3.73
+                   18. Lampung                                     22      3.42
+                   19. Bangka Belitung                              6      0.93
+                   31. Jakarta                                     78     12.11
+                   32. West Java                                   94     14.60
+                   33. Central Java                                74     11.49
+                   34. D.I. Yogyakarta                             43      6.68
+                   35. East Java                                   90     13.98
+                   36. Banten                                      13      2.02
+                   51. Bali                                        28      4.35
+                   52. West Nusa Tenggara                          32      4.97
+                   63. South Kalimantan                            26      4.04
+                   73. South Sulawesi                              30      4.66
+                   76. West Sulawesi                                2      0.31
+                   total                                          644    100.00
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        32.92
+                   max:                                         78.00
+                   #obs                                           644
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 17
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        34.55
+                   max:                                         78.00
+                   #obs                                           644
+                   #miss:                                           0
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        87.89
+                   max:                                        730.00
+                   #obs                                           644
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        75.89
+                   max:                                        730.00
+                   #obs                                           644
+                   #miss:                                           0
+
+LK05               Urban/rural
+
+                   1. Urban                                       405     62.89
+                   2. Rural                                       239     37.11
+                   total                                          644    100.00
+
+LK15               Code of interviewer
+
+
+LK16               Code of editor
+
+
+LK17               Code of local supervisor
+
+
+LK19               Code of field coordinator
+
+
+NUMVIS             Number of visits
+
+                   min:                                          1.00
+                   mean:                                         1.01
+                   max:                                          2.00
+                   #obs                                           644
+                   #miss:                                           0
+
+PPS10A             Transportation
+
+                   missing                                         16      2.48
+                   1. Much worse                                    9      1.40
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 18
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PPS10A  continued)
+
+                   2. Worse                                        27      4.19
+                   3. Same                                        149     23.14
+                   4. Better                                      388     60.25
+                   5. Much better                                  31      4.81
+                   6. NA                                           24      3.73
+                   total                                          644    100.00
+
+PPS10B             Education services
+
+                   missing                                         16      2.48
+                   1. Much worse                                    7      1.09
+                   2. Worse                                        18      2.80
+                   3. Same                                        139     21.58
+                   4. Better                                      427     66.30
+                   5. Much better                                  37      5.75
+                   total                                          644    100.00
+
+PPS10C             Health services
+
+                   missing                                         16      2.48
+                   1. Much worse                                    8      1.24
+                   2. Worse                                        17      2.64
+                   3. Same                                        138     21.43
+                   4. Better                                      423     65.68
+                   5. Much better                                  40      6.21
+                   6. NA                                            1      0.16
+                   8. Don't know                                    1      0.16
+                   total                                          644    100.00
+
+PPS10D             Building permit / IMB
+
+                   missing                                         16      2.48
+                   1. Much worse                                    6      0.93
+                   2. Worse                                        15      2.33
+                   3. Same                                        225     34.94
+                   4. Better                                      244     37.89
+                   5. Much better                                  17      2.64
+                   6. NA                                           86     13.35
+                   8. Don't know                                   35      5.43
+                   total                                          644    100.00
+
+PPS10E             Bussiness permit
+
+                   missing                                         16      2.48
+                   1. Much worse                                    7      1.09
+                   2. Worse                                        14      2.17
+                   3. Same                                        231     35.87
+                   4. Better                                      259     40.22
+                   5. Much better                                  19      2.95
+                   6. NA                                           60      9.32
+                   8. Don't know                                   38      5.90
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 19
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PPS10F             Birth certificate
+
+                   missing                                         16      2.48
+                   1. Much worse                                   11      1.71
+                   2. Worse                                        14      2.17
+                   3. Same                                        204     31.68
+                   4. Better                                      355     55.12
+                   5. Much better                                  27      4.19
+                   6. NA                                           14      2.17
+                   8. Don't know                                    3      0.47
+                   total                                          644    100.00
+
+PPS10G             National Identification
+
+                   missing                                         16      2.48
+                   1. Much worse                                   11      1.71
+                   2. Worse                                        23      3.57
+                   3. Same                                        186     28.88
+                   4. Better                                      382     59.32
+                   5. Much better                                  24      3.73
+                   8. Don't know                                    2      0.31
+                   total                                          644    100.00
+
+PPS10H             Driver licence
+
+                   missing                                         16      2.48
+                   1. Much worse                                    7      1.09
+                   2. Worse                                        19      2.95
+                   3. Same                                        274     42.55
+                   4. Better                                      284     44.10
+                   5. Much better                                  16      2.48
+                   6. NA                                           23      3.57
+                   8. Don't know                                    5      0.78
+                   total                                          644    100.00
+
+PPS10I             Police services
+
+                   missing                                         16      2.48
+                   1. Much worse                                    7      1.09
+                   2. Worse                                        22      3.42
+                   3. Same                                        307     47.67
+                   4. Better                                      276     42.86
+                   5. Much better                                   7      1.09
+                   6. NA                                            3      0.47
+                   8. Don't know                                    6      0.93
+                   total                                          644    100.00
+
+PPS1A              Sanitation/sewage
+
+                   missing                                         16      2.48
+                   1. Adequate                                    201     31.21
+                   2. Somewhat adequate                           148     22.98
+                   3. Not Adequate                                124     19.25
+                   4. Far from adequate                            34      5.28
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 20
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PPS1A  continued)
+
+                   6. Not applicable                              119     18.48
+                   8. Don't know                                    2      0.31
+                   total                                          644    100.00
+
+PPS1B              Road
+
+                   missing                                         16      2.48
+                   1. Adequate                                    349     54.19
+                   2. Somewhat adequate                           163     25.31
+                   3. Not Adequate                                 88     13.66
+                   4. Far from adequate                            27      4.19
+                   6. Not applicable                                1      0.16
+                   total                                          644    100.00
+
+PPS1C              Drainage/Flood control
+
+                   missing                                         16      2.48
+                   1. Adequate                                    152     23.60
+                   2. Somewhat adequate                            96     14.91
+                   3. Not Adequate                                 86     13.35
+                   4. Far from adequate                            19      2.95
+                   6. Not applicable                              266     41.30
+                   8. Don't know                                    9      1.40
+                   total                                          644    100.00
+
+PPS1D              Irrigation
+
+                   missing                                         16      2.48
+                   1. Adequate                                    169     26.24
+                   2. Somewhat adequate                            79     12.27
+                   3. Not Adequate                                 74     11.49
+                   4. Far from adequate                            10      1.55
+                   6. Not applicable                              292     45.34
+                   8. Don't know                                    4      0.62
+                   total                                          644    100.00
+
+PPS1E              Public lighting
+
+                   missing                                         16      2.48
+                   1. Adequate                                    335     52.02
+                   2. Somewhat adequate                           163     25.31
+                   3. Not Adequate                                 89     13.82
+                   4. Far from adequate                            23      3.57
+                   6. Not applicable                               17      2.64
+                   8. Don't know                                    1      0.16
+                   total                                          644    100.00
+
+PPS1F              Clean Water
+
+                   missing                                         16      2.48
+                   1. Adequate                                    403     62.58
+                   2. Somewhat adequate                           103     15.99
+                   3. Not Adequate                                 63      9.78
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 21
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PPS1F  continued)
+
+                   4. Far from adequate                            22      3.42
+                   6. Not applicable                               37      5.75
+                   total                                          644    100.00
+
+PPS3A              Sanitation/sewage
+
+                   missing                                         16      2.48
+                   1. Much worse                                    3      0.47
+                   2. Worse                                        33      5.12
+                   3. Same                                        199     30.90
+                   4. Better                                      259     40.22
+                   5. Much better                                  15      2.33
+                   6. NA                                          116     18.01
+                   8. Don't know                                    3      0.47
+                   total                                          644    100.00
+
+PPS3B              Road
+
+                   missing                                         16      2.48
+                   1. Much worse                                    5      0.78
+                   2. Worse                                        50      7.76
+                   3. Same                                        143     22.20
+                   4. Better                                      393     61.02
+                   5. Much better                                  35      5.43
+                   6. NA                                            1      0.16
+                   8. Don't know                                    1      0.16
+                   total                                          644    100.00
+
+PPS3C              Drainage/Flood control
+
+                   missing                                         16      2.48
+                   1. Much worse                                    5      0.78
+                   2. Worse                                        16      2.48
+                   3. Same                                        141     21.89
+                   4. Better                                      187     29.04
+                   5. Much better                                  15      2.33
+                   6. NA                                          256     39.75
+                   8. Don't know                                    8      1.24
+                   total                                          644    100.00
+
+PPS3D              Irrigation
+
+                   missing                                         16      2.48
+                   1. Much worse                                    6      0.93
+                   2. Worse                                        18      2.80
+                   3. Same                                        142     22.05
+                   4. Better                                      160     24.84
+                   5. Much better                                  12      1.86
+                   6. NA                                          285     44.25
+                   8. Don't know                                    5      0.78
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 22
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PPS3E              Public lighting
+
+                   missing                                         16      2.48
+                   1. Much worse                                    6      0.93
+                   2. Worse                                        32      4.97
+                   3. Same                                        175     27.17
+                   4. Better                                      363     56.37
+                   5. Much better                                  35      5.43
+                   6. NA                                           16      2.48
+                   8. Don't know                                    1      0.16
+                   total                                          644    100.00
+
+PPS3F              Clean water
+
+                   missing                                         16      2.48
+                   1. Much worse                                    6      0.93
+                   2. Worse                                        31      4.81
+                   3. Same                                        255     39.60
+                   4. Better                                      273     42.39
+                   5. Much better                                  29      4.50
+                   6. NA                                           34      5.28
+                   total                                          644    100.00
+
+PPS4A              Transportation
+
+                   missing                                         16      2.48
+                   1. Adequate                                    428     66.46
+                   2. Somewhat adequate                           102     15.84
+                   3. Not Adequate                                 49      7.61
+                   4. Far from adequate                            23      3.57
+                   6. Not applicable                               25      3.88
+                   8. Don't know                                    1      0.16
+                   total                                          644    100.00
+
+PPS4B              Education services
+
+                   missing                                         16      2.48
+                   1. Adequate                                    474     73.60
+                   2. Somewhat adequate                           125     19.41
+                   3. Not Adequate                                 22      3.42
+                   4. Far from adequate                             7      1.09
+                   total                                          644    100.00
+
+PPS4C              Health services
+
+                   missing                                         16      2.48
+                   1. Adequate                                    469     72.83
+                   2. Somewhat adequate                           113     17.55
+                   3. Not Adequate                                 35      5.43
+                   4. Far from adequate                            11      1.71
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 23
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PPS4D              Building permit / IMB
+
+                   missing                                         16      2.48
+                   1. Adequate                                    325     50.47
+                   2. Somewhat adequate                           111     17.24
+                   3. Not Adequate                                 51      7.92
+                   4. Far from adequate                             8      1.24
+                   6. Not applicable                              102     15.84
+                   8. Don't know                                   31      4.81
+                   total                                          644    100.00
+
+PPS4E              Bussiness permit
+
+                   missing                                         16      2.48
+                   1. Adequate                                    353     54.81
+                   2. Somewhat adequate                           116     18.01
+                   3. Not Adequate                                 42      6.52
+                   4. Far from adequate                             7      1.09
+                   6. Not applicable                               71     11.02
+                   8. Don't know                                   39      6.06
+                   total                                          644    100.00
+
+PPS4F              Birth certificate
+
+                   missing                                         16      2.48
+                   1. Adequate                                    507     78.73
+                   2. Somewhat adequate                            72     11.18
+                   3. Not Adequate                                 24      3.73
+                   4. Far from adequate                             7      1.09
+                   6. Not applicable                               15      2.33
+                   8. Don't know                                    3      0.47
+                   total                                          644    100.00
+
+PPS4G              National identification
+
+                   missing                                         16      2.48
+                   1. Adequate                                    532     82.61
+                   2. Somewhat adequate                            62      9.63
+                   3. Not Adequate                                 27      4.19
+                   4. Far from adequate                             5      0.78
+                   8. Don't know                                    2      0.31
+                   total                                          644    100.00
+
+PPS4H              Driver licence
+
+                   missing                                         16      2.48
+                   1. Adequate                                    426     66.15
+                   2. Somewhat adequate                           121     18.79
+                   3. Not Adequate                                 41      6.37
+                   4. Far from adequate                             7      1.09
+                   6. Not applicable                               28      4.35
+                   8. Don't know                                    5      0.78
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 24
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PPS4I              Police services
+
+                   missing                                         16      2.48
+                   1. Adequate                                    388     60.25
+                   2. Somewhat adequate                           150     23.29
+                   3. Not Adequate                                 62      9.63
+                   4. Far from adequate                            15      2.33
+                   6. Not applicable                                4      0.62
+                   8. Don't know                                    9      1.40
+                   total                                          644    100.00
+
+REASON             Reason code for answer of FP3
+
+                   missing                                        644    100.00
+                   total                                          644    100.00
+
+REC_TYPE           Record type
+
+
+RESPNDNT           Responden is
+
+                   1. School Principal / Senior Teacher           106     16.46
+                   2. Health Professional                         106     16.46
+                   3. Youth Activities                            133     20.65
+                   4. Religious Leader                            112     17.39
+                   5. Local Political Party Activist               92     14.29
+                   6. Local Business Leader                        95     14.75
+                   total                                          644    100.00
+
+RESULT             Interview result code
+
+                   1. Completed                                   628     97.52
+                   4. EA Duplicate                                 16      2.48
+                   total                                          644    100.00
+
+RESULT1            Result of interview(1)
+
+                   1. Completed                                   631     97.98
+                   2. Partial completed                             4      0.62
+                   4. Refused                                       9      1.40
+                   total                                          644    100.00
+
+RESULT2            Result of interview(2)
+
+                   missing                                        640     99.38
+                   1. Completed                                     4      0.62
+                   total                                          644    100.00
+
+RESULT3            Result of interview(3)
+
+                   missing                                        644    100.00
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 25
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+SUPVERIF           Monitoring by local supervisor
+
+                   1. Yes                                          26      4.04
+                   3. No                                          618     95.96
+                   total                                          644    100.00
+
+SUP_EDIT           Monitoring by local supervisor
+
+                   1. Yes                                          73     11.34
+                   3. No                                          571     88.66
+                   total                                          644    100.00
+
+SUP_OBS            Monitoring by local supervisor
+
+                   1. Yes                                          69     10.71
+                   3. No                                          575     89.29
+                   total                                          644    100.00
+
+TR05               How safe do you consider this village is
+
+                   missing                                         16      2.48
+                   1. Strongly agree                              137     21.27
+                   2. Agree                                       488     75.78
+                   3. Disagree                                      3      0.47
+                   total                                          644    100.00
+
+TR06               Compared to 2000, how safe is village
+
+                   missing                                         16      2.48
+                   1. Strongly agree                              125     19.41
+                   2. Agree                                       455     70.65
+                   3. Disagree                                     45      6.99
+                   4. Strongly disagree                             3      0.47
+                   total                                          644    100.00
+
+TR07               IIs it safe to walk at night
+
+                   missing                                         16      2.48
+                   1. Strongly agree                               28      4.35
+                   2. Agree                                       266     41.30
+                   3. Disagree                                    329     51.09
+                   4. Strongly disagree                             5      0.78
+                   total                                          644    100.00
+
+TR08               Past yr, any household a victim of theft
+
+                   missing                                         16      2.48
+                   1. Strongly agree                               56      8.70
+                   2. Agree                                       510     79.19
+                   3. Disagree                                     61      9.47
+                   4. Strongly disagree                             1      0.16
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 26
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+TR09               Past yr, any crop/livestock theft?
+
+                   missing                                         16      2.48
+                   1. Strongly agree                               64      9.94
+                   2. Agree                                       520     80.75
+                   3. Disagree                                     43      6.68
+                   4. Strongly disagree                             1      0.16
+                   total                                          644    100.00
+
+TR10               Past yr, any household victim of robbery
+
+                   missing                                         16      2.48
+                   1. Very safe                                    74     11.49
+                   2. Safe                                        534     82.92
+                   3. Unsafe                                       20      3.11
+                   total                                          644    100.00
+
+TR11               Past yr, any incident of sexual assault?
+
+                   missing                                         16      2.48
+                   1. Very safe                                    50      7.76
+                   2. Safe                                        542     84.16
+                   3. Unsafe                                       35      5.43
+                   4. Very unsafe                                   1      0.16
+                   total                                          644    100.00
+
+TR23               Feeling towards diffrent faith in vill
+
+                   missing                                         16      2.48
+                   1. Strongly agree                               39      6.06
+                   2. Agree                                       365     56.68
+                   3. Disagree                                    222     34.47
+                   4. Strongly disagree                             2      0.31
+                   total                                          644    100.00
+
+TR24               Feeling towards diffrent faith in neighb
+
+                   missing                                         16      2.48
+                   1.No objection at all                           14      2.17
+                   2.No objection                                  83     12.89
+                   3.Somewhat acceptable                          514     79.81
+                   4.Not acceptable                                17      2.64
+                   total                                          644    100.00
+
+TR25               Feeling towards diffrent faith in house
+
+                   missing                                         16      2.48
+                   1.No objection at all                           14      2.17
+                   2.No objection                                  88     13.66
+                   3.Somewhat acceptable                          511     79.35
+                   4.Not acceptable                                15      2.33
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 27
+book:    INF  - Public Perception                                   
+module:  INF                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+TR26               Feeling towards diffrent faith in family
+
+                   missing                                         16      2.48
+                   1.No objection at all                           18      2.80
+                   2.No objection                                 149     23.14
+                   3.Somewhat acceptable                          449     69.72
+                   4.Not acceptable                                12      1.86
+                   total                                          644    100.00
+
+TR27               House of different faith in community?
+
+                   missing                                         16      2.48
+                   1.No objection at all                          195     30.28
+                   2.No objection                                 280     43.48
+                   3.Somewhat acceptable                          146     22.67
+                   4.Not acceptable                                 7      1.09
+                   total                                          644    100.00
+
+TR28               I trust people with same religion more
+
+                   missing                                         16      2.48
+                   1.No objection at all                            9      1.40
+                   2.No objection                                 182     28.26
+                   3.Somewhat acceptable                          273     42.39
+                   4.Not acceptable                               164     25.47
+                   total                                          644    100.00
+
+TR29               How important is religion of a candidate
+
+                   missing                                         16      2.48
+                   1. Make it very likely to vote for him         285     44.25
+                   2. Make it somewhat likely to vote for h       162     25.16
+                   3. Make it somewhat unlikely to vote for       153     23.76
+                   4. Make it very unlikely to vote for him        22      3.42
+                   5. Doesn not matter                              6      0.93
+                   total                                          644    100.00
+
+TR30               How important is religiosity of candidat
+
+                   missing                                         16      2.48
+                   1. Make it very likely to vote for him         299     46.43
+                   2. Make it somewhat likely to vote for h       188     29.19
+                   3. Make it somewhat unlikely to vote for       130     20.19
+                   4. Make it very unlikely to vote for him         8      1.24
+                   5. Doesn not matter                              3      0.47
+                   total                                          644    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 28
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   INF                                            628    100.00
+                   total                                          628    100.00
+
+COMMID07           2007 community ID
+
+
+INFCODE            Informant Code
+
+
+PAP01              System to identity GAKIN eligibility?
+
+                   1. Yes                                         598     95.22
+                   3. No                                           30      4.78
+                   total                                          628    100.00
+
+PAP02              Criteria used for GAKIN eligibility
+
+                   Variable PAP02 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP02 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP02 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP02     A =  Landless                                       
+                                               B =  Quality of house is poor                       
+                                               C =  No/shared toilets                              
+                                               D =  No electricity for lighting                    
+                                               E =  Use wood/kerosene/arang for cooking fuel       
+                                               F =  Eat less than two meals a day                  
+                                               G =  Eat meat/chicken/milk less than once a week    
+                                               H =  Cannot afford health services                  
+                                               I =  Household head has no more than elementary scho
+                                               J =  Household head is unemployed                   
+                                               K =  Children dropped out of school                 
+                                               L =  Pra Sejahtera (Pre Welfare) Family             
+                                               M =  KS 1 (Welfare 1) Family                        
+                                               N =  Low Helath Status                              
+                                               O =  Widow/widower                                  
+                                               P =  Don't have permanent employment                
+                                               Q =  Don't have asset                               
+                                               R =  BPS' 14 criteria                               
+                                               V =  Others                                         
+                                               Y =  Don't know                                     
+                                               Z =  Missing                                        
+
+
+PAP03              Who determines GAKIN eligibility?
+
+                   Variable PAP03 can have multiple responses.  Users were asked to select 
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 29
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP03 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP03 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP03     A =  Village head                                   
+                                               B =  Village official/staff                         
+                                               C =  PLKB                                           
+                                               D =  Village midwife                                
+                                               E =  Puskesmas staff                                
+                                               F =  Community figure                               
+                                               G =  Activist                                       
+                                               H =  PKK                                            
+                                               I =  NGO                                            
+                                               J =  LKMD                                           
+                                               K =  Head of RT/RW                                  
+                                               L =  Consultant                                     
+                                               V =  Others                                         
+                                               Y =  Don't know                                     
+
+
+PAP04              Who is more appropriate to determine
+
+                   Variable PAP04 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP04 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP04 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP04     A =  Village head                                   
+                                               B =  Village official/staff                         
+                                               C =  PLKB                                           
+                                               D =  Village midwife                                
+                                               E =  Puskesmas staff                                
+                                               F =  Community figure                               
+                                               G =  Activist                                       
+                                               H =  PKK                                            
+                                               I =  NGO                                            
+                                               J =  LKMD                                           
+                                               K =  Head of RT/RW                                  
+                                               L =  Consultant                                     
+                                               V =  Other                                          
+                                               Y =  Don't know                                     
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 30
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP05              How often is the list of GAKIN updated?
+
+                   min:                                          1.00
+                   mean:                                         1.51
+                   max:                                         12.00
+                   #obs                                           247
+                   #miss:                                         381
+
+PAP05X             Do you know how often it is updated?
+
+                   missing                                         30      4.78
+                   1. Given                                       247     39.33
+                   3. Every time there is a new program           218     34.71
+                   6. NA                                            4      0.64
+                   8. Don't know                                  129     20.54
+                   total                                          628    100.00
+
+PAP05A             Month/Year
+
+                   missing                                        381     60.67
+                   1. Month                                        26      4.14
+                   2. Year                                        221     35.19
+                   total                                          628    100.00
+
+PAP06              Mechanism for application?
+
+                   1. Report to RT/RW head                        431     68.63
+                   2. Report to village                           131     20.86
+                   3. Report to kecamatan                           1      0.16
+                   4. Depends on type of PAP program               11      1.75
+                   6. No mechanism                                 36      5.73
+                   8. Don't know                                   18      2.87
+                   total                                          628    100.00
+
+PAP20              Health card program in last 12 months?
+
+                   1. Yes                                         198     31.53
+                   3. No                                          430     68.47
+                   total                                          628    100.00
+
+PAP21              Facilities accepting Health Card
+
+                   Variable PAP21 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP21 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP21 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP21     A =  Puskesmas                                      
+                                               B =  Puskesmas Pembantu                             
+                                               C =  village midwife                                
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 31
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               D =  Private Practice                               
+                                               E =  Public hospital                                
+                                               F =  Private Hospital                               
+
+
+PAP22X             Do you know how long it is valid
+
+                   missing                                        430     68.47
+                   1. Yes                                          63     10.03
+                   3. No explanation                               65     10.35
+                   8. Don't know                                   70     11.15
+                   total                                          628    100.00
+
+PAP22              For how long is the Health Card valid
+
+                   min:                                          1.00
+                   mean:                                        15.92
+                   max:                                         60.00
+                   #obs                                            63
+                   #miss:                                         565
+
+PAP23X             Have you ever heard of any cases?
+
+                   missing                                        430     68.47
+                   1. Yes                                          19      3.03
+                   3. No                                          175     27.87
+                   8. Don't know                                    4      0.64
+                   total                                          628    100.00
+
+PAP23              Any cases of denied services with card?
+
+                   Variable PAP23 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP23 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP23 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP23     A =  Puskesmas                                      
+                                               B =  Puskesmas Pembantu                             
+                                               C =  village midwife                                
+                                               D =  Private Practice                               
+                                               E =  Public hospital                                
+                                               F =  Private Hospital                               
+
+
+PAP24              ASKESKIN program in the last 12 months?
+
+                   1. Yes                                         534     85.03
+                   3. No                                           94     14.97
+                   total                                          628    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 32
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP25              Facilities accepting Askeskin
+
+                   Variable PAP25 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP25 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP25 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP25     A =  Puskesmas                                      
+                                               B =  Puskesmas Pembantu                             
+                                               C =  village midwife                                
+                                               D =  Private Practice                               
+                                               E =  Public hospital                                
+                                               F =  Private Hospital                               
+
+
+PAP26X             Do you know how long Askeskin is valid
+
+                   missing                                         94     14.97
+                   1. Yes                                         135     21.50
+                   6. No explanation                              238     37.90
+                   8. Don't know                                  161     25.64
+                   total                                          628    100.00
+
+PAP26              For how long is the Askeskin valid
+
+                   min:                                          1.00
+                   mean:                                        15.26
+                   max:                                         99.00
+                   #obs                                           135
+                   #miss:                                         493
+
+PAP27X             Have you ever heard of any cases?
+
+                   missing                                         94     14.97
+                   1. Yes                                          58      9.24
+                   3. No                                          455     72.45
+                   8. Don't know                                   21      3.34
+                   total                                          628    100.00
+
+PAP27              Any case of denied service with Askeskin
+
+                   Variable PAP27 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP27 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP27 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 33
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   key for variable: PAP27     A =  Puskesmas                                      
+                                               B =  Puskesmas Pembantu                             
+                                               C =  village midwife                                
+                                               D =  Private Practice                               
+                                               E =  Public hospital                                
+                                               F =  Private Hospital                               
+
+
+PAP28              Was there RASKIN program in last 12 mo?
+
+                   1. Yes                                         612     97.45
+                   3. No                                           16      2.55
+                   total                                          628    100.00
+
+PAP29X             Do you know how many times distributed?
+
+                   missing                                         16      2.55
+                   1. Given                                       544     86.62
+                   8. Don't know                                   68     10.83
+                   total                                          628    100.00
+
+PAP29              Past yr, times RASKIN rice distributed
+
+                   min:                                          1.00
+                   mean:                                        10.63
+                   max:                                         99.00
+                   #obs                                           544
+                   #miss:                                          84
+
+PAP32X             Last time RASKIN rice was distributed
+
+                   missing                                         16      2.55
+                   1. Given                                       607     96.66
+                   6. NA                                            5      0.80
+                   total                                          628    100.00
+
+PAP32MT            Last time RASKIN rice was distributed
+
+                   missing                                         21      3.34
+                   1. January                                      56      8.92
+                   2. February                                    172     27.39
+                   3. March                                       191     30.41
+                   4. April                                        74     11.78
+                   5. May                                          23      3.66
+                   6. June                                          2      0.32
+                   7. July                                          2      0.32
+                   8. August                                        2      0.32
+                   9. September                                     2      0.32
+                   10. October                                      5      0.80
+                   11. November                                     6      0.96
+                   12. December                                    37      5.89
+                   98. DK                                          35      5.57
+                   total                                          628    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 34
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP32YR            Last time RASKIN rice was distributed
+
+                   min:                                       2000.00
+                   mean:                                      2178.91
+                   max:                                       9998.00
+                   #obs                                           607
+                   #miss:                                          21
+
+PAP36X             Do you know the average amount received?
+
+                   missing                                         21      3.34
+                   1. Given                                       558     88.85
+                   8. Don't know                                   49      7.80
+                   total                                          628    100.00
+
+PAP36              Average amount received by recipients
+
+                   min:                                          2.00
+                   mean:                                        10.39
+                   max:                                         75.00
+                   #obs                                           558
+                   #miss:                                          70
+
+PAP37X             Do you know the price/kg to household
+
+                   missing                                         21      3.34
+                   1. Given                                       560     89.17
+                   8. Don't know                                   47      7.48
+                   total                                          628    100.00
+
+PAP37              Price/kg of RASKIN rice to household
+
+                   min:                                          0.00
+                   mean:                                      1646.21
+                   max:                                      20000.00
+                   #obs                                           560
+                   #miss:                                          68
+
+PAP38X             Do you know the market price/kg of rice?
+
+                   missing                                         21      3.34
+                   1. Given                                       546     86.94
+                   8. Don't know                                   61      9.71
+                   total                                          628    100.00
+
+PAP38              Market price/kg of the rice then
+
+
+PAP39              Did all HHs receive equal amounts rice?
+
+                   missing                                         21      3.34
+                   1. Yes                                         543     86.46
+                   3. No                                           64     10.19
+                   total                                          628    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 35
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+PAP40              How is the household amount determined?
+
+                   Variable PAP40 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP40 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP40 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP40     A =  Based on the number of household members       
+                                               B =  Based on the poverty level of the household    
+                                               C =  Based on the number of children                
+                                               V =  Others                                         
+                                               Z =  Missing                                        
+
+
+PAP46              Past yr, market operation for rice?
+
+                   1. Yes                                          98     15.61
+                   3. No                                          530     84.39
+                   total                                          628    100.00
+
+PAP47X             Past yr, Times of market operation
+
+                   missing                                        530     84.39
+                   1. Given                                        90     14.33
+                   8. Don't know                                    8      1.27
+                   total                                          628    100.00
+
+PAP47              Past yr, Times of market operation
+
+                   min:                                          1.00
+                   mean:                                         1.83
+                   max:                                         12.00
+                   #obs                                            90
+                   #miss:                                         538
+
+PAP50A             Who distributed/sold the rice?
+
+                   Variable PAP50A can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP50A will have the value ACF.  If the       
+                   interviewee selected D and E, PAP50A will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP50A    A =  Central Goverment                              
+                                               B =  Local Goverment                                
+                                               C =  Not Goverment                                  
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 36
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               Y =  Don't know                                     
+
+
+PAP50X             Do you know when was the last market?
+
+                   missing                                        530     84.39
+                   1. Given                                        90     14.33
+                   8. Don't know                                    8      1.27
+                   total                                          628    100.00
+
+PAP50MT            Last market operation for rice (mo)
+
+                   missing                                        538     85.67
+                   1. January                                       6      0.96
+                   2. February                                      4      0.64
+                   3. March                                         4      0.64
+                   4. April                                         2      0.32
+                   5. May                                           2      0.32
+                   6. June                                          2      0.32
+                   7. July                                          2      0.32
+                   8. August                                        8      1.27
+                   9. September                                     4      0.64
+                   10. October                                     18      2.87
+                   11. November                                     3      0.48
+                   12. December                                    12      1.91
+                   98. DK                                          23      3.66
+                   total                                          628    100.00
+
+PAP50YR            Last market operation for rice (yr)
+
+                   min:                                       2005.00
+                   mean:                                      2007.10
+                   max:                                       2008.00
+                   #obs                                            90
+                   #miss:                                         538
+
+PAP53X             Maximum amount of rice per household
+
+                   missing                                        530     84.39
+                   1. Given                                        70     11.15
+                   6. No Maximum                                   11      1.75
+                   8. Don't know                                   17      2.71
+                   total                                          628    100.00
+
+PAP53              Maximum amount of rice per household
+
+                   min:                                          2.00
+                   mean:                                        13.49
+                   max:                                         60.00
+                   #obs                                            70
+                   #miss:                                         558
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 37
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP54X             Market price/kg of rice paid by HH
+
+                   missing                                        530     84.39
+                   1. Given                                        75     11.94
+                   8. Don't know                                   23      3.66
+                   total                                          628    100.00
+
+PAP54              Market price/kg of rice paid by HH
+
+
+PAP55X             Market price of rice per kg at the time
+
+                   missing                                        530     84.39
+                   1. Given                                        85     13.54
+                   8. Don't know                                   13      2.07
+                   total                                          628    100.00
+
+PAP55              Market price of rice per kg at the time
+
+
+PAP56AX            PKPS BBM-SLT (2007)
+
+                   missing                                         92     14.65
+                   1. Given                                        91     14.49
+                   3. No                                          445     70.86
+                   total                                          628    100.00
+
+PAP56A             PKPS BBM-SLT (2007)
+
+                   min:                                          1.00
+                   mean:                                         2.44
+                   max:                                          8.00
+                   #obs                                            91
+                   #miss:                                         537
+
+PAP56BX            PKPS BBM-SLT (2006)
+
+                   missing                                         92     14.65
+                   1. Given                                       402     64.01
+                   3. No                                          134     21.34
+                   total                                          628    100.00
+
+PAP56B             PKPS BBM-SLT (2006)
+
+                   min:                                          1.00
+                   mean:                                         3.29
+                   max:                                         41.00
+                   #obs                                           402
+                   #miss:                                         226
+
+PAP56CX            PKPS BBM-SLT (2005)
+
+                   missing                                         92     14.65
+                   1. Given                                       324     51.59
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 38
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PAP56CX  continued)
+
+                   3. No                                          212     33.76
+                   total                                          628    100.00
+
+PAP56C             PKPS BBM-SLT (2005)
+
+                   min:                                          1.00
+                   mean:                                         3.06
+                   max:                                         98.00
+                   #obs                                           324
+                   #miss:                                         304
+
+PAP56X             Was there ever PKPS BBM-SLT program here
+
+                   1. Given                                       536     85.35
+                   3. No                                           92     14.65
+                   total                                          628    100.00
+
+PAP58MTX           able to answer PAP58MT
+
+
+PAP58MT            Last time a HH received the SLT funds?
+
+                   missing                                         92     14.65
+                   1. January                                      15      2.39
+                   2. February                                     10      1.59
+                   3. March                                        14      2.23
+                   4. April                                         6      0.96
+                   5. May                                          10      1.59
+                   6. June                                         26      4.14
+                   7. July                                         14      2.23
+                   8. August                                       10      1.59
+                   9. September                                    20      3.18
+                   10. October                                     23      3.66
+                   11. November                                    11      1.75
+                   12. December                                   161     25.64
+                   98. DK                                         216     34.39
+                   total                                          628    100.00
+
+PAP58YRX           able to answer PAP58YR
+
+
+PAP58YR            Last time a HH received the SLT funds?
+
+                   min:                                       2000.00
+                   mean:                                      2006.02
+                   max:                                       2008.00
+                   #obs                                           526
+                   #miss:                                         102
+
+PAP60X             able to answer PAP60
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 39
+book:    INF  - Public Perception                                   
+module:  INF_PAP0             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP60              Rupiah each household received from SLT
+
+                   min:                                     100000.00
+                   mean:                                    296453.40
+                   max:                                     900000.00
+                   #obs                                           530
+                   #miss:                                          98
+
+PAP61              Could HHs reschedule collection from SLT
+
+                   missing                                         92     14.65
+                   1. Yes, with no additional fee                 298     47.45
+                   2. Yes, with additional fee                     11      1.75
+                   3. No                                          156     24.84
+                   4. Yes, but no information whether with         71     11.31
+                   total                                          628    100.00
+
+PAP62              Can someone else pick up the funds?
+
+                   missing                                         92     14.65
+                   1. Yes, with no additional fee                 228     36.31
+                   2. Yes, with additional fee                      3      0.48
+                   3. No                                          249     39.65
+                   4. Yes, but no information whether with         56      8.92
+                   total                                          628    100.00
+
+PAP63              Keluarga Harapan Program then or now?
+
+                   1. Yes, did it                                  39      6.21
+                   2. Yes, will do it                               5      0.80
+                   3. No                                          583     92.83
+                   9. Missing                                       1      0.16
+                   total                                          628    100.00
+
+PAP65              Do you understand eligibility procedure?
+
+                   missing                                        583     92.83
+                   1. Yes                                          22      3.50
+                   3. No                                           22      3.50
+                   9. Missing                                       1      0.16
+                   total                                          628    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 40
+book:    INF  - Public Perception                                   
+module:  INF_PAP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   INF                                          5,652    100.00
+                   total                                        5,652    100.00
+
+COMMID07           2007 community ID
+
+
+INFCODE            Informant Code
+
+
+PAP10              Criteria used to determine eligibility
+
+                   Variable PAP10 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP10 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP10 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP10     A =  Landless                                       
+                                               B =  Quality of house/welling is poor               
+                                               C =  No/shared toilets                              
+                                               D =  No electricity for lighting                    
+                                               E =  Use wood/kerosene/arang for cooking fuel       
+                                               F =  Eat less than 2 meals a day                    
+                                               G =  Eat meat/chicken/milk less than once a week    
+                                               H =  Cannot afford health service                   
+                                               I =  Household head has no more than elementary scho
+                                               J =  Household head is unemployed                   
+                                               K =  Children dropped out of school                 
+                                               L =  Pra Sejahtera (Pre Welfare) Family             
+                                               M =  KS 1(Welfare 1) Family                         
+                                               N =  Low Health Status                              
+                                               O =  Widow/Widower                                  
+                                               P =  Do not have permanent income                   
+                                               Q =  Do not have assets                             
+                                               R =  BPS' 14 criteria                               
+                                               V =  Others                                         
+                                               Y =  Don't know                                     
+
+
+PAP11              Who determines household eligibility
+
+                   Variable PAP11 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP11 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP11 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 41
+book:    INF  - Public Perception                                   
+module:  INF_PAP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+                   key for variable: PAP11     A =  Village head                                   
+                                               B =  Village official/staff                         
+                                               C =  PLKB                                           
+                                               D =  Village midwife                                
+                                               E =  Puskesmas staff                                
+                                               F =  Community figure                               
+                                               G =  Activist                                       
+                                               H =  PKK                                            
+                                               I =  NGO                                            
+                                               J =  LKMD                                           
+                                               K =  Head of RT/RW                                  
+                                               L =  Consultant                                     
+                                               V =  Other                                          
+                                               Y =  Don't know                                     
+
+
+PAP14              Has there been an information campaign?
+
+                   missing                                      2,633     46.59
+                   1. Yes                                       2,424     42.89
+                   3. No                                          595     10.53
+                   total                                        5,652    100.00
+
+PAP16A             Was the information campaign effective?
+
+                   missing                                      3,228     57.11
+                   1. Yes                                       2,034     35.99
+                   3. No                                          313      5.54
+                   8. Don't know                                   76      1.34
+                   9. Missing                                       1      0.02
+                   total                                        5,652    100.00
+
+PAP17A             Protests about eligibility?
+
+                   missing                                      3,228     57.11
+                   1. Yes                                         719     12.72
+                   3. No                                        1,705     30.17
+                   total                                        5,652    100.00
+
+PAP17B             Who protested?
+
+                   Variable PAP17B can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP17B will have the value ACF.  If the       
+                   interviewee selected D and E, PAP17B will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP17B    A =  Those who did not receive assistance           
+                                               B =  Those who receive the assistance               
+                                               C =  Community Leader                               
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 42
+book:    INF  - Public Perception                                   
+module:  INF_PAP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               D =  NGO Activist                                   
+                                               E =  Village officials                              
+                                               F =  All Villagers                                  
+                                               G =  Service providers                              
+                                               V =  Others                                         
+                                               Y =  Don't know                                     
+                                               Z =  Missing                                        
+
+
+PAP17C             Reason for the protests
+
+                   Variable PAP17C can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP17C will have the value ACF.  If the       
+                   interviewee selected D and E, PAP17C will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP17C    A =  The listing and selection was not transparent  
+                                               B =  Nepotism practice in the selection             
+                                               C =  The amount was not as specified                
+                                               D =  Assitance was late                             
+                                               E =  Unfair distribution                            
+                                               F =  Practice of illegal fee in the program implemen
+                                               G =  Assistance were given to those not eligible    
+                                               H =  In-transparent implementation of the program   
+                                               V =  Others                                         
+                                               Z =  Missing                                        
+
+
+PAP17D             Goverment response to protest?
+
+                   Variable PAP17D can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP17D will have the value ACF.  If the       
+                   interviewee selected D and E, PAP17D will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP17D    A =  Clarify the problems                           
+                                               B =  Re-listing                                     
+                                               C =  Improve management of the program              
+                                               D =  Take punitive action                           
+                                               E =  Cancel those who are not eligible              
+                                               F =  Through the court system                       
+                                               V =  Others                                         
+                                               W =  No action was taken                            
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 43
+book:    INF  - Public Perception                                   
+module:  INF_PAP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP7               Was there program in village since 2000
+
+                   1. Yes                                       3,019     53.41
+                   3. No                                        2,633     46.59
+                   total                                        5,652    100.00
+
+PAP7AX             First time the program began?
+
+                   missing                                      2,633     46.59
+                   1. Given                                     2,314     40.94
+                   8. Don't know                                  705     12.47
+                   total                                        5,652    100.00
+
+PAP7AMT            First time the program began?
+
+                   missing                                      3,338     59.06
+                   1. January                                     247      4.37
+                   2. February                                     68      1.20
+                   3. March                                        91      1.61
+                   4. April                                        50      0.88
+                   5. May                                          53      0.94
+                   6. June                                         67      1.19
+                   7. July                                         52      0.92
+                   8. August                                       49      0.87
+                   9. September                                    46      0.81
+                   10. October                                     54      0.96
+                   11. November                                    32      0.57
+                   12. December                                    43      0.76
+                   98. DK                                       1,462     25.87
+                   total                                        5,652    100.00
+
+PAP7AYR            First time the program began?
+
+                   min:                                       1970.00
+                   mean:                                      2003.60
+                   max:                                       2008.00
+                   #obs                                         2,314
+                   #miss:                                       3,338
+
+PAP7B              Who began the program?
+
+                   Variable PAP7B can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP7B will have the value ACF.  If the       
+                   interviewee selected D and E, PAP7B will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP7B     A =  Central Goverment                              
+                                               B =  Local Goverment                                
+                                               C =  Not Goverment                                  
+                                               Y =  Don't know                                     
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 44
+book:    INF  - Public Perception                                   
+module:  INF_PAP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               Z =  Missing                                        
+
+
+PAP7C              Is the program still running?
+
+                   missing                                      2,980     52.72
+                   1. Yes                                       1,819     32.18
+                   3. No                                          807     14.28
+                   8. Don't know                                   46      0.81
+                   total                                        5,652    100.00
+
+PAP7DX             When did the program stop?
+
+                   missing                                      4,799     84.91
+                   1. Yes                                         658     11.64
+                   8. Don't know                                  194      3.43
+                   9. Missing                                       1      0.02
+                   total                                        5,652    100.00
+
+PAP7DMT            When did the program stop?
+
+                   missing                                      4,994     88.36
+                   1. January                                      45      0.80
+                   2. February                                     18      0.32
+                   3. March                                         5      0.09
+                   4. April                                         6      0.11
+                   5. May                                           3      0.05
+                   6. June                                         24      0.42
+                   7. July                                         10      0.18
+                   8. August                                        8      0.14
+                   9. September                                     9      0.16
+                   10. October                                     15      0.27
+                   11. November                                    11      0.19
+                   12. December                                   126      2.23
+                   98. DK                                         378      6.69
+                   total                                        5,652    100.00
+
+PAP7DYR            When did the program stop?
+
+                   min:                                       1997.00
+                   mean:                                      2017.88
+                   max:                                       9998.00
+                   #obs                                           658
+                   #miss:                                       4,994
+
+PAP9               Same criteria used as PAP program?
+
+                   missing                                      3,478     61.54
+                   1. Yes                                       1,965     34.77
+                   3. No                                           43      0.76
+                   6                                                6      0.11
+                   8. Don't know                                  160      2.83
+                   total                                        5,652    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 45
+book:    INF  - Public Perception                                   
+module:  INF_PAP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAPTYPE            Type of poverty program
+
+                   1. Health card                                 628     11.11
+                   2. Askeskin                                    628     11.11
+                   3. Raskin                                      628     11.11
+                   4. Market operation for rice                   628     11.11
+                   5. Market operation for other goods            628     11.11
+                   6. PKPS BBM-SLT                                628     11.11
+                   7. Keluarga Harapan                            628     11.11
+                   8. KDP                                         628     11.11
+                   9. P2KP                                        628     11.11
+                   total                                        5,652    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 46
+book:    INF  - Public Perception                                   
+module:  INF_PAP2             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   INF                                            128    100.00
+                   total                                          128    100.00
+
+COMMID07           2007 community ID
+
+
+INFCODE            Informant Code
+
+
+PAP2TYPE           Type of Poverty Program
+
+                   A. Largest                                      64     50.00
+                   B. Smallest                                     64     50.00
+                   total                                          128    100.00
+
+PAP41              These household's received [..] portion
+
+                   01. Poorest                                     39     30.47
+                   02. Poor                                        36     28.13
+                   03. Big Family                                  12      9.38
+                   04. Only who can afford to buy                  31     24.22
+                   95. Others                                      10      7.81
+                   total                                          128    100.00
+
+PAP42X             able to answer PAP42
+
+                   1.given                                        128    100.00
+                   total                                          128    100.00
+
+PAP42              Total amount
+
+                   min:                                          2.00
+                   mean:                                        14.34
+                   max:                                         98.00
+                   #obs                                           128
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 47
+book:    INF  - Public Perception                                   
+module:  INF_PAP5             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   INF                                          3,768    100.00
+                   total                                        3,768    100.00
+
+COMMID07           2007 community ID
+
+
+INFCODE            Informant Code
+
+
+PAP3TYPE           Type of Poverty Program
+
+                   1. Health card                                 628     16.67
+                   2. Askeskin                                    628     16.67
+                   3. Raskin                                      628     16.67
+                   4. Market operation for rice                   628     16.67
+                   6. PKPS BBM-SLT                                628     16.67
+                   7. Keluarga Harapan                            628     16.67
+                   total                                        3,768    100.00
+
+PAP66              Program implemented transparently?
+
+                   1. Yes                                       2,018     53.56
+                   3. No                                          319      8.47
+                   6. No Program                                1,431     37.98
+                   total                                        3,768    100.00
+
+PAP67              Program implemented with fairness?
+
+                   missing                                      1,431     37.98
+                   1. Yes                                       1,844     48.94
+                   3. No                                          493     13.08
+                   total                                        3,768    100.00
+
+PAP68              Any corruption during implementation?
+
+                   missing                                      1,431     37.98
+                   1. Yes                                         597     15.84
+                   3. No                                        1,740     46.18
+                   total                                        3,768    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 48
+book:    INF  - Public Perception                                   
+module:  INF_TR1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   INF                                          3,768    100.00
+                   total                                        3,768    100.00
+
+COMMID07            
+
+
+IDWINF             BUKUINF identification
+
+
+INFCODE            Informant Code
+
+
+TR01               Has [...] occured in village since 2000
+
+                   1. Yes                                         437     11.60
+                   3. No                                        3,283     87.13
+                   8. Don't know                                   48      1.27
+                   total                                        3,768    100.00
+
+TR02               Was there violence in the [..]?
+
+                   missing                                      3,331     88.40
+                   1. Yes                                          86      2.28
+                   3. No                                          351      9.32
+                   total                                        3,768    100.00
+
+TR03               Who usually helped resolve the conflict
+
+                   Variable TR03 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, TR03 will have the value ACF.  If the       
+                   interviewee selected D and E, TR03 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: TR03      A =  Law Expert                                     
+                                               B =  Village leaders/ Adat leaders/Religious leaders
+                                               C =  Village officials                              
+                                               D =  NGO                                            
+                                               E =  Police                                         
+                                               F =  Family member/friends                          
+                                               G =  Lawyers/Paralegal                              
+                                               H =  Subdistrict officials                          
+                                               I =  District officials                             
+                                               J =  District Attorney                              
+                                               K =  Judical Court                                  
+                                               V =  Other                                          
+                                               Y =  Don't know                                     
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 49
+book:    INF  - Public Perception                                   
+module:  INF_TR1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+TR03A              How well was the conflict resolved?
+
+                   missing                                      3,331     88.40
+                   1. Much Satisfied                               20      0.53
+                   2. Satisfied                                   302      8.01
+                   3. Unsatisfied                                  96      2.55
+                   4. Much Satisfied                                4      0.11
+                   8. Don't know                                   15      0.40
+                   total                                        3,768    100.00
+
+TR04               This conflict type increasing/decreasing
+
+                   missing                                      3,331     88.40
+                   1. Increasing                                   51      1.35
+                   2. Same                                        114      3.03
+                   3. Decreasing                                  271      7.19
+                   8                                                1      0.03
+                   total                                        3,768    100.00
+
+TRTYPE             Type of conflicts
+
+                   A. Conflicts on land/building between ci       628     16.67
+                   B. Conficts on land/building between cit       628     16.67
+                   C. Conflicts arising from abuse of power       628     16.67
+                   D. Conflicts related to election of publ       628     16.67
+                   E. Conflicts between members of differen       628     16.67
+                   F. Conflicts between members of differen       628     16.67
+                   total                                        3,768    100.00

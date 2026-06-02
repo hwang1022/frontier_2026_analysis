@@ -1,0 +1,817 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       SAR                                            
+ T O P I C :     SURVICE AVAILABILITY ROSTER (SAR)                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       SAR
+ T O P I C :     Survice Availability Roster (SAR)
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      SAR                                                   39348
+      SAR_COV                                                 322
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+NOTES ABOUT BOOK SAR                                                       
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       SAR
+ T O P I C :     Survice Availability Roster (SAR)
+
+--------------------------------------------------------------------------------
+------------------                                                         
+The Service Availability Roster was constructed by the supervisor of       
+the Community-Facility team.  The purpose of the SAR is to provide         
+information on facilities that are available to community residents,       
+for each of the IFLS communities.  Eight types of facilities are           
+characterized: community health centers (puskesmas), private               
+practitioners, community health posts (posyandu), traditional              
+practitioners, hospitals, elementary schools, junior secondary             
+schools, and senior secondary schools.  The listing of facilities is       
+compiled from facilities that were available in 1993 and facilities        
+that were newly available as of 1997 as identified either by NOTE          
+household survey respondents or by community informants.  Once the list of 
+facilities was compiled, a community informant (the respondent either      
+to Book I or to the PKK Book) was asked about distances, travel            
+times, and travel costs to each of the facilities on the list.             
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FASCODE2           Facility Code
+
+
+FCODE07            2007 Facility Code
+
+
+INFORSRC           Source information of health facility
+
+                   missing                                     20,237     51.43
+                   Head of village                              3,155      8.02
+                   PKK                                          1,137      2.89
+                   PP                                          14,816     37.65
+                   Missing                                          3      0.01
+                   total                                       39,348    100.00
+
+TOTFAS_1           Records for Puskesmas with supplements
+
+                   min:                                          3.00
+                   mean:                                        12.22
+                   max:                                         32.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+TOTFAS_2           Records for Dokter with supplements
+
+                   min:                                         10.00
+                   mean:                                        48.91
+                   max:                                        103.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+TOTFAS_3           Records for Prak.Traditionals with suppl
+
+                   min:                                          0.00
+                   mean:                                        12.62
+                   max:                                         48.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+TOTFAS_4           Records for posyandu with supplements
+
+                   min:                                          0.00
+                   mean:                                        14.95
+                   max:                                         39.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+TOTFAS_5           Records for posyandu with suplements
+
+                   min:                                          0.00
+                   mean:                                         2.92
+                   max:                                         32.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+TOTFAS_6           Records for Hospitals with supplements
+
+                   min:                                          0.00
+                   mean:                                         6.61
+                   max:                                         23.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+TOTPEN_1           Records for SD with supplements
+
+                   min:                                          3.00
+                   mean:                                        14.51
+                   max:                                         34.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+TOTPEN_2           Records for SLTP with supplements
+
+                   min:                                          4.00
+                   mean:                                        10.93
+                   max:                                         22.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+TOTPEN_3           Records for SLTA with supplements
+
+                   min:                                          0.00
+                   mean:                                        12.29
+                   max:                                         28.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+X04AX              Are there the facility code
+
+                   Given                                       39,348    100.00
+                   total                                       39,348    100.00
+
+X00                Health facility number: Puskesmas
+
+                   min:                                          1.00
+                   mean:                                        13.97
+                   max:                                        103.00
+                   #obs                                        39,348
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+X05X               Do you know the name of Village
+
+                   missing                                      2,042      5.19
+                   1. Given                                    28,071     71.34
+                   3. Same                                      6,099     15.50
+                   8. Don't know                                3,027      7.69
+                   9. Missing                                     109      0.28
+                   total                                       39,348    100.00
+
+X06X               Do you know the name of Distric
+
+                   missing                                      2,042      5.19
+                   11. Given                                   24,685     62.74
+                   13. Same                                     9,006     22.89
+                   98. Don't know                               3,469      8.82
+                   99. Missing                                    146      0.37
+                   total                                       39,348    100.00
+
+X07                What the facility still operate?
+
+                   missing                                     20,232     51.42
+                   0. TT Fakes                                  3,153      8.01
+                   1. Yes                                      14,264     36.25
+                   2. Move                                        450      1.14
+                   3. No                                          927      2.36
+                   8. TT open                                     312      0.79
+                   9. Missing                                      10      0.03
+                   total                                       39,348    100.00
+
+X08X               When the facility was closed?
+
+                   missing                                     38,411     97.62
+                   1. Year Given                                  364      0.93
+                   3. Number of year given                        328      0.83
+                   8. Don't know                                  234      0.59
+                   9. Missing                                      11      0.03
+                   total                                       39,348    100.00
+
+X08B               Number of year
+
+                   min:                                          0.00
+                   mean:                                         4.87
+                   max:                                         18.00
+                   #obs                                           328
+                   #miss:                                      39,020
+
+X08YR              Year closed
+
+                   min:                                       1980.00
+                   mean:                                      2002.46
+                   max:                                       2008.00
+                   #obs                                           364
+                   #miss:                                      38,984
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+X09X               Do you know how far?
+
+                   missing                                      6,444     16.38
+                   1. Given                                    28,217     71.71
+                   8. Don't know                                4,676     11.88
+                   9. Missing                                      11      0.03
+                   total                                       39,348    100.00
+
+X09                Disctance from facility to village head
+
+                   min:                                          0.00
+                   mean:                                         7.47
+                   max:                                        996.96
+                   #obs                                        28,217
+                   #miss:                                      11,131
+
+X10X               Do you know the transportation cost
+
+                   missing                                      6,444     16.38
+                   1. Given                                    10,795     27.43
+                   3. By walk                                   3,654      9.29
+                   5. By own vehicle/car                       13,878     35.27
+                   8. Don't know                                4,564     11.60
+                   9. Missing                                      13      0.03
+                   total                                       39,348    100.00
+
+X10                Enter the cost for one round trip
+
+                   min:                                          0.00
+                   mean:                                      4726.84
+                   max:                                     150000.00
+                   #obs                                        10,795
+                   #miss:                                      28,553
+
+X11                Time from facility to village head
+
+                   min:                                          0.00
+                   mean:                                       185.09
+                   max:                                        999.00
+                   #obs                                        22,109
+                   #miss:                                      17,239
+
+X11AX              Unit of time
+
+                   missing                                     28,553     72.57
+                   1. Minutes                                  10,279     26.12
+                   2. Hours                                       500      1.27
+                   3. Day                                           5      0.01
+                   8. Don,t know                                    9      0.02
+                   9. Missing                                       2      0.01
+                   total                                       39,348    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+X11A               The length of time by motor vehicle
+
+                   min:                                          0.00
+                   mean:                                        17.34
+                   max:                                        999.00
+                   #obs                                        10,795
+                   #miss:                                      28,553
+
+X11X               Unit of time
+
+                   missing                                     17,239     43.81
+                   1. Minutes                                  16,515     41.97
+                   2. Hours                                       958      2.43
+                   3. Day                                           6      0.02
+                   8. Don,t know                                4,614     11.73
+                   9. Missing                                      16      0.04
+                   total                                       39,348    100.00
+
+X12X               Do you know when the facility began
+
+                   missing                                      6,444     16.38
+                   1. Year given                                6,968     17.71
+                   3. Number of year given                      3,680      9.35
+                   8. Don,t know                               22,229     56.49
+                   9. Missing                                      27      0.07
+                   total                                       39,348    100.00
+
+X12B               Years this facility has operated
+
+                   min:                                          0.00
+                   mean:                                        20.74
+                   max:                                         99.00
+                   #obs                                         3,680
+                   #miss:                                      35,668
+
+X13X               Do you know the Puskesmas of facility?
+
+                   missing                                      2,979      7.57
+                   1. Given                                    12,537     31.86
+                   3. Posyandu/Traditional Practice             7,630     19.39
+                   4                                            7,745     19.68
+                   5. Not Found or unknow                       3,638      9.25
+                   6. Out of radius                             4,773     12.13
+                   9. Missing                                      46      0.12
+                   total                                       39,348    100.00
+
+X12YR              Year when the facility begin to operate
+
+                   min:                                       1900.00
+                   mean:                                      1985.14
+                   max:                                       2008.00
+                   #obs                                         6,968
+                   #miss:                                      32,380
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+X15X               IVW CHECK: IS DUPLICATE
+
+                   1. Yes                                       2,042      5.19
+                   3. No                                       37,305     94.81
+                   9. Missing                                       1      0.00
+                   total                                       39,348    100.00
+
+X14B1              Type of facility
+
+                   missing                                     11,390     28.95
+                   01. Puskesmas/Pustu                          5,259     13.37
+                   02. Clinic                                   1,597      4.06
+                   03. Clinic for give birth                    1,654      4.20
+                   04. Doctor/Physician                         3,769      9.58
+                   05. Paramedic                                1,889      4.80
+                   06. Nurse                                    1,275      3.24
+                   07. Private midwife                          2,575      6.54
+                   08. Village midwife                            954      2.42
+                   9                                                1      0.00
+                   10. Hospital                                 1,209      3.07
+                   11. Trad.Private                             2,158      5.48
+                   12. Dukun Bayi                               1,136      2.89
+                   13                                             812      2.06
+                   14                                             146      0.37
+                   31                                               1      0.00
+                   51                                               1      0.00
+                   83                                               1      0.00
+                   95. Other, specify                           3,512      8.93
+                   99. Missing                                      9      0.02
+                   total                                       39,348    100.00
+
+X16                Status of interview
+
+                   missing                                     11,390     28.95
+                   Yes                                          6,532     16.60
+                   No                                          21,424     54.45
+                   Missing                                          2      0.01
+                   total                                       39,348    100.00
+
+_FACTYPE            
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Code of book
+
+                   DKF                                            322    100.00
+                   total                                          322    100.00
+
+COMMID07           2007 community ID
+
+
+CPF1A              Number of confusing questions
+
+
+CPF1A2             Explanation confusion
+
+
+CPF1B              Number of confusing questions
+
+
+CPF1B2             Explanation confusion
+
+
+CPF1C              Number of confusing questions
+
+
+CPF1C2             Explanation confusion
+
+
+CPF4A              Number of Qs that make other problems
+
+
+CPF4A2             Explanation of other problems
+
+
+CPF4B              Number of Qs that make other problems
+
+
+CPF4B2             Explanation of other problems
+
+
+CPF4C              Number of Qs that make other problems
+
+
+CPF4C2             Explanation of other problems
+
+
+DFWASLOK           Local supervisor code
+
+
+DKF1A              Number preprinted of Puskesmas
+
+                   min:                                          0.00
+                   mean:                                         2.35
+                   max:                                         13.00
+                   #obs                                           322
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+DKF1B              Number Supplement of Puskesmas
+
+                   min:                                          0.00
+                   mean:                                         1.86
+                   max:                                         10.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF2A              Number suplement of posyandu
+
+                   min:                                          0.00
+                   mean:                                         6.68
+                   max:                                         31.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF2C              Number supplement of Posyandu Lansia
+
+                   min:                                          0.00
+                   mean:                                         1.35
+                   max:                                         16.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF3A              Number preprinted of Dr. Swasta
+
+                   min:                                          0.00
+                   mean:                                         7.52
+                   max:                                         18.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF3B              Number supplement of Dr. Swasta
+
+                   min:                                          0.00
+                   mean:                                         7.59
+                   max:                                         30.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF4A              Number preprinted of Elementary School
+
+                   min:                                          0.00
+                   mean:                                         2.52
+                   max:                                          7.00
+                   #obs                                           322
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+DKF4B              Number supplement of Elementary school
+
+                   min:                                          0.00
+                   mean:                                         2.26
+                   max:                                         10.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF5A              Number preprinted of Seconcary School
+
+                   min:                                          0.00
+                   mean:                                         2.25
+                   max:                                          6.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF5B              Number supplement of Secondary School
+
+                   min:                                          0.00
+                   mean:                                         1.45
+                   max:                                          5.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF6A              Number preprinted of Senior High School
+
+                   min:                                          0.00
+                   mean:                                         2.45
+                   max:                                          7.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF6B              Number supplement of Senior High School
+
+                   min:                                          0.00
+                   mean:                                         1.62
+                   max:                                          6.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF7A              Number preprinted of Hospital
+
+                   min:                                          0.00
+                   mean:                                         1.07
+                   max:                                          5.00
+                   #obs                                           322
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+DKF7B              Number suplement of Hospital
+
+                   min:                                          0.00
+                   mean:                                         1.74
+                   max:                                         10.00
+                   #obs                                           322
+                   #miss:                                           0
+
+DKF8A              Number supplement of Traditional Practic
+
+                   min:                                          0.00
+                   mean:                                         5.89
+                   max:                                         24.00
+                   #obs                                           322
+                   #miss:                                           0
+
+EDITORCK           Editing status by Editor
+
+                   1.Edited, no correction necessary                2      0.62
+                   2.Edited and corrected                         239     74.22
+                   3.Edited, but not corrected                     81     25.16
+                   total                                          322    100.00
+
+IDWDKF             SAKERTI Cluster identification
+
+
+SUPVERIF           Monitoring by Local Supervisor : Verifikasi
+
+                   1. Yes                                          28      8.70
+                   2. No                                          294     91.30
+                   total                                          322    100.00
+
+SUP_EDIT           Monitor by Local Supervisor : Edited
+
+                   1. Yes                                          45     13.98
+                   2. No                                          277     86.02
+                   total                                          322    100.00
+
+SUP_OBS            Monitor by Local Supervisor : Observed
+
+                   1. Yes                                          36     11.18
+                   2. No                                          286     88.82
+                   total                                          322    100.00
+
+TOTFAKES           Total number of Health facility
+
+                   min:                                          9.00
+                   mean:                                        36.05
+                   max:                                         99.00
+                   #obs                                           322
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    SAR  - Survice Availability Roster (SAR)                                   
+module:  SAR_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+TOTFASEK           Total number of School facility
+
+                   min:                                          5.00
+                   mean:                                        12.56
+                   max:                                         27.00
+                   #obs                                           322
+                   #miss:                                           0

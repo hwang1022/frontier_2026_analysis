@@ -1,0 +1,2557 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       ADT                                            
+ T O P I C :     TRADITIONAL LAW AND COMMUNITY CUSTOMS                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       ADT
+ T O P I C :     Traditional Law and Community Customs
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      ADT                                                     340
+      ADT_AP1                                                 660
+      ADT_DG1                                                 660
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       ADT
+ T O P I C :     Traditional Law and Community Customs
+
+--------------------------------------------------------------------------------
+NOTES ABOUT BOOK ADT                                                       
+--------------------                                                       
+Book Adat was used in IFLS2 in order to collect information                
+on community norms pertaining to daily life.  In IFLS4 we                  
+added back ADAT in order to see if any changes had occurred                
+in the ensuing decade.                                                     
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+AC01               Acceptable grounds for a man to divorce
+
+                   Variable AC01 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, AC01 will have the value ACF.  If the       
+                   interviewee selected D and E, AC01 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: AC01      A =  Wife is not obedient to the husband            
+                                               B =  Not harmoniou/can't get along                  
+                                               C =  Wife was unfaithful                            
+                                               D =  Interested in another woman                    
+                                               E =  Wife cannot manage money                       
+                                               F =  Differences with family/parents                
+                                               G =  Problems relating to children                  
+                                               H =  Wife behaved inappropriately                   
+                                               J =  Economic problems                              
+                                               K =  Wife has major illnes                          
+                                               L =  Spouse cannot meet household need              
+                                               V =  Other                                          
+                                               W =  Never acceptable                               
+                                               Z =  Missing                                        
+
+
+AC02               Acceptable grounds for woman to divorce
+
+                   Variable AC02 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, AC02 will have the value ACF.  If the       
+                   interviewee selected D and E, AC02 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: AC02      A =  Not harmonious/can't get along/doesn't like him
+                                               B =  Husband was unfaithful                         
+                                               C =  Husband got married again                      
+                                               D =  Economic problems                              
+                                               E =  Diffrerences among the couple                  
+                                               F =  Diferences with family or parents              
+                                               G =  Problems with children                         
+                                               H =  Husband behaved inappropriately                
+                                               J =  Didn't provide for the family                  
+                                               K =  Wife has major illnes                          
+                                               L =  Spouse cannot meet household need              
+                                               V =  Other                                          
+                                               W =  Never acceptable                               
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+AC04               Who has claim on pre-marriage assets
+
+                   missing                                         10      2.94
+                   01. Each takes assets they obtained            134     39.41
+                   02. They split assets evently                   69     20.29
+                   03. The husband takes all                       13      3.82
+                   04. The wife takes all                          28      8.24
+                   05. Children                                    24      7.06
+                   07. They split asset based on religious         26      7.65
+                   08. 2/3 husband and 1/3 for wife                 5      1.47
+                   95. Other                                        4      1.18
+                   96. No rule                                     27      7.94
+                   total                                          340    100.00
+
+AC05               Who has right to assets since marriage
+
+                   missing                                         10      2.94
+                   01. Each takes assets they obtained              4      1.18
+                   02. They split assets evently                  174     51.18
+                   03. The husband takes all                        8      2.35
+                   04. The wife takes all                          23      6.76
+                   05. Children                                    36     10.59
+                   07. They split asset based on religious         51     15.00
+                   08. 2/3 husband and 1/3 for wife                10      2.94
+                   95. Other                                        7      2.06
+                   96. No rule                                     17      5.00
+                   total                                          340    100.00
+
+AC05A              Who has to pay for the fees
+
+                   missing                                         10      2.94
+                   01. Husband                                    122     35.88
+                   02. Wife                                         1      0.29
+                   03. Both parties                                 4      1.18
+                   06. The party who files for divorce            179     52.65
+                   95. Other                                        2      0.59
+                   96. No rule                                     22      6.47
+                   total                                          340    100.00
+
+AC06               With whom do the young children live?
+
+                   missing                                         10      2.94
+                   01. Wife                                       210     61.76
+                   02. Husband                                     23      6.76
+                   03. Wife's parents                               6      1.76
+                   04. Husband's parents                            2      0.59
+                   06. Depend's on child                           23      6.76
+                   08. Decided on court ruling                     27      7.94
+                   09. Daughters with the father, sons with         2      0.59
+                   10. Daughters with the mother, sons with         3      0.88
+                   95. Other                                        6      1.76
+                   96. No rule                                     28      8.24
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+AP01C              Types of marriage considered lawful here
+
+                   Variable AP01C can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, AP01C will have the value ACF.  If the       
+                   interviewee selected D and E, AP01C will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: AP01C     A =  Marriages under traditional law                
+                                               B =  Marriages under religious law(kawin siri)      
+                                               C =  Marriages under religious law and registered in
+                                               D =  Marriages registered at civil registry         
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+AP04               What is usually given
+
+                   Variable AP04 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, AP04 will have the value ACF.  If the       
+                   interviewee selected D and E, AP04 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: AP04      A =  House                                          
+                                               B =  land/field                                     
+                                               C =  Money                                          
+                                               D =  Jewelry                                        
+                                               E =  Things                                         
+                                               G =  Food                                           
+                                               H =  Livestock                                      
+                                               I =  Religious things                               
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+AP05               Gift owned by one person or as a couple?
+
+                   missing                                         10      2.94
+                   1. Individually                                119     35.00
+                   3. Together                                    211     62.06
+                   total                                          340    100.00
+
+AP06               Groom's family give a gift to the bride?
+
+                   missing                                         10      2.94
+                   1. Yes                                         307     90.29
+                   3. No                                           23      6.76
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          340    100.00
+
+AP10               Bride's family give a gift the groom?
+
+                   missing                                         10      2.94
+                   1. Yes                                         104     30.59
+                   3. No                                          226     66.47
+                   total                                          340    100.00
+
+AP14               Groom's fam give gift to bride's family?
+
+                   missing                                         10      2.94
+                   1. Yes                                         262     77.06
+                   3. No                                           68     20.00
+                   total                                          340    100.00
+
+AP18               Brides's fam give fig to groom's family?
+
+                   missing                                         10      2.94
+                   1. Yes                                         100     29.41
+                   3. No                                          230     67.65
+                   total                                          340    100.00
+
+AP22               Which family's house is wedding?
+
+                   missing                                         10      2.94
+                   1. Both sides                                   96     28.24
+                   2. Groom's family                               31      9.12
+                   3. Bride's family                              193     56.76
+                   4. Adat hall                                     3      0.88
+                   5. Other                                         7      2.06
+                   total                                          340    100.00
+
+AP23               Who pays for the wedding party
+
+                   missing                                        106     31.18
+                   01. Only the bride's side                       27      7.94
+                   02. The bride's helped by the grooms           103     30.29
+                   03. Only the groom's side                       31      9.12
+                   04. The groom's side helped by the bride        54     15.88
+                   05. The groom and the bride split the co        18      5.29
+                   95. Other                                        1      0.29
+                   total                                          340    100.00
+
+AP24               Where does the newly married couple live
+
+                   missing                                         10      2.94
+                   00. Wherever they want                          50     14.71
+                   01. Bride's parent's house                      88     25.88
+                   02. Groom's parent's house                      17      5.00
+                   03. The bride's place                           92     27.06
+                   04. The groom's place                           54     15.88
+                   05. A new place for the couple                   5      1.47
+                   07. Groom's or bride's parents                  23      6.76
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(AP24  continued)
+
+                   95. Other                                        1      0.29
+                   total                                          340    100.00
+
+AP25AX             How long will couple live with parents
+
+                   missing                                        338     99.41
+                   1. Day                                           1      0.29
+                   3. Year                                          1      0.29
+                   total                                          340    100.00
+
+AP25A              How long will couple live with parents
+
+                   min:                                          1.00
+                   mean:                                         1.00
+                   max:                                          1.00
+                   #obs                                             2
+                   #miss:                                         338
+
+AP25X              How long will couple live with parents
+
+                   missing                                        212     62.35
+                   A. Day/month/year                               36     10.59
+                   B. Until after they have achild                  5      1.47
+                   C. Until they have a house                      48     14.12
+                   D. Until they have work                          5      1.47
+                   V. Other                                         6      1.76
+                   W. No rule                                      28      8.24
+                   total                                          340    100.00
+
+AP27               Can a man have more than one wife?
+
+                   missing                                        266     78.24
+                   0                                               34     10.00
+                   1. Yes                                          17      5.00
+                   3. No                                           23      6.76
+                   total                                          340    100.00
+
+AP28               1st wife's consent need for 2nd marriage
+
+                   missing                                        289     85.00
+                   0                                               31      9.12
+                   1. Yes                                          18      5.29
+                   3. No                                            1      0.29
+                   4                                                1      0.29
+                   total                                          340    100.00
+
+BEGHR1             Time interview began (hour)(1)
+
+                   min:                                          6.00
+                   mean:                                        15.48
+                   max:                                         21.00
+                   #obs                                           340
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+BEGHR2             Time interview began (hour)(2)
+
+                   min:                                         10.00
+                   mean:                                        10.00
+                   max:                                         10.00
+                   #obs                                             1
+                   #miss:                                         339
+
+BEGHR3             Time interview began (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         340
+
+BEGMIN1            Time interview began (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        21.76
+                   max:                                         59.00
+                   #obs                                           340
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                         0.00
+                   max:                                          0.00
+                   #obs                                             1
+                   #miss:                                         339
+
+BEGMIN3            Time interview began (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         340
+
+BK03               During childbirth, where does wife stay
+
+                   missing                                         10      2.94
+                   01. At the wife's parents                      151     44.41
+                   02. At the husbands parents                     27      7.94
+                   03. At their own home                           83     24.41
+                   95. Other                                        6      1.76
+                   96. No rule                                     63     18.53
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BK04               40 days after birth,where does wife stay
+
+                   missing                                         10      2.94
+                   01. Wife's parents                             112     32.94
+                   02. Husbands parents                            26      7.65
+                   03. At their own place                         114     33.53
+                   95. Other                                        3      0.88
+                   96. No rule                                     75     22.06
+                   total                                          340    100.00
+
+BK05               Who is responsible for providing care
+
+                   Variable BK05 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, BK05 will have the value ACF.  If the       
+                   interviewee selected D and E, BK05 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: BK05      A =  Husband                                        
+                                               B =  Wife's parents                                 
+                                               C =  Husband parents                                
+                                               D =  Other family of wife                           
+                                               E =  Other family of husband                        
+                                               G =  Traditional birth attendant                    
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+BK06X              Post-birth, when mother allowed to leave
+
+                   missing                                         10      2.94
+                   1. Immediately                                  28      8.24
+                   2. Many days                                   180     52.94
+                   5. Other                                         6      1.76
+                   6. No rule                                     116     34.12
+                   total                                          340    100.00
+
+BK06               Post-birth, when mother allowed to leave
+
+                   min:                                          1.00
+                   mean:                                        31.77
+                   max:                                         90.00
+                   #obs                                           180
+                   #miss:                                         160
+
+BK07X              Post-birth, when can the mother bathe
+
+                   missing                                         10      2.94
+                   1. Immediately                                 129     37.94
+                   2. Many days                                    64     18.82
+                   5. Other                                         4      1.18
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(BK07X  continued)
+
+                   6. No rule                                     133     39.12
+                   total                                          340    100.00
+
+BK07               Post-birth, when can the mother bathe
+
+                   min:                                          1.00
+                   mean:                                        15.02
+                   max:                                         50.00
+                   #obs                                            64
+                   #miss:                                         276
+
+BK08               Post-birth, days until infant taken out
+
+                   min:                                          1.00
+                   mean:                                        32.43
+                   max:                                         99.00
+                   #obs                                           217
+                   #miss:                                         123
+
+BK08AX             Post-birth,when can mother engage in sex
+
+                   missing                                         10      2.94
+                   1. Immediately                                   6      1.76
+                   2. Many days                                   204     60.00
+                   5. Other                                        12      3.53
+                   6. No rule                                     108     31.76
+                   total                                          340    100.00
+
+BK08A              Post-birth,when can mother engage in sex
+
+                   min:                                         11.00
+                   mean:                                        44.74
+                   max:                                         99.00
+                   #obs                                           204
+                   #miss:                                         136
+
+BK08X              Post-birth, days until infant taken out
+
+                   missing                                         10      2.94
+                   1. Immediately                                  13      3.82
+                   2. Many days                                   217     63.82
+                   5. Other                                         7      2.06
+                   6. No rule                                      93     27.35
+                   total                                          340    100.00
+
+BK09               Are females normally circumcised here
+
+                   missing                                         10      2.94
+                   1. Yes                                         226     66.47
+                   3. No                                          104     30.59
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BK10               First birth, parents want male or female
+
+                   missing                                         10      2.94
+                   1. Boy                                          97     28.53
+                   2. Girl                                         13      3.82
+                   3. No preference                               220     64.71
+                   total                                          340    100.00
+
+BK11               Pressure on families to have a male?
+
+                   missing                                         10      2.94
+                   1. Yes                                          26      7.65
+                   3. No                                          304     89.41
+                   total                                          340    100.00
+
+BK12               Pressure on families to have a female?
+
+                   missing                                         10      2.94
+                   1. Yes                                          10      2.94
+                   3. No                                          320     94.12
+                   total                                          340    100.00
+
+BK13               Gener unfulfilled, what does family do
+
+                   missing                                         10      2.94
+                   00. Nothing                                    243     71.47
+                   01. Husband marries again                        7      2.06
+                   02. Wife marries again                           1      0.29
+                   03. Continue to hope their next child wi        38     11.18
+                   04. Medical                                     15      4.41
+                   05. Adopt                                        9      2.65
+                   06. Take into care a child from relative        11      3.24
+                   95. Other                                        6      1.76
+                   total                                          340    100.00
+
+BK15               Child given higher education priority
+
+                   missing                                         10      2.94
+                   01. Son                                         65     19.12
+                   03. Oldest child                                 4      1.18
+                   04. Oldest son                                   3      0.88
+                   09. All children are treated the same          223     65.59
+                   96. No rule                                     35     10.29
+                   total                                          340    100.00
+
+BK16               Child given higher health care priority
+
+                   missing                                         10      2.94
+                   01. Son                                          3      0.88
+                   03. Oldest child                                 1      0.29
+                   09. All children are treated the same          283     83.24
+                   96. No rule                                     43     12.65
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BKTYPE             Book type
+
+
+BL01               Do elderly parents remain in own homes
+
+                   missing                                         10      2.94
+                   1. Yes                                         259     76.18
+                   3. No                                           71     20.88
+                   total                                          340    100.00
+
+BL02               With whom do parents usually live
+
+                   missing                                         81     23.82
+                   00. Nobody                                      42     12.35
+                   01. Youngest female child                       18      5.29
+                   02. Oldest female child                         22      6.47
+                   03. Youngest male child                          6      1.76
+                   04. Oldest male child                           10      2.94
+                   06. Other family                                 1      0.29
+                   09. Youngest child                              12      3.53
+                   10. Daughter                                    24      7.06
+                   11. Son                                          3      0.88
+                   12. Grandchild                                   5      1.47
+                   13. Up to parents                               71     20.88
+                   14. Favorite child                              11      3.24
+                   15. Rotate among children                        4      1.18
+                   16. Unmarried child                              2      0.59
+                   17. Child, not specified                        23      6.76
+                   95. Other                                        5      1.47
+                   total                                          340    100.00
+
+BL04               In what places do parents live
+
+                   missing                                        269     79.12
+                   1. Whit their children                          65     19.12
+                   2. Whit their relatives                          4      1.18
+                   4. Senior citizen's home or another simi         1      0.29
+                   9. Missing                                       1      0.29
+                   total                                          340    100.00
+
+BL05               Parents prefer to live with male/female?
+
+                   missing                                        275     80.88
+                   1. Sons                                          5      1.47
+                   3. Daughters                                    26      7.65
+                   5. The same                                     34     10.00
+                   total                                          340    100.00
+
+BL06               Do children take care of elderly parents
+
+                   missing                                         10      2.94
+                   1. Yes                                         323     95.00
+                   3. No                                            7      2.06
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+BL07               Other adult children provide assistance?
+
+                   missing                                         17      5.00
+                   1. Yes                                         311     91.47
+                   3. No                                           12      3.53
+                   total                                          340    100.00
+
+BL08               Type of assistance other children provide
+
+                   Variable BL08 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, BL08 will have the value ACF.  If the       
+                   interviewee selected D and E, BL08 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: BL08      A =  Money                                          
+                                               B =  Clothes                                        
+                                               C =  Food                                           
+                                               D =  Labor/attention                                
+                                               E =  Healthcare cost                                
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+BL09               Childless elderly,where does he/she live
+
+                   missing                                         10      2.94
+                   01. Alone                                       71     20.88
+                   02. Brother                                     24      7.06
+                   03. Sister                                      84     24.71
+                   04. Other family                               121     35.59
+                   05. Senior citizen's home                        9      2.65
+                   95. Other                                       21      6.18
+                   total                                          340    100.00
+
+BOOKR              Book record
+
+                   1                                              322     94.71
+                   2                                               18      5.29
+                   total                                          340    100.00
+
+BOOKT              Book type
+
+
+BW05               If a woman dies,who has rights to assets
+
+                   Variable BW05 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   A, C, and F from the list, BW05 will have the value ACF.  If the       
+                   interviewee selected D and E, BW05 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: BW05      A =  Husband                                        
+                                               B =  Children                                       
+                                               C =  Wife's family                                  
+                                               V =  Other                                          
+                                               W =  No rule                                        
+                                               Z =  Missing                                        
+
+
+BW06               If a man dies,who has rights to assets
+
+                   Variable BW06 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, BW06 will have the value ACF.  If the       
+                   interviewee selected D and E, BW06 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: BW06      A =  Wife                                           
+                                               B =  Children                                       
+                                               C =  Husband's family                               
+                                               V =  Other                                          
+                                               W =  No rule                                        
+                                               Z =  Missing                                        
+
+
+BW07               If couple dies,who has rights to assets
+
+                   Variable BW07 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, BW07 will have the value ACF.  If the       
+                   interviewee selected D and E, BW07 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: BW07      A =  Couple                                         
+                                               B =  Children                                       
+                                               C =  Husband's family                               
+                                               F =  Wife family                                    
+                                               G =  Couple's family                                
+                                               V =  Other                                          
+                                               W =  No rule                                        
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 17
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BW08               Does amt of inheritance differ by gender
+
+                   missing                                         10      2.94
+                   1. Yes                                         187     55.00
+                   3. No                                          143     42.06
+                   total                                          340    100.00
+
+BW09A              Percent to males and percent to females
+
+                   min:                                          0.00
+                   mean:                                        65.34
+                   max:                                        100.00
+                   #obs                                           187
+                   #miss:                                         153
+
+BW09B              Percent to males and percent to females
+
+                   min:                                          0.00
+                   mean:                                        33.13
+                   max:                                        100.00
+                   #obs                                           187
+                   #miss:                                         153
+
+BW10A              One child provides care, change precent?
+
+                   missing                                         10      2.94
+                   1. Yes                                         102     30.00
+                   3. No                                          228     67.06
+                   total                                          340    100.00
+
+BW12               One child provides care, receive house?
+
+                   missing                                         10      2.94
+                   1. Yes                                         108     31.76
+                   3. No                                          222     65.29
+                   total                                          340    100.00
+
+BW13               Parents have land, who inherits the land
+
+                   missing                                         10      2.94
+                   01. Son                                         31      9.12
+                   02. Daughter                                     9      2.65
+                   03. Oldest child                                 1      0.29
+                   04. Oldest son                                  17      5.00
+                   05. Oldest daughter                              1      0.29
+                   09. All children are treated the same          244     71.76
+                   96. No rule                                     27      7.94
+                   total                                          340    100.00
+
+CK01               Who manage the household finances
+
+                   missing                                         10      2.94
+                   1. Husband                                      68     20.00
+                   2. Wife                                        164     48.24
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 18
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(CK01  continued)
+
+                   3. Together                                     75     22.06
+                   5. Other                                         1      0.29
+                   6. No rule                                      22      6.47
+                   total                                          340    100.00
+
+CK01A              Husband and wife work, who keeps money?
+
+                   missing                                         10      2.94
+                   01. Each keep their own earnings                20      5.88
+                   02. Wife keep her own earnings                  58     17.06
+                   03. Husband keep his own earnings               10      2.94
+                   04. All earnings pooled, wife manages          108     31.76
+                   05. All earnings pooled, husband manages         9      2.65
+                   06. All earnings pooled in wife, husband        93     27.35
+                   96. No rule                                     32      9.41
+                   total                                          340    100.00
+
+CK03               Who manages expenditures on luxury goods
+
+                   missing                                         10      2.94
+                   1. Husband                                      66     19.41
+                   2. Wife                                         37     10.88
+                   3. Together                                    185     54.41
+                   6. No rule                                      42     12.35
+                   total                                          340    100.00
+
+CK04               Who manages expenditures on health care?
+
+                   missing                                         10      2.94
+                   1. Husband                                      55     16.18
+                   2. Wife                                         30      8.82
+                   3. Together                                    191     56.18
+                   5. Other                                         1      0.29
+                   6. No rule                                      53     15.59
+                   total                                          340    100.00
+
+CK05               Who manages financial transfers?
+
+                   missing                                         10      2.94
+                   1. Husband                                      58     17.06
+                   2. Wife                                         26      7.65
+                   3. Together                                    188     55.29
+                   5. Other                                         2      0.59
+                   6. No rule                                      56     16.47
+                   total                                          340    100.00
+
+CK06               Who decides about savings?
+
+                   missing                                         10      2.94
+                   1. Husband                                      47     13.82
+                   2. Wife                                         33      9.71
+                   3. Together                                    197     57.94
+                   6. No rule                                      53     15.59
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 19
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          340    100.00
+
+CK07               Who decides about selling assets?
+
+                   missing                                         10      2.94
+                   1. Husband                                      81     23.82
+                   2. Wife                                          4      1.18
+                   3. Together                                    208     61.18
+                   5. Other                                         1      0.29
+                   6. No rule                                      36     10.59
+                   total                                          340    100.00
+
+CK08               Who decides about selling jewelry?
+
+                   missing                                         10      2.94
+                   1. Husband                                      40     11.76
+                   2. Wife                                         54     15.88
+                   3. Together                                    195     57.35
+                   6. No rule                                      41     12.06
+                   total                                          340    100.00
+
+CK09               Who determines the children's education?
+
+                   missing                                         10      2.94
+                   1. Husband                                      56     16.47
+                   2. Wife                                         12      3.53
+                   3. Together                                    226     66.47
+                   5. Other                                         1      0.29
+                   6. No rule                                      35     10.29
+                   total                                          340    100.00
+
+CK10               Is a woman allowed to own land herself?
+
+                   missing                                         10      2.94
+                   1. Yes                                         186     54.71
+                   2. Yes, before she married                      12      3.53
+                   3. No                                           27      7.94
+                   4. Yes, after she married                        9      2.65
+                   6. No rule                                      96     28.24
+                   total                                          340    100.00
+
+CK11               Is a widow allowed to own land herself?
+
+                   missing                                         10      2.94
+                   1. Yes                                         226     66.47
+                   3. No                                           10      2.94
+                   6. No rule                                      94     27.65
+                   total                                          340    100.00
+
+CK12               Who is considered to be the breadwinner?
+
+                   Variable CK12 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 20
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, CK12 will have the value ACF.  If the       
+                   interviewee selected D and E, CK12 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: CK12      A =  Husband                                        
+                                               B =  Wife                                           
+                                               W =  No Rules                                       
+                                               Z =  Missing                                        
+
+
+CK13               Is a woman allowed to work/own business?
+
+                   missing                                         10      2.94
+                   1. Yes                                         239     70.29
+                   3. No                                           28      8.24
+                   6. No rule                                      63     18.53
+                   total                                          340    100.00
+
+COMMID07           2007 community ID
+
+
+CP1A               Questions with doubtful answers
+
+
+CP1B               Questions with doubtful answers
+
+
+CP1C               Questions with doubful answers
+
+
+CP2A               Questions needing conversion of unit
+
+
+CP2B               Questions needing conversion of unit
+
+
+CP2C               Questions needing conversion of unit
+
+
+CP3A               Questions using secondary data source
+
+
+CP3B               Questions using secondary data source
+
+
+CP3C               Questions using secondary data source
+
+
+CP4A               Others problems
+
+
+CP4B               Others problems
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 21
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+CP4C               Others problems
+
+
+EDITOR             Code of Editor Traditional Law book
+
+
+EDIT_CK            Checking status
+
+                   1. Edited,no correction necessary              106     31.18
+                   2. Edited and corrected                        232     68.24
+                   3. Edited,but not corrected                      2      0.59
+                   total                                          340    100.00
+
+ENDHR1             Time interview ended (hour)(1)
+
+                   min:                                          6.00
+                   mean:                                        16.34
+                   max:                                         22.00
+                   #obs                                           340
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)(2)
+
+                   min:                                         10.00
+                   mean:                                        10.00
+                   max:                                         10.00
+                   #obs                                             1
+                   #miss:                                         339
+
+ENDHR3             Time interview ended (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         340
+
+ENDMIN1            Time interview ended (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        25.45
+                   max:                                         59.00
+                   #obs                                           340
+                   #miss:                                           0
+
+ENDMIN2            Time interview ended (minute)(2)
+
+                   min:                                         45.00
+                   mean:                                        45.00
+                   max:                                         45.00
+                   #obs                                             1
+                   #miss:                                         339
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 22
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+ENDMIN3            Time interview ended (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         340
+
+FG03AA             Construction of places of worship
+
+                   missing                                         10      2.94
+                   1. Yes                                         326     95.88
+                   3. No                                            4      1.18
+                   total                                          340    100.00
+
+FG03AB             Construction of extended family house
+
+                   missing                                         10      2.94
+                   1. Yes                                         151     44.41
+                   3. No                                          179     52.65
+                   total                                          340    100.00
+
+FG03AC             Construction of individual family house
+
+                   missing                                         10      2.94
+                   1. Yes                                         179     52.65
+                   3. No                                          151     44.41
+                   total                                          340    100.00
+
+FG03AD             Construction of public infrastruture
+
+                   missing                                         10      2.94
+                   1. Yes                                         312     91.76
+                   3. No                                           18      5.29
+                   total                                          340    100.00
+
+FG03AE             Village cleanliness
+
+                   missing                                         10      2.94
+                   1. Yes                                         313     92.06
+                   3. No                                           17      5.00
+                   total                                          340    100.00
+
+FG03AF             Deaths/funerals
+
+                   missing                                         10      2.94
+                   1. Yes                                         327     96.18
+                   3. No                                            3      0.88
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 23
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+FG03AG             Weddings
+
+                   missing                                         10      2.94
+                   1. Yes                                         290     85.29
+                   3. No                                           40     11.76
+                   total                                          340    100.00
+
+FG05               Who participates in this activity
+
+                   missing                                         10      2.94
+                   01. All members of the community               291     85.59
+                   02. Male community members                      24      7.06
+                   04. Adults                                      12      3.53
+                   05. Youth                                        2      0.59
+                   95. Other                                        1      0.29
+                   total                                          340    100.00
+
+FG10               Community activity to assist the poor?
+
+                   missing                                         10      2.94
+                   1. Yes                                         299     87.94
+                   3. No                                           31      9.12
+                   total                                          340    100.00
+
+FG11               How this activity is organized ?
+
+                   Variable FG11 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, FG11 will have the value ACF.  If the       
+                   interviewee selected D and E, FG11 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: FG11      A =  Organize community member to help the poor     
+                                               B =  Each community member helps the poor           
+                                               C =  Advide those who wealtheir to help the poor    
+                                               D =  Helping the poor is the responsibility of desa/
+                                               E =  Personal responsibility                        
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+FG12               Community activity to assist the ill?
+
+                   missing                                         10      2.94
+                   1. Yes                                         316     92.94
+                   3. No                                           14      4.12
+                   total                                          340    100.00
+
+FG13               How this activity is organized ?
+
+                   Variable FG13 can have multiple responses.  Users were asked to select 
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 24
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, FG13 will have the value ACF.  If the       
+                   interviewee selected D and E, FG13 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: FG13      A =  Pooling fund to help the mediaction cost       
+                                               B =  Providing time to assist the ill               
+                                               C =  Visiting the ill to show sympathy              
+                                               D =  Ask Desa/RT/RW to share the cost of medication 
+                                               E =  Personal responsibility                        
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+FG14               Community activity to assist the dead?
+
+                   missing                                         10      2.94
+                   1. Yes                                         325     95.59
+                   3. No                                            5      1.47
+                   total                                          340    100.00
+
+FG15               How this activity is organized ?
+
+                   Variable FG15 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, FG15 will have the value ACF.  If the       
+                   interviewee selected D and E, FG15 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: FG15      A =  Pooling fund to help the mediaction cost       
+                                               B =  Providing time                                 
+                                               C =  Visiting the ill to show sympathy              
+                                               D =  Ask Desa/RT/RW to share the cost of funeral    
+                                               E =  Personal responsibility                        
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+FG18               Community activity to maintain security?
+
+                   missing                                         10      2.94
+                   1. Yes                                         309     90.88
+                   3. No                                           21      6.18
+                   total                                          340    100.00
+
+FG19               How this activity is organized ?
+
+                   Variable FG19 can have multiple responses.  Users were asked to select 
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 25
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, FG19 will have the value ACF.  If the       
+                   interviewee selected D and E, FG19 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: FG19      A =  Pooling fund                                   
+                                               B =  Neighbourhood watch program                    
+                                               C =  Visiting the ill to show sympathy              
+                                               D =  It becomes Desa/RT/RW responsibility           
+                                               E =  Personal responsibility                        
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+FG20               Policy used to make comunity decisions
+
+                   missing                                         10      2.94
+                   01. Consensus building among all village        35     10.29
+                   02. Local elites decide                          5      1.47
+                   03. Local institutions decide                    1      0.29
+                   04. Voting                                     181     53.24
+                   05. Choosen by government                      106     31.18
+                   95. Other                                        2      0.59
+                   total                                          340    100.00
+
+FG21               Who resolves families-community conflict
+
+                   missing                                         10      2.94
+                   01. Community figure                            94     27.65
+                   02. Religious figure                            27      7.94
+                   03. All village residents                        5      1.47
+                   04. Village official                           120     35.29
+                   05. Families involved in conflict               71     20.88
+                   95. Other                                       13      3.82
+                   total                                          340    100.00
+
+FP3_EA             EA Duplicate
+
+
+GO01               System of organization before RT/RW?
+
+                   missing                                         10      2.94
+                   1. Yes                                         140     41.18
+                   3. No                                          164     48.24
+                   8. Don't know                                   26      7.65
+                   total                                          340    100.00
+
+GO02               Basis of this organizational system
+
+                   missing                                        200     58.82
+                   01. Geography/household location                85     25.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 26
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(GO02  continued)
+
+                   02. Religious                                   20      5.88
+                   03. Kinship or marriage alliances               22      6.47
+                   95. Other                                       13      3.82
+                   total                                          340    100.00
+
+GO03               How is authority of this figure viewed
+
+                   Variable GO03 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, GO03 will have the value ACF.  If the       
+                   interviewee selected D and E, GO03 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: GO03      A =  Because of knowledge or expertise              
+                                               B =  Because they were selected                     
+                                               C =  Because of wealth                              
+                                               D =  Social spirit                                  
+                                               E =  It was passed down                             
+                                               F =  Personality/character/leadership               
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+IDIVWR             Code of Interviewer traditional law book
+
+
+IVWDAY1            Date of intrvw (day of month)(1)
+
+                   min:                                          1.00
+                   mean:                                        15.76
+                   max:                                         31.00
+                   #obs                                           340
+                   #miss:                                           0
+
+IVWDAY2            Date of intrvw (day of month)(2)
+
+                   min:                                         18.00
+                   mean:                                        18.00
+                   max:                                         18.00
+                   #obs                                             1
+                   #miss:                                         339
+
+IVWDAY3            Date of intrvw (day of month)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         340
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 27
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IVWMTH1            Date of interview (month)(1)
+
+                   2. February                                     77     22.65
+                   3. March                                       107     31.47
+                   4. April                                       102     30.00
+                   5. May                                          52     15.29
+                   6. June                                          2      0.59
+                   total                                          340    100.00
+
+IVWMTH2            Date of interview (month)(2)
+
+                   missing                                        339     99.71
+                   5. May                                           1      0.29
+                   total                                          340    100.00
+
+IVWMTH3            Date of interview (month)(3)
+
+                   missing                                        340    100.00
+                   total                                          340    100.00
+
+IVWYR1             Date of interview (year)(1)
+
+                   8                                              340    100.00
+                   total                                          340    100.00
+
+IVWYR2             Date of interview (year)(2)
+
+                   missing                                        339     99.71
+                   8                                                1      0.29
+                   total                                          340    100.00
+
+IVWYR3             Date of interview (year)(3)
+
+                   missing                                        340    100.00
+                   total                                          340    100.00
+
+KD00AAX            Percent of 3 largest ethnic groups here
+
+
+KD00AA             Percent
+
+                   min:                                          9.00
+                   mean:                                        81.84
+                   max:                                        100.00
+                   #obs                                           340
+                   #miss:                                           0
+
+KD00ABX            Percent of 3 largest ethnic groups here
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 28
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+KD00AB             Percent
+
+                   min:                                          1.00
+                   mean:                                        16.85
+                   max:                                         50.00
+                   #obs                                           230
+                   #miss:                                         110
+
+KD00ACX            Percent of 3 largest ethnic groups here
+
+
+KD00AC             Percent
+
+                   min:                                          0.00
+                   mean:                                        10.62
+                   max:                                         30.00
+                   #obs                                           143
+                   #miss:                                         197
+
+KD00B              Largest ethnic group in the village
+
+                   1. More than 50 %                              305     89.71
+                   3. Less than 50 %                               35     10.29
+                   total                                          340    100.00
+
+KD00CX             What is traditional law book
+
+                   A.                                             326     95.88
+                   B.                                              14      4.12
+                   total                                          340    100.00
+
+KD00C              What is traditional law book
+
+
+KD02               Respondent sex
+
+                   missing                                         10      2.94
+                   1. Male                                        313     92.06
+                   3. Female                                       17      5.00
+                   total                                          340    100.00
+
+KD03               How old are you
+
+                   min:                                          1.00
+                   mean:                                        59.77
+                   max:                                         95.00
+                   #obs                                           330
+                   #miss:                                          10
+
+KD04               What is highest level of your education
+
+                   missing                                         10      2.94
+                   1. No school                                     8      2.35
+                   2. Elementary school                            73     21.47
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 29
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(KD04  continued)
+
+                   3. Junior high general                          42     12.35
+                   4. Junior high vocational                       13      3.82
+                   5. Senior high general                          80     23.53
+                   6. Senior high vocational                       28      8.24
+                   12. Adult education B                            1      0.29
+                   14. Islamic School (pesantren)                   3      0.88
+                   15. Adult education C                            1      0.29
+                   60. College (D1,D2,D3)                          28      8.24
+                   61. University S1                               37     10.88
+                   62. University S2                                4      1.18
+                   63. University S3                                2      0.59
+                   73. Islamic Junior/High School (Madrasah         3      0.88
+                   74. Islamic Senior/High School (Madrasah         4      1.18
+                   95. Other, specify                               3      0.88
+                   total                                          340    100.00
+
+KD05               Highest class or level you completed
+
+                   missing                                         10      2.94
+                   00. Never finished class/grade 1                 6      1.76
+                   1                                                9      2.65
+                   2                                                8      2.35
+                   3                                                6      1.76
+                   4                                                4      1.18
+                   5                                                2      0.59
+                   6                                                5      1.47
+                   7. Graduated                                   280     82.35
+                   96. NA                                           9      2.65
+                   98. Don't know                                   1      0.29
+                   total                                          340    100.00
+
+KD06               What is your religion
+
+                   missing                                         10      2.94
+                   01. Islam                                      291     85.59
+                   02. Protestant                                  12      3.53
+                   03. Catholik                                     7      2.06
+                   04. Hindu                                       15      4.41
+                   05. Budha                                        4      1.18
+                   95. Others                                       1      0.29
+                   total                                          340    100.00
+
+KD06A              Past wk, What was your primary activity?
+
+                   missing                                         10      2.94
+                   01. To earn income                             171     50.29
+                   02. Job searching                               15      4.41
+                   03. Attending school                             1      0.29
+                   04. Housekeeping                                13      3.82
+                   05. Retired                                     89     26.18
+                   07. Sick/disable                                 6      1.76
+                   95. Other                                       35     10.29
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 30
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+KD07               Which category describes work you do?
+
+                   missing                                        169     49.71
+                   01. Self employed                               63     18.53
+                   02. Self employed with unpaid family wor        14      4.12
+                   03. Self employed with permanent worker          5      1.47
+                   04. Government worker                           29      8.53
+                   05. Private worker                              18      5.29
+                   06. Unpaid family worker                         4      1.18
+                   07. Casual worker in agriculture                24      7.06
+                   08. Casual worker not in agriculture            14      4.12
+                   total                                          340    100.00
+
+KD08               Were you born in this village?
+
+                   missing                                         10      2.94
+                   1. In this village                             214     62.94
+                   3. In another village                          116     34.12
+                   total                                          340    100.00
+
+KD09X              Able to answer KD09
+
+
+KD09               How many years have you lived here?
+
+                   min:                                          4.00
+                   mean:                                        48.40
+                   max:                                         99.00
+                   #obs                                           330
+                   #miss:                                          10
+
+KD10               What language do you use daily?
+
+                   Variable KD10 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, KD10 will have the value ACF.  If the       
+                   interviewee selected D and E, KD10 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: KD10      A =  Javanese                                       
+                                               B =  Sundanese                                      
+                                               C =  Maduranese                                     
+                                               D =  Balinese                                       
+                                               E =  Sasak                                          
+                                               F =  Minang                                         
+                                               G =  Batak                                          
+                                               H =  Bugis                                          
+                                               I =  Chinese                                        
+                                               J =  Banjar                                         
+                                               L =  Bima                                           
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 31
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               M =  Makasar                                        
+                                               N =  Nias                                           
+                                               O =  Palembang                                      
+                                               P =  Sumbawa                                        
+                                               Q =  Toraja                                         
+                                               R =  Lahat                                          
+                                               S =  Other South Sumatra                            
+                                               T =  Betawi                                         
+                                               U =  Lampung                                        
+                                               W =  Indonesian                                     
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+KD12               What ethnic group do you belong to?
+
+                   Variable KD12 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, KD12 will have the value ACF.  If the       
+                   interviewee selected D and E, KD12 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: KD12      A =  Javanese                                       
+                                               B =  Sundanese                                      
+                                               C =  Balinese                                       
+                                               D =  Batak                                          
+                                               E =  Bugis                                          
+                                               F =  Tionghoa                                       
+                                               G =  Maduranese                                     
+                                               H =  Sasak                                          
+                                               I =  Minang                                         
+                                               J =  Banjar                                         
+                                               K =  Bima-Dompu                                     
+                                               L =  Makasar                                        
+                                               M =  Nias                                           
+                                               N =  Palembang                                      
+                                               O =  Sumbawa                                        
+                                               P =  Toraja                                         
+                                               Q =  Betawi                                         
+                                               R =  Dayak                                          
+                                               S =  Melayu                                         
+                                               T =  Komering                                       
+                                               U =  Ambon                                          
+                                               A1 =  Menado                                        
+                                               B1 =  Aceh                                          
+                                               C1 =  Other South Sumatera                          
+                                               D1 =  Banten                                        
+                                               E1 =  Cirebon                                       
+                                               F1 =  Gorontalo                                     
+                                               G1 =  Kutai                                         
+                                               V =  Other,                                         
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 32
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               Z =  Missing                                        
+
+
+KD13               How do you know the traditional laws?
+
+                   Variable KD13 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, KD13 will have the value ACF.  If the       
+                   interviewee selected D and E, KD13 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: KD13      A =  From parents                                   
+                                               B =  Observation                                    
+                                               C =  Reading a book                                 
+                                               D =  From another adat figure                       
+                                               E =  Book or writed paper                           
+                                               V =  Other                                          
+
+
+KD15               What is the common religion here?
+
+                   missing                                         10      2.94
+                   01. Islam                                      298     87.65
+                   02. Protestant                                  13      3.82
+                   03. Catholik                                     2      0.59
+                   04. Hindu                                       15      4.41
+                   05. Budha                                        2      0.59
+                   total                                          340    100.00
+
+KD16               What is the common language here?
+
+                   Variable KD16 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, KD16 will have the value ACF.  If the       
+                   interviewee selected D and E, KD16 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: KD16      A =  Javanese                                       
+                                               B =  Sundanese                                      
+                                               C =  Maduranese                                     
+                                               D =  Balinese                                       
+                                               E =  Sasak                                          
+                                               F =  Minang                                         
+                                               G =  Batak                                          
+                                               H =  Bugis                                          
+                                               I =  Chinese                                        
+                                               J =  Banjar                                         
+                                               L =  Bima                                           
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 33
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               M =  Makasar                                        
+                                               N =  Nias                                           
+                                               O =  Palembang                                      
+                                               P =  Sumbawa                                        
+                                               Q =  Toraja                                         
+                                               R =  Lahat                                          
+                                               S =  Other South Sumatra                            
+                                               T =  Betawi                                         
+                                               U =  Lampung                                        
+                                               W =  Indonesian                                     
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+KD18               What is the largest ethnic group here?
+
+                   Variable KD18 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, KD18 will have the value ACF.  If the       
+                   interviewee selected D and E, KD18 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: KD18      A =  Javanese                                       
+                                               B =  Sundanese                                      
+                                               C =  Balinese                                       
+                                               D =  Batak                                          
+                                               E =  Bugis                                          
+                                               F =  Tionghoa                                       
+                                               G =  Maduranese                                     
+                                               H =  Sasak                                          
+                                               I =  Minang                                         
+                                               J =  Banjar                                         
+                                               K =  Bima-Dompu                                     
+                                               L =  Makasar                                        
+                                               M =  Nias                                           
+                                               N =  Palembang                                      
+                                               O =  Sumbawa                                        
+                                               P =  Toraja                                         
+                                               Q =  Betawi                                         
+                                               R =  Dayak                                          
+                                               S =  Melayu                                         
+                                               T =  Komering                                       
+                                               U =  Ambon                                          
+                                               A1 =  Menado                                        
+                                               B1 =  Aceh                                          
+                                               C1 =  Other South Sumatera                          
+                                               D1 =  Banten                                        
+                                               E1 =  Cirebon                                       
+                                               F1 =  Gorontalo                                     
+                                               G1 =  Kutai                                         
+                                               V =  Other,                                         
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 34
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               Z =  Missing                                        
+
+
+LANGMAIN           Interview in what language?
+
+                   0. Indonesian                                  297     87.35
+                   1. Javanese                                     28      8.24
+                   2. Sundanese                                     6      1.76
+                   8. Sasak                                         3      0.88
+                   9. Minang                                        4      1.18
+                   14. Palembang                                    2      0.59
+                   total                                          340    100.00
+
+LANGOTHR           Other language used if any
+
+                   0. Indonesian                                   27      7.94
+                   1. Javanese                                     56     16.47
+                   2. Sundanese                                     4      1.18
+                   3. Balinese                                      4      1.18
+                   5. Bugis                                         1      0.29
+                   7. Maduranese                                    2      0.59
+                   8. Sasak                                         4      1.18
+                   9. Minang                                        9      2.65
+                   10. Banjar                                       5      1.47
+                   14. Palembang                                    5      1.47
+                   18. Other South Sumatra                          1      0.29
+                   96. NA                                         222     65.29
+                   total                                          340    100.00
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   12. North Sumatra                               29      8.53
+                   13. West Sumatra                                14      4.12
+                   16. South Sumatra                               12      3.53
+                   18. Lampung                                     14      4.12
+                   19. Bangka Belitung                              3      0.88
+                   31. Jakarta                                     50     14.71
+                   32. West Java                                   48     14.12
+                   33. Central Java                                37     10.88
+                   34. D.I. Yogyakarta                             22      6.47
+                   35. East Java                                   45     13.24
+                   36. Banten                                       6      1.76
+                   51. Bali                                        14      4.12
+                   52. West Nusa Tenggara                          16      4.71
+                   63. South Kalimantan                            14      4.12
+                   73. South Sulawesi                              16      4.71
+                   total                                          340    100.00
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   12. North Sumatra                               29      8.53
+                   13. West Sumatra                                14      4.12
+                   16. South Sumatra                               12      3.53
+                   18. Lampung                                     14      4.12
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 35
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(LK010707  continued)
+
+                   19. Bangka Belitung                              3      0.88
+                   31. Jakarta                                     50     14.71
+                   32. West Java                                   48     14.12
+                   33. Central Java                                37     10.88
+                   34. D.I. Yogyakarta                             22      6.47
+                   35. East Java                                   45     13.24
+                   36. Banten                                       6      1.76
+                   51. Bali                                        14      4.12
+                   52. West Nusa Tenggara                          16      4.71
+                   63. South Kalimantan                            14      4.12
+                   73. South Sulawesi                              15      4.41
+                   76. West Sulawesi                                1      0.29
+                   total                                          340    100.00
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        34.52
+                   max:                                         78.00
+                   #obs                                           340
+                   #miss:                                           0
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        36.06
+                   max:                                         78.00
+                   #obs                                           340
+                   #miss:                                           0
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        85.89
+                   max:                                        730.00
+                   #obs                                           340
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        74.52
+                   max:                                        730.00
+                   #obs                                           340
+                   #miss:                                           0
+
+LK05               Urban/rural
+
+                   1. Urban                                       218     64.12
+                   2. Rural                                       122     35.88
+                   total                                          340    100.00
+
+LK17               Code of local supervisor
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 36
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+LK19               Code of field coordinator
+
+
+NUMVIS             Number of visits
+
+                   min:                                          1.00
+                   mean:                                         1.00
+                   max:                                          2.00
+                   #obs                                           340
+                   #miss:                                           0
+
+PB1                Affect of traditional law on life styles
+
+                   missing                                         10      2.94
+                   1. Never broken                                 80     23.53
+                   2. Sometimes broken                             92     27.06
+                   3. Frequenly broken                             55     16.18
+                   4. Not remember                                103     30.29
+                   total                                          340    100.00
+
+PB1A               Tradtional law broken, what is sanction
+
+                   Variable PB1A can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PB1A will have the value ACF.  If the       
+                   interviewee selected D and E, PB1A will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PB1A      A =  Advisory/training                              
+                                               B =  Fine/Pinalty                                   
+                                               C =  Isolated                                       
+                                               D =  Move out from the village                      
+                                               E =  Corporal punishment                            
+                                               W =  No saction                                     
+                                               Z =  Missing                                        
+
+
+PB2A               Marriage
+
+                   missing                                         10      2.94
+                   1. No change                                   199     58.53
+                   2. Some change                                  88     25.88
+                   3. Much change                                  43     12.65
+                   total                                          340    100.00
+
+PB2B               Divorce
+
+                   missing                                         10      2.94
+                   1. No change                                   219     64.41
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 37
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PB2B  continued)
+
+                   2. Some change                                  68     20.00
+                   3. Much change                                  43     12.65
+                   total                                          340    100.00
+
+PB2C               Birth
+
+                   missing                                         10      2.94
+                   1. No change                                   213     62.65
+                   2. Some change                                  78     22.94
+                   3. Much change                                  39     11.47
+                   total                                          340    100.00
+
+PB2D               Death inheritance
+
+                   missing                                         10      2.94
+                   1. No change                                   252     74.12
+                   2. Some change                                  56     16.47
+                   3. Much change                                  22      6.47
+                   total                                          340    100.00
+
+PB2E               Gender role
+
+                   missing                                         10      2.94
+                   1. No change                                   176     51.76
+                   2. Some change                                  90     26.47
+                   3. Much change                                  64     18.82
+                   total                                          340    100.00
+
+PB2F               Decision making in the household
+
+                   missing                                         10      2.94
+                   1. No change                                   221     65.00
+                   2. Some change                                  76     22.35
+                   3. Much change                                  33      9.71
+                   total                                          340    100.00
+
+PB2G               Residence of the elderly
+
+                   missing                                         10      2.94
+                   1. No change                                   251     73.82
+                   2. Some change                                  61     17.94
+                   3. Much change                                  18      5.29
+                   total                                          340    100.00
+
+PB2H               Land rights
+
+                   missing                                         10      2.94
+                   1. No change                                   244     71.76
+                   2. Some change                                  62     18.24
+                   3. Much change                                  24      7.06
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 38
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PB2I               Decision making in the community
+
+                   missing                                         10      2.94
+                   1. No change                                   223     65.59
+                   2. Some change                                  79     23.24
+                   3. Much change                                  28      8.24
+                   total                                          340    100.00
+
+PB2J               Mutual cooperation
+
+                   missing                                         10      2.94
+                   1. No change                                   238     70.00
+                   2. Some change                                  61     17.94
+                   3. Much change                                  31      9.12
+                   total                                          340    100.00
+
+PB2K               Community organization
+
+                   missing                                         10      2.94
+                   1. No change                                   217     63.82
+                   2. Some change                                  82     24.12
+                   3. Much change                                  31      9.12
+                   total                                          340    100.00
+
+PB4                Last 5 yr, changes in behaviour/attitude
+
+                   Variable PB4 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PB4 will have the value ACF.  If the       
+                   interviewee selected D and E, PB4 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PB4       W =  No changes                                     
+                                               A1 =  Less feeling of togetherness                  
+                                               B1 =  Less feeling of tolerance                     
+                                               C1 =  Easier to get angry                           
+                                               D1 =  Easier to be influenced                       
+                                               E1 =  More selfish                                  
+                                               A2 =  More feeling of togetherness                  
+                                               B2 =  More feeling of tolerance                     
+                                               C2 =  More patient                                  
+                                               D2 =  More difficult to be influenced               
+                                               E2 =  Unselfish                                     
+                                               Z =  Missing                                        
+
+
+REASON             Reason for FP3
+
+                   missing                                        340    100.00
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 39
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+RESULT             Interviewed result code
+
+                   1. Completed                                   330     97.06
+                   4. EA Duplicate                                 10      2.94
+                   total                                          340    100.00
+
+RESULT1            Result of interview(1)
+
+                   1. Completed                                   339     99.71
+                   2. Partial completed                             1      0.29
+                   total                                          340    100.00
+
+RESULT2            Result of interview(2)
+
+                   missing                                        339     99.71
+                   1. Completed                                     1      0.29
+                   total                                          340    100.00
+
+RESULT3            Result of interview(3)
+
+                   missing                                        340    100.00
+                   total                                          340    100.00
+
+SUPVERIF           Verivication by local supervisor
+
+                   1. Yes                                          23      6.76
+                   3. No                                          317     93.24
+                   total                                          340    100.00
+
+SUP_EDIT           Edited by local supervisor
+
+                   1. Yes                                          55     16.18
+                   3. No                                          285     83.82
+                   total                                          340    100.00
+
+SUP_OBS            Observed by local supervisor
+
+                   1. Yes                                          47     13.82
+                   3. No                                          293     86.18
+                   total                                          340    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 40
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT_AP1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+AP01               Who choose spouse
+
+                   1. The individual                              454     68.79
+                   2. Parent                                      203     30.76
+                   3. Other relative                                2      0.30
+                   5. Other                                         1      0.15
+                   total                                          660    100.00
+
+AP01A              Can a [..] marry different ethnic group
+
+                   1. Yes                                         582     88.18
+                   3. No                                           78     11.82
+                   total                                          660    100.00
+
+AP01B              Can a [..] marry different religion
+
+                   1. Yes                                         121     18.33
+                   3. No                                          539     81.67
+                   total                                          660    100.00
+
+AP02               Minimum age a [..] can get married
+
+                   min:                                          7.00
+                   mean:                                        20.46
+                   max:                                         96.00
+                   #obs                                           660
+                   #miss:                                           0
+
+AP1TYPE            Marriage
+
+                   A. Man                                         330     50.00
+                   B. Woman                                       330     50.00
+                   total                                          660    100.00
+
+BKTYPE             Book type
+
+
+BOOKR              Book record
+
+                   1                                              626     94.85
+                   2                                               34      5.15
+                   total                                          660    100.00
+
+COMMID07           2007 community ID
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 41
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT_DG1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BKTYPE             Book type
+
+
+BOOKR              Book record
+
+                   1                                              626     94.85
+                   2                                               34      5.15
+                   total                                          660    100.00
+
+COMMID07           2007 community ID
+
+
+DG01               Is there a coomunal land in this village
+
+                   1. Yes                                         146     22.12
+                   3. No                                          514     77.88
+                   total                                          660    100.00
+
+DG02               Is there a rule about the communal land
+
+                   missing                                        514     77.88
+                   1. Yes                                         119     18.03
+                   3. No                                           27      4.09
+                   total                                          660    100.00
+
+DG03               If yes, what does the rule limit
+
+                   Variable DG03 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, DG03 will have the value ACF.  If the       
+                   interviewee selected D and E, DG03 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: DG03      A =  Usage/cuiltivation                             
+                                               B =  Rent                                           
+                                               C =  Purchases/sales of the communal land           
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+DG04               Can any community member own a piece?
+
+                   1. Yes                                         616     93.33
+                   3. No                                           44      6.67
+                   total                                          660    100.00
+
+DG05               Can any community member buy/sell land?
+
+                   1. Yes                                         606     91.82
+                   3. No                                           54      8.18
+                   total                                          660    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 42
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT_DG1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+DG06A              Law restricting sale of inheritance land
+
+                   1. Yes                                         172     26.06
+                   3. No                                          470     71.21
+                   6. NA                                           17      2.58
+                   9. Missing                                       1      0.15
+                   total                                          660    100.00
+
+DG06B              Law restricting sale of communal land
+
+                   1. Yes                                         135     20.45
+                   3. No                                          255     38.64
+                   6. NA                                          269     40.76
+                   9. Missing                                       1      0.15
+                   total                                          660    100.00
+
+DG06C              Law restricting the sale of family land
+
+                   1. Yes                                         170     25.76
+                   3. No                                          440     66.67
+                   6. NA                                           49      7.42
+                   9. Missing                                       1      0.15
+                   total                                          660    100.00
+
+DG07               How are land disputes/conflicts resolved
+
+                   01. Disputing parties                          405     61.36
+                   02. Village residents                           37      5.61
+                   03. Trough the court system                     82     12.42
+                   95. Other                                       30      4.55
+                   96. No Conflict                                106     16.06
+                   total                                          660    100.00
+
+DG08               Who resolves the conflict about land
+
+                   Variable DG08 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, DG08 will have the value ACF.  If the       
+                   interviewee selected D and E, DG08 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: DG08      A =  Community figure                               
+                                               B =  Religious figure                               
+                                               C =  All village residents                          
+                                               D =  Village official                               
+                                               E =  Families involved in conflict                  
+                                               V =  Other                                          
+                                               W =  Not applicable                                 
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 43
+book:    ADT  - Traditional Law and Community Customs                                   
+module:  ADT_DG1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+DGTYPE             Landuse
+
+                   A. According to traditional law                330     50.00
+                   B. Common practice now                         330     50.00
+                   total                                          660    100.00

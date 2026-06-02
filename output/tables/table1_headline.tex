@@ -1,0 +1,44 @@
+\begin{table}[!htbp]
+\centering
+\caption{Heat amplifies the mental-health cost of acute economic stress}
+\label{tab:headline}
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+ & Pooled & Job loss & Palm shock & Fuel cut \\
+ & (no interaction) & (within 12 mo) & (price decline $\times$ palm-farmer HH) & (post-cut $\times$ transport share) \\
+\midrule
+\multicolumn{5}{l}{\textit{Dependent variable: CES-D total, z-standardised within wave}} \\
+\midrule
+\multicolumn{5}{l}{\textit{A. Regression coefficients}} \\
+\addlinespace[2pt]
+\quad Heat $\times$ Stressor & --- & $+0.043^{***}$ & $+0.282^{***}$ & $+0.105^{*}$ \\
+ &  & $(0.015)$ & $(0.089)$ & $(0.059)$ \\
+\addlinespace[3pt]
+\quad Heat & $+0.003$ & $+0.002$ & $+0.001$ & $-0.006$ \\
+ & $(0.008)$ & $(0.008)$ & $(0.008)$ & $(0.010)$ \\
+\addlinespace[3pt]
+\quad Stressor & --- & $+0.123^{***}$ & $-1.023^{***}$ & $-0.236$ \\
+ &  & $(0.024)$ & $(0.287)$ & $(0.195)$ \\
+\addlinespace[6pt]
+\multicolumn{5}{l}{\textit{B. Marginal effect of heat at exposed reference value$^{\dagger}$}} \\
+\addlinespace[2pt]
+\quad Heat slope $|$ exposed$^{\dagger}$ & --- & $+0.045^{***}$ & $+0.030^{**}$ & $+0.004$ \\
+ &  & $(0.017)$ & $(0.012)$ & $(0.010)$ \\
+\midrule
+Demographic controls & Yes & Yes & Yes & Yes \\
+Kabupaten FE & Yes & Yes & Yes & Yes \\
+Month + Year FE & Yes & Yes & Yes & Yes \\
+Wave FE & Yes & Yes & Yes & --- \\
+\addlinespace[3pt]
+Sample & Pooled & Pooled & Pooled & IFLS5 only \\
+Observations & 59,944 & 59,944 & 59,944 & 31,071 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} The dependent variable is the 10-item Andresen CES-D score, z-standardised within wave. Heat is the daily mean temperature on the interview date (ERA5-Land kabupaten polygon mean), centred on the pooled sample mean of 24.83$^\circ$C. Column (1) reports the unconditional heat slope from a regression with no stressor and no interaction term. Columns (2)--(4) add a stressor indicator and its interaction with heat; in those columns the ``Heat'' row reports the slope at Stressor $= 0$. The job-loss indicator equals 1 if the respondent's most recent job termination occurred within 365 days of the interview. The palm shock equals the cumulative percentage drop in the World Bank monthly palm-oil price over the 3 months preceding interview, interacted with a household-level indicator equal to one if any adult in the household is an agricultural worker in a palm-producing province (capturing within-household income spillovers from the palm-farming member); this household-level palm-farmer indicator is included as a separate control. The fuel shock equals the household's monthly transport-spending share interacted with an indicator for interviews on or after 18 November 2014 (Indonesia's fuel-subsidy cut); transport share is included as a separate control. Demographic controls are age, an indicator for female, years of completed schooling, and indicators for being married and being widowed. $^{\dagger}$The ``exposed'' heat slope is evaluated at Stressor $= 1$ in column (2) (recent job loss) and at Stressor $= 0.10$ in columns (3)--(4) (a 10-percentage-point palm-price decline for a household with at least one palm-farmer adult in column (3); a 10-percentage-point transport-spending share post-cut in column (4)). Marginal effects are computed via the delta method on the kabupaten-clustered covariance matrix. Column (4) is identified within IFLS5 only, so Wave FE is omitted (mechanically collinear with the constant). Standard errors clustered at the kabupaten level are in parentheses. Significance: $^{*}$ $p<0.10$, $^{**}$ $p<0.05$, $^{***}$ $p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

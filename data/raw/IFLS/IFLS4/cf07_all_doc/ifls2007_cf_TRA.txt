@@ -1,0 +1,2142 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       TRA                                            
+ T O P I C :     TRADITIONAL PRACTICE                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       TRA
+ T O P I C :     Traditional Practice
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      TRA                                                    4373
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+This book was reinserted into IFLS in 2007 (it had been in IFLS1).         
+Two traditional health providers were sampled in each community, one was   
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       TRA
+ T O P I C :     Traditional Practice
+
+--------------------------------------------------------------------------------
+a traditional (untrained) midwife and the other a traditional health       
+practitioner.                                                              
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book type
+
+                   TRA                                          4,373    100.00
+                   total                                        4,373    100.00
+
+A00A               Do you give acupuncture
+
+                   1. Yes                                         133      3.04
+                   3. No                                        4,240     96.96
+                   total                                        4,373    100.00
+
+A00B               Do you give orthopedics
+
+                   1. Yes                                         420      9.60
+                   3. No                                        3,953     90.40
+                   total                                        4,373    100.00
+
+A00C               Do you give massage(reflexive massage)
+
+                   1. Yes                                       2,982     68.19
+                   3. No                                        1,391     31.81
+                   total                                        4,373    100.00
+
+A00D               Do you give operation
+
+                   1. Yes                                          21      0.48
+                   3. No                                        4,352     99.52
+                   total                                        4,373    100.00
+
+A00E               Do you give charm
+
+                   1. Yes                                         605     13.83
+                   3. No                                        3,768     86.17
+                   total                                        4,373    100.00
+
+A00F               Do you give anti black magic
+
+                   1. Yes                                          89      2.04
+                   3. No                                        4,284     97.96
+                   total                                        4,373    100.00
+
+A00G               Do you give formula
+
+                   1. Yes                                         924     21.13
+                   3. No                                        3,449     78.87
+                   total                                        4,373    100.00
+
+A00H               Do you give special medicine herbs
+
+                   1. Yes                                         812     18.57
+                   3. No                                        3,561     81.43
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A00I               Do you give delivery
+
+                   1. Yes                                       1,792     40.98
+                   3. No                                        2,581     59.02
+                   total                                        4,373    100.00
+
+A00J               Do you give consultation
+
+                   1. Yes                                         710     16.24
+                   3. No                                        3,663     83.76
+                   total                                        4,373    100.00
+
+A00K               Do you give acupressure
+
+                   1. Yes                                         105      2.40
+                   3. No                                        4,268     97.60
+                   total                                        4,373    100.00
+
+A00L               Do you give gurah
+
+                   min:                                          1.00
+                   mean:                                         2.96
+                   max:                                          3.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+A00M               Do you give circumcision
+
+                   1. Yes                                         210      4.80
+                   3. No                                        4,163     95.20
+                   total                                        4,373    100.00
+
+A00N               Do you give massage for baby
+
+                   1. Yes                                       3,094     70.75
+                   3. No                                        1,279     29.25
+                   total                                        4,373    100.00
+
+A00V               Other
+
+                   1. Yes                                         791     18.09
+                   3. No                                        3,582     81.91
+                   total                                        4,373    100.00
+
+A01                How old are you
+
+                   min:                                         23.00
+                   mean:                                        60.70
+                   max:                                         98.00
+                   #obs                                         4,368
+                   #miss:                                           5
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A02                How long practice traditional treatment
+
+                   min:                                          1.00
+                   mean:                                        22.58
+                   max:                                         98.00
+                   #obs                                         4,368
+                   #miss:                                           5
+
+A03                From whom did you learn this treatment
+
+                   missing                                          5      0.11
+                   1. Parents(inherited)                        2,968     67.87
+                   2. Learned from other people                   371      8.48
+                   3. Friend                                        7      0.16
+                   4. Self-study                                  826     18.89
+                   5. Other                                       196      4.48
+                   total                                        4,373    100.00
+
+A04                What is the highest education level
+
+                   missing                                      1,587     36.29
+                   2. Elementary                                1,995     45.62
+                   3. Junior high general                         189      4.32
+                   4. Junior high vocational                       84      1.92
+                   5. Senior high general                         140      3.20
+                   6. Senior high vocational                       63      1.44
+                   11. Adult education A                           28      0.64
+                   12. Adult education B                           14      0.32
+                   14. Islamic school (pesantren)                   7      0.16
+                   17. School for disabled                         49      1.12
+                   60. Colege (D1,D2,D3)                           28      0.64
+                   61. Univercity (Bachelor)                       35      0.80
+                   62. University (Master)                          7      0.16
+                   72. Islamic elementary school                   70      1.60
+                   73. Islamic junior/high school                  21      0.48
+                   95. Other                                       56      1.28
+                   total                                        4,373    100.00
+
+A04A               Have you ever attended school
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,786     63.71
+                   3. No                                        1,582     36.18
+                   total                                        4,373    100.00
+
+A04B               What is the highest grade completed
+
+                   missing                                      1,587     36.29
+                   00. Not complete first grade                    98      2.24
+                   1                                               98      2.24
+                   2                                              259      5.92
+                   3                                              378      8.64
+                   4                                              252      5.76
+                   5                                              196      4.48
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(A04B  continued)
+
+                   6                                               49      1.12
+                   7. Graduated                                 1,435     32.82
+                   8. Don't know                                   21      0.48
+                   total                                        4,373    100.00
+
+A05A               Read an indonesian-language newspaper?
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,506     57.31
+                   3. No                                        1,862     42.58
+                   total                                        4,373    100.00
+
+A05B               Read a newspaper in another language?
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,225     28.01
+                   3. No                                        3,143     71.87
+                   total                                        4,373    100.00
+
+A06A               Write a letter in Indobesian?
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,268     51.86
+                   3. No                                        2,100     48.02
+                   total                                        4,373    100.00
+
+A06B               Write a letter in another language?
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,015     23.21
+                   3. No                                        3,353     76.68
+                   total                                        4,373    100.00
+
+A07                Are there specific hours for services
+
+                   missing                                          5      0.11
+                   1.  Yes                                        791     18.09
+                   3. No                                        3,577     81.80
+                   total                                        4,373    100.00
+
+A08                Days per week services are provided
+
+                   missing                                      3,582     81.91
+                   4                                               21      0.48
+                   5                                               49      1.12
+                   6                                              175      4.00
+                   7                                              546     12.49
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A09                How many hours per day do you practice?
+
+                   min:                                          1.00
+                   mean:                                        10.71
+                   max:                                         24.00
+                   #obs                                           791
+                   #miss:                                       3,582
+
+A10                If not, how do you provide services
+
+                   missing                                        796     18.20
+                   1. Open 24 hours a day                       3,157     72.19
+                   2. Only by appointment                         315      7.20
+                   5. Other                                       105      2.40
+                   total                                        4,373    100.00
+
+A11                What language do you usually use
+
+                   Variable A11 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, A11 will have the value ACF.  If the       
+                   interviewee selected D and E, A11 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: A11       W =  Indonesian                                     
+                                               A =  Javanese                                       
+                                               B =  Sundanese                                      
+                                               C =  Maduranese                                     
+                                               D =  Balinese                                       
+                                               E =  Sasak                                          
+                                               F =  Minang                                         
+                                               G =  Batak                                          
+                                               H =  Bugis                                          
+                                               I =  Chinese                                        
+                                               J =  Banjar                                         
+                                               L =  Bima                                           
+                                               M =  Makasar                                        
+                                               N =  Nias                                           
+                                               O =  Palembang                                      
+                                               P =  Sumbawa                                        
+                                               Q =  Toraja                                         
+                                               R =  Lahat                                          
+                                               S =  other south sumatra                            
+                                               T =  Betawi                                         
+                                               U =  Lmapung                                        
+                                               V =  Other                                          
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A12                What is your religion
+
+                   missing                                          5      0.11
+                   01. Islam                                    4,081     93.32
+                   02. Protestant                                 119      2.72
+                   03. Catholik                                    21      0.48
+                   04. Hindu                                      126      2.88
+                   05. Budha                                        7      0.16
+                   07. Kong hu cu                                  14      0.32
+                   total                                        4,373    100.00
+
+A13                Besides this practice, any other work?
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,127     25.77
+                   3. No                                        3,241     74.11
+                   total                                        4,373    100.00
+
+A13A1              What do you produce/do in your work ?
+
+
+A13A2              What do you produce/do in your work ?
+
+
+A13B               EDITOR: CODE FOR SECTORS
+
+                   missing                                      3,246     74.23
+                   01. Agriculture,forestry,fishing, and hu       749     17.13
+                   05. Construction                                42      0.96
+                   06. Wholesale, retail, retaurant and hot       161      3.68
+                   07. Transportation, storage and ommunica        14      0.32
+                   08. Finance, insurance, real estate and         14      0.32
+                   09. Social services                             63      1.44
+                   95. Other                                       77      1.76
+                   99. Missing                                      7      0.16
+                   total                                        4,373    100.00
+
+A14                Which category best describes the work?
+
+                   missing                                      3,246     74.23
+                   01. Self employed                              427      9.76
+                   02. Self employed with unpaid family wor       224      5.12
+                   04. Government worker                           21      0.48
+                   05. Private worker                             112      2.56
+                   06. Unpaid family worker                        49      1.12
+                   07. Casual worker in agriculture               245      5.60
+                   08. Casual worker not in agriculture            49      1.12
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A15                How many hours a week do you work there?
+
+                   min:                                          1.00
+                   mean:                                        29.71
+                   max:                                         91.00
+                   #obs                                         1,127
+                   #miss:                                       3,246
+
+B01                Do you provide services on
+
+                   missing                                          5      0.11
+                   1. Yes                                       4,089     93.51
+                   3. No                                          279      6.38
+                   total                                        4,373    100.00
+
+B02A1              Opening hour (morning)
+
+                   min:                                          0.00
+                   mean:                                         4.20
+                   max:                                         96.00
+                   #obs                                         4,089
+                   #miss:                                         284
+
+B02A2              Opening hour (morning)
+
+                   min:                                          0.00
+                   mean:                                         1.49
+                   max:                                         96.00
+                   #obs                                         3,971
+                   #miss:                                         402
+
+B02B1              Closing hour (morning)
+
+                   min:                                          6.00
+                   mean:                                        91.19
+                   max:                                         99.00
+                   #obs                                         3,971
+                   #miss:                                         402
+
+B02B2              Closing hour (morning)
+
+                   min:                                          0.00
+                   mean:                                         6.33
+                   max:                                         99.00
+                   #obs                                           234
+                   #miss:                                       4,139
+
+B03A1              Opening hour (afternoon)
+
+                   min:                                         12.00
+                   mean:                                        35.36
+                   max:                                         99.00
+                   #obs                                           352
+                   #miss:                                       4,021
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+B03A2              Opening hour (afternoon)
+
+                   min:                                          0.00
+                   mean:                                         7.06
+                   max:                                         96.00
+                   #obs                                           274
+                   #miss:                                       4,099
+
+B03B1              Closing hour (afternoon)
+
+                   min:                                          0.00
+                   mean:                                        22.42
+                   max:                                         23.00
+                   #obs                                         4,011
+                   #miss:                                         362
+
+B03B2              Closing hour (afternoon)
+
+                   min:                                          0.00
+                   mean:                                        47.96
+                   max:                                         59.00
+                   #obs                                         4,011
+                   #miss:                                         362
+
+B05A               Do you cure stomachache/diarrhea
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,534     57.95
+                   3. No                                        1,834     41.94
+                   total                                        4,373    100.00
+
+B05B               Do you cure hemorrhoids
+
+                   missing                                          5      0.11
+                   1. Yes                                         672     15.37
+                   3. No                                        3,696     84.52
+                   total                                        4,373    100.00
+
+B05C               Do you cure Impotence
+
+                   missing                                          5      0.11
+                   1. Yes                                         532     12.17
+                   3. No                                        3,836     87.72
+                   total                                        4,373    100.00
+
+B05D               Do you cure flu/headache
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,457     56.19
+                   3. No                                        1,911     43.70
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B05E               Do you cure rheumatism
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,911     43.70
+                   3. No                                        2,457     56.19
+                   total                                        4,373    100.00
+
+B05F               Do you cure Orthopedics
+
+                   missing                                          5      0.11
+                   1. Yes                                         546     12.49
+                   3. No                                        3,822     87.40
+                   total                                        4,373    100.00
+
+B05G               Do you cure cancer
+
+                   missing                                          5      0.11
+                   1. Yes                                         210      4.80
+                   3. No                                        4,158     95.08
+                   total                                        4,373    100.00
+
+B05H               Do you give sterility
+
+                   missing                                          5      0.11
+                   1. Yes                                         868     19.85
+                   3. No                                        3,500     80.04
+                   total                                        4,373    100.00
+
+B05I               Paint during pregnancy
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,436     55.71
+                   3. No                                        1,932     44.18
+                   total                                        4,373    100.00
+
+B05J               Do you give delivery care
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,883     43.06
+                   3. No                                        2,485     56.83
+                   total                                        4,373    100.00
+
+B05K               Do you cure skin disease
+
+                   missing                                          5      0.11
+                   1. Yes                                         462     10.56
+                   3. No                                        3,906     89.32
+                   total                                        4,373    100.00
+
+B05L               Do you cure insomnia/stress/nervousness
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,295     29.61
+                   3. No                                        3,073     70.27
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                        4,373    100.00
+
+B05M               Do you cure diabetis
+
+                   missing                                          5      0.11
+                   1. Yes                                         364      8.32
+                   3. No                                        4,004     91.56
+                   total                                        4,373    100.00
+
+B05N               Do you cure eye complaints
+
+                   missing                                          5      0.11
+                   1. Yes                                         427      9.76
+                   3. No                                        3,941     90.12
+                   total                                        4,373    100.00
+
+B05O               Mental disorder
+
+                   missing                                          5      0.11
+                   1. Yes                                         238      5.44
+                   3. No                                        4,130     94.44
+                   total                                        4,373    100.00
+
+B05P               Convulsion/epilepsy
+
+                   missing                                          5      0.11
+                   1. Yes                                         469     10.72
+                   3. No                                        3,899     89.16
+                   total                                        4,373    100.00
+
+B05Q               Kidney failure
+
+                   missing                                          5      0.11
+                   1. Yes                                         252      5.76
+                   3. No                                        4,116     94.12
+                   total                                        4,373    100.00
+
+B05R               Heart problem
+
+                   missing                                          5      0.11
+                   1. Yes                                         273      6.24
+                   3. No                                        4,095     93.64
+                   total                                        4,373    100.00
+
+B05S               High blood pressure
+
+                   missing                                          5      0.11
+                   1. Yes                                         672     15.37
+                   3. No                                        3,696     84.52
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B05V               Other
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,610     36.82
+                   3. No                                        2,758     63.07
+                   total                                        4,373    100.00
+
+B06                How many patients examine/treat, last wk
+
+                   min:                                          0.00
+                   mean:                                        15.25
+                   max:                                        300.00
+                   #obs                                         4,368
+                   #miss:                                           5
+
+B07                How many patients examine/treat, last mo
+
+                   min:                                          0.00
+                   mean:                                       100.56
+                   max:                                       9998.00
+                   #obs                                         4,368
+                   #miss:                                           5
+
+B08                In general, patients are adults/children
+
+                   missing                                          5      0.11
+                   1. Adults ( > 15 years)                        917     20.97
+                   3. Children ( < 15 years)                      364      8.32
+                   5. Both                                      3,087     70.59
+                   total                                        4,373    100.00
+
+B09                Are your patients in general male/female
+
+                   missing                                          5      0.11
+                   1. Male                                        224      5.12
+                   3. Female                                      868     19.85
+                   5. Both                                      3,276     74.91
+                   total                                        4,373    100.00
+
+B10HX              able to answer B10H
+
+
+B10H               In general,how long is each consultation
+
+                   min:                                          0.00
+                   mean:                                         0.98
+                   max:                                         20.00
+                   #obs                                         4,368
+                   #miss:                                           5
+
+B10MX              able to answer B10M
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B10M               In general,how long is each consultation
+
+                   min:                                          0.00
+                   mean:                                        12.67
+                   max:                                         50.00
+                   #obs                                         4,368
+                   #miss:                                           5
+
+B11                Do you usually charge a fee for services
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,408     55.07
+                   3. No                                        1,960     44.82
+                   total                                        4,373    100.00
+
+B12X               Do you know how much is the usual charge
+
+                   missing                                      1,965     44.93
+                   1. Given                                       392      8.96
+                   2. Up to the patient                         2,016     46.10
+                   total                                        4,373    100.00
+
+B12                If you do, how much is the usual charge
+
+                   min:                                       5000.00
+                   mean:                                     51696.34
+                   max:                                     400000.00
+                   #obs                                           392
+                   #miss:                                       3,981
+
+B13A               Does the payment include medicine
+
+                   missing                                      1,965     44.93
+                   1. Yes                                       2,184     49.94
+                   3. No                                          224      5.12
+                   total                                        4,373    100.00
+
+B13A1              Lowest payment that patients given you
+
+                   min:                                          0.00
+                   mean:                                     19656.25
+                   max:                                     400000.00
+                   #obs                                         2,016
+                   #miss:                                       2,357
+
+B13B               How much is charge for medicine/herbs
+
+                   min:                                          0.00
+                   mean:                                     75777.48
+                   max:                                     999996.00
+                   #obs                                           189
+                   #miss:                                       4,184
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 17
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B13BX              Do you know how much is the usual charge
+
+                   missing                                      4,149     94.88
+                   1. Given                                       189      4.32
+                   2. Up to the patient                            35      0.80
+                   total                                        4,373    100.00
+
+B13B1              Highest payment that patients given you
+
+                   min:                                       3000.00
+                   mean:                                     65243.06
+                   max:                                     600000.00
+                   #obs                                         2,016
+                   #miss:                                       2,357
+
+B13CA              Lowest payment for herbs/medicine
+
+                   min:                                        500.00
+                   mean:                                     20100.00
+                   max:                                      75000.00
+                   #obs                                            35
+                   #miss:                                       4,338
+
+B13CB              Highest payment for herbs/medicine
+
+                   min:                                       1000.00
+                   mean:                                     35200.00
+                   max:                                     100000.00
+                   #obs                                            35
+                   #miss:                                       4,338
+
+B14A               Do your patients usually give money
+
+                   missing                                          5      0.11
+                   1. Yes                                       3,045     69.63
+                   3. No                                        1,323     30.25
+                   total                                        4,373    100.00
+
+B14AX              Do you know what is the value?
+
+                   missing                                          5      0.11
+                   1. Given                                     3,136     71.71
+                   2. Do not receive any gift                   1,232     28.17
+                   total                                        4,373    100.00
+
+B14A1              How much is the value of those gifts
+
+                   min:                                        500.00
+                   mean:                                     50848.17
+                   max:                                     999998.00
+                   #obs                                         3,136
+                   #miss:                                       1,237
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 18
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B14B               Patients usually give rice
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,694     38.74
+                   3. No                                        2,674     61.15
+                   total                                        4,373    100.00
+
+B14C               Patients usually give other crops
+
+                   missing                                          5      0.11
+                   1. Yes                                         679     15.53
+                   3. No                                        3,689     84.36
+                   total                                        4,373    100.00
+
+B14D               Patients usually give other food stuffs
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,316     30.09
+                   3. No                                        3,052     69.79
+                   total                                        4,373    100.00
+
+B14E               Patients usually give livestock
+
+                   missing                                          5      0.11
+                   1. Yes                                         441     10.08
+                   3. No                                        3,927     89.80
+                   total                                        4,373    100.00
+
+B14F               Patients usually give cigarettes
+
+                   missing                                          5      0.11
+                   1. Yes                                         420      9.60
+                   3. No                                        3,948     90.28
+                   total                                        4,373    100.00
+
+B14V               Other
+
+                   missing                                          5      0.11
+                   1. Yes                                         518     11.85
+                   3. No                                        3,850     88.04
+                   total                                        4,373    100.00
+
+B15                Patients treated at another place prior?
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,436     55.71
+                   3. No                                        1,932     44.18
+                   total                                        4,373    100.00
+
+B16                Where is treatment usually carried out?
+
+                   Variable B16 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 19
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, B16 will have the value ACF.  If the       
+                   interviewee selected D and E, B16 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: B16       A =  Patient come at your place                     
+                                               B =  At the hospital                                
+                                               C =  Visit your patient's place                     
+                                               D =  At the hospital                                
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+B16A               Any equipment/tools used for treatment?
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,855     42.42
+                   3. No                                        2,513     57.47
+                   total                                        4,373    100.00
+
+B16B               Kind of equipment or tools used
+
+                   missing                                      2,518     57.58
+                   1. Medical                                     378      8.64
+                   2. Non Medical                               1,162     26.57
+                   3. Both                                        315      7.20
+                   total                                        4,373    100.00
+
+B16C               Kind of method of treatment used
+
+                   Variable B16C can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, B16C will have the value ACF.  If the       
+                   interviewee selected D and E, B16C will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: B16C      A =  Using animal as a medium                       
+                                               B =  Using spells, charm                            
+                                               C =  Using water as medium                          
+                                               D =  Using herb                                     
+                                               V =  Other                                          
+                                               W =  No other                                       
+                                               Z =  Missing                                        
+
+
+B17                Provide traditional medicine herbs?
+
+                   missing                                          5      0.11
+                   1. Yes                                       1,554     35.54
+                   3. No                                        2,814     64.35
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 20
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                        4,373    100.00
+
+B18AA              Antibiotic
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         469     10.72
+                   3. No                                        1,085     24.81
+                   total                                        4,373    100.00
+
+B18AB              Analgetics
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         483     11.05
+                   3. No                                        1,071     24.49
+                   total                                        4,373    100.00
+
+B18AC              Antipyretics
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         392      8.96
+                   3. No                                        1,162     26.57
+                   total                                        4,373    100.00
+
+B18AD              Stomachache
+
+                   missing                                      2,819     64.46
+                   1. Yes                                       1,204     27.53
+                   3. No                                          350      8.00
+                   total                                        4,373    100.00
+
+B18AE              Hemorhoids
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         385      8.80
+                   3. No                                        1,169     26.73
+                   total                                        4,373    100.00
+
+B18AF              Impotence
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         280      6.40
+                   3. No                                        1,274     29.13
+                   total                                        4,373    100.00
+
+B18AG              Flu/Headache
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         889     20.33
+                   3. No                                          665     15.21
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 21
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B18AH              Rheumatism
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         609     13.93
+                   3. No                                          945     21.61
+                   total                                        4,373    100.00
+
+B18AI              Orthopedics
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         196      4.48
+                   3. No                                        1,351     30.89
+                   9. Missing                                       7      0.16
+                   total                                        4,373    100.00
+
+B18AJ              Cancer
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         161      3.68
+                   3. No                                        1,386     31.69
+                   9. Missing                                       7      0.16
+                   total                                        4,373    100.00
+
+B18AK              Sterility
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         392      8.96
+                   3. No                                        1,155     26.41
+                   9. Missing                                       7      0.16
+                   total                                        4,373    100.00
+
+B18AL              Pain during pregnancy
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         805     18.41
+                   3. No                                          749     17.13
+                   total                                        4,373    100.00
+
+B18AM              Delivery care
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         742     16.97
+                   3. No                                          812     18.57
+                   total                                        4,373    100.00
+
+B18AN              Skin disease
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         329      7.52
+                   3. No                                        1,225     28.01
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 22
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B18AO              Insomnia/Stress/Nervouness
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         476     10.88
+                   3. No                                        1,078     24.65
+                   total                                        4,373    100.00
+
+B18AP              Diabetis
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         224      5.12
+                   3. No                                        1,330     30.41
+                   total                                        4,373    100.00
+
+B18AQ              Eye complaints
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         259      5.92
+                   3. No                                        1,295     29.61
+                   total                                        4,373    100.00
+
+B18AR              Mental disorder
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         126      2.88
+                   3. No                                        1,428     32.65
+                   total                                        4,373    100.00
+
+B18AS              Convulsion/epilepsy
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         203      4.64
+                   3. No                                        1,351     30.89
+                   total                                        4,373    100.00
+
+B18AT              Kidney problem
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         133      3.04
+                   3. No                                        1,421     32.49
+                   total                                        4,373    100.00
+
+B18AU              Heart problem
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         140      3.20
+                   3. No                                        1,414     32.33
+                   total                                        4,373    100.00
+
+B18AV              Other
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         392      8.96
+                   3. No                                        1,162     26.57
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 23
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                        4,373    100.00
+
+B18AX              Lowering Cholesterol level
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         175      4.00
+                   3. No                                        1,379     31.53
+                   total                                        4,373    100.00
+
+B18AW              Lowering blood pressure
+
+                   missing                                      2,819     64.46
+                   1. Yes                                         406      9.28
+                   3. No                                        1,148     26.25
+                   total                                        4,373    100.00
+
+B19                Do you give also modern medicine
+
+                   missing                                          5      0.11
+                   1. Yes                                         266      6.08
+                   3. No                                        4,102     93.80
+                   total                                        4,373    100.00
+
+B1TYPE             Day
+
+                   missing                                          5      0.11
+                   A. Monday                                      624     14.27
+                   B. Tuesday                                     624     14.27
+                   C. Wenesday                                    624     14.27
+                   D. Thursday                                    624     14.27
+                   E. Friday                                      624     14.27
+                   F. Saturday                                    624     14.27
+                   G. Sunday                                      624     14.27
+                   total                                        4,373    100.00
+
+B20A               Do you provide antibiotic
+
+                   missing                                      4,107     93.92
+                   1. Yes                                         126      2.88
+                   3. No                                          140      3.20
+                   total                                        4,373    100.00
+
+B20B               Do you provide analgetics
+
+                   missing                                      4,107     93.92
+                   1. Yes                                          91      2.08
+                   3. No                                          175      4.00
+                   total                                        4,373    100.00
+
+B20C               Do you provide antipyretics
+
+                   missing                                      4,107     93.92
+                   1. Yes                                          35      0.80
+                   3. No                                          231      5.28
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 24
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                        4,373    100.00
+
+B20D               Do you provide anti-TBC
+
+                   missing                                      4,107     93.92
+                   1. Yes                                           7      0.16
+                   3. No                                          259      5.92
+                   total                                        4,373    100.00
+
+B20E               Do you provide oralie
+
+                   missing                                      4,107     93.92
+                   1. Yes                                          35      0.80
+                   3. No                                          231      5.28
+                   total                                        4,373    100.00
+
+B20V               Other
+
+                   missing                                      4,107     93.92
+                   1. Yes                                         105      2.40
+                   3. No                                          161      3.68
+                   total                                        4,373    100.00
+
+B21                Do you provide FP services
+
+                   missing                                          5      0.11
+                   1. Yes                                         105      2.40
+                   3. No                                        4,263     97.48
+                   total                                        4,373    100.00
+
+B22A               Do you give medicinal herbs
+
+                   missing                                      4,268     97.60
+                   1. Yes                                          56      1.28
+                   3. No                                           49      1.12
+                   total                                        4,373    100.00
+
+B22B               Do you give other traditional
+
+                   missing                                      4,268     97.60
+                   1. Yes                                          70      1.60
+                   3. No                                           35      0.80
+                   total                                        4,373    100.00
+
+B22C               Do you give modern:pill,injection,condom
+
+                   missing                                      4,268     97.60
+                   1. Yes                                          28      0.64
+                   3. No                                           77      1.76
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 25
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BEGHR1             Time interview began (hour)(1)
+
+                   min:                                          6.00
+                   mean:                                        14.82
+                   max:                                         21.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+BEGHR2             Time interview began (hour)(2)
+
+                   min:                                         13.00
+                   mean:                                        14.50
+                   max:                                         16.00
+                   #obs                                            14
+                   #miss:                                       4,359
+
+BEGHR3             Time interview began (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                       4,373
+
+BEGMIN1            Time interview began (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        21.32
+                   max:                                         58.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        29.00
+                   max:                                         58.00
+                   #obs                                            14
+                   #miss:                                       4,359
+
+BEGMIN3            Time interview began (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                       4,373
+
+BOOKT              Book type
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 26
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+C00                Check: Are you a traditional midwife?
+
+                   missing                                          5      0.11
+                   1. Yes                                       2,142     48.98
+                   3. No                                        2,226     50.90
+                   total                                        4,373    100.00
+
+C01                Trained as a traditional midwife?
+
+                   missing                                      2,231     51.02
+                   1. Yes                                       1,379     31.53
+                   3. No                                          763     17.45
+                   total                                        4,373    100.00
+
+C02A               Year of your most recent training(year)
+
+                   min:                                       1960.00
+                   mean:                                      2149.66
+                   max:                                       9998.00
+                   #obs                                         1,078
+                   #miss:                                       3,295
+
+C02X               Do you know the year of most recent?
+
+                   missing                                      2,994     68.47
+                   1. In year                                   1,078     24.65
+                   3. Years                                       301      6.88
+                   total                                        4,373    100.00
+
+C02B               Years ago most recent training
+
+                   min:                                          3.00
+                   mean:                                        18.95
+                   max:                                         98.00
+                   #obs                                           301
+                   #miss:                                       4,072
+
+C03                Who organized the training?
+
+                   Variable C03 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, C03 will have the value ACF.  If the       
+                   interviewee selected D and E, C03 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: C03       A =  Midwife                                        
+                                               B =  Puskesmas                                      
+                                               C =  Posyandu                                       
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 27
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+C04                For how many days did you participate?
+
+                   min:                                          1.00
+                   mean:                                        14.26
+                   max:                                         98.00
+                   #obs                                         1,379
+                   #miss:                                       2,994
+
+C05                Where do you provide delivery services?
+
+                   Variable C05 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, C05 will have the value ACF.  If the       
+                   interviewee selected D and E, C05 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: C05       A =  In your  home                                  
+                                               B =  At special place for practice                  
+                                               C =  In patient's  home                             
+                                               V =  Other                                          
+                                               W =  No Aided                                       
+                                               Z =  Missing                                        
+
+
+C06                Do you also give TT immunization?
+
+                   missing                                      2,231     51.02
+                   1. Yes                                          56      1.28
+                   3. No                                        2,086     47.70
+                   total                                        4,373    100.00
+
+C07                What is the usual fee for delivery?
+
+                   min:                                          0.00
+                   mean:                                    141690.14
+                   max:                                     700000.00
+                   #obs                                           497
+                   #miss:                                       3,876
+
+C07X               Do you know the fee for delivery?
+
+                   missing                                      2,231     51.02
+                   1. Yes                                         497     11.37
+                   2. Up to patient                             1,351     30.89
+                   3. Free of charge                               63      1.44
+                   6. No Aided                                    231      5.28
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 28
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(C07A  continued)
+
+C07A               Provide traditional post natal care?
+
+                   missing                                      2,231     51.02
+                   1. Yes                                       1,869     42.74
+                   3. No                                          273      6.24
+                   total                                        4,373    100.00
+
+C08X               Do you know the fee for mother?
+
+                   missing                                      2,504     57.26
+                   1. Yes                                         231      5.28
+                   2. Up to patient                             1,554     35.54
+                   3. Free of charge                               84      1.92
+                   total                                        4,373    100.00
+
+C08                What is the fee for mother care?
+
+                   min:                                          0.00
+                   mean:                                    111060.61
+                   max:                                     700000.00
+                   #obs                                           231
+                   #miss:                                       4,142
+
+C09                How is mother care provided?
+
+                   min:                                          1.00
+                   mean:                                        16.75
+                   max:                                         41.00
+                   #obs                                         1,869
+                   #miss:                                       2,504
+
+C10                Do you also provide care for baby?
+
+                   missing                                      2,231     51.02
+                   1. Yes                                       1,883     43.06
+                   3. No                                          259      5.92
+                   total                                        4,373    100.00
+
+C10A               For how long do you care for baby?
+
+                   min:                                          1.00
+                   mean:                                        17.19
+                   max:                                         90.00
+                   #obs                                         1,883
+                   #miss:                                       2,490
+
+C11X               Do you know the charge per visit?
+
+                   missing                                      2,490     56.94
+                   1. Money                                       175      4.00
+                   2. Up to patient                             1,589     36.34
+                   3. Free of charge                              119      2.72
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 29
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(C11X  continued)
+
+
+C11                Charge per visit for the baby's care
+
+                   min:                                          0.00
+                   mean:                                    119600.00
+                   max:                                     700000.00
+                   #obs                                           175
+                   #miss:                                       4,198
+
+C12                Is immunization included in baby's care
+
+                   missing                                      2,490     56.94
+                   1. Yes                                           7      0.16
+                   3. No                                        1,876     42.90
+                   total                                        4,373    100.00
+
+C13X               Do you know the charges of immunization
+
+                   missing                                      4,366     99.84
+                   2. Up to patient                                 7      0.16
+                   total                                        4,373    100.00
+
+C13                What are the charges of immunization
+
+
+C14A               Stethoscope for pregnant mother
+
+                   missing                                      2,231     51.02
+                   1. Yes                                          35      0.80
+                   3. No                                        2,107     48.18
+                   total                                        4,373    100.00
+
+C14B               Tensimeter
+
+                   missing                                      2,231     51.02
+                   1. Yes                                          42      0.96
+                   3. No                                        2,100     48.02
+                   total                                        4,373    100.00
+
+C14C               Adult scales
+
+                   missing                                      2,231     51.02
+                   1. Yes                                          91      2.08
+                   3. No                                        2,051     46.90
+                   total                                        4,373    100.00
+
+C14D               Baby scales
+
+                   missing                                      2,231     51.02
+                   1. Yes                                         602     13.77
+                   3. No                                        1,540     35.22
+                   total                                        4,373    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 30
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+C14E               Height measurer
+
+                   missing                                      2,231     51.02
+                   1. Yes                                         182      4.16
+                   3. No                                        1,960     44.82
+                   total                                        4,373    100.00
+
+C14F               Normal delivery set/traditnl midwife kit
+
+                   missing                                      2,231     51.02
+                   1. Yes                                       1,393     31.85
+                   3. No                                          749     17.13
+                   total                                        4,373    100.00
+
+C14G               Forceps
+
+                   missing                                      2,231     51.02
+                   1. Yes                                           7      0.16
+                   3. No                                        2,135     48.82
+                   total                                        4,373    100.00
+
+C14H               Vaginal speculum
+
+                   missing                                      2,231     51.02
+                   1. Yes                                          14      0.32
+                   3. No                                        2,128     48.66
+                   total                                        4,373    100.00
+
+COMMID07           2007 community ID
+
+
+CP1A               Questions with doubtful answers
+
+
+CP1B               Questions with doubtful answers
+
+
+CP1C               Questions with doubful answers
+
+
+CP2A               Questions needing conversion of unit
+
+
+CP2B               Questions needing conversion of unit
+
+
+CP2C               Questions needing conversion of unit
+
+
+CP3A               Questions using secondary data source
+
+
+CP3B               Questions using secondary data source
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 31
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+CP3C               Questions using secondary data source
+
+
+CP4A               Others problems
+
+
+CP4B               Others problems
+
+
+CP4C               Others problems
+
+
+EDITOR             Code of Editor book 1
+
+
+EDITORCK           Checking status
+
+                   1. Edited,no correction necessary            1,310     29.96
+                   2. Edited and corrected                      2,873     65.70
+                   3. Edited,but not corrected                    190      4.34
+                   total                                        4,373    100.00
+
+ENDHR1             Time interview ended (hour)(1)
+
+                   min:                                          6.00
+                   mean:                                        15.34
+                   max:                                         21.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)(2)
+
+                   min:                                         13.00
+                   mean:                                        15.00
+                   max:                                         17.00
+                   #obs                                            14
+                   #miss:                                       4,359
+
+ENDHR3             Time interview ended (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                       4,373
+
+ENDMIN1            Time interview ended (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        25.57
+                   max:                                         59.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 32
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+ENDMIN2            Time interview ended (minute)(2)
+
+                   min:                                          9.00
+                   mean:                                        29.00
+                   max:                                         49.00
+                   #obs                                            14
+                   #miss:                                       4,359
+
+ENDMIN3            Time interview ended (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                       4,373
+
+FASCODE            Facility code
+
+
+FCODE07            2007 Facility Code
+
+
+IDIVWR             Code of Interviewer book 1
+
+
+IVWDAY1            Date of interview (day of month)(1)
+
+                   min:                                          1.00
+                   mean:                                        15.76
+                   max:                                         31.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+IVWDAY2            Date of interview (day of month)(2)
+
+                   min:                                         19.00
+                   mean:                                        20.00
+                   max:                                         21.00
+                   #obs                                            14
+                   #miss:                                       4,359
+
+IVWDAY3            Date of interview (day of month)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                       4,373
+
+IVWMTH1            Date of interview (month)(1)
+
+                   1. January                                       7      0.16
+                   2. February                                    995     22.75
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 33
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(IVWMTH1  continued)
+
+                   3. March                                     1,437     32.86
+                   4. April                                     1,192     27.26
+                   5. May                                         686     15.69
+                   6. June                                         56      1.28
+                   total                                        4,373    100.00
+
+IVWMTH2            Date of interview (month)(2)
+
+                   missing                                      4,359     99.68
+                   5. May                                          14      0.32
+                   total                                        4,373    100.00
+
+IVWMTH3            Date of interview (month)(3)
+
+                   missing                                      4,373    100.00
+                   total                                        4,373    100.00
+
+IVWYR1             Date of interview (year)(1)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+IVWYR2             Date of interview (year)(2)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                            14
+                   #miss:                                       4,359
+
+IVWYR3             Date of interview (year)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                       4,373
+
+LANGMAIN           Interview in what language?
+
+                   0. Indonesian                                2,930     67.00
+                   1. Javanese                                  1,016     23.23
+                   2. Sundanese                                   133      3.04
+                   3. Balinese                                     35      0.80
+                   5. Bugis                                        49      1.12
+                   7. Maduranese                                    7      0.16
+                   8. Sasak                                       126      2.88
+                   9. Minang                                       63      1.44
+                   10. Banjar                                       7      0.16
+                   12. Makasar                                      7      0.16
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 34
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                        4,373    100.00
+
+LANGOTHR           Other language used if any
+
+                   0. Indonesian                                  595     13.61
+                   1. Javanese                                    336      7.68
+                   2. Sundanese                                    84      1.92
+                   3. Balinese                                     21      0.48
+                   5. Bugis                                         7      0.16
+                   7. Maduranese                                    7      0.16
+                   8. Sasak                                         7      0.16
+                   9. Minang                                      105      2.40
+                   10. Banjar                                     112      2.56
+                   14. Palembang                                   21      0.48
+                   18. Other South Sumatra                          7      0.16
+                   95. Other                                       28      0.64
+                   96. No other                                 3,043     69.59
+                   total                                        4,373    100.00
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   min:                                         12.00
+                   mean:                                        34.07
+                   max:                                         73.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   min:                                         12.00
+                   mean:                                        34.08
+                   max:                                         76.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        31.92
+                   max:                                         78.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        33.49
+                   max:                                         78.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 35
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        88.60
+                   max:                                        730.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        78.21
+                   max:                                        730.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+LK05               Urban/rural
+
+                   1. Urban                                     2,720     62.20
+                   2. Rural                                     1,653     37.80
+                   total                                        4,373    100.00
+
+LK09               Sex of respondent
+
+                   1. Male                                        865     19.78
+                   3. Female                                    3,508     80.22
+                   total                                        4,373    100.00
+
+LK13               type of facility
+
+                   1. Traditional midwife                       1,561     35.70
+                   5. Other                                     2,812     64.30
+                   total                                        4,373    100.00
+
+LK15               Code of interviewer
+
+
+LK16               Code of editor
+
+
+LK17               Code of local supervisor
+
+
+LK19               Code of field coordinator
+
+
+NUMVIS             Number of visits
+
+                   min:                                          1.00
+                   mean:                                         1.00
+                   max:                                          2.00
+                   #obs                                         4,373
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 36
+book:    TRA  - Traditional Practice                                   
+module:  TRA                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+REASON             CHECKING BY EDITOR
+
+                   missing                                      4,373    100.00
+                   total                                        4,373    100.00
+
+RESULT             Interview result code
+
+                   1. Completed                                 4,373    100.00
+                   total                                        4,373    100.00
+
+RESULT1            Result of interview(1)
+
+                   1. Completed                                 4,359     99.68
+                   2. Partial completed                            14      0.32
+                   total                                        4,373    100.00
+
+RESULT2            Result of interview(2)
+
+                   missing                                      4,359     99.68
+                   1. Completed                                    14      0.32
+                   total                                        4,373    100.00
+
+RESULT3            Result of interview(3)
+
+                   missing                                      4,373    100.00
+                   total                                        4,373    100.00
+
+SUPVERIF           Monitoring by local supervisor
+
+                   1. Yes                                         232      5.31
+                   3. No                                        4,141     94.69
+                   total                                        4,373    100.00
+
+SUP_EDIT           Monitoring by local supervisor
+
+                   1. Yes                                         603     13.79
+                   3. No                                        3,770     86.21
+                   total                                        4,373    100.00
+
+SUP_OBS            Monitoring by local supervisor
+
+                   1. Yes                                         302      6.91
+                   3. No                                        4,071     93.09
+                   total                                        4,373    100.00

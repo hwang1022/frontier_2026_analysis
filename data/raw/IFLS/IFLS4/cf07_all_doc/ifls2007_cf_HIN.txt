@@ -1,0 +1,788 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       HIN                                            
+ T O P I C :     PRICES: INFORMANT                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       HIN
+ T O P I C :     Prices: Informant
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      HIN                                                     322
+      HIN_H                                                 13202
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+NOTES ABOUT BOOK HIN                                                       
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       HIN
+ T O P I C :     Prices: Informant
+
+--------------------------------------------------------------------------------
+--------------------                                                       
+Book HIN contains market price data as reported by up to 3                 
+community respondents.                                                     
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    HIN  - Prices: Informant                                   
+module:  HIN                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   HIN                                            322    100.00
+                   total                                          322    100.00
+
+AGEINF_1           Age of Informant(1)
+
+                   min:                                         21.00
+                   mean:                                        42.83
+                   max:                                         73.00
+                   #obs                                           322
+                   #miss:                                           0
+
+AGEINF_2           Age of Informant(2)
+
+                   min:                                         21.00
+                   mean:                                        40.18
+                   max:                                         67.00
+                   #obs                                            71
+                   #miss:                                         251
+
+AGEINF_3           Age of Informant(3)
+
+                   min:                                         22.00
+                   mean:                                        34.71
+                   max:                                         49.00
+                   #obs                                            21
+                   #miss:                                         301
+
+BEGHR1             Time interview began (hour)(1)
+
+                   min:                                          6.00
+                   mean:                                        14.68
+                   max:                                         22.00
+                   #obs                                           322
+                   #miss:                                           0
+
+BEGHR2             Time interview began (hour)(2)
+
+                   min:                                          6.00
+                   mean:                                        14.35
+                   max:                                         21.00
+                   #obs                                            71
+                   #miss:                                         251
+
+BEGHR3             Time interview began (hour)(3)
+
+                   min:                                         10.00
+                   mean:                                        15.24
+                   max:                                         19.00
+                   #obs                                            21
+                   #miss:                                         301
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    HIN  - Prices: Informant                                   
+module:  HIN                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BEGMIN1            Time interview began (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        20.73
+                   max:                                         59.00
+                   #obs                                           322
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        25.37
+                   max:                                         55.00
+                   #obs                                            71
+                   #miss:                                         251
+
+BEGMIN3            Time interview began (minute)(3)
+
+                   min:                                          0.00
+                   mean:                                        25.95
+                   max:                                         50.00
+                   #obs                                            21
+                   #miss:                                         301
+
+COMMID07           2007 community ID
+
+
+CP10               Was the interview interupted by ...
+
+                   A. Not applicable                              224     69.57
+                   C. Family                                       63     19.57
+                   CD                                               1      0.31
+                   CE                                               4      1.24
+                   D. Others                                        3      0.93
+                   E. Not Family                                   26      8.07
+                   ED                                               1      0.31
+                   total                                          322    100.00
+
+CP11               Evaluation of the answers
+
+                   1. Very God                                     77     23.91
+                   2. Good                                        191     59.32
+                   3.                                              51     15.84
+                   4. Bad                                           3      0.93
+                   total                                          322    100.00
+
+CP12               Seriousness/attentivness of respondant
+
+                   1. Very God                                    104     32.30
+                   2. Good                                        183     56.83
+                   3.                                              33     10.25
+                   4. Bad                                           2      0.62
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    HIN  - Prices: Informant                                   
+module:  HIN                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+EDITOR             Code of Editor book Informant Price
+
+
+EDITORCK           Checking status
+
+                   1. Edited,no correction necessary              126     39.13
+                   2. Edited and corrected                        195     60.56
+                   3. Manually edited without CAFE                  1      0.31
+                   total                                          322    100.00
+
+ENDHR1             Time interview ended (hour)(1)
+
+                   min:                                          6.00
+                   mean:                                        15.12
+                   max:                                         22.00
+                   #obs                                           322
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)(2)
+
+                   min:                                          6.00
+                   mean:                                        14.87
+                   max:                                         22.00
+                   #obs                                            71
+                   #miss:                                         251
+
+ENDHR3             Time interview ended (hour)(3)
+
+                   min:                                         10.00
+                   mean:                                        15.95
+                   max:                                         20.00
+                   #obs                                            21
+                   #miss:                                         301
+
+ENDMIN1            Time interview ended (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        24.77
+                   max:                                         59.00
+                   #obs                                           322
+                   #miss:                                           0
+
+ENDMIN2            Time interview ended (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        24.85
+                   max:                                         55.00
+                   #obs                                            71
+                   #miss:                                         251
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    HIN  - Prices: Informant                                   
+module:  HIN                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+ENDMIN3            Time interview ended (minute)(3)
+
+                   min:                                          0.00
+                   mean:                                        20.95
+                   max:                                         55.00
+                   #obs                                            21
+                   #miss:                                         301
+
+HINCODE            Code name of desa/kelurahan book
+
+
+IDIVWR             Code of Interviewer book informant price
+
+
+INFTYPE1           Type of Informan(1)
+
+                   A                                              322    100.00
+                   total                                          322    100.00
+
+INFTYPE2           Type of Informan(2)
+
+                   B                                              322    100.00
+                   total                                          322    100.00
+
+INFTYPE3           Type of Informan(3)
+
+                   missing                                        248     77.02
+                   C                                               74     22.98
+                   total                                          322    100.00
+
+IVWDAY1            Date of interview (day of month)(1)
+
+                   min:                                          1.00
+                   mean:                                        15.21
+                   max:                                         31.00
+                   #obs                                           322
+                   #miss:                                           0
+
+IVWDAY2            Date of interview (day of month)(2)
+
+                   min:                                          1.00
+                   mean:                                        15.39
+                   max:                                         30.00
+                   #obs                                            71
+                   #miss:                                         251
+
+IVWDAY3            Date of interview (day of month)(3)
+
+                   min:                                          1.00
+                   mean:                                        15.76
+                   max:                                         30.00
+                   #obs                                            21
+                   #miss:                                         301
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    HIN  - Prices: Informant                                   
+module:  HIN                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IVWMTH1            Date of interview (month)(1)
+
+                   2. February                                     74     22.98
+                   3. March                                       107     33.23
+                   4. April                                        97     30.12
+                   5. May                                          43     13.35
+                   6. June                                          1      0.31
+                   total                                          322    100.00
+
+IVWMTH2            Date of interview (month)(2)
+
+                   missing                                        251     77.95
+                   2. February                                     22      6.83
+                   3. March                                        25      7.76
+                   4. April                                        18      5.59
+                   5. May                                           6      1.86
+                   total                                          322    100.00
+
+IVWMTH3            Date of interview (month)(3)
+
+                   missing                                        301     93.48
+                   2. February                                      6      1.86
+                   3. March                                         7      2.17
+                   4. April                                         7      2.17
+                   5. May                                           1      0.31
+                   total                                          322    100.00
+
+IVWYR1             Date of interview (Year)(1)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                           322
+                   #miss:                                           0
+
+IVWYR2             Date of interview (Year)(2)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                            71
+                   #miss:                                         251
+
+IVWYR3             Date of interview (Year)(3)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                            21
+                   #miss:                                         301
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    HIN  - Prices: Informant                                   
+module:  HIN                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   12. North Sumatra                               27      8.39
+                   13. West Sumatra                                14      4.35
+                   16. South Sumatra                               12      3.73
+                   18. Lampung                                     11      3.42
+                   19. Bangka Belitung                              3      0.93
+                   31. Jakarta                                     40     12.42
+                   32. West Java                                   46     14.29
+                   33. Central Java                                37     11.49
+                   34. D.I. Yogyakarta                             22      6.83
+                   35. East Java                                   45     13.98
+                   36. Banten                                       6      1.86
+                   51. Bali                                        14      4.35
+                   52. West Nusa Tenggara                          16      4.97
+                   63. South Kalimantan                            13      4.04
+                   73. South Sulawesi                              16      4.97
+                   total                                          322    100.00
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   12. North Sumatra                               27      8.39
+                   13. West Sumatra                                14      4.35
+                   16. South Sumatra                               12      3.73
+                   18. Lampung                                     11      3.42
+                   19. Bangka Belitung                              3      0.93
+                   31. Jakarta                                     40     12.42
+                   32. West Java                                   46     14.29
+                   33. Central Java                                37     11.49
+                   34. D.I. Yogyakarta                             22      6.83
+                   35. East Java                                   45     13.98
+                   36. Banten                                       6      1.86
+                   51. Bali                                        14      4.35
+                   52. West Nusa Tenggara                          16      4.97
+                   63. South Kalimantan                            13      4.04
+                   73. South Sulawesi                              15      4.66
+                   76. West Sulawesi                                1      0.31
+                   total                                          322    100.00
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        33.01
+                   max:                                         78.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        34.64
+                   max:                                         78.00
+                   #obs                                           322
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    HIN  - Prices: Informant                                   
+module:  HIN                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        87.55
+                   max:                                        730.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        75.54
+                   max:                                        730.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK05               Urban/rural
+
+                   1. Urban                                       202     62.73
+                   2. Rural                                       120     37.27
+                   total                                          322    100.00
+
+LK15               Code of interviewer
+
+
+LK16               Code of editor
+
+
+LK17               Code of local supervisor
+
+
+LK19               Code of field coordinator
+
+
+PKKINF_1           Position on PKK(1)
+
+
+PKKINF_2           Position on PKK(2)
+
+
+PKKINF_3           Position on PKK(3)
+
+
+REASON             Reason of FP3
+
+                   missing                                        322    100.00
+                   total                                          322    100.00
+
+REC_TYPE           Record type
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    HIN  - Prices: Informant                                   
+module:  HIN                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+RESULT             Interview result
+
+                   1. Completed                                   322    100.00
+                   total                                          322    100.00
+
+SEXINF_1           Sex of Informant (1)
+
+                   1. Male                                          6      1.86
+                   3. Female                                      316     98.14
+                   total                                          322    100.00
+
+SEXINF_2           Sex of Informant (2)
+
+                   missing                                        251     77.95
+                   1. Male                                          1      0.31
+                   3. Female                                       70     21.74
+                   total                                          322    100.00
+
+SEXINF_3           Sex of Informant (3)
+
+                   missing                                        301     93.48
+                   3. Female                                       21      6.52
+                   total                                          322    100.00
+
+SUPVERIF           Monitoring by local supervisor
+
+                   1. Yes                                          10      3.11
+                   3. No                                          312     96.89
+                   total                                          322    100.00
+
+SUP_EDIT           Monitoring by local supervisor
+
+                   1. Yes                                          36     11.18
+                   3. No                                          286     88.82
+                   total                                          322    100.00
+
+SUP_OBS            Monitoring by local supervisor
+
+                   1. Yes                                          23      7.14
+                   3. No                                          299     92.86
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    HIN  - Prices: Informant                                   
+module:  HIN_H                
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+COMMID07           2007 community ID
+
+
+H01                Price per unit
+
+                   min:                                          0.00
+                   mean:                                     11766.43
+                   max:                                      99999.00
+                   #obs                                        12,334
+                   #miss:                                         868
+
+H02                Unit for H01
+
+                   missing                                      3,019     22.87
+                   1. Kg                                        4,280     32.42
+                   2. Litre                                       893      6.76
+                   3. Bottle                                      229      1.73
+                   4. Pieces                                      310      2.35
+                   11. Box                                        613      4.64
+                   12. Can                                        313      2.37
+                   13. Pack                                     1,296      9.82
+                   95. Others                                   2,249     17.04
+                   total                                       13,202    100.00
+
+H03                How much contained in 1 unit
+
+                   min:                                          0.01
+                   mean:                                       165.38
+                   max:                                        999.99
+                   #obs                                         4,700
+                   #miss:                                       8,502
+
+H03A               Is it available for sale?
+
+                   1                                            9,915     75.10
+                   2                                            1,147      8.69
+                   3                                              347      2.63
+                   4                                               42      0.32
+                   5. Others                                      883      6.69
+                   6. Not Applicable                              171      1.30
+                   8. Can't sell                                  697      5.28
+                   total                                       13,202    100.00
+
+H04                In what units is it measured
+
+                   missing                                      8,502     64.40
+                   1. Kg                                        1,183      8.96
+                   2. Litre                                       336      2.55
+                   8. Gram                                      3,178     24.07
+                   99. Missing                                      3      0.02
+                   total                                       13,202    100.00
+
+HINCODE            Code name of desa/kelurahan
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    HIN  - Prices: Informant                                   
+module:  HIN_H                
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+HTYPE              Type of Product
+
+                   1. Rice:  high quality                         322      2.44
+                   2. Rice: average quality                       322      2.44
+                   3. Rice : low quality                          322      2.44
+                   4. Corn                                        322      2.44
+                   5. Cassava                                     322      2.44
+                   6. Tapioca                                     322      2.44
+                   7. Beef (good quality, boneless)               322      2.44
+                   8. Chicken (one chicken already cleaned)       322      2.44
+                   9. Goat (good quality, boneless)               322      2.44
+                   10.Fresh fish (whole)                          322      2.44
+                   11.Dried or salted fish                        322      2.44
+                   12.Wheat flour                                 322      2.44
+                   13.Cooking oil                                 322      2.44
+                   14.White sugar                                 322      2.44
+                   15.Salt                                        322      2.44
+                   16.Infant porridge                             322      2.44
+                   17.Infant formula                              322      2.44
+                   18.Sweetened condensed milk                    322      2.44
+                   19.Powdered Milk                               322      2.44
+                   20.Noodles                                     322      2.44
+                   21.Tofu                                        322      2.44
+                   22.Bean Curd                                   322      2.44
+                   23.Filtered clove cigarettes                   322      2.44
+                   24.Filtered cigarettes                         322      2.44
+                   25.Potato                                      322      2.44
+                   26.Kangkung (Water Spinach)                    322      2.44
+                   27.Spinach                                     322      2.44
+                   28.Cassava leaves                              322      2.44
+                   29.Bananas                                     322      2.44
+                   30.Papaya                                      322      2.44
+                   31.Bottled Drinking water                      322      2.44
+                   32.Kerosene                                    322      2.44
+                   33.Rice with egg                               322      2.44
+                   34                                             322      2.44
+                   35.Bath soap                                   322      2.44
+                   36.Cotton cloth                                322      2.44
+                   37.Women’s blouse                              322      2.44
+                   38.Men’s trousers                              322      2.44
+                   39.Women’s skirt                               322      2.44
+                   40.Plastic sandals (for children)              322      2.44
+                   41.Writing book                                322      2.44
+                   total                                       13,202    100.00

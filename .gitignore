@@ -1,0 +1,16 @@
+# Ignore everything by default
+*
+
+# But recurse into directories so whitelisted files can be found
+!*/
+
+# Keep this .gitignore
+!.gitignore
+
+# Whitelist allowed file types
+!*.py
+!*.md
+!*.lock
+!*.toml
+!*.txt
+!*.tex

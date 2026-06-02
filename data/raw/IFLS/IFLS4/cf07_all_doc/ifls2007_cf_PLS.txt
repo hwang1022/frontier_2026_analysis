@@ -1,0 +1,1394 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       PLS                                            
+ T O P I C :     INTEGRATED COMMUNITY HEALTH POST FOR ELDERLY (POSYANDU LANSIA)                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       PLS
+ T O P I C :     Integrated Community Health Post for Elderly (Posyandu Lansia)
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      PLS                                                     307
+      PLS_B1                                                 4605
+      PLS_D1                                                 3070
+      PLS_SDP1                                                811
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       PLS
+ T O P I C :     Integrated Community Health Post for Elderly (Posyandu Lansia)
+
+--------------------------------------------------------------------------------
+
+BOOK PLS                                                                   
+----------                                                                 
+Book PLS collects information on the locally-run clinics for               
+the elderly, Posyandu Lancia.                                              
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A1                 Year when Posyandu begin operation
+
+                   min:                                       1970.00
+                   mean:                                      2002.96
+                   max:                                       2008.00
+                   #obs                                           298
+                   #miss:                                           9
+
+A10X               What is the charge to us Posyandu
+
+                   1. Given                                       104     33.88
+                   6. No pay / free of charge                     202     65.80
+                   8. Don't know                                    1      0.33
+                   total                                          307    100.00
+
+A10                What is the charge to us Posyandu
+
+                   min:                                          0.00
+                   mean:                                      1501.92
+                   max:                                      11000.00
+                   #obs                                           104
+                   #miss:                                         203
+
+A1AX               How long has Posyandu Lansia been active
+
+                   missing                                        298     97.07
+                   1. Given                                         7      2.28
+                   8. Don't know                                    2      0.65
+                   total                                          307    100.00
+
+A1A                How long has Posyandu Lansia been active
+
+                   min:                                          1.00
+                   mean:                                         6.00
+                   max:                                         10.00
+                   #obs                                             7
+                   #miss:                                         300
+
+A1X                When did Posyandu begin operation
+
+                   1. Given                                       298     97.07
+                   8. Don't know                                    9      2.93
+                   total                                          307    100.00
+
+A2                 How many times/month is Posyandu Lansia
+
+                   min:                                          1.00
+                   mean:                                         1.92
+                   max:                                         12.00
+                   #obs                                           307
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A2X                Do you know how many times?
+
+                   1. Given per month                             285     92.83
+                   2. Given per year                               22      7.17
+                   total                                          307    100.00
+
+A2A                Is Posyandu part of Posyandu Balita?
+
+                   1. Yes                                         103     33.55
+                   3. No                                          204     66.45
+                   total                                          307    100.00
+
+A3X                Number of operations in the last year
+
+                   1. Given                                       307    100.00
+                   total                                          307    100.00
+
+A3                 Number of operations in the last year
+
+                   min:                                          0.00
+                   mean:                                        11.33
+                   max:                                         48.00
+                   #obs                                           307
+                   #miss:                                           0
+
+A4                 How many cadres are active?
+
+                   min:                                          1.00
+                   mean:                                         5.52
+                   max:                                         30.00
+                   #obs                                           307
+                   #miss:                                           0
+
+A6AJAM             Opening hour of Posyandu
+
+                   min:                                          6.00
+                   mean:                                         9.64
+                   max:                                         17.00
+                   #obs                                           307
+                   #miss:                                           0
+
+A6AMNT             Opening minute  of Posyandu
+
+                   min:                                          0.00
+                   mean:                                         3.03
+                   max:                                         30.00
+                   #obs                                           307
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A6BJAM             Closing hours of Posyandu
+
+                   min:                                          8.00
+                   mean:                                        12.25
+                   max:                                         18.00
+                   #obs                                           307
+                   #miss:                                           0
+
+A6BMNT             Closing minute of Posyandu
+
+                   min:                                          0.00
+                   mean:                                         4.20
+                   max:                                         30.00
+                   #obs                                           307
+                   #miss:                                           0
+
+A7X                Average attendence at Posyandu meeting
+
+                   1. Given                                       305     99.35
+                   8. Don't know                                    2      0.65
+                   total                                          307    100.00
+
+A7                 Average attendence at Posyandu meeting
+
+                   min:                                          2.00
+                   mean:                                        41.68
+                   max:                                        701.00
+                   #obs                                           305
+                   #miss:                                           2
+
+A8X                What is the age of the youngest person?
+
+                   1. Given                                       306     99.67
+                   8. Don't know                                    1      0.33
+                   total                                          307    100.00
+
+A8                 What is the age of the youngest person?
+
+                   min:                                         30.00
+                   mean:                                        48.94
+                   max:                                         65.00
+                   #obs                                           306
+                   #miss:                                           1
+
+A9X                What is the age of the oldest person?
+
+                   1. Given                                       305     99.35
+                   8. Don't know                                    2      0.65
+                   total                                          307    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A9                 What is the age of the oldest person?
+
+                   min:                                         48.00
+                   mean:                                        78.68
+                   max:                                         99.00
+                   #obs                                           305
+                   #miss:                                           2
+
+B3                 Who is providing services to elderly?
+
+                   Variable B3 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, B3 will have the value ACF.  If the       
+                   interviewee selected D and E, B3 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: B3        A =  Doctor                                         
+                                               B =  Midwife                                        
+                                               C =  Nurse                                          
+                                               D =  Village Midwife                                
+                                               E =  Cadre                                          
+                                               F =  Community members                              
+
+
+B4                 Do they receive training for elder care?
+
+                   1. Yes                                         167     54.40
+                   3. No                                          140     45.60
+                   total                                          307    100.00
+
+B5X                Average time spent by cadres per month
+
+                   1. Hours                                       296     96.42
+                   2. Days                                         11      3.58
+                   total                                          307    100.00
+
+B5                 Average time spent by cadres per month
+
+                   min:                                          1.00
+                   mean:                                        11.67
+                   max:                                        120.00
+                   #obs                                           307
+                   #miss:                                           0
+
+B6X                Do you know how many times visited?
+
+                   1. Given times                                 285     92.83
+                   6. Never                                        22      7.17
+                   total                                          307    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(B6X  continued)
+
+
+B6                 Last yr, times Posyandu visited by staff
+
+                   min:                                          1.00
+                   mean:                                         9.66
+                   max:                                         80.00
+                   #obs                                           285
+                   #miss:                                          22
+
+B7A                Who usually comes: Nurse?
+
+                   missing                                         22      7.17
+                   1. Yes                                         192     62.54
+                   3. No                                           93     30.29
+                   total                                          307    100.00
+
+B7B                Who usually comes: Midwife?
+
+                   missing                                         22      7.17
+                   1. Yes                                         225     73.29
+                   3. No                                           60     19.54
+                   total                                          307    100.00
+
+B7C                Who usually comes: Nutritionist?
+
+                   missing                                         22      7.17
+                   1. Yes                                          64     20.85
+                   3. No                                          221     71.99
+                   total                                          307    100.00
+
+B7D                Who usually comes: Doctor?
+
+                   missing                                         22      7.17
+                   1. Yes                                         136     44.30
+                   3. No                                          149     48.53
+                   total                                          307    100.00
+
+B7E                Who usually comes: Village Midwife?
+
+                   missing                                         22      7.17
+                   1. Yes                                          83     27.04
+                   3. No                                          202     65.80
+                   total                                          307    100.00
+
+B7F                Who usually comes: Public Health?
+
+                   missing                                         22      7.17
+                   1. Yes                                          11      3.58
+                   3. No                                          274     89.25
+                   total                                          307    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B8                 Problems you face at this health post?
+
+                   Variable B8 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, B8 will have the value ACF.  If the       
+                   interviewee selected D and E, B8 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: B8        A =  Inadequate fund                                
+                                               B =  Inadequate medicine                            
+                                               C =  Inadequate supplies                            
+                                               D =  Too few cadres                                 
+                                               E =  Inadequate support from Puskesmas              
+                                               F =  Inadequate support from village                
+                                               G =  Don't have permanent place                     
+                                               H =  Too few participant                            
+                                               V =  Others                                         
+                                               W =  No problem                                     
+
+
+BEGHR1             Time interview began (hour)(1)
+
+                   min:                                          7.00
+                   mean:                                        14.70
+                   max:                                         21.00
+                   #obs                                           307
+                   #miss:                                           0
+
+BEGHR2             Time interview began (hour)(2)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+BEGHR3             Time interview began (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BEGMIN1            Time interview began (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        20.40
+                   max:                                         58.00
+                   #obs                                           307
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)(2)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+BEGMIN3            Time interview began (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+COMMID07           2007 community ID
+
+
+CP1A               Number of Questions with doubtful answer
+
+
+CP1B               Number of Questions with doubtful answer
+
+
+CP1C               Number of Questions with doubtful answer
+
+
+CP2A               Number of Questions that need conversion
+
+
+CP2B               Number of Questions that need conversion
+
+
+CP2C               Number of Questions that need conversion
+
+
+CP3A               Number of Qs that use secondary data
+
+
+CP3B               Number of Qs that use secondary data
+
+
+CP3C               Number of Qs that use secondary data
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+CP4A               Number of Qs that make other problems
+
+
+CP4B               Number of Qs that make other problems
+
+
+CP4C               Number of Qs that make other problems
+
+
+EDITOR             Editor code
+
+
+EDITORCK           Reviewed by editor
+
+                   1. Entry Data without error                     96     31.27
+                   2. Entry Data and correction                   196     63.84
+                   3. Manually corrected without CAFE              15      4.89
+                   total                                          307    100.00
+
+ENDHR1             Time interview ended (hour)(1)
+
+                   min:                                          7.00
+                   mean:                                        15.12
+                   max:                                         21.00
+                   #obs                                           307
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)(2)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+ENDHR3             Time interview ended (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+ENDMIN1            Time interview ended (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        26.76
+                   max:                                         59.00
+                   #obs                                           307
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+ENDMIN2            Time interview ended (minute)(2)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+ENDMIN3            Time interview ended (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+
+IVWDAY1            Date of intrview (day of month)(1)
+
+                   min:                                          1.00
+                   mean:                                        15.44
+                   max:                                         31.00
+                   #obs                                           307
+                   #miss:                                           0
+
+IVWDAY2            Date of intrview (day of month)(2)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+IVWDAY3            Date of intrview (day of month)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+IVWMTH1            Date of interview (month)(1)
+
+                   2. February                                     65     21.17
+                   3. March                                        94     30.62
+                   4. April                                        96     31.27
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(IVWMTH1  continued)
+
+                   5. May                                          51     16.61
+                   6. June                                          1      0.33
+                   total                                          307    100.00
+
+IVWMTH2            Date of interview (month)(2)
+
+                   missing                                        307    100.00
+                   total                                          307    100.00
+
+IVWMTH3            Date of interview (month)(3)
+
+                   missing                                        307    100.00
+                   total                                          307    100.00
+
+IVWYR1             Date of interview (Year)(1)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                           307
+                   #miss:                                           0
+
+IVWYR2             Date of interview (Year)(2)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+IVWYR3             Date of interview (Year)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         307
+
+KR02A_1            1: Sex
+
+                   1.Male                                          21      6.84
+                   3.Female                                       286     93.16
+                   total                                          307    100.00
+
+KR02A_2            2: Sex
+
+                   missing                                        287     93.49
+                   3.Female                                        20      6.51
+                   total                                          307    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+KR02_1             1: Age
+
+                   min:                                         23.00
+                   mean:                                        47.24
+                   max:                                         78.00
+                   #obs                                           307
+                   #miss:                                           0
+
+KR02_2             2: Age
+
+                   min:                                         32.00
+                   mean:                                        47.10
+                   max:                                         67.00
+                   #obs                                            20
+                   #miss:                                         287
+
+KR03_1             1: Title/Position in the Posyandu
+
+                   1. Head of Posyandu                            164     53.42
+                   2. Posyandu Cadre                              124     40.39
+                   5. Other                                        19      6.19
+                   total                                          307    100.00
+
+KR03_2             2: Title/Position in the Posyandu
+
+                   missing                                        287     93.49
+                   1. Head of Posyandu                              4      1.30
+                   2. Posyandu Cadre                               12      3.91
+                   5. Other                                         4      1.30
+                   total                                          307    100.00
+
+KR04_1             1: Length of tenure in the position
+
+                   min:                                          0.00
+                   mean:                                         5.63
+                   max:                                         38.00
+                   #obs                                           307
+                   #miss:                                           0
+
+KR04_2             2: Length of tenure in the position
+
+                   min:                                          0.00
+                   mean:                                         4.70
+                   max:                                         19.00
+                   #obs                                            20
+                   #miss:                                         287
+
+KR05_1             1: Highest level of education attended
+
+                   02. Elementary                                  43     14.01
+                   03. Junior High-General                         56     18.24
+                   04. Junior High-Vocation                         6      1.95
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(KR05_1  continued)
+
+                   05. Senior High-General                         99     32.25
+                   06. Senior High-Vocation                        45     14.66
+                   13. Open University                              1      0.33
+                   60. D1, D2, D3 (Junior college)                 32     10.42
+                   61. University S1(Bachelors)                    18      5.86
+                   62. University S2(Masters)                       3      0.98
+                   73. Islamic Juinior High School(Madrasah         2      0.65
+                   74. Islamic Senior High School(Madrasah          2      0.65
+                   total                                          307    100.00
+
+KR05_2             2: Highest level of education attended
+
+                   missing                                        287     93.49
+                   02. Elementary                                   3      0.98
+                   03. Junior High-General                          4      1.30
+                   04. Junior High-Vocation                         4      1.30
+                   05. Senior High-General                          5      1.63
+                   06. Senior High-Vocation                         3      0.98
+                   95. Others                                       1      0.33
+                   total                                          307    100.00
+
+KR06_1             1: Highest grade/class completed
+
+                   min:                                          0.00
+                   mean:                                         6.69
+                   max:                                          7.00
+                   #obs                                           307
+                   #miss:                                           0
+
+KR06_2             2: Highest grade/class completed
+
+                   min:                                          3.00
+                   mean:                                         6.65
+                   max:                                          7.00
+                   #obs                                            20
+                   #miss:                                         287
+
+KR07_1             1: Length of time residing in village
+
+                   min:                                          0.00
+                   mean:                                        32.36
+                   max:                                         82.00
+                   #obs                                           307
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 17
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+KR07_2             2: Length of time residing in village
+
+                   min:                                          6.00
+                   mean:                                        36.40
+                   max:                                         65.00
+                   #obs                                            20
+                   #miss:                                         287
+
+KRTYPE             Type of Respondent
+
+                   2. Responden 2                                 307    100.00
+                   total                                          307    100.00
+
+LANGMAIN           Interview in what language?
+
+                   00. Indonesian                                 280     91.21
+                   01. Javanese                                    17      5.54
+                   02. Sundanese                                    7      2.28
+                   08. Sasak                                        2      0.65
+                   09. Minang                                       1      0.33
+                   total                                          307    100.00
+
+LANGOTHR           Other language used if any
+
+                   00. Indonesian                                  23      7.49
+                   01. Javanese                                    74     24.10
+                   02. Sundanese                                    6      1.95
+                   08. Sasak                                        3      0.98
+                   09. Minang                                      15      4.89
+                   10. Banjar                                       1      0.33
+                   14. Palembang                                    2      0.65
+                   96. NA                                         183     59.61
+                   total                                          307    100.00
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   12. North Sumatra                               18      5.86
+                   13. West Sumatra                                17      5.54
+                   16. South Sumatra                               16      5.21
+                   18. Lampung                                      9      2.93
+                   19. Bangka Belitung                              3      0.98
+                   31. Jakarta                                     20      6.51
+                   32. West Java                                   60     19.54
+                   33. Central Java                                42     13.68
+                   34. D.I. Yogyakarta                             41     13.36
+                   35. East Java                                   39     12.70
+                   36. Banten                                       6      1.95
+                   51. Bali                                        10      3.26
+                   52. West Nusa Tenggara                           6      1.95
+                   63. South Kalimantan                            10      3.26
+                   73. South Sulawesi                              10      3.26
+                   total                                          307    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 18
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   12. North Sumatra                               18      5.86
+                   13. West Sumatra                                17      5.54
+                   16. South Sumatra                               16      5.21
+                   18. Lampung                                      9      2.93
+                   19. Bangka Belitung                              3      0.98
+                   31. Jakarta                                     20      6.51
+                   32. West Java                                   60     19.54
+                   33. Central Java                                42     13.68
+                   34. D.I. Yogyakarta                             41     13.36
+                   35. East Java                                   39     12.70
+                   36. Banten                                       6      1.95
+                   51. Bali                                        10      3.26
+                   52. West Nusa Tenggara                           6      1.95
+                   63. South Kalimantan                            10      3.26
+                   73. South Sulawesi                               9      2.93
+                   76. West Sulawesi                                1      0.33
+                   total                                          307    100.00
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        37.21
+                   max:                                         78.00
+                   #obs                                           307
+                   #miss:                                           0
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        38.88
+                   max:                                         78.00
+                   #obs                                           307
+                   #miss:                                           0
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        96.09
+                   max:                                        730.00
+                   #obs                                           307
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        81.71
+                   max:                                        730.00
+                   #obs                                           307
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 19
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+LK05               Type of area
+
+                   1. Urban                                       235     76.55
+                   2. Rural                                        72     23.45
+                   total                                          307    100.00
+
+LK15               Interviewer code
+
+
+LK16               Editor code
+
+
+LK17               Supervisor code
+
+
+LK19               Field Coordinator code
+
+
+NUMVIS             Number of visits
+
+                   min:                                          1.00
+                   mean:                                         1.00
+                   max:                                          1.00
+                   #obs                                           307
+                   #miss:                                           0
+
+PLSANSIA           Interviewer code
+
+
+PLSTYPE            Book Type
+
+
+POSITONA           Position in Posyandu
+
+
+POSITONB           Position in Posyandu
+
+
+REASON             Reason code for the answer of FP3
+
+                   missing                                        307    100.00
+                   total                                          307    100.00
+
+RESULT             Interview Results Code
+
+                   1. Completed                                   307    100.00
+                   total                                          307    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 20
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+RESULT1            Result of interview(1)
+
+                   1. Completed                                   307    100.00
+                   total                                          307    100.00
+
+RESULT2            Result of interview(2)
+
+                   missing                                        307    100.00
+                   total                                          307    100.00
+
+RESULT3            Result of interview(3)
+
+                   missing                                        307    100.00
+                   total                                          307    100.00
+
+SDP00A             Can you separate the source of resources
+
+                   missing                                        201     65.47
+                   1. If Yes, SDP is only for Posyandu             71     23.13
+                   3. If No, SDP is both for Posyandu and E        35     11.40
+                   total                                          307    100.00
+
+SDP02A             Value of money: community to Posyandu
+
+                   min:                                          0.00
+                   mean:                                   3285570.03
+                   max:                                     998998998
+                   #obs                                           307
+                   #miss:                                           0
+
+SDP02B             Value of food: community to Posyandu
+
+                   min:                                          0.00
+                   mean:                                     25863.19
+                   max:                                    3000000.00
+                   #obs                                           307
+                   #miss:                                           0
+
+SDP02CX            Value of time: volunteer to Posyandu
+
+                   3. Hours                                       307    100.00
+                   total                                          307    100.00
+
+SDP02C             Value of time: volunteer to Posyandu
+
+                   min:                                          0.00
+                   mean:                                        15.58
+                   max:                                        120.00
+                   #obs                                           307
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 21
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+SDP02V             Value of other: community to Posyandu
+
+                   min:                                          0.00
+                   mean:                                      6566.87
+                   max:                                     500000.00
+                   #obs                                           307
+                   #miss:                                           0
+
+SDP03              Posyandu receive any other resources?
+
+                   1. Yes                                         168     54.72
+                   3. No                                          139     45.28
+                   total                                          307    100.00
+
+SUPVERIF           Checked by Supervisor (Verificated)
+
+                   1. Yes                                          20      6.51
+                   3. No                                          287     93.49
+                   total                                          307    100.00
+
+SUP_EDIT           Checked by Supervisor (Checked)
+
+                   1. Yes                                          45     14.66
+                   3. No                                          262     85.34
+                   total                                          307    100.00
+
+SUP_OBS            Checked by Supervisor (Observation)
+
+                   1. Yes                                          39     12.70
+                   3. No                                          268     87.30
+                   total                                          307    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 22
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS_B1               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B1TYPE             Service type
+
+                   A. Weighing                                    307      6.67
+                   B. Measuring Blood Pressure                    307      6.67
+                   C. Listening to Heartbeat                      307      6.67
+                   D. Checking Eyes                               307      6.67
+                   E. Checking Ears                               307      6.67
+                   F. Treatment for minor illnesses               307      6.67
+                   G. Osteoporosis test                           307      6.67
+                   H. Supplying Supplementary Food                307      6.67
+                   I. Proving iron supplement                     307      6.67
+                   J. Proving vitamint                            307      6.67
+                   K. Physical Exercise                           307      6.67
+                   L. Meeting of the elderly                      307      6.67
+                   M. Coordinating activities for the elder       307      6.67
+                   N. Workshop on Clean and Healthy Living        307      6.67
+                   O. Workshop related to ways to earn addi       307      6.67
+                   total                                        4,605    100.00
+
+B2                 Are there have {..}  services?
+
+                   1. Yes                                       2,566     55.72
+                   3. No                                        2,039     44.28
+                   total                                        4,605    100.00
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+
+POSYPE             Book Type
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 23
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS_D1               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+COMMID07           2007 community ID
+
+
+D2                 Are the [..] instruments here?
+
+                   1. Yes                                       1,720     56.03
+                   3. No                                        1,350     43.97
+                   total                                        3,070    100.00
+
+D3                 Who owns instruments?
+
+                   missing                                      1,350     43.97
+                   1. Posyandu for the elderly                    673     21.92
+                   2. Midwife from Puskesmas                      753     24.53
+                   3. Regular Posyandu                            185      6.03
+                   4. Individuals                                  40      1.30
+                   5. Others                                       68      2.21
+                   9. Missing                                       1      0.03
+                   total                                        3,070    100.00
+
+DTYPE              Type Of instruments
+
+                   a. Weighing scales                             307     10.00
+                   b. Height measuring device                     307     10.00
+                   c. Blood Pressure Measurement                  307     10.00
+                   d. Eye Checking Device                         307     10.00
+                   e. Osteoporosis Test Kit                       307     10.00
+                   f. Demontration Tools/Books                    307     10.00
+                   g. Physical Exercise Equipment                 307     10.00
+                   h. Paracetamol                                 307     10.00
+                   i. Iron tablets/Sulfas Ferosus                 307     10.00
+                   j. Vitamins                                    307     10.00
+                   total                                        3,070    100.00
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+
+PLSTYPE            Book Type
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 24
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS_SDP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+
+PLSTYPE            Book Type
+
+
+SDP04              Source of resources
+
+                   missing                                        139     17.14
+                   a. Puskesmas (Community Health Center)         168     20.72
+                   b. Other Posyandu                              168     20.72
+                   c. BKKBN/PLKB                                  168     20.72
+                   v. Other, specify                              168     20.72
+                   total                                          811    100.00
+
+SDP04A             Is (..) give cash money for assistance
+
+                   missing                                        139     17.14
+                   1. Yes                                         125     15.41
+                   3. No                                          547     67.45
+                   total                                          811    100.00
+
+SDP04B             Is (..) give food for assistance
+
+                   missing                                        139     17.14
+                   1. Yes                                          62      7.64
+                   3. No                                          610     75.22
+                   total                                          811    100.00
+
+SDP04C             Is (..) give vitamin for assistance
+
+                   missing                                        139     17.14
+                   1. Yes                                         134     16.52
+                   3. No                                          538     66.34
+                   total                                          811    100.00
+
+SDP04D             Is (..) give vaccination for assistance
+
+                   missing                                        139     17.14
+                   1. Yes                                          40      4.93
+                   3. No                                          632     77.93
+                   total                                          811    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 25
+book:  
+PLS  - Integrated Community Health Post for Elderly (Posyandu Lansia)                               
+
+module:  PLS_SDP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+SDP04E             Is (..) give other equipment for assist
+
+                   missing                                        139     17.14
+                   1. Yes                                         109     13.44
+                   3. No                                          563     69.42
+                   total                                          811    100.00
