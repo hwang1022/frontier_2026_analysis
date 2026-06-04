@@ -20,7 +20,7 @@ from log import log
 IFLS4 = {
     "wave": "IFLS4",
     "file": Path(RAW_IFLS_EXTRACTED) / "IFLS4" / "hh07" / "bk_sc.dta",
-    "geo_columns": {
+    "geo_columns_07": {
         "hhid": "hhid07",
         "province_code": "sc010707",
         "kabupaten_code": "sc020707",
@@ -44,32 +44,33 @@ IFLS5 = {
     },
 }
 
-WAVE_GEO_CONFIGS: dict[str, dict] = {
-    "IFLS5": IFLS5,
-    "IFLS4": IFLS4,
-}
-
 
 def parse_geo_codes_ifls5() -> pd.DataFrame:
     """
     Extract household geography from a wave's screening file.
     Rename and standardize
 
+    HW Notes:
+    Import: bk_sc.dta
+    Export: returns household level dataframe
+    Data Desc: Household level (hhid07, unique in IFLS 4) province, kabupaten and kecamatan code
     """
-    cfg = WAVE_GEO_CONFIGS["IFLS5"]
+    cfg = IFLS5
     screening_dataset = read_stata_df(
         cfg["file"],
         convert_categoricals=False,
     )
-    # Reverse the dict so mapping works
+
+    # Rename location columns to province_code, kabupaten_code, and kecamatan_code
     rename_dict = {v: k for k, v in cfg["geo_columns"].items()}
     screening_dataset = screening_dataset.rename(columns=rename_dict)
     screening_dataset = screening_dataset[cfg["geo_columns"].keys()].copy()
 
-    # We want one per household, not per interviewee
+    # Convert province_code, kabupaten_code, and kecamatan_code from float to int
     screening_dataset["province_code"] = screening_dataset.province_code.astype(int)
     screening_dataset["kabupaten_code"] = screening_dataset.kabupaten_code.astype(int)
     screening_dataset["kecamatan_code"] = screening_dataset.kecamatan_code.astype(int)
+
     # Generate combined code for easy matching with GAMD boundary data.
     # The code is province (2 digits) + kabupaten (2 digits) + kecamatan (3 digits)
     screening_dataset["gadm_fullcode"] = (
@@ -95,6 +96,18 @@ def parse_geo_codes_ifls5() -> pd.DataFrame:
 
 
 def generate_mapping_data(original_col: str) -> pd.DataFrame:
+    """
+    HW Notes: Sample usage
+    generate_mapping_data("kecid00")
+          kecid00       gadm_fullcode_2014
+    0     1101010                  1101010
+    1     1101020  1101020,1101021,1101022
+    2     1101030  1101031,1101032,1101030
+    3     1101040                  1101040
+    4     1101050          1101051,1101050
+    ...       ...                      ...
+    An old kecid might have multiple corresponding new 2014 kecid
+    """
     mapping = read_stata_df(
         Path(RAW_IFLS_EXTRACTED)
         / "IFLS5"
@@ -102,7 +115,7 @@ def generate_mapping_data(original_col: str) -> pd.DataFrame:
         / "IFLS5_BPS_2014_codes"
         / "kec_9899000714.dta"
     )
-    # Do the same for 2000 codes
+
     mapping = mapping[[original_col, "kecid14"]].copy()
     mapping = mapping.dropna(subset=[original_col, "kecid14"])
     mapping = mapping.drop_duplicates(subset=[original_col, "kecid14"])
@@ -126,25 +139,26 @@ def parse_geo_codes_ifls4() -> pd.DataFrame:
     Does additional work to convert IFLS4 2007 BPS codes to 2014 BPS codes compatible with GADM boundaries
 
     """
-    cfg = WAVE_GEO_CONFIGS["IFLS4"]
+    cfg = IFLS4
     screening_dataset = read_stata_df(
         cfg["file"],
         convert_categoricals=False,
     )
-    # Reverse the dict so mapping works
-    rename_dict = {v: k for k, v in cfg["geo_columns"].items()}
-    screening_dataset = screening_dataset.rename(columns=rename_dict)
-    # Rename 2000 codes as well since mapping dict doesn't have all the 2007 codes
+
+    # Rename location columns to province_code, kabupaten_code, and kecamatan_code both 00 and 07 versions
+    rename_dict_07 = {v: k for k, v in cfg["geo_columns_07"].items()}
+    screening_dataset = screening_dataset.rename(columns=rename_dict_07)
+
     rename_dict_00 = {v: k for k, v in cfg["geo_columns_00"].items()}
     screening_dataset = screening_dataset.rename(columns=rename_dict_00)
     screening_dataset = screening_dataset[
-        list(rename_dict.values()) + list(rename_dict_00.values())
+        list(rename_dict_07.values()) + list(rename_dict_00.values())
     ].copy()
 
-    # We want one per household, not per interviewee
     screening_dataset["province_code"] = screening_dataset.province_code.astype(int)
     screening_dataset["kabupaten_code"] = screening_dataset.kabupaten_code.astype(int)
     screening_dataset["kecamatan_code"] = screening_dataset.kecamatan_code.astype(int)
+
     # Generate combined code for easy matching with GAMD boundary data.
     # The code is province (2 digits) + kabupaten (2 digits) + kecamatan (3 digits)
     screening_dataset["gadm_fullcode_07"] = (
@@ -164,6 +178,8 @@ def parse_geo_codes_ifls4() -> pd.DataFrame:
 
     screening_dataset["wave"] = "IFLS4"
 
+
+    # For each household locate the 2014 (list of) code from 07 code
     screening_dataset = screening_dataset.merge(
         mapping_07,
         left_on=["gadm_fullcode_07"],
@@ -174,6 +190,7 @@ def parse_geo_codes_ifls4() -> pd.DataFrame:
     screening_dataset["gadm_fullcode_07_2014"] = screening_dataset.gadm_fullcode_2014
     screening_dataset.drop(columns=["kecid07", "gadm_fullcode_2014"], inplace=True)
 
+    # For each household locate the 2014 (list of) code from 00 code
     screening_dataset = screening_dataset.merge(
         mapping_00,
         left_on=["gadm_fullcode_00"],
@@ -181,9 +198,12 @@ def parse_geo_codes_ifls4() -> pd.DataFrame:
         how="left",
         validate="many_to_one",
     )
+
+    # Generate final 2014 (list of) code. Prioritize code matched from 07, use 00 if no 07
     screening_dataset["gadm_fullcode"] = screening_dataset.gadm_fullcode_07_2014.fillna(
         screening_dataset.gadm_fullcode_2014
     )
+
     # Multiple map indicates that a single 2007 district was mapping to many 2014 ones; detect by checking for comma
     screening_dataset["multiple_kec_remap"] = screening_dataset.gadm_fullcode.apply(
         lambda x: 1 if isinstance(x, str) and "," in x else 0
@@ -199,6 +219,11 @@ def parse_geo_codes_ifls4() -> pd.DataFrame:
             "multiple_kec_remap",
         ]
     ].copy()
+
+    # Confirm that all household have a (list of) corresponding 2014 geo code
+    num_no_2014_code = screening_dataset["gadm_fullcode"].isna().sum()
+    assert num_no_2014_code == 0
+
     return screening_dataset
 
 
