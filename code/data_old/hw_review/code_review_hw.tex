@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=.5in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{parskip}
+
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\title{Hao's Code Review}
+\author{HW}
+\date{Last compiled: \today}
+
+\begin{document}
+
+\maketitle
+
+This document summarizes my review of the IFLS 4 and IFLS 5 creation pipeline.
+
+
+\section{Identify Individuals and Households in IFLS 4 and IFLS 5}
+
+Generates a list of people in IFLS 4 and IFLS 5, extract their survey time and location.
+
+\begin{table}[h]
+\centering
+\caption{Decisions made}
+\begin{tabularx}{\textwidth}{L{3cm} L{2cm} X L{1.5cm} L{3cm}}
+\toprule
+\textbf{Decision} & \textbf{Result} & \textbf{Potential Issue} & \textbf{Impact} & \textbf{HW's Action} \\
+\midrule
+For both IFLS 4 and 5, use Book 3a data for survey time & Imprecise survey time & The mental health section (KP) was conduced in Book 3b. Use Book 3a survey time will result in wrong survey time if 3a and 3b were surveyed at different times & High & Now using Book 3b data for survey time\\
+\addlinespace
+For IFLS 5, drop observations with missing or impossible dates & None dropped & No & Low & No action \\
+\addlinespace
+For IFLS 4, drop observations with missing or impossible dates & There are 4 people dropped, from 29{,}967 to 29{,}963 & Does not matter much & Low & No action \\
+\addlinespace
+For IFLS 4, there are 3 sets of survey dates, for each visit. Most only have 1 survey date. 
+The code only uses first set & Incorrect survey time & For IFLS 4, there are 3 sets of survey dates, for each visit. Most only have 1 survey date. For those with multiple sets, some have very short durartion, likely unsuccessful attempts to survey. However we do not know which questions were asked in which visit if there are multiple visits. & High & Use the first set of start and end time associated with duration of 10 minutes or more \\
+\addlinespace
+For IFLS 5, there could similarly be multiple observations for the same person. The code currently drops duplicates without any rules & Incorrect survey time & We need to deduplicate the observation based with some reasons instead of simply dropping all duplicates & High & The same as IFLS 4, keeping the first observation with 10 minutes or more duration. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Potential Issues with survey time} Some survey times seem to be a bit too late. In IFLS 4, 25\% of the surveys took place after 7PM, and 10\% after 8PM. I cannot find documentation mentioning they conducted surveys in evenings.
+
+
+
+
+
+
+\section{Identify Locations}
+
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{L{3cm} L{2.5cm} X L{2cm}}
+\toprule
+\textbf{Decision} & \textbf{Result} & \textbf{Potential Issue} & \textbf{Impact / Urgency} \\
+\midrule
+Use kabupaten as the geocoding unit, not kecamatan. The kecamatan code changed a few years ago but the data still uses the old code & Less precise weather than kecamatan level & Can we find polygon files for the old kecamatan code? & High if \\
+\addlinespace
+Province polygon as fallback when kab doesn't match & Unknown, depending on how many don't match & & With high potential \\
+\addlinespace
+Reproject to centroid & Weather less representa & This is a wrong-ish choice (Web Mercator is not equal-area, despite the comment ``equal-area projection'') & High \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection*{\texttt{03\_fetch\_temperature\_gee.py}}
+\begin{itemize}[leftmargin=*]
+  \item For each --- IFLS4 (2007-07-06 to 2008-08-18) and IFLS5 (2014-09-06 to 2015-12-18) period (including 30 days prior and 7 days after), download daily average, max, min, dewpoint, precipitation for 303 kabupatens
+  \item Create a heat index and derive relative humidity
+  \item HW Comment: Is there apparent temperature data available to download? I think there is in ERA5-Land
+\end{itemize}
+
+
+\end{document}

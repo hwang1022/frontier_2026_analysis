@@ -1,4 +1,4 @@
-"""Pull ERA5-Land HOURLY temperature_2m per kabupaten across the IFLS4 + IFLS5
+"""Pull ERA5-Land HOURLY temperature_2m per IFLS geography across the IFLS4 + IFLS5
 fielding windows.
 
 Same source (ERA5-Land), same polygons, same reduction as the daily pull
@@ -9,10 +9,14 @@ and as a richer source for the daytime-only / nighttime-only Tmax/Tmin checks).
 
 Approach
 --------
-For each batch of 16 hours, do ONE GEE reduceRegions over all kabupaten polygons
--> hourly means written into a long parquet keyed (kabupaten_code, datetime_utc).
+For each batch of 2 hours, do ONE GEE reduceRegions over all deduplicated GADM
+polygons -> hourly means written into a long parquet keyed
+(gadm_fullcode, datetime_utc).
 
-  16 hours x 303 polygons = 4,848 features per call (under the 5,000 getInfo cap).
+  BATCH_HOURS is capped at 2 because 2,211 polygons x 2 hours = 4,422 features
+  per getInfo() call, just under GEE's ~5,000 feature response limit.
+  To compensate, batches are fetched in parallel via ThreadPoolExecutor
+  (getInfo is I/O-bound).  With 4 workers the wall-clock time is ~1/4 of serial.
 
 Variables (ERA5-Land native ~9 km, polygon-mean):
   tmean_c_hour  hourly 2m air temperature (deg C; converted from Kelvin)
@@ -22,13 +26,13 @@ Coverage
 --------
   IFLS4: ~445 days x 24h = ~10,680 hours per polygon
   IFLS5: ~505 days x 24h = ~12,120 hours per polygon
-  Total: ~22,800 hours x 303 kabs = ~7M rows
+  Total: ~22,800 hours x N geographies
 
 Runtime estimate
 ----------------
-  Number of batches per wave: ceil((days * 24) / 16) hours = ~670 (IFLS4) + 760 (IFLS5)
-  At ~8-12s per call, plan ~3-5 hours for the full pull. Per-wave caches let you
-  resume after interruption.
+  Number of batches per wave: ceil((days * 24) / 2) hours = ~4,900 (IFLS4) + ~6,100 (IFLS5)
+  At ~8-12s per call serial: ~25-35 hours.  With 4 workers in parallel: ~6-9 hours.
+  Per-wave caches let you resume after interruption.
 
 Output
 ------
@@ -46,17 +50,23 @@ where it left off.
 """
 
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import timedelta
 
 import ee
 import pandas as pd
 import shapely.wkt
+from tqdm.auto import tqdm
 
 from config import GEE_PROEJCT_ID, GENERATED_DATA, TMP_TEMPERATURE_HOURLY as TMP
 from _schemas import HOURLY_TEMPERATURE_SCHEMA
+from log import log
 
-# Hours per server-side call. 16 * 303 polygons = 4,848 features (under 5000 cap).
-BATCH_HOURS = 16
+# 2 hours x 2,211 polygons = 4,422 features per getInfo() call.
+# GEE's getInfo response limit is ~5,000 features, so BATCH_HOURS cannot
+# be raised without first splitting geographies into separate calls.
+BATCH_HOURS = 2
+MAX_WORKERS = 4  # Conservative: 4 concurrent getInfo() calls, well under GEE's ~3 req/s limit
 
 BANDS = [
     "temperature_2m",
@@ -78,14 +88,39 @@ def shapely_to_ee(g) -> ee.Geometry:
     return ee.Geometry(g.__geo_interface__, opt_geodesic=False, opt_evenOdd=True)
 
 
-def build_polygon_collection(kab: pd.DataFrame) -> ee.FeatureCollection:
+def load_geographies() -> pd.DataFrame:
+    geographies = pd.read_parquet(GENERATED_DATA / "02_kabupaten_polygons.parquet")
+    required = ["gadm_fullcode", "geometry_wkt", "province_code", "match_level"]
+    missing = [col for col in required if col not in geographies.columns]
+    if missing:
+        raise ValueError(f"02_kabupaten_polygons.parquet missing columns: {missing}")
+    geographies = geographies.dropna(subset=["geometry_wkt"]).copy()
+    geographies["gadm_fullcode"] = geographies["gadm_fullcode"].astype(str)
+    return geographies[required].drop_duplicates("gadm_fullcode").reset_index(drop=True)
+
+
+def build_feature_collection(geographies: pd.DataFrame) -> ee.FeatureCollection:
     feats = []
-    for geometry_wkt, kabupaten_code in kab[
-        ["geometry_wkt", "kabupaten_code"]
-    ].itertuples(index=False, name=None):
+    rows = geographies[
+        ["gadm_fullcode", "geometry_wkt", "province_code", "match_level"]
+    ].itertuples(index=False, name=None)
+    for gadm_fullcode, geometry_wkt, province_code, match_level in tqdm(
+        rows,
+        total=len(geographies),
+        desc="ERA5 hourly polygons",
+        unit="polygon",
+        leave=False,
+    ):
         g = shapely.wkt.loads(geometry_wkt)
         feats.append(
-            ee.Feature(shapely_to_ee(g), {"kabupaten_code": int(kabupaten_code)})
+            ee.Feature(
+                shapely_to_ee(g),
+                {
+                    "gadm_fullcode": str(gadm_fullcode),
+                    "province_code": int(province_code),
+                    "match_level": str(match_level),
+                },
+            )
         )
     return ee.FeatureCollection(feats)
 
@@ -122,7 +157,9 @@ def pull_window(
             continue
         rows.append(
             {
-                "kabupaten_code": int(p["kabupaten_code"]),
+                "gadm_fullcode": str(p["gadm_fullcode"]),
+                "province_code": int(p["province_code"]),
+                "match_level": str(p["match_level"]),
                 "datetime_utc": p["datetime"],
                 "tmean_c_hour": p["temperature_2m"] - 273.15,
                 "dewp_c_hour": (
@@ -135,19 +172,32 @@ def pull_window(
     return pd.DataFrame(rows)
 
 
-def main() -> None:
-    init_gee()
-    TMP.mkdir(parents=True, exist_ok=True)
+def pull_window_with_retry(
+    start: pd.Timestamp, end_excl: pd.Timestamp, fc: ee.FeatureCollection,
+    max_retries: int = 3,
+) -> pd.DataFrame:
+    """pull_window with exponential-backoff retry, safe for threaded use."""
+    for attempt in range(max_retries):
+        try:
+            return pull_window(start, end_excl, fc)
+        except Exception:
+            if attempt == max_retries - 1:
+                raise
+            wait = (attempt + 1) * 30
+            log(
+                f"    {start} error, retrying in {wait}s "
+                f"(attempt {attempt + 1}/{max_retries})",
+                "WARNING",
+            )
+            time.sleep(wait)
 
-    kab = pd.read_parquet(GENERATED_DATA / "02_kabupaten_polygons.parquet")
-    kab = kab.dropna(subset=["geometry_wkt"]).reset_index(drop=True)
-    print(f"polygons to process: {len(kab)}")
 
-    # Same windows as the daily pull (30d lead, 7d lag).
-    ind = pd.read_parquet(GENERATED_DATA / "01_individuals.parquet")
-    w4 = ind[ind.wave == "IFLS4"]
-    w5 = ind[ind.wave == "IFLS5"]
-    windows = [
+def define_windows(ind: pd.DataFrame) -> list[tuple[str, pd.Timestamp, pd.Timestamp]]:
+    interview_date = pd.to_datetime(ind.interview_datetime).dt.normalize()
+    dated = ind.assign(interview_date=interview_date)
+    w4 = dated[dated.wave == "IFLS4"]
+    w5 = dated[dated.wave == "IFLS5"]
+    return [
         (
             "IFLS4",
             w4.interview_date.min() - timedelta(days=30),
@@ -159,24 +209,52 @@ def main() -> None:
             w5.interview_date.max() + timedelta(days=7),
         ),
     ]
-    print("windows:")
+
+
+def read_cached_window(path) -> pd.DataFrame | None:
+    if not path.exists():
+        return None
+    cached = pd.read_parquet(path)
+    if "gadm_fullcode" not in cached.columns:
+        log(f"ignoring old kabupaten_code cache at {path}", "WARNING")
+        return None
+    return cached
+
+
+def write_output(df: pd.DataFrame) -> None:
+    out_path = GENERATED_DATA / "11_hourly_temperature_kab.parquet"
+    df.to_parquet(out_path, index=False)
+    log(f"wrote {len(df):,} rows to {out_path}")
+
+
+def main() -> None:
+    init_gee()
+    TMP.mkdir(parents=True, exist_ok=True)
+
+    geographies = load_geographies()
+    log(f"polygons to process: {len(geographies)}")
+
+    ind = pd.read_parquet(GENERATED_DATA / "01_individuals.parquet")
+    windows = define_windows(ind)
+    log("windows:")
     for tag, a, b in windows:
         n_days = (b - a).days + 1
         n_hours = n_days * 24
         n_batches = (n_hours + BATCH_HOURS - 1) // BATCH_HOURS
-        print(
+        log(
             f"  {tag}: {a.date()} -> {b.date()}  "
             f"({n_days:,} days, {n_hours:,} hours, ~{n_batches:,} batches)"
         )
 
-    fc = build_polygon_collection(kab)
+    fc = build_feature_collection(geographies)
 
     all_frames = []
     for tag, start, end in windows:
         out_path = TMP / f"{tag}_hourly_temp.parquet"
-        if out_path.exists():
-            print(f"  {tag}: cached at {out_path}  -> skipping pull")
-            all_frames.append(pd.read_parquet(out_path))
+        cached = read_cached_window(out_path)
+        if cached is not None:
+            log(f"  {tag}: cached at {out_path}  -> skipping pull")
+            all_frames.append(cached)
             continue
 
         # Snap start to top-of-hour
@@ -188,63 +266,86 @@ def main() -> None:
             start_t, end_excl_total, freq=f"{BATCH_HOURS}h", inclusive="left"
         )
         n_batches = len(starts)
-        print(
+        log(
             f"  {tag}: pulling {n_batches} batches of {BATCH_HOURS}h "
-            f"({BATCH_HOURS * len(kab)} features per call)"
+            f"({BATCH_HOURS * len(geographies)} features per call)"
         )
 
+        # --- Build batch windows ------------------------------------------------
+        batch_windows: list[tuple[pd.Timestamp, pd.Timestamp]] = []
+        for s in starts:
+            batch_start = pd.Timestamp(s)
+            candidate_end = batch_start + timedelta(hours=BATCH_HOURS)
+            e_excl = (
+                candidate_end if candidate_end <= end_excl_total else end_excl_total
+            )
+            batch_windows.append((batch_start, e_excl))
+
+        # --- Fetch in parallel (getInfo is I/O-bound) --------------------------
         wave_frames = []
         t0 = time.time()
-        for i, s in enumerate(starts, 1):
-            batch_start = pd.Timestamp(s)
-            if not isinstance(batch_start, pd.Timestamp):
-                raise ValueError(f"{tag}: invalid batch timestamp {s}")
-            candidate_end = batch_start + timedelta(hours=BATCH_HOURS)
-            e_excl = candidate_end if candidate_end <= end_excl_total else end_excl_total
-            try:
-                df = pull_window(batch_start, e_excl, fc)
-                wave_frames.append(df)
-            except Exception as exc:
-                print(f"    {batch_start} ERROR: {exc}; sleeping 30s and retrying once")
-                time.sleep(30)
-                df = pull_window(batch_start, e_excl, fc)
-                wave_frames.append(df)
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            future_to_window = {
+                executor.submit(pull_window_with_retry, bs, be, fc): (bs, be)
+                for bs, be in batch_windows
+            }
+            pbar = tqdm(
+                as_completed(future_to_window),
+                total=len(future_to_window),
+                desc=f"{tag} ERA5 hourly",
+                unit="batch",
+            )
+            for i, fut in enumerate(pbar, 1):
+                batch_start, e_excl = future_to_window[fut]
+                try:
+                    df = fut.result()
+                    wave_frames.append(df)
+                except Exception as exc:
+                    log(
+                        f"    {batch_start} FAILED after all retries: {exc}",
+                        "ERROR",
+                    )
+                    raise
 
-            if i % 20 == 0 or i == n_batches:
                 el = time.time() - t0
-                eta = el / i * (n_batches - i)
-                rows = sum(len(f) for f in wave_frames)
-                print(
-                    f"    {tag} {i}/{n_batches}  elapsed={el / 60:.1f}min  "
-                    f"eta={eta / 60:.1f}min  rows={rows:,}"
+                eta = el / i * (len(future_to_window) - i)
+                n_rows = sum(len(f) for f in wave_frames)
+                pbar.set_postfix(
+                    elapsed_min=f"{el / 60:.1f}",
+                    eta_min=f"{eta / 60:.1f}",
+                    rows=f"{n_rows:,}",
                 )
 
         wave_df = pd.concat(wave_frames, ignore_index=True)
         wave_df.to_parquet(out_path, index=False)
-        print(f"  {tag}: wrote {len(wave_df):,} rows to {out_path}")
+        log(f"  {tag}: wrote {len(wave_df):,} rows to {out_path}")
         all_frames.append(wave_df)
 
     combined = pd.concat(all_frames, ignore_index=True)
     combined["datetime_utc"] = pd.to_datetime(combined.datetime_utc, utc=True)
-    combined = combined.sort_values(["kabupaten_code", "datetime_utc"]).reset_index(
+    combined = combined.sort_values(["gadm_fullcode", "datetime_utc"]).reset_index(
         drop=True
     )
-    out_path = GENERATED_DATA / "11_hourly_temperature_kab.parquet"
-    combined.to_parquet(out_path, index=False)
-    print(f"\nwrote {len(combined):,} rows to {out_path}")
-    print("variable summary:")
-    print(combined[["tmean_c_hour", "dewp_c_hour"]].describe().round(2))
-    print("\nNote: datetime_utc is in UTC. Indonesia time zones to convert to local:")
-    print(
-        "  WIB (UTC+7):  Sumatra, Java, West Kalimantan, Central Kalimantan -- prov codes 11-36, 61-62"
+    combined = HOURLY_TEMPERATURE_SCHEMA.validate(combined)
+    write_output(combined)
+    log("variable summary:", "DEBUG")
+    log(combined[["tmean_c_hour", "dewp_c_hour"]].describe().round(2), "DEBUG")
+    log(
+        "Note: datetime_utc is in UTC. Indonesia time zones to convert to local:",
+        "DEBUG",
     )
-    print(
-        "  WITA (UTC+8): Bali, NTB, NTT, South & East Kalimantan, Sulawesi  -- prov codes 51-53, 63-64, 71-76"
+    log(
+        "  WIB (UTC+7):  Sumatra, Java, West Kalimantan, Central Kalimantan -- prov codes 11-36, 61-62",
+        "DEBUG",
     )
-    print(
-        "  WIT (UTC+9):  Maluku, Maluku Utara, Papua, Papua Barat            -- prov codes 81-82, 91-94"
+    log(
+        "  WITA (UTC+8): Bali, NTB, NTT, South & East Kalimantan, Sulawesi  -- prov codes 51-53, 63-64, 71-76",
+        "DEBUG",
     )
-    HOURLY_TEMPERATURE_SCHEMA.validate(combined)
+    log(
+        "  WIT (UTC+9):  Maluku, Maluku Utara, Papua, Papua Barat            -- prov codes 81-82, 91-94",
+        "DEBUG",
+    )
 
 
 if __name__ == "__main__":

@@ -10,11 +10,15 @@ files, the archive is skipped. Run from anywhere:
 
 import importlib
 import zipfile
+from argparse import ArgumentParser
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 
+from tqdm.auto import tqdm
+
 from config import RAW_IFLS, RAW_IFLS_EXTRACTED
+from log import DEFAULT_LOG_FILE, configure_logging, log
 
 # Each entry: archive path (relative to RAW_IFLS) -> extraction dir (relative to RAW_IFLS_EXTRACTED).
 ARCHIVES: dict[str, str] = {
@@ -62,20 +66,22 @@ def extract() -> None:
     """
     RAW_IFLS_EXTRACTED.mkdir(parents=True, exist_ok=True)
     n_done, n_skip, n_missing = 0, 0, 0
-    for rel_archive, rel_target in ARCHIVES.items():
+    archives = tqdm(ARCHIVES.items(), desc="IFLS archives", unit="archive")
+    for rel_archive, rel_target in archives:
         archive = RAW_IFLS / rel_archive
         target = RAW_IFLS_EXTRACTED / rel_target
+        archives.set_postfix_str(archive.name, refresh=False)
         if (not target.exists()) and (not archive.exists()):
-            print(f"MISSING    {archive}")
+            log(f"MISSING    {archive}", "WARNING")
             n_missing += 1
             continue
         status = unpack_one(archive, target)
-        print(f"{status:10s} {archive.name:55s} -> {target}")
+        log(f"{status:10s} {archive.name:55s} -> {target}")
         if status == "extracted":
             n_done += 1
         else:
             n_skip += 1
-    print(f"\nDone. extracted={n_done}  skipped={n_skip}  missing={n_missing}")
+    log(f"Done. extracted={n_done}  skipped={n_skip}  missing={n_missing}")
 
 
 @dataclass(frozen=True)
@@ -93,7 +99,6 @@ PIPELINE_LAYERS: tuple[tuple[PipelineStep, ...], ...] = (
         PipelineStep("10_fetch_temperature_gee", "daily temperature"),
         PipelineStep("11_fetch_temperature_hourly_gee", "hourly temperature"),
         PipelineStep("12_fetch_merra_pm25_gee", "MERRA PM2.5"),
-        PipelineStep("13_fetch_aod_gee", "AOD"),
     ),
     (
         PipelineStep("20_build_economic_exposures", "economic exposures"),
@@ -107,43 +112,86 @@ PIPELINE_LAYERS: tuple[tuple[PipelineStep, ...], ...] = (
         ),
     ),
     (
-        PipelineStep("30_build_analysis_table_input", "analysis table input"),
+        PipelineStep("26_process_temperature_data", "processed temperature"),
+        PipelineStep("27_build_income_mechanism_inputs", "income mechanisms"),
+        PipelineStep("28_build_sleep_duration", "sleep duration"),
     ),
+    (PipelineStep("30_build_analysis_table_input", "analysis table input"),),
 )
 
 
 def run_step(step: PipelineStep) -> None:
-    print(f"\n--- start {step.module}: {step.label} ---")
+    log(f"--- start {step.module}: {step.label} ---")
     module = importlib.import_module(step.module)
     module.main()
-    print(f"--- done  {step.module}: {step.label} ---")
+    log(f"--- done  {step.module}: {step.label} ---")
 
 
 def run_layer(layer_index: int, steps: tuple[PipelineStep, ...]) -> None:
-    print(
-        f"\n=== layer {layer_index}: "
-        f"{', '.join(step.module for step in steps)} ==="
-    )
+    log(f"=== layer {layer_index}: {', '.join(step.module for step in steps)} ===")
     if len(steps) == 1:
-        run_step(steps[0])
+        with tqdm(
+            steps,
+            desc=f"layer {layer_index}",
+            unit="step",
+            leave=True,
+        ) as progress:
+            for step in progress:
+                progress.set_postfix_str(step.label, refresh=False)
+                run_step(step)
         return
 
     with ThreadPoolExecutor(max_workers=len(steps)) as executor:
         futures = {executor.submit(run_step, step): step for step in steps}
-        for future in as_completed(futures):
-            step = futures[future]
-            try:
-                future.result()
-            except Exception as exc:
-                raise RuntimeError(f"{step.module} failed") from exc
+        with tqdm(
+            total=len(steps),
+            desc=f"layer {layer_index}",
+            unit="step",
+            leave=True,
+        ) as progress:
+            for future in as_completed(futures):
+                step = futures[future]
+                try:
+                    future.result()
+                except Exception as exc:
+                    raise RuntimeError(f"{step.module} failed") from exc
+                progress.set_postfix_str(step.label, refresh=False)
+                progress.update()
+
+
+def parse_args() -> tuple[str, Path]:
+    parser = ArgumentParser(description="Run the IFLS data pipeline.")
+    parser.add_argument(
+        "--log-level",
+        default="INFO",
+        choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
+        help="Minimum level written to the pipeline log.",
+    )
+    parser.add_argument(
+        "--log-file",
+        type=Path,
+        default=DEFAULT_LOG_FILE,
+        help="Path to the pipeline log file.",
+    )
+    args = parser.parse_args()
+    return args.log_level, args.log_file
 
 
 def main() -> None:
     """
     Run all the pipelines to build all datasets, in the correct order with parallelism for the same layer (i.e. layer 0, then 1, then 2)
     """
+    log_level, log_file = parse_args()
+    configure_logging(output="file", level=log_level, log_file=log_file)
     extract()
-    for layer_index, steps in enumerate(PIPELINE_LAYERS):
+    layers = tqdm(
+        enumerate(PIPELINE_LAYERS),
+        total=len(PIPELINE_LAYERS),
+        desc="pipeline layers",
+        unit="layer",
+    )
+    for layer_index, steps in layers:
+        layers.set_postfix_str(f"layer {layer_index}", refresh=False)
         run_layer(layer_index, steps)
 
 

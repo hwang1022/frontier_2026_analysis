@@ -1,4 +1,4 @@
-"""Pull MERRA-2 daily PM2.5 polygon-mean per kabupaten over IFLS4 + IFLS5 windows.
+"""Pull MERRA-2 daily PM2.5 polygon-mean per IFLS geography over IFLS4 + IFLS5 windows.
 
 PM2.5 is constructed from MERRA-2 surface aerosol mass mixing ratios using the
 standard van Donkelaar formula:
@@ -9,7 +9,7 @@ standard van Donkelaar formula:
 Source: NASA/GSFC/MERRA/aer/2 (hourly, ~50 km native). We aggregate the 24 hourly
 images per day to a daily mean before reduceRegions over kab polygons.
 
-Output: data/generated/pm25_daily_kab.parquet (kabupaten_code, date, pm25_ugm3, +components)
+Output: data/generated/12_pm25_daily_kab.parquet (gadm_fullcode, date, pm25_ugm3, +components)
 """
 
 import time
@@ -18,9 +18,11 @@ from datetime import timedelta
 import ee
 import pandas as pd
 import shapely.wkt
+from tqdm.auto import tqdm
 
 from config import GEE_PROEJCT_ID, TMP_PM25 as TMP, GENERATED_DATA
 from _schemas import PM25_DAILY_SCHEMA
+from log import log
 
 WINDOWS = [
     ("2007-06-06", "2008-08-25"),  # IFLS4 (~445 days)
@@ -39,14 +41,39 @@ def shapely_to_ee(g) -> ee.Geometry:
     return ee.Geometry(g.__geo_interface__, opt_geodesic=False, opt_evenOdd=True)
 
 
-def build_fc(kab: pd.DataFrame) -> ee.FeatureCollection:
+def load_geographies() -> pd.DataFrame:
+    geographies = pd.read_parquet(GENERATED_DATA / "02_kabupaten_polygons.parquet")
+    required = ["gadm_fullcode", "geometry_wkt", "province_code", "match_level"]
+    missing = [col for col in required if col not in geographies.columns]
+    if missing:
+        raise ValueError(f"02_kabupaten_polygons.parquet missing columns: {missing}")
+    geographies = geographies.dropna(subset=["geometry_wkt"]).copy()
+    geographies["gadm_fullcode"] = geographies["gadm_fullcode"].astype(str)
+    return geographies[required].drop_duplicates("gadm_fullcode").reset_index(drop=True)
+
+
+def build_feature_collection(geographies: pd.DataFrame) -> ee.FeatureCollection:
     feats = []
-    for geometry_wkt, kabupaten_code in kab[
-        ["geometry_wkt", "kabupaten_code"]
-    ].itertuples(index=False, name=None):
+    rows = geographies[
+        ["gadm_fullcode", "geometry_wkt", "province_code", "match_level"]
+    ].itertuples(index=False, name=None)
+    for gadm_fullcode, geometry_wkt, province_code, match_level in tqdm(
+        rows,
+        total=len(geographies),
+        desc="MERRA PM2.5 polygons",
+        unit="polygon",
+        leave=False,
+    ):
         g = shapely.wkt.loads(geometry_wkt)
         feats.append(
-            ee.Feature(shapely_to_ee(g), {"kabupaten_code": int(kabupaten_code)})
+            ee.Feature(
+                shapely_to_ee(g),
+                {
+                    "gadm_fullcode": str(gadm_fullcode),
+                    "province_code": int(province_code),
+                    "match_level": str(match_level),
+                },
+            )
         )
     return ee.FeatureCollection(feats)
 
@@ -99,7 +126,9 @@ def pull_window(
         p = f["properties"]
         rows.append(
             {
-                "kabupaten_code": int(p["kabupaten_code"]),
+                "gadm_fullcode": str(p["gadm_fullcode"]),
+                "province_code": int(p["province_code"]),
+                "match_level": str(p["match_level"]),
                 "date": p["date"],
                 "pm25_ugm3": p.get("pm25_ugm3"),
                 "BCSMASS": p.get("BCSMASS"),
@@ -112,26 +141,42 @@ def pull_window(
     return pd.DataFrame(rows)
 
 
+def read_cached_window(path) -> pd.DataFrame | None:
+    if not path.exists():
+        return None
+    cached = pd.read_parquet(path)
+    if "gadm_fullcode" not in cached.columns:
+        log(f"ignoring old kabupaten_code cache at {path}", "WARNING")
+        return None
+    return cached
+
+
+def write_output(df: pd.DataFrame) -> None:
+    out_path = GENERATED_DATA / "12_pm25_daily_kab.parquet"
+    df.to_parquet(out_path, index=False)
+    log(f"wrote {len(df):,} rows to {out_path}")
+
+
 def main() -> None:
     init_gee()
     TMP.mkdir(parents=True, exist_ok=True)
 
-    kab = pd.read_parquet(GENERATED_DATA / "02_kabupaten_polygons.parquet").dropna(
-        subset=["geometry_wkt"]
-    )
-    fc = build_fc(kab)
-    print(f"polygons: {len(kab)}")
+    geographies = load_geographies()
+    fc = build_feature_collection(geographies)
+    log(f"polygons: {len(geographies)}")
 
-    BATCH_DAYS = 12  # 303 * 12 = 3636 features per call (well under 5000 cap)
+    # Keep each call under roughly 5,000 features after the gadm_fullcode expansion.
+    BATCH_DAYS = 2
     all_frames = []
     for tag, start_s, end_s in [
         ("IFLS4", *WINDOWS[0]),
         ("IFLS5", *WINDOWS[1]),
     ]:
         cache = TMP / f"{tag}_pm25.parquet"
-        if cache.exists():
-            print(f"{tag}: cached")
-            all_frames.append(pd.read_parquet(cache))
+        cached = read_cached_window(cache)
+        if cached is not None:
+            log(f"{tag}: cached")
+            all_frames.append(cached)
             continue
         start = pd.Timestamp(start_s)
         end = pd.Timestamp(end_s)
@@ -141,7 +186,8 @@ def main() -> None:
         starts = pd.date_range(start, end, freq=f"{BATCH_DAYS}D")
         wave_frames = []
         t0 = time.time()
-        for i, s in enumerate(starts, 1):
+        batches = tqdm(starts, desc=f"{tag} MERRA PM2.5", unit="batch")
+        for s in batches:
             batch_start = pd.Timestamp(s)
             if not isinstance(batch_start, pd.Timestamp):
                 raise ValueError(f"{tag}: invalid batch timestamp {s}")
@@ -153,15 +199,17 @@ def main() -> None:
                 df = pull_window(batch_start, e_excl, fc)
                 wave_frames.append(df)
             except Exception as e:
-                print(
-                    f"  ERROR at {batch_start.date()}: {e}; sleeping 30s and retrying"
+                log(
+                    f"ERROR at {batch_start.date()}: {e}; sleeping 30s and retrying",
+                    "WARNING",
                 )
                 time.sleep(30)
                 df = pull_window(batch_start, e_excl, fc)
                 wave_frames.append(df)
-            print(
-                f"  {tag} batch {i}/{len(starts)} ({batch_start.date()} -> {e_excl.date()})  "
-                f"rows={len(df)}  elapsed={time.time() - t0:.0f}s"
+            batches.set_postfix(
+                rows=len(df),
+                elapsed_s=f"{time.time() - t0:.0f}",
+                window=f"{batch_start.date()}->{e_excl.date()}",
             )
         wave_df = pd.concat(wave_frames, ignore_index=True)
         wave_df.to_parquet(cache, index=False)
@@ -169,28 +217,26 @@ def main() -> None:
 
     combined = pd.concat(all_frames, ignore_index=True)
     combined["date"] = pd.to_datetime(combined.date)
-    combined = combined.sort_values(["kabupaten_code", "date"]).reset_index(drop=True)
-    combined.to_parquet(GENERATED_DATA / "12_pm25_daily_kab.parquet", index=False)
-    print(
-        f"\nwrote {len(combined):,} rows to {GENERATED_DATA / '12_pm25_daily_kab.parquet'}"
-    )
-    print(combined.pm25_ugm3.describe().round(2))
+    combined = combined.sort_values(["gadm_fullcode", "date"]).reset_index(drop=True)
+    combined = PM25_DAILY_SCHEMA.validate(combined)
+    write_output(combined)
+    log(combined.pm25_ugm3.describe().round(2), "DEBUG")
 
-    print("\n2015 haze months Sumatra+Kalimantan PM2.5:")
+    log("2015 haze months Sumatra+Kalimantan PM2.5:", "DEBUG")
     haze = combined[
         (combined.date >= "2015-09-01") & (combined.date <= "2015-11-30")
-    ].merge(kab[["kabupaten_code", "province_code"]], on="kabupaten_code", how="left")
+    ].copy()
     haze["region"] = haze.province_code.apply(
         lambda p: (
             "Sumatra" if 11 <= p <= 21 else ("Kalimantan" if 61 <= p <= 64 else "Other")
         )
     )
-    print(
+    log(
         haze.groupby("region")
         .pm25_ugm3.describe()
-        .round(2)[["count", "mean", "50%", "max"]]
+        .round(2)[["count", "mean", "50%", "max"]],
+        "DEBUG",
     )
-    PM25_DAILY_SCHEMA.validate(combined)
 
 
 if __name__ == "__main__":

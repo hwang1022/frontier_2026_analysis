@@ -1,8 +1,5 @@
 # AGENTS.md - IFLS Mental Health x Temperature
 
-Guide for AI agents collaborating on this project. Mirrors the conventions in
-`../simon/AGENTS.md` where shared infrastructure, literature resources, and
-empirical framing overlap.
 
 ## Project context
 
@@ -14,11 +11,6 @@ subjective well-being), and the effect is amplified among respondents already
 exposed to baseline stressors. Heat does not create distress in a vacuum; it
 tips already-stressed people over the edge.
 
-**Companion:** Simon's project does the same exercise on DHS (Bangladesh,
-Mozambique, Nepal). This project extends the design to the Indonesian Family
-Life Survey (IFLS), with richer mental-health and stressor modules plus
-individual-level dates and location linkage for environmental exposure.
-
 ## Structure
 
 `code`: contains all code.
@@ -28,9 +20,14 @@ individual-level dates and location linkage for environmental exposure.
   pipeline.
 - `analysis`: regression, table, and figure scripts that consume the canonical
   analysis input.
-- `exploratory`: prototype or one-off code such as `_tmp_*.py` and `_tmp_*.R`.
-- `lib`: shared utilities where present. Reuse compatible helpers from
-  `../simon/code/data/lib/` when the same logic can be shared cleanly.
+    - Note: always the final analysis dataset `30_analysis_table_input.parquet` as input unless excplicitly told not to or unless the user's request 
+    requires data at a different level
+    - `exploratory`: prototype or one-off code such as `_tmp_*.py` and `_tmp_*.R`.
+    - `lib`: shared utilities where present. Reuse compatible helpers from
+    - `tables`: final tables to be included in the paper. 
+    - `figures`: final tables to be included in the paper. 
+        - Use plotnine to make figures
+
 
 `data`: contains raw and generated data. The detailed raw/extracted/generated
 layout and large-data rules live in `code/data/DATA.md`.
@@ -71,20 +68,16 @@ collection so both projects benefit. See `../simon/resources/summary.md` and
 - Use `uv` to run code and add dependencies (`uv add`, `uv run python ...`).
 - Keep edits minimal and script-first unless the user asks for packaging or
   tooling expansion.
+- Code should made to read top-down. If the code requires decomposition for clarity then functions names should be clear
+  and such that the final main funciton can be read like a set of instructions telling the reader what is being done
 - If you add dev tooling or workflows, document the exact commands in the
-  relevant repo guide.
+  relevant repo guide. Ask the user before doing so
 - **Identification framing:** within-individual variation across waves with
   date-by-community fixed effects is the cleanest cut, but the headline spec is
   closer to Mullins & White 2019: community fixed effects, month-of-year fixed
   effects, and year fixed effects, identifying off daily weather wiggles around
   the interview. State the assumption explicitly in code comments where the
   regression lives.
-- **Heterogeneity discipline:** pre-specify the stressor cuts in
-  `resources/heterogeneity_plan.md` before running them. If a cut was not
-  pre-specified, label it exploratory.
-- **Honest empirics:** if a result is fragile under reasonable robustness
-  checks, say so in the notes. Do not paper over null heterogeneity with
-  creative subgroups.
 
 ## Anti-patterns
 

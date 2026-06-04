@@ -18,7 +18,7 @@ dependency layer. Numbering communicates dependency depth:
 
 - `01`/`02`: core IFLS person-wave and geography artifacts.
 - `10`-`13`: environmental pulls and exposure source files.
-- `20`-`25`: respondent, household, economic, health, commodity, and outcome
+- `20`-`28`: respondent, household, economic, health, commodity, mechanism, and outcome
   artifacts.
 - `30`: final downstream-facing analysis table.
 
@@ -59,8 +59,8 @@ across scripts.
 
 ## Environmental data and GEE
 
-The current pipeline uses Google Earth Engine for ERA5-Land temperature,
-MERRA-2 PM2.5, and MODIS AOD pulls. Use the existing `config.py`/environment
+The current pipeline uses Google Earth Engine for ERA5-Land temperature and
+MERRA-2 PM2.5 pulls. Use the existing `config.py`/environment
 setup and never commit API keys, project IDs from private `.env` files, or other
 secrets.
 
@@ -79,11 +79,10 @@ when the interface fits.
   BPS and GADM sources.
 - `10_fetch_temperature_gee.py`: pulls ERA5-Land daily polygon-mean temperature
   and weather variables.
-- `11_fetch_temperature_hourly_gee.py`: pulls ERA5-Land hourly temperature and
+- `11_fetch_temperature_hourly_gee.py`: builds ERA5-Land hourly temperature and
   dewpoint for within-day heat analysis.
 - `12_fetch_merra_pm25_gee.py`: builds daily kabupaten PM2.5 from MERRA-2
   aerosol components.
-- `13_fetch_aod_gee.py`: builds monthly kabupaten MODIS AOD as a haze proxy.
 - `20_build_economic_exposures.py`: builds job-loss, asset, benefit-card, and
   palm-price exposure variables.
 - `21_build_health_exposures.py`: builds acute health, hospitalization,
@@ -96,8 +95,14 @@ when the interface fits.
   modules.
 - `25_build_commodity_transport_exposures.py`: builds agriculture,
   commodity-region/farmer, and transport-cost exposure measures.
+- `26_process_temperature_data.py`: merges interview records to daily/hourly
+  temperature and builds lag, lead, anomaly, heat-window, and CDD variables.
+- `27_build_income_mechanism_inputs.py`: builds household income and real
+  income mechanism outcomes.
+- `28_build_sleep_duration.py`: builds IFLS5 time-use sleep duration.
 - `30_build_analysis_table_input.py`: merges outcomes, covariates, exposures,
-  pollution, and weather into the canonical analysis table.
+  processed temperature, and mechanism sidecars into the canonical analysis
+  table.
 - `_schemas.py`: Pandera schemas for generated pipeline artifacts.
 - `_ifls_wave.py`: IFLS4/IFLS5 metadata for file paths, IDs, interview dates,
   and screening columns.

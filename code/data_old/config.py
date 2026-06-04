@@ -1,6 +1,7 @@
 """Project path configuration shared by data and analysis scripts."""
 
 from pathlib import Path
+import getpass
 
 
 PROJECT = Path(__file__).resolve().parents[2]
@@ -10,8 +11,6 @@ PROJECT = Path(__file__).resolve().parents[2]
 RAW_ROOT = PROJECT / "data" / "raw"
 RAW_IFLS = RAW_ROOT / "IFLS"
 RAW_IFLS_EXTRACTED = RAW_IFLS / "extracted"
-IFLS4_FOLDER = RAW_IFLS_EXTRACTED / "IFLS4" / "hh07"
-IFLS5_FOLDER = RAW_IFLS_EXTRACTED / "IFLS5" / "hh14"
 
 # Repo-local generated artifacts.
 CODE = PROJECT / "code"
@@ -19,10 +18,6 @@ DATA_CODE = CODE / "data"
 ANALYSIS_CODE = CODE / "analysis"
 DATA = PROJECT / "data"
 GENERATED_DATA = DATA / "generated"
-
-# Approximate 2007-to-2014 IDR inflation factor already used for inter-wave PCE
-# changes. Review against a documented CPI series before treating it as final.
-IDR_2007_TO_2014_DEFLATOR = 1.7
 
 RESULTS = GENERATED_DATA / "results"
 TMP_TEMPERATURE = GENERATED_DATA / "_tmp_temperature"
@@ -39,5 +34,10 @@ GADM_PATH = RAW_ROOT / "gadm41_IDN.gpkg"
 
 # NOTE: these uses Simon's credentials tied to the cornell account. Please ask an LLM
 # on authenticating earthengine's python API for advice on setting up your own account and logging in
-GEE_PROEJCT_ID = "vip-inc-vol-anal"
+# Each collaborator maps their machine login to their own GEE Cloud project.
+_GEE_PROJECTS_BY_USER = {
+    "ew": "ugg-embedding",
+    "simon": "vip-inc-vol-anal",
+}
+GEE_PROEJCT_ID = _GEE_PROJECTS_BY_USER.get(getpass.getuser())
 # GEE_ENV_PATH = Path("~/.config/earthengine/.env")
