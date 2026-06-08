@@ -1,0 +1,2185 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       POS                                            
+ T O P I C :     INTEGRATED COMMUNITY HEALTH POST (POSYANDU)                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       POS
+ T O P I C :     Integrated Community Health Post (Posyandu)
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      POS                                                     636
+      POS_B1                                                 6360
+      POS_B2                                                 3180
+      POS_C0                                                 3512
+      POS_C2                                                 3816
+      POS_D1                                                11448
+      POS_PRP1                                               1064
+      POS_SDP1                                               1776
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       POS
+ T O P I C :     Integrated Community Health Post (Posyandu)
+
+--------------------------------------------------------------------------------
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+NOTES ABOUT BOOK POS                                                       
+------------------                                                         
+Posyandu are community-sponsored health posts that offer family            
+planning and maternal and child health services.  Generally these          
+posts offer services once a month and are run by volunteers from the       
+community, with supervision from staff from a government health            
+center.  In some ways it is more accurate to call the health post an       
+activity rather than a facility.  The health post questionnaire was        
+administered to the  volunteers who staff the post.  The questionnaire     
+ascertained the  characteristics of the volunteer staff (including         
+general education  and training in health), frequency of contact with      
+Health Center  outreach workers, services offered at the post, and         
+also asked some  general questions regarding health problems in the        
+village.  Because the respondents to the health post                       
+questionaire are typical community residents, a food price module          
+(Section H) was included to provide multiple responses to questions        
+on food  prices.                                                           
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   POS                                            636    100.00
+                   total                                          636    100.00
+
+A1                 Year when Posyandu begin operation
+
+                   min:                                          1.00
+                   mean:                                      1995.78
+                   max:                                       9998.00
+                   #obs                                           553
+                   #miss:                                          83
+
+A10                In general, where do mothers go to birth
+
+                   Variable A10 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, A10 will have the value ACF.  If the       
+                   interviewee selected D and E, A10 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: A10       A =  Goverment hospital                             
+                                               B =  Private hospital                               
+                                               C =  Maternity Hospital                             
+                                               D =  Health Center                                  
+                                               E =  Village Maternity Clinic                       
+                                               F =  Clinic/Private Doctor                          
+                                               G =  Clinic/Private Midwife                         
+                                               H =  Traditional midwife's House                    
+                                               I =  Own home                                       
+                                               J =  Familys house                                  
+                                               V =  Others                                         
+                                               Z =  Missing                                        
+
+
+A11                Who assists the mother in giving birth?
+
+                   Variable A11 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, A11 will have the value ACF.  If the       
+                   interviewee selected D and E, A11 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: A11       A =  Doctor                                         
+                                               B =  Midwife                                        
+                                               C =  Village midwife                                
+                                               D =  Nurse                                          
+                                               E =  Trad. midwife                                  
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               G =  No one assists                                 
+                                               I =  Posyandu cadre                                 
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+A11AX              Number of traditional midwives
+
+                   1. Given                                       303     47.64
+                   6. Not applicable/None                         305     47.96
+                   8. Don't know                                   28      4.40
+                   total                                          636    100.00
+
+A11A               Number of traditional midwives
+
+                   min:                                          1.00
+                   mean:                                         2.27
+                   max:                                         12.00
+                   #obs                                           303
+                   #miss:                                         333
+
+A11B               Percent of births assisted by midwives
+
+                   missing                                        305     47.96
+                   1. >=75 %                                       20      3.14
+                   2. 50%-74%                                      27      4.25
+                   3. 25%-49%                                      40      6.29
+                   4. <25%                                        182     28.62
+                   8. Don't know                                   62      9.75
+                   total                                          636    100.00
+
+A12                Main problem faced by Posyandu
+
+                   Variable A12 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, A12 will have the value ACF.  If the       
+                   interviewee selected D and E, A12 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: A12       A =  Lack of Fund                                   
+                                               B =  Lack of medical supply                         
+                                               C =  Lack of Equipment                              
+                                               D =  Lack of Active Cadres                          
+                                               E =  Lack of support form Puskesmas                 
+                                               F =  Lack of Support from village/township          
+                                               G =  Lack of interest/participation                 
+                                               H =  Lack of interest/participation                 
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A1X                When did Posyandu begin operation
+
+                   1. Given                                       553     86.95
+                   8. Don't know                                   83     13.05
+                   total                                          636    100.00
+
+A13                Main problem in mother/child health
+
+                   Variable A13 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, A13 will have the value ACF.  If the       
+                   interviewee selected D and E, A13 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: A13       A =  Lack of Fund                                   
+                                               B =  Lack of medical supply                         
+                                               C =  Lack of Equipment                              
+                                               D =  Lack of Active Cadres                          
+                                               E =  Lack of support form Puskesmas                 
+                                               F =  Lack of Support from village/township          
+                                               G =  No permanent place                             
+                                               H =  Lack of interest/participation                 
+                                               I =  Lack of KIA training for cadres                
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+A2                 Before Posyan, was there a weighing post
+
+                   1. Yes                                         325     51.10
+                   3. No                                          311     48.90
+                   total                                          636    100.00
+
+A2A                Is this Posyandu also a Posyandu Elderly
+
+                   1. Yes                                         114     17.92
+                   3. No                                          522     82.08
+                   total                                          636    100.00
+
+A2B                Is there any Posyandu elderly in village
+
+                   missing                                        114     17.92
+                   1. Yes                                         266     41.82
+                   3. No                                          256     40.25
+                   total                                          636    100.00
+
+A3A                Does the Posyandu open every month
+
+                   1. Yes                                         624     98.11
+                   3. No                                           12      1.89
+                   total                                          636    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+A3B                Number of operation in the last year
+
+                   min:                                          5.00
+                   mean:                                        10.67
+                   max:                                         12.00
+                   #obs                                            12
+                   #miss:                                         624
+
+A4                 How many cadres are active in operation
+
+                   min:                                          1.00
+                   mean:                                         5.50
+                   max:                                         25.00
+                   #obs                                           636
+                   #miss:                                           0
+
+A4A                Does PPKBD present in every operation
+
+                   1. Yes                                         354     55.66
+                   3. No                                          282     44.34
+                   total                                          636    100.00
+
+A4B                Health post/Posyandu classification
+
+                   1. Pratama                                     106     16.67
+                   2. Madya                                       163     25.63
+                   3. Purnama                                     109     17.14
+                   4. Self-sufficient                             110     17.30
+                   8. Don't know                                  148     23.27
+                   total                                          636    100.00
+
+A6AJAM             Opening hour of Posyandu
+
+                   min:                                          7.00
+                   mean:                                         9.10
+                   max:                                         16.00
+                   #obs                                           636
+                   #miss:                                           0
+
+A6AMNT             Opening minute  of Posyandu
+
+                   min:                                          0.00
+                   mean:                                         3.19
+                   max:                                         30.00
+                   #obs                                           636
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A6BJAM             Closing hours of Posyandu
+
+                   min:                                         10.00
+                   mean:                                        11.99
+                   max:                                         18.00
+                   #obs                                           636
+                   #miss:                                           0
+
+A6BMNT             Closing minute of Posyandu
+
+                   min:                                          0.00
+                   mean:                                         3.45
+                   max:                                         30.00
+                   #obs                                           636
+                   #miss:                                           0
+
+A7                 If Posy. closed, where clients get pills
+
+                   Variable A7 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, A7 will have the value ACF.  If the       
+                   interviewee selected D and E, A7 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: A7        A = Community Health Center                         
+                                               B =  Community Health Subcenter                     
+                                               C =  Hospital                                       
+                                               D =  Clinic                                         
+                                               E =  Pharmachy                                      
+                                               F =  Private Practice                               
+                                               G =  Cadre's home                                   
+                                               L =  Village staff                                  
+                                               M =  PKK meeting                                    
+                                               V =  Others, mention                                
+                                               Z =  Missing                                        
+
+
+A8A                Place of referral: (IUD)
+
+                   01. Public Health Center                       496     77.99
+                   02. Public Health Subcenter                     20      3.14
+                   03. Hospital                                    28      4.40
+                   04. Clinic                                       2      0.31
+                   05. Private Practice                            40      6.29
+                   06. KB Manunggal/Safari KB                      13      2.04
+                   07. Not referred                                 3      0.47
+                   95. Others, mention                             34      5.35
+                   total                                          636    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+A8B                Place of referral: (Nor/implant)
+
+                   01. Public Health Center                       448     70.44
+                   02. Public Health Subcenter                     15      2.36
+                   03. Hospital                                    48      7.55
+                   04. Clinic                                       3      0.47
+                   05. Private Practice                            46      7.23
+                   06. KB Manunggal/Safari KB                      20      3.14
+                   07. Not referred                                17      2.67
+                   95. Others, mention                             39      6.13
+                   total                                          636    100.00
+
+A8C                Place of referral: (Sterilization)
+
+                   01. Public Health Center                       239     37.58
+                   02. Public Health Subcenter                      7      1.10
+                   03. Hospital                                   333     52.36
+                   04. Clinic                                       1      0.16
+                   05. Private Practice                            21      3.30
+                   06. KB Manunggal/Safari KB                      16      2.52
+                   07. Not referred                                10      1.57
+                   95. Others, mention                              9      1.42
+                   total                                          636    100.00
+
+A9                 IWhere do mothers go for prenatal care
+
+                   Variable A9 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, A9 will have the value ACF.  If the       
+                   interviewee selected D and E, A9 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: A9        A =  Goverment hospital                             
+                                               B =  Private hospital                               
+                                               C =  Health Center                                  
+                                               D =  Village Maternity Clinic                       
+                                               E =  Clinic/Private Doctor                          
+                                               F =  Clinic/Private Midwife                         
+                                               G =  Traditional midwife's House                    
+                                               I =  Health Post                                    
+                                               J =  Village midwife                                
+                                               V =  Others                                         
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B0A                How much is the charge for each visit?
+
+                   min:                                          0.00
+                   mean:                                       822.08
+                   max:                                      99996.00
+                   #obs                                           636
+                   #miss:                                           0
+
+B0B                Compared to last yr, service charge
+
+                   1. Increase                                     55      8.65
+                   2. No change                                   554     87.11
+                   3. Decrease                                     27      4.25
+                   total                                          636    100.00
+
+B6A                Source of Funding: Monthly contribution
+
+                   1. Yes                                         169     26.57
+                   3. No                                          466     73.27
+                   9. Missing                                       1      0.16
+                   total                                          636    100.00
+
+B6B                Source of funding: Village budget
+
+                   1. Yes                                         248     38.99
+                   3. No                                          387     60.85
+                   9. Missing                                       1      0.16
+                   total                                          636    100.00
+
+B6C                Source of funding: Puskesmas donation
+
+                   1. Yes                                         449     70.60
+                   3. No                                          187     29.40
+                   total                                          636    100.00
+
+B6D                Source of funding: Health fund
+
+                   1. Yes                                          48      7.55
+                   3. No                                          587     92.30
+                   9. Missing                                       1      0.16
+                   total                                          636    100.00
+
+B6E                Source of funding: donor Contribution
+
+                   1. Yes                                          79     12.42
+                   3. No                                          556     87.42
+                   9. Missing                                       1      0.16
+                   total                                          636    100.00
+
+B6V                Source of funding: Other, specify
+
+                   1. Yes                                         136     21.38
+                   3. No                                          499     78.46
+                   9. Missing                                       1      0.16
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          636    100.00
+
+BEGHR1             Time interview began (hour)(1)
+
+                   min:                                          7.00
+                   mean:                                        14.48
+                   max:                                         20.00
+                   #obs                                           636
+                   #miss:                                           0
+
+BEGHR2             Time interview began (hour)(2)
+
+                   min:                                          7.00
+                   mean:                                        15.14
+                   max:                                         20.00
+                   #obs                                             7
+                   #miss:                                         629
+
+BEGHR3             Time interview began (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         636
+
+BEGMIN1            Time interview began (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        20.13
+                   max:                                         59.00
+                   #obs                                           636
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        17.29
+                   max:                                         30.00
+                   #obs                                             7
+                   #miss:                                         629
+
+BEGMIN3            Time interview began (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         636
+
+C4A1               Past yr, did PLKB staff visit Posyandu?
+
+                   1. Yes                                         404     63.52
+                   3. No                                          198     31.13
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(C4A1  continued)
+
+                   6. No PLKB                                      34      5.35
+                   total                                          636    100.00
+
+C4B1X              Past yr, How many times PLKB staff visit
+
+                   missing                                        232     36.48
+                   1. Given                                       401     63.05
+                   8. Don't Know                                    3      0.47
+                   total                                          636    100.00
+
+C4B1               Past yr, How many times PLKB staff visit
+
+                   min:                                          1.00
+                   mean:                                         6.89
+                   max:                                         12.00
+                   #obs                                           401
+                   #miss:                                         235
+
+C4B3               Since 2000, change in visits from PLKB?
+
+                   missing                                        232     36.48
+                   1. Increased                                    95     14.94
+                   2. No change                                   246     38.68
+                   3. Descreased                                   63      9.91
+                   total                                          636    100.00
+
+C4C                Any Bina Keluarga program in Posyandu?
+
+                   1. Yes                                         224     35.22
+                   3. No                                          412     64.78
+                   total                                          636    100.00
+
+C4D                Who operates the program
+
+                   Variable C4D can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, C4D will have the value ACF.  If the       
+                   interviewee selected D and E, C4D will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: C4D       A =  BKKBN staff                                    
+                                               B =  Cadre/volunteer                                
+                                               C =  Village midwife                                
+                                               D =  Puskesmas staff                                
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+C4EX               Times Bina Keluarga Balita operated
+
+                   missing                                        412     64.78
+                   1. Given                                       210     33.02
+                   6. Never                                        11      1.73
+                   8. Don't know                                    3      0.47
+                   total                                          636    100.00
+
+C4E                Number of Bina Keluarga Balita operated
+
+                   min:                                          1.00
+                   mean:                                         7.23
+                   max:                                         88.00
+                   #obs                                           210
+                   #miss:                                         426
+
+C5X                Times 'Puskesmas' staff visited Posyandu
+
+                   1. Given                                       618     97.17
+                   6. Never                                        16      2.52
+                   8. Don't know                                    2      0.31
+                   total                                          636    100.00
+
+C5                 Number of visit in last year by staff
+
+                   min:                                          0.00
+                   mean:                                         9.97
+                   max:                                         17.00
+                   #obs                                           618
+                   #miss:                                          18
+
+C6A                Who usually comes :  Nurse?
+
+                   missing                                         18      2.83
+                   1. Yes                                         330     51.89
+                   3. No                                          288     45.28
+                   total                                          636    100.00
+
+C6A2               Since 2000, change in visits?
+
+                   1. Increase                                    136     21.38
+                   2. No change                                   446     70.13
+                   3. Decrease                                     53      8.33
+                   9. Missing                                       1      0.16
+                   total                                          636    100.00
+
+C6B                Who usually comes : Midwife?
+
+                   missing                                         18      2.83
+                   1. Yes                                         574     90.25
+                   3. No                                           44      6.92
+                   total                                          636    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+C6C                Who usually comes : Immunization person?
+
+                   missing                                         18      2.83
+                   1. Yes                                         233     36.64
+                   3. No                                          385     60.53
+                   total                                          636    100.00
+
+C6D                Who usually comes : Physician?
+
+                   missing                                         18      2.83
+                   1. Yes                                         174     27.36
+                   3. No                                          444     69.81
+                   total                                          636    100.00
+
+C6V                Who usually comes : Other?
+
+                   missing                                         18      2.83
+                   1. Yes                                          84     13.21
+                   3. No                                          534     83.96
+                   total                                          636    100.00
+
+COMMID07           2007 community ID
+
+
+CP1A               Number of Questions with doubtful answer
+
+
+CP1B               Number of Questions with doubtful answer
+
+
+CP1C               Number of Questions with doubtful answer
+
+
+CP2A               Number of Questions that need conversion
+
+
+CP2B               Number of Questions that need conversion
+
+
+CP2C               Number of Questions that need conversion
+
+
+CP3A               Number of Qs that use secondary data
+
+
+CP3B               Number of Qs that use secondary data
+
+
+CP3C               Number of Qs that use secondary data
+
+
+CP4A               Number of Qs that make other problems
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+CP4B               Number of Qs that make other problems
+
+
+CP4C               Number of Qs that make other problems
+
+
+EDITOR             Editor code
+
+
+EDITORCK           Reviewed by editor
+
+                   1. Entry Data without error                    148     23.27
+                   2. Entry Data and correction                   465     73.11
+                   3. Manually edited without CAFE                 23      3.62
+                   total                                          636    100.00
+
+ENDHR1             Time interview ended (hour)(1)
+
+                   min:                                          7.00
+                   mean:                                        15.15
+                   max:                                         21.00
+                   #obs                                           636
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)(2)
+
+                   min:                                          7.00
+                   mean:                                        15.43
+                   max:                                         20.00
+                   #obs                                             7
+                   #miss:                                         629
+
+ENDHR3             Time interview ended (hour)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         636
+
+ENDMIN1            Time interview ended (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        25.66
+                   max:                                         59.00
+                   #obs                                           636
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 17
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+ENDMIN2            Time interview ended (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        31.86
+                   max:                                         55.00
+                   #obs                                             7
+                   #miss:                                         629
+
+ENDMIN3            Time interview ended (minute)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         636
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility code
+
+
+IDIVWR             Interviewer code
+
+
+IVWDAY1            Date of intrview (day of month)(1)
+
+                   min:                                          1.00
+                   mean:                                        15.44
+                   max:                                         31.00
+                   #obs                                           636
+                   #miss:                                           0
+
+IVWDAY2            Date of intrview (day of month)(2)
+
+                   min:                                          4.00
+                   mean:                                        16.29
+                   max:                                         27.00
+                   #obs                                             7
+                   #miss:                                         629
+
+IVWDAY3            Date of intrview (day of month)(3)
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                         636
+
+IVWMTH1            Date of interview (month)(1)
+
+                   2. February                                    143     22.48
+                   3. March                                       205     32.23
+                   4. April                                       184     28.93
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 18
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(IVWMTH1  continued)
+
+                   5. May                                          98     15.41
+                   6. June                                          6      0.94
+                   total                                          636    100.00
+
+IVWMTH2            Date of interview (month)(2)
+
+                   missing                                        629     98.90
+                   2. February                                      1      0.16
+                   3. March                                         3      0.47
+                   4. April                                         2      0.31
+                   5. May                                           1      0.16
+                   total                                          636    100.00
+
+IVWMTH3            Date of interview (month)(3)
+
+                   missing                                        636    100.00
+                   total                                          636    100.00
+
+IVWYR1             Date of interview (Year)(1)
+
+                   8                                              636    100.00
+                   total                                          636    100.00
+
+IVWYR2             Date of interview (Year)(2)
+
+                   missing                                        629     98.90
+                   8                                                7      1.10
+                   total                                          636    100.00
+
+IVWYR3             Date of interview (Year)(3)
+
+                   missing                                        636    100.00
+                   total                                          636    100.00
+
+KR02A_1            1: Sex
+
+                   min:                                          1.00
+                   mean:                                         2.94
+                   max:                                          3.00
+                   #obs                                           636
+                   #miss:                                           0
+
+KR02A_2            2: Sex
+
+                   min:                                          1.00
+                   mean:                                         2.88
+                   max:                                          3.00
+                   #obs                                            68
+                   #miss:                                         568
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 19
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+KR02_1             1: Age
+
+                   min:                                         16.00
+                   mean:                                        41.98
+                   max:                                         71.00
+                   #obs                                           636
+                   #miss:                                           0
+
+KR02_2             2: Age
+
+                   min:                                         21.00
+                   mean:                                        36.66
+                   max:                                         60.00
+                   #obs                                            68
+                   #miss:                                         568
+
+KR03_1             1: Title/Position in the Posyandu
+
+                   min:                                          1.00
+                   mean:                                         1.46
+                   max:                                          5.00
+                   #obs                                           636
+                   #miss:                                           0
+
+KR03_2             2: Title/Position in the Posyandu
+
+                   min:                                          1.00
+                   mean:                                         1.94
+                   max:                                          5.00
+                   #obs                                            68
+                   #miss:                                         568
+
+KR04_1             1: Length of tenure in the position
+
+                   min:                                          1.00
+                   mean:                                        10.24
+                   max:                                         40.00
+                   #obs                                           636
+                   #miss:                                           0
+
+KR04_2             2: Length of tenure in the position
+
+                   min:                                          1.00
+                   mean:                                         6.49
+                   max:                                         23.00
+                   #obs                                            68
+                   #miss:                                         568
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 20
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+KR05_1             1: Highest level of education attended
+
+                   min:                                          2.00
+                   mean:                                        10.95
+                   max:                                         95.00
+                   #obs                                           636
+                   #miss:                                           0
+
+KR05_2             2: Highest level of education attended
+
+                   min:                                          2.00
+                   mean:                                        13.12
+                   max:                                         74.00
+                   #obs                                            68
+                   #miss:                                         568
+
+KR06_1             1: Highest grade/class completed
+
+                   min:                                          0.00
+                   mean:                                         6.67
+                   max:                                          7.00
+                   #obs                                           636
+                   #miss:                                           0
+
+KR06_2             2: Highest grade/class completed
+
+                   min:                                          0.00
+                   mean:                                         6.53
+                   max:                                          7.00
+                   #obs                                            68
+                   #miss:                                         568
+
+KR07_1             1: Length of time residing in village
+
+                   min:                                          0.00
+                   mean:                                        29.10
+                   max:                                         68.00
+                   #obs                                           636
+                   #miss:                                           0
+
+KR07_2             2: Length of time residing in village
+
+                   min:                                          0.00
+                   mean:                                        28.84
+                   max:                                         56.00
+                   #obs                                            68
+                   #miss:                                         568
+
+LANGMAIN           Interview in what language?
+
+                   00. Indonesian                                 594     93.40
+                   01. Javanese                                    30      4.72
+                   02. Sundanese                                    4      0.63
+                   08. Sasak                                        3      0.47
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 21
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(LANGMAIN  continued)
+
+                   09. Minang                                       4      0.63
+                   10. Banjar                                       1      0.16
+                   total                                          636    100.00
+
+LANGOTHR           Other language used if any
+
+                   00. Indonesian                                  33      5.19
+                   01. Javanese                                   106     16.67
+                   02. Sundanese                                    8      1.26
+                   08. Sasak                                       14      2.20
+                   09. Minang                                      20      3.14
+                   10. Banjar                                      10      1.57
+                   14. Palembang                                    4      0.63
+                   95. Other                                        1      0.16
+                   96. No other                                   440     69.18
+                   total                                          636    100.00
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   min:                                         12.00
+                   mean:                                        34.20
+                   max:                                         73.00
+                   #obs                                           636
+                   #miss:                                           0
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   min:                                         12.00
+                   mean:                                        34.21
+                   max:                                         76.00
+                   #obs                                           636
+                   #miss:                                           0
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        33.08
+                   max:                                         78.00
+                   #obs                                           636
+                   #miss:                                           0
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        34.58
+                   max:                                         78.00
+                   #obs                                           636
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 22
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        86.84
+                   max:                                        730.00
+                   #obs                                           636
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        75.97
+                   max:                                        730.00
+                   #obs                                           636
+                   #miss:                                           0
+
+LK05               Type of area
+
+                   1. Urban                                       408     64.15
+                   2. Rural                                       228     35.85
+                   total                                          636    100.00
+
+LK15               Interviewer code
+
+
+LK16               Editor code
+
+
+LK17               Supervisor code
+
+
+LK19               Field Coordinator code
+
+
+NUMVIS             Number of visits
+
+                   min:                                          1.00
+                   mean:                                         1.01
+                   max:                                          2.00
+                   #obs                                           636
+                   #miss:                                           0
+
+POSITONA           Position in Posyandu
+
+
+POSITONB           Position in Posyandu
+
+
+POSTYPE            Book Type
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 23
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PRP00              Ever heard Posyandu revitalization progr
+
+                   1. Yes                                         171     26.89
+                   3. No                                          465     73.11
+                   total                                          636    100.00
+
+PRP01A             Since 2000, any revitalization program?
+
+                   missing                                        465     73.11
+                   1. Yes                                         133     20.91
+                   3. No                                           38      5.97
+                   total                                          636    100.00
+
+PRP01B             When was last revitalization program ?
+
+                   min:                                       1998.00
+                   mean:                                      2006.83
+                   max:                                       2008.00
+                   #obs                                           133
+                   #miss:                                         503
+
+PRP03A             Was money used for: 'KIE'
+
+                   missing                                        503     79.09
+                   1. Yes                                           7      1.10
+                   3. No                                          126     19.81
+                   total                                          636    100.00
+
+PRP03B             Was money used for: 'cadre trainning'
+
+                   missing                                        503     79.09
+                   1. Yes                                          44      6.92
+                   3. No                                           89     13.99
+                   total                                          636    100.00
+
+PRP03C             Was money used for: buy cooking tools
+
+                   missing                                        503     79.09
+                   1. Yes                                          15      2.36
+                   3. No                                          118     18.55
+                   total                                          636    100.00
+
+PRP03D             Was money used for: 'other Posy. exp.'
+
+                   missing                                        503     79.09
+                   1. Yes                                          74     11.64
+                   3. No                                           59      9.28
+                   total                                          636    100.00
+
+PRP03E             Was money used for: 'cadre trasports'
+
+                   missing                                        503     79.09
+                   1. Yes                                         104     16.35
+                   3. No                                           29      4.56
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 24
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          636    100.00
+
+PRP03F             Was money used for: PMT
+
+                   missing                                        503     79.09
+                   1. Yes                                          80     12.58
+                   3. No                                           53      8.33
+                   total                                          636    100.00
+
+REASON             CHECK BY EDITOR
+
+                   missing                                        636    100.00
+                   total                                          636    100.00
+
+RESULT             Interview Results Code
+
+                   1. Completed                                   636    100.00
+                   total                                          636    100.00
+
+RESULT1            Result of interview(1)
+
+                   1. Completed                                   629     98.90
+                   2. Partially completed                           7      1.10
+                   total                                          636    100.00
+
+RESULT2            Result of interview(2)
+
+                   missing                                        629     98.90
+                   1. Completed                                     7      1.10
+                   total                                          636    100.00
+
+RESULT3            Result of interview(3)
+
+                   missing                                        636    100.00
+                   total                                          636    100.00
+
+SDP02A             Value of money: community to Posyandu
+
+                   min:                                          0.00
+                   mean:                                     25494.87
+                   max:                                     335000.00
+                   #obs                                           636
+                   #miss:                                           0
+
+SDP02B             Value of food: community to Posyandu
+
+                   min:                                          0.00
+                   mean:                                   4731130.49
+                   max:                                     999999998
+                   #obs                                           636
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 25
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+SDP02C1            Value of time: volunteers to Posyandu
+
+                   min:                                          0.00
+                   mean:                                        17.57
+                   max:                                        168.00
+                   #obs                                           636
+                   #miss:                                           0
+
+SDP02C2            Value of time: volunteers to Posyandu
+
+                   03. Hours                                      635     99.84
+                   05. Days                                         1      0.16
+                   total                                          636    100.00
+
+SDP02V             Value of other: community to Posyandu
+
+                   min:                                          0.00
+                   mean:                                   3151478.03
+                   max:                                     999999998
+                   #obs                                           636
+                   #miss:                                           0
+
+SDP03              Posyandu receive any other resources?
+
+                   1. Yes                                         444     69.81
+                   3. No                                          192     30.19
+                   total                                          636    100.00
+
+SDP03A             Past yr, did posyandu receive resource
+
+                   1. Yes                                         323     50.79
+                   3. No                                          313     49.21
+                   total                                          636    100.00
+
+SDP03B             How many times this posyandu receive?
+
+                   min:                                          1.00
+                   mean:                                         4.71
+                   max:                                         98.00
+                   #obs                                           323
+                   #miss:                                         313
+
+SDP03C             What is the source of the resource
+
+                   Variable SDP03C can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, SDP03C will have the value ACF.  If the       
+                   interviewee selected D and E, SDP03C will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: SDP03C    A =  Puskesmas/Pustu                                
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 26
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               B =  BKKBN/PLKB                                     
+                                               C =  Desa/Kelurahan                                 
+                                               V = Other                                           
+                                               Z =  Missing                                        
+
+
+SDP03DA            Value of cash money receive by Posyandu
+
+                   min:                                          0.00
+                   mean:                                   12645575.5
+                   max:                                     999999998
+                   #obs                                           323
+                   #miss:                                         313
+
+SDP03DB            Value of foods receive by Posyandu
+
+                   min:                                          0.00
+                   mean:                                   68317540.8
+                   max:                                     999999998
+                   #obs                                           323
+                   #miss:                                         313
+
+SDP03DC1           Value of time spend by volunteers
+
+                   min:                                          0.00
+                   mean:                                        17.25
+                   max:                                        998.00
+                   #obs                                           323
+                   #miss:                                         313
+
+SDP03DC2           Value of time spend by volunteers
+
+                   missing                                        313     49.21
+                   03. Hours                                      319     50.16
+                   05. Days                                         3      0.47
+                   09. Missing                                      1      0.16
+                   total                                          636    100.00
+
+SDP03DV            Value of other items receive by Posyandu
+
+                   min:                                          0.00
+                   mean:                                   3106702.78
+                   max:                                     999999998
+                   #obs                                           323
+                   #miss:                                         313
+
+SUPVERIF           Checked by Supervisor (Verified)
+
+                   1. Yes                                          34      5.35
+                   3. No                                          602     94.65
+                   total                                          636    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 27
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+SUP_EDIT           Checked by Supervisor (Edited)
+
+                   1. Yes                                          85     13.36
+                   3. No                                          551     86.64
+                   total                                          636    100.00
+
+SUP_OBS            Checked by Supervisor (Observation)
+
+                   1. Yes                                          51      8.02
+                   3. No                                          585     91.98
+                   total                                          636    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 28
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_B1               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   POS                                          6,360    100.00
+                   total                                        6,360    100.00
+
+B1TYPE             Service type
+
+                   A. Weighing of babies/children                 636     10.00
+                   B. Provision of supplementary food             636     10.00
+                   C. Provision of Oralit                         636     10.00
+                   D. Immunization                                636     10.00
+                   E. Pregnancy examination                       636     10.00
+                   E1. Iron vitamin supplements                   636     10.00
+                   E2. Vitamin A supplement                       636     10.00
+                   F. Patients treatment                          636     10.00
+                   G. Child development (TKA)                     636     10.00
+                   H. Kid and mother health (KIA)                 636     10.00
+                   total                                        6,360    100.00
+
+B2                 Past yr, are there [..] services?
+
+                   1. Yes                                       4,379     68.85
+                   3. No                                        1,981     31.15
+                   total                                        6,360    100.00
+
+B3A                Are there [..] services currently ?
+
+                   missing                                      1,981     31.15
+                   1. Yes                                       4,102     64.50
+                   3. No                                          277      4.36
+                   total                                        6,360    100.00
+
+B4AX               How many [..] in the last month?
+
+                   missing                                      2,258     35.50
+                   1. Given                                     3,925     61.71
+                   8. Don't know                                  177      2.78
+                   total                                        6,360    100.00
+
+B4A                How many [..] in the last month?
+
+                   min:                                          0.00
+                   mean:                                        31.18
+                   max:                                        996.00
+                   #obs                                         3,925
+                   #miss:                                       2,435
+
+B4BX               How many [..] two months ago?
+
+                   missing                                      2,258     35.50
+                   1. Given                                     3,892     61.19
+                   8. Don't know                                  210      3.30
+                   total                                        6,360    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 29
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_B1               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B4B                How many [..] two months ago?
+
+                   min:                                          0.00
+                   mean:                                        31.83
+                   max:                                        996.00
+                   #obs                                         3,892
+                   #miss:                                       2,468
+
+B4CX               How many [..] three months ago?
+
+                   missing                                      2,258     35.50
+                   1. Given                                     3,861     60.71
+                   8. Don't know                                  241      3.79
+                   total                                        6,360    100.00
+
+B4C                How many [..] three months ago?
+
+                   min:                                          0.00
+                   mean:                                        35.12
+                   max:                                        996.00
+                   #obs                                         3,861
+                   #miss:                                       2,499
+
+B5DX               Do you know how much are charges?
+
+                   missing                                      2,554     40.16
+                   1. Given                                       158      2.48
+                   3. Did not pay                               3,645     57.31
+                   9. Missing                                       3      0.05
+                   total                                        6,360    100.00
+
+B5D                Additional service charges
+
+                   min:                                          0.00
+                   mean:                                      3598.18
+                   max:                                      99998.00
+                   #obs                                           158
+                   #miss:                                       6,202
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 30
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_B2               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   POS                                          3,180    100.00
+                   total                                        3,180    100.00
+
+B10A               Service charge in every unit
+
+                   min:                                          0.00
+                   mean:                                      3973.90
+                   max:                                      99998.00
+                   #obs                                           642
+                   #miss:                                       2,538
+
+B11                How are changing of users/client
+
+                   missing                                      2,260     71.07
+                   1. Increase                                    205      6.45
+                   2. No change                                   587     18.46
+                   3. Decrease                                    128      4.03
+                   total                                        3,180    100.00
+
+B12                Factors that account for change
+
+                   Variable B12 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, B12 will have the value ACF.  If the       
+                   interviewee selected D and E, B12 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: B12       A1 =  Increase in price of services                 
+                                               B1 =  Decrease in availability of service           
+                                               C1 =  Clients can no longer afford                  
+                                               D1 =  Switch to traditional midwives                
+                                               E1 =  High risk of side effect                      
+                                               H1 =  Switch to other methods                       
+                                               I1 =  Feel comfortable with the contaceptive        
+                                               A2 =  Decrease in price of service                  
+                                               B2 =  Increase in availability of service           
+                                               C2 =  Clients can better afford                     
+                                               D2 =  Switch from traditional midwives              
+                                               E2 =  Low risk of side effect                       
+                                               H2 =  Switch from other methods                     
+                                               I2 =  Feel uncomfortable with contraceptive         
+                                               V =  Other                                          
+                                               Y =  Don't know                                     
+                                               Z =  Missing                                        
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 31
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_B2               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B2TYPE             Type of Family Planning service
+
+                   B7A. Pill                                      636     20.00
+                   B7B. Condom                                    636     20.00
+                   B7C. Injection                                 636     20.00
+                   B7D. Side Effect Treatement                    636     20.00
+                   B7E. Family Planning Counselling               636     20.00
+                   total                                        3,180    100.00
+
+B8A                Past yer, Are there [..] services?
+
+                   1. Yes                                       1,024     32.20
+                   3. No                                        2,156     67.80
+                   total                                        3,180    100.00
+
+B8B                Are there [..] services currently ?
+
+                   missing                                      2,156     67.80
+                   1. Yes                                         920     28.93
+                   3. No                                          104      3.27
+                   total                                        3,180    100.00
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 32
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_C0               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+C1X                able to answer C1
+
+
+C1                 Name of cadre
+
+                   min:                                           .  
+                   mean:                                          .  
+                   max:                                           .  
+                   #obs                                             0
+                   #miss:                                       3,512
+
+C2                 Highest level of education
+
+                   01. No school/Not yet at school                 33      0.94
+                   02. Elementary                                 645     18.37
+                   03. Junior High-General                        680     19.36
+                   04. Junior High-Vocation                       292      8.31
+                   05. Senior High-General                      1,243     35.39
+                   06. Senior High-Vocation                       284      8.09
+                   12. Adult Educ. B(Kejar Paket B)                 6      0.17
+                   15. Adult Educ. C(Kejar Paket C)                 9      0.26
+                   60. D1, D2, D3 (Junior college)                116      3.30
+                   61. University S1(Bachelors)                    97      2.76
+                   62. University S2(Masters)                       1      0.03
+                   72. Islamic Elementary School(Madrasah I         1      0.03
+                   73. Islamic Juinior High School(Madrasah        25      0.71
+                   74. Islamic Senior High School(Madrasah         27      0.77
+                   95. Other, Mention____                           6      0.17
+                   98. Don't Know                                  47      1.34
+                   total                                        3,512    100.00
+
+C2A                Has [..] every had tranining
+
+                   1. Yes                                       2,422     68.96
+                   3. No                                        1,090     31.04
+                   total                                        3,512    100.00
+
+C3AX               Do you know when was the last training?
+
+                   missing                                      1,090     31.04
+                   1. Enter year                                2,307     65.69
+                   8. Don't know                                  115      3.27
+                   total                                        3,512    100.00
+
+C3A                Year when the last training occured
+
+                   min:                                       1984.00
+                   mean:                                      2005.94
+                   max:                                       2008.00
+                   #obs                                         2,307
+                   #miss:                                       1,205
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 33
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_C0               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+C3B                How many days was the training?
+
+                   min:                                          0.00
+                   mean:                                         3.45
+                   max:                                         98.00
+                   #obs                                         2,422
+                   #miss:                                       1,090
+
+C3C                What type of training?
+
+                   Variable C3C can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, C3C will have the value ACF.  If the       
+                   interviewee selected D and E, C3C will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: C3C       A =  Child development (TKA)                        
+                                               B =  Service for elderly                            
+                                               C =  Family planning                                
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+C4AMTHX            able to answer C4AMTH
+
+
+C4AMTH             When did [..] start working (month)
+
+                   1. January                                     378     10.76
+                   2. February                                    121      3.45
+                   3. March                                       105      2.99
+                   4. April                                       109      3.10
+                   5. May                                          99      2.82
+                   6. June                                        129      3.67
+                   7. July                                         95      2.71
+                   8. August                                       92      2.62
+                   9. September                                    62      1.77
+                   10. October                                     74      2.11
+                   11. November                                    77      2.19
+                   12. December                                    71      2.02
+                   98. DK                                       2,100     59.79
+                   total                                        3,512    100.00
+
+C4AYRX             able to answer C4AYR
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 34
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_C0               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+C4AYR              When did [..] start working (year)
+
+                   min:                                       1965.00
+                   mean:                                      1999.39
+                   max:                                       2008.00
+                   #obs                                         3,489
+                   #miss:                                          23
+
+CADRENUM           Line Numbers C1
+
+                   min:                                          0.00
+                   mean:                                         0.75
+                   max:                                          9.00
+                   #obs                                         3,512
+                   #miss:                                           0
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+
+IDWPOSY            Enumeration Area
+
+
+POSTYPE            Book Type
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 35
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_C2               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   POS                                          3,816    100.00
+                   total                                        3,816    100.00
+
+C7X                Type of activity
+
+                   A. Conselling on Immunization                  636     16.67
+                   B. Conselling on Family Planning               636     16.67
+                   C. Traveling medical team                      636     16.67
+                   D. Sanitation Program                          636     16.67
+                   E. Information on Mother and child healt       636     16.67
+                   F. Services for Posyandu for the elderly       636     16.67
+                   total                                        3,816    100.00
+
+C7                 Are there other visiting from Puskesmas?
+
+                   1. Yes                                         566     14.83
+                   3. No                                        3,250     85.17
+                   total                                        3,816    100.00
+
+C8X                Do you know how many visits?
+
+                   missing                                      3,250     85.17
+                   1. Given                                       527     13.81
+                   6. Never                                        13      0.34
+                   8. Don't know                                   26      0.68
+                   total                                        3,816    100.00
+
+C8                 Enter the number of visits
+
+                   min:                                          0.00
+                   mean:                                         4.99
+                   max:                                         99.00
+                   #obs                                           527
+                   #miss:                                       3,289
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 36
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_D1               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   POS                                         11,448    100.00
+                   total                                       11,448    100.00
+
+COMMID07           2007 community ID
+
+
+D1                 Kinds Of Instruments
+
+                   a. Baby scalees                                636      5.56
+                   b. Height measuring device                     636      5.56
+                   c. KMS cards                                   636      5.56
+                   d. Pregnant Mother cards                       636      5.56
+                   e. Oral contraceptive pill                     636      5.56
+                   g. Demonstration tools/books                   636      5.56
+                   h. Oralit                                      636      5.56
+                   i. Iron tablets/Sulfas Ferosus                 636      5.56
+                   j. Vitamin A                                   636      5.56
+                   k. Paracetamol/other lowering fever medi       636      5.56
+                   l. Children's toys                             636      5.56
+                   m. Instruction book for the Bina Keluarg       636      5.56
+                   n. Adult scale                                 636      5.56
+                   o. Blood monitor                               636      5.56
+                   p. Osteoporosis kit                            636      5.56
+                   q. Cholesterol kit                             636      5.56
+                   r. Stetothoscope                               636      5.56
+                   s. Thermometer                                 636      5.56
+                   total                                       11,448    100.00
+
+D2                 Are the [..] Instruments here?
+
+                   1. Yes                                       4,374     38.21
+                   3. No                                        7,073     61.78
+                   9. Missing                                       1      0.01
+                   total                                       11,448    100.00
+
+D3X                able to answer D3
+
+
+D3                 How many are there?
+
+                   min:                                          0.00
+                   mean:                                        28.22
+                   max:                                        970.00
+                   #obs                                         1,844
+                   #miss:                                       9,604
+
+D6X                Last 6 mo, weeks [..] was out of stock
+
+                   missing                                      6,140     53.63
+                   1. Givent                                    1,934     16.89
+                   6. Never available                           3,176     27.74
+                   8. Don't Know                                  186      1.62
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 37
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_D1               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(D6X  continued)
+
+                   9. Missing                                      12      0.10
+                   total                                       11,448    100.00
+
+D6                 Last 6 mo, weeks [..] was out of stock
+
+                   min:                                          0.00
+                   mean:                                         2.31
+                   max:                                         48.00
+                   #obs                                         1,934
+                   #miss:                                       9,514
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 38
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_PRP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   POS                                          1,064    100.00
+                   total                                        1,064    100.00
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+
+PRP01C             Was there PRP program in [..]?
+
+                   1. Yes                                         473     44.45
+                   3. No                                          519     48.78
+                   8. Don't know                                   72      6.77
+                   total                                        1,064    100.00
+
+PRP02X             Do you know how much they received?
+
+                   missing                                        591     55.55
+                   1. Given                                       409     38.44
+                   8. Don't know                                   64      6.02
+                   total                                        1,064    100.00
+
+PRP02              Amount Posyandu got from revitalisation
+
+                   min:                                          0.00
+                   mean:                                    433068.44
+                   max:                                    9999998.00
+                   #obs                                           409
+                   #miss:                                         655
+
+PRPTYPE            Type of year
+
+                   H.2000                                         133     12.50
+                   G.2001                                         133     12.50
+                   F.2002                                         133     12.50
+                   E.2003                                         133     12.50
+                   D.2004                                         133     12.50
+                   C.2005                                         133     12.50
+                   B.2006                                         133     12.50
+                   A.2007                                         133     12.50
+                   total                                        1,064    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 39
+book:    POS  - Integrated Community Health Post (Posyandu)                                   
+module:  POS_SDP1             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   POS                                          1,776    100.00
+                   total                                        1,776    100.00
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+FCODE07            2007 Facility Code
+
+
+SDP04A             Is [..] give cash money for assistance
+
+                   1. Yes                                         466     26.24
+                   3. No                                        1,310     73.76
+                   total                                        1,776    100.00
+
+SDP04B             Is [..] give food for assistance
+
+                   1. Yes                                         348     19.59
+                   3. No                                        1,428     80.41
+                   total                                        1,776    100.00
+
+SDP04C             Is [..] give vitamin for assistance
+
+                   1. Yes                                         423     23.82
+                   3. No                                        1,353     76.18
+                   total                                        1,776    100.00
+
+SDP04D             Is [..] give vaccination for assistance
+
+                   1. Yes                                         370     20.83
+                   3. No                                        1,406     79.17
+                   total                                        1,776    100.00
+
+SDP04X             Source of resources
+
+                   a. Puskesmas (Community Health Center)         444     25.00
+                   b. Other Posyandu                              444     25.00
+                   c. BKKBN/PLKB                                  444     25.00
+                   v. Other, specify                              444     25.00
+                   total                                        1,776    100.00
+
+SDP04E             Is [..] give other equipment for assist
+
+                   1. Yes                                         295     16.61
+                   3. No                                        1,481     83.39
+                   total                                        1,776    100.00

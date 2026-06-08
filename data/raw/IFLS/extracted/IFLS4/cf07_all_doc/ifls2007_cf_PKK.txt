@@ -1,0 +1,1852 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       PKK                                            
+ T O P I C :     DESA/KELURAHAN WOMEN’S GROUP (PKK)                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       PKK
+ T O P I C :     DESA/KELURAHAN WOMEN’S GROUP (PKK)
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      PKK                                                     322
+      PKK_I                                                   948
+      PKK_J                                                  1887
+      PKK_J1                                                 2310
+      PKK_KR                                                  432
+      PKK_KSR                                                 946
+      PKK_PAP2                                                364
+      PKK_PM                                                 5627
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       PKK
+ T O P I C :     DESA/KELURAHAN WOMEN’S GROUP (PKK)
+
+--------------------------------------------------------------------------------
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+NOTES ABOUT BOOK PKK                                                       
+------------------                                                         
+The PKK book is administered to the head of the Village Women's Group      
+and to one or more of her staff members in a group interview setting.      
+This book contains modules covering the availability of health             
+facilities, health programs and schools.                                   
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   PKK                                            322    100.00
+                   total                                          322    100.00
+
+BEGHR1             Time interview began (hour)(1)
+
+                   min:                                          5.00
+                   mean:                                        14.36
+                   max:                                         22.00
+                   #obs                                           322
+                   #miss:                                           0
+
+BEGHR2             Time interview began (hour)(2)
+
+                   min:                                          7.00
+                   mean:                                        12.50
+                   max:                                         17.00
+                   #obs                                            14
+                   #miss:                                         308
+
+BEGHR3             Time interview began (hour)(3)
+
+                   min:                                         13.00
+                   mean:                                        13.00
+                   max:                                         13.00
+                   #obs                                             1
+                   #miss:                                         321
+
+BEGMIN1            Time interview began (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        17.32
+                   max:                                         59.00
+                   #obs                                           322
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        21.14
+                   max:                                         50.00
+                   #obs                                            14
+                   #miss:                                         308
+
+BEGMIN3            Time interview began (minute)(3)
+
+                   min:                                         25.00
+                   mean:                                        25.00
+                   max:                                         25.00
+                   #obs                                             1
+                   #miss:                                         321
+
+COMMID07           2007 community ID
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+CP1A               Number of questions with doubtful answer
+
+
+CP1B               Number of questions with doubtful answer
+
+
+CP1C               Number of questions with doubtful answer
+
+
+CP2A               Number of questions need unit conversion
+
+
+CP2B               Number of questions need unit conversion
+
+
+CP2C               Number of questions need unit conversion
+
+
+CP3A               Number of Qs that use secondary data
+
+
+CP3B               Number of Qs that use secondary data
+
+
+CP3C               Number of Qs that use secondary data
+
+
+CP4A               Number of Qs that make other problems
+
+
+CP4B               Number of Qs that make other problems
+
+
+CP4C               Number of Qs that make other problems
+
+
+EDITOR             Editor Code
+
+
+EDITORCK           Reviewed by editor
+
+                   1. Entry Data without error                     92     28.57
+                   2. Entry Data and correction                   228     70.81
+                   3. Manually edited without CAFE                  2      0.62
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+ENDHR1             Time interview ended (hour)(1)
+
+                   min:                                          6.00
+                   mean:                                        14.97
+                   max:                                         22.00
+                   #obs                                           322
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)(2)
+
+                   min:                                          7.00
+                   mean:                                        12.93
+                   max:                                         17.00
+                   #obs                                            14
+                   #miss:                                         308
+
+ENDHR3             Time interview ended (hour)(3)
+
+                   min:                                         14.00
+                   mean:                                        14.00
+                   max:                                         14.00
+                   #obs                                             1
+                   #miss:                                         321
+
+ENDMIN1            Time interview ended (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        26.56
+                   max:                                         59.00
+                   #obs                                           322
+                   #miss:                                           0
+
+ENDMIN2            Time interview ended (minute)(2)
+
+                   min:                                         10.00
+                   mean:                                        28.71
+                   max:                                         40.00
+                   #obs                                            14
+                   #miss:                                         308
+
+ENDMIN3            Time interview ended (minute)(3)
+
+                   min:                                          0.00
+                   mean:                                         0.00
+                   max:                                          0.00
+                   #obs                                             1
+                   #miss:                                         321
+
+FP3_EA             Duplicate EA
+
+
+IDIVWR             Interviewer Code
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IDW                IDW
+
+
+IVWDAY1            Date of interview (day of month)(1)
+
+                   min:                                          1.00
+                   mean:                                        15.02
+                   max:                                         31.00
+                   #obs                                           322
+                   #miss:                                           0
+
+IVWDAY2            Date of interview (day of month)(2)
+
+                   min:                                          5.00
+                   mean:                                        13.50
+                   max:                                         25.00
+                   #obs                                            14
+                   #miss:                                         308
+
+IVWDAY3            Date of interview (day of month)(3)
+
+                   min:                                         15.00
+                   mean:                                        15.00
+                   max:                                         15.00
+                   #obs                                             1
+                   #miss:                                         321
+
+IVWMTH1            Date of interview (month)(1)
+
+                   2. February                                     78     24.22
+                   3. March                                       103     31.99
+                   4. April                                       101     31.37
+                   5. May                                          39     12.11
+                   6. June                                          1      0.31
+                   total                                          322    100.00
+
+IVWMTH2            Date of interview (month)(2)
+
+                   missing                                        308     95.65
+                   2. February                                      6      1.86
+                   3. March                                         6      1.86
+                   4. April                                         2      0.62
+                   total                                          322    100.00
+
+IVWMTH3            Date of interview (month)(3)
+
+                   missing                                        321     99.69
+                   3. March                                         1      0.31
+                   total                                          322    100.00
+
+IVWYR1             Date of Interview(Year)(1)
+
+                   8                                              322    100.00
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+IVWYR2             Date of Interview(Year)(2)
+
+                   missing                                        308     95.65
+                   8                                               14      4.35
+                   total                                          322    100.00
+
+IVWYR3             Date of Interview(Year)(3)
+
+                   missing                                        321     99.69
+                   8                                                1      0.31
+                   total                                          322    100.00
+
+J10A               Is there a village midwife
+
+                   missing                                          9      2.80
+                   1. Yes                                         207     64.29
+                   3. No                                          106     32.92
+                   total                                          322    100.00
+
+J10A1              Ever any village midwife
+
+                   missing                                        216     67.08
+                   1. Yes                                          12      3.73
+                   3. No                                           94     29.19
+                   total                                          322    100.00
+
+J10A2BLN           Month of midwife departure
+
+                   missing                                        310     96.27
+                   6. June                                          2      0.62
+                   7. July                                          1      0.31
+                   10. October                                      1      0.31
+                   11. November                                     1      0.31
+                   98. DK                                           7      2.17
+                   total                                          322    100.00
+
+J10A2X             Do you know when midwife left village
+
+                   missing                                        310     96.27
+                   1. Yes                                          12      3.73
+                   total                                          322    100.00
+
+J10A2TH            Year of midwife departure
+
+                   min:                                       1980.00
+                   mean:                                      2666.42
+                   max:                                       9998.00
+                   #obs                                            12
+                   #miss:                                         310
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+J10BX              Knows number of midwives
+
+                   missing                                        115     35.71
+                   1. Yes                                         203     63.04
+                   8. Don't Know                                    4      1.24
+                   total                                          322    100.00
+
+J10B               Number of village midwives
+
+                   min:                                          1.00
+                   mean:                                         1.36
+                   max:                                          8.00
+                   #obs                                           203
+                   #miss:                                         119
+
+J10CX              Knows when midwife started
+
+                   missing                                        103     31.99
+                   1. Yes                                         174     54.04
+                   8. Don't Know                                   45     13.98
+                   total                                          322    100.00
+
+J10C               Year first village midwife began
+
+                   min:                                       1960.00
+                   mean:                                      1994.36
+                   max:                                       2008.00
+                   #obs                                           174
+                   #miss:                                         148
+
+J10DX              Do you know the length of time?
+
+                   missing                                        277     86.02
+                   1. Given                                        17      5.28
+                   8. Don't know                                   28      8.70
+                   total                                          322    100.00
+
+J10D               Time the first village midwife practiced
+
+                   min:                                          1.00
+                   mean:                                        13.29
+                   max:                                         30.00
+                   #obs                                            17
+                   #miss:                                         305
+
+J10E               Type of support received by midwife
+
+                   Variable J10E can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, J10E will have the value ACF.  If the       
+                   interviewee selected D and E, J10E will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+                   key for variable: J10E      A =  NONE                                           
+                                               B =  HOUSING                                        
+                                               C =  FOOD                                           
+                                               D =  A PLACE TO PRACTICE                            
+                                               F =  WAGE/SALARY                                    
+                                               V =  Others                                         
+                                               Y =  Don't know                                     
+                                               Z =  Missing                                        
+
+
+J11X               Number of Posyandu in this village
+
+                   missing                                          9      2.80
+                   1. Given                                       308     95.65
+                   8. Don't know                                    5      1.55
+                   total                                          322    100.00
+
+J11                Number of Posyandu
+
+                   min:                                          1.00
+                   mean:                                         8.41
+                   max:                                         68.00
+                   #obs                                           308
+                   #miss:                                          14
+
+J13X               How often do Puskesmas employee visit
+
+                   missing                                          9      2.80
+                   1. Given                                       305     94.72
+                   8. Don't know                                    8      2.48
+                   total                                          322    100.00
+
+J13                Number of visit by staff to Posyandu
+
+                   min:                                          1.00
+                   mean:                                        33.54
+                   max:                                        456.00
+                   #obs                                           305
+                   #miss:                                          17
+
+J19                Is there any Polindes
+
+                   missing                                        103     31.99
+                   1. Yes                                          78     24.22
+                   3. No                                          141     43.79
+                   total                                          322    100.00
+
+J19AX              When was the Polindes established
+
+                   missing                                        244     75.78
+                   1. Given                                        68     21.12
+                   8. Don't know                                   10      3.11
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(J19AX  continued)
+
+                   total                                          322    100.00
+
+J19A               Year of the POLINDES established
+
+                   min:                                       1978.00
+                   mean:                                      1997.22
+                   max:                                       2008.00
+                   #obs                                            68
+                   #miss:                                         254
+
+J19BX              Knows number of years
+
+                   missing                                        312     96.89
+                   1. Given                                         8      2.48
+                   8. Don't know                                    2      0.62
+                   total                                          322    100.00
+
+J19B               Length of time the POLINDES operated
+
+                   min:                                          5.00
+                   mean:                                        10.63
+                   max:                                         18.00
+                   #obs                                             8
+                   #miss:                                         314
+
+J19CX              Knows number of beds
+
+                   missing                                        244     75.78
+                   1. Given                                        73     22.67
+                   8. Don't know                                    5      1.55
+                   total                                          322    100.00
+
+J19C               Number of beds
+
+                   min:                                          1.00
+                   mean:                                         1.42
+                   max:                                          4.00
+                   #obs                                            73
+                   #miss:                                         249
+
+J20                Is there a Medicine Post ?
+
+                   missing                                          9      2.80
+                   1. Yes                                          35     10.87
+                   3. No                                          278     86.34
+                   total                                          322    100.00
+
+J21A               Is there any Posyandu Lansia in village?
+
+                   missing                                          9      2.80
+                   1. Yes                                         169     52.48
+                   3. No                                          144     44.72
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+J21BX              Do you know how many Posyandu Lansia
+
+                   missing                                        153     47.52
+                   1. Given                                       167     51.86
+                   8. Don't know                                    2      0.62
+                   total                                          322    100.00
+
+J21B               How many Posyandu Lansia in this village
+
+                   min:                                          1.00
+                   mean:                                         3.49
+                   max:                                         99.00
+                   #obs                                           167
+                   #miss:                                         155
+
+J21CX              Do you know in what year the first
+
+                   missing                                        153     47.52
+                   1. Given                                       154     47.83
+                   8. Don't know                                   15      4.66
+                   total                                          322    100.00
+
+J21C               Year first Posyandu Lansia began
+
+                   min:                                       1980.00
+                   mean:                                      2003.47
+                   max:                                       2008.00
+                   #obs                                           154
+                   #miss:                                         168
+
+J21DX              Do you know how many years?
+
+                   missing                                        307     95.34
+                   1. Given                                         8      2.48
+                   8. Don't know                                    7      2.17
+                   total                                          322    100.00
+
+J21D               Tears the Posyandu Lansia practiced
+
+                   min:                                          1.00
+                   mean:                                         6.63
+                   max:                                         25.00
+                   #obs                                             8
+                   #miss:                                         314
+
+J22A               Is there any Bidan Delima in village
+
+                   missing                                          9      2.80
+                   1. Yes                                          72     22.36
+                   3. No                                          241     74.84
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+J22BX              Do you know how many Bidan Delima?
+
+                   missing                                        250     77.64
+                   1. Given                                        65     20.19
+                   8. Don't know                                    7      2.17
+                   total                                          322    100.00
+
+J22B               How many Bidan Delima are in village
+
+                   min:                                          1.00
+                   mean:                                         1.92
+                   max:                                         21.00
+                   #obs                                            65
+                   #miss:                                         257
+
+J22CX              Do you know in what year it began?
+
+                   missing                                        250     77.64
+                   1. Given                                        41     12.73
+                   8. Don't know                                   31      9.63
+                   total                                          322    100.00
+
+J22C               Year the first Bidan Delima began
+
+                   min:                                       1972.00
+                   mean:                                      1999.32
+                   max:                                       2007.00
+                   #obs                                            41
+                   #miss:                                         281
+
+J22DX              Do you know how many years practiced
+
+                   missing                                        291     90.37
+                   1. Given                                         8      2.48
+                   8. Don't know                                   23      7.14
+                   total                                          322    100.00
+
+J22D               Years the first Bidan Delima practiced
+
+                   min:                                          2.00
+                   mean:                                        15.88
+                   max:                                         30.00
+                   #obs                                             8
+                   #miss:                                         314
+
+J24                Since 2000, any mass immunization
+
+                   missing                                          9      2.80
+                   1. Yes                                         284     88.20
+                   3. No                                           29      9.01
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+JMLKR              Jumlah Seksi KR Terisi
+
+                   min:                                          1.00
+                   mean:                                         1.35
+                   max:                                          3.00
+                   #obs                                           313
+                   #miss:                                           9
+
+LANGMAIN           Interview in what language?
+
+                   00. Indonesia                                  304     94.41
+                   01. Javanese                                    11      3.42
+                   02. Sundanese                                    5      1.55
+                   09. Minang                                       2      0.62
+                   total                                          322    100.00
+
+LANGOTHR           Other language used
+
+                   00. Indonesia                                   11      3.42
+                   01. Javanese                                    48     14.91
+                   02. Sundanese                                    4      1.24
+                   07. Madura                                       1      0.31
+                   08. Sasak                                        4      1.24
+                   09. Minang                                      12      3.73
+                   10. Banjar                                       1      0.31
+                   13. Nias                                         1      0.31
+                   14. Palembang                                    2      0.62
+                   96. Nothing                                    238     73.91
+                   total                                          322    100.00
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   12. North Sumatra                               27      8.39
+                   13. West Sumatra                                14      4.35
+                   16. South Sumatra                               12      3.73
+                   18. Lampung                                     11      3.42
+                   19. Bangka Belitung                              3      0.93
+                   31. Jakarta                                     40     12.42
+                   32. West Java                                   46     14.29
+                   33. Central Java                                37     11.49
+                   34. D.I. Yogyakarta                             22      6.83
+                   35. East Java                                   45     13.98
+                   36. Banten                                       6      1.86
+                   51. Bali                                        14      4.35
+                   52. West Nusa Tenggara                          16      4.97
+                   63. South Kalimantan                            13      4.04
+                   73. South Sulawesi                              16      4.97
+                   total                                          322    100.00
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   12. North Sumatra                               27      8.39
+                   13. West Sumatra                                14      4.35
+                   16. South Sumatra                               12      3.73
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(LK010707  continued)
+
+                   18. Lampung                                     11      3.42
+                   19. Bangka Belitung                              3      0.93
+                   31. Jakarta                                     40     12.42
+                   32. West Java                                   46     14.29
+                   33. Central Java                                37     11.49
+                   34. D.I. Yogyakarta                             22      6.83
+                   35. East Java                                   45     13.98
+                   36. Banten                                       6      1.86
+                   51. Bali                                        14      4.35
+                   52. West Nusa Tenggara                          16      4.97
+                   63. South Kalimantan                            13      4.04
+                   73. South Sulawesi                              15      4.66
+                   76. West Sulawesi                                1      0.31
+                   total                                          322    100.00
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        33.01
+                   max:                                         78.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        34.64
+                   max:                                         78.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        87.58
+                   max:                                        730.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        75.57
+                   max:                                        730.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK05               Status of region
+
+                   1. Urban                                       201     62.42
+                   2. Rural                                       121     37.58
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 17
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+LK15               Interviewer code
+
+
+LK16               Editor code
+
+
+LK17               Waslok code
+
+
+LK19               Field coord. code
+
+
+NUMVIS             Number of visit
+
+                   min:                                          1.00
+                   mean:                                         1.05
+                   max:                                          3.00
+                   #obs                                           322
+                   #miss:                                           0
+
+PAP28              Raskin rice program in last 12 months?
+
+                   missing                                         10      3.11
+                   1. Yes                                         310     96.27
+                   3. No                                            2      0.62
+                   total                                          322    100.00
+
+PAP29X             Past yr, times RASKIN rice distributed
+
+                   missing                                         12      3.73
+                   1. Given                                       304     94.41
+                   8. Don't Know                                    6      1.86
+                   total                                          322    100.00
+
+PAP29              Past yr, times RASKIN rice distributed
+
+                   min:                                          1.00
+                   mean:                                        10.65
+                   max:                                         13.00
+                   #obs                                           304
+                   #miss:                                          18
+
+PAP30X             Past yr, tons of RASKIN rice delivered
+
+                   missing                                         12      3.73
+                   1. Given                                       153     47.52
+                   8. Don't Know                                  157     48.76
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 18
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP30              Past yr, tons of RASKIN rice delivered
+
+                   min:                                          1.00
+                   mean:                                        59.05
+                   max:                                        961.00
+                   #obs                                           153
+                   #miss:                                         169
+
+PAP31X             Past yr, percent of HHs receiving RASKIN
+
+                   missing                                         12      3.73
+                   1. Given                                       253     78.57
+                   8. Don't Know                                   57     17.70
+                   total                                          322    100.00
+
+PAP31              Past yr, percent of HHs receiving RASKIN
+
+                   min:                                          1.00
+                   mean:                                        45.53
+                   max:                                        100.00
+                   #obs                                           253
+                   #miss:                                          69
+
+PAP32X             Last time RASKIN rice was distributed
+
+                   missing                                         12      3.73
+                   1. Enter date                                  310     96.27
+                   total                                          322    100.00
+
+PAP32M             Last time RASKIN rice was distributed
+
+                   missing                                         12      3.73
+                   01. JANUARY                                     33     10.25
+                   02. FEBRUARY                                    83     25.78
+                   03. MARCH                                      101     31.37
+                   04. APRIL                                       47     14.60
+                   05. MAY                                         17      5.28
+                   08. AUGUST                                       2      0.62
+                   10. OCTOBER                                      1      0.31
+                   11. NOVEMBER                                     7      2.17
+                   12. DECEMBER                                    16      4.97
+                   98. DK                                           3      0.93
+                   total                                          322    100.00
+
+PAP32Y             Last time RASKIN rice was distributed
+
+                   min:                                       2007.00
+                   mean:                                      2033.68
+                   max:                                       9998.00
+                   #obs                                           310
+                   #miss:                                          12
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 19
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP36X             Average amount received by recipients
+
+                   missing                                         12      3.73
+                   1. Given                                       301     93.48
+                   8. Don't Know                                    9      2.80
+                   total                                          322    100.00
+
+PAP36              Average amount received by recipients
+
+                   min:                                          2.00
+                   mean:                                        10.82
+                   max:                                         60.00
+                   #obs                                           301
+                   #miss:                                          21
+
+PAP37X             What was the price/kg of RASKIN rice
+
+                   missing                                         12      3.73
+                   1. Enter                                       296     91.93
+                   8. Don't Know                                   14      4.35
+                   total                                          322    100.00
+
+PAP37              What was the price/kg of RASKIN rice
+
+                   min:                                          0.00
+                   mean:                                      2054.12
+                   max:                                      24000.00
+                   #obs                                           296
+                   #miss:                                          26
+
+PAP38X             Do you know the market price/kilogram
+
+                   missing                                         12      3.73
+                   1. Enter                                       298     92.55
+                   8. Don't Know                                   12      3.73
+                   total                                          322    100.00
+
+PAP38              Market price/kg of the rice in that time
+
+
+PAP39              Did all households receive equal amounts
+
+                   missing                                         12      3.73
+                   1. Yes                                         268     83.23
+                   3. No                                           42     13.04
+                   total                                          322    100.00
+
+PAP40              How was amount of rice determined?
+
+                   missing                                        280     86.96
+                   A. Based on the number of hh members             4      1.24
+                   AB                                               3      0.93
+                   ABC                                              2      0.62
+                   ABV                                              1      0.31
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 20
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PAP40  continued)
+
+                   AC                                               1      0.31
+                   B. Based on yhe poverty level of the hh         18      5.59
+                   BV                                               2      0.62
+                   V. Other                                        11      3.42
+                   total                                          322    100.00
+
+PAP46              Market operation for rice in last 12 mo
+
+                   missing                                         10      3.11
+                   1. Yes                                          77     23.91
+                   3. No                                          235     72.98
+                   total                                          322    100.00
+
+PAP47X             Do you know how many times?
+
+                   missing                                        245     76.09
+                   1. Enter                                        75     23.29
+                   8. Don't know                                    2      0.62
+                   total                                          322    100.00
+
+PAP47              # of times of market operation for rice
+
+                   min:                                          1.00
+                   mean:                                         2.00
+                   max:                                         12.00
+                   #obs                                            75
+                   #miss:                                         247
+
+PAP50A             Who distributed/sold the rice?
+
+                   Variable PAP50A can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP50A will have the value ACF.  If the       
+                   interviewee selected D and E, PAP50A will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP50A    A =  Central government                             
+                                               B =  Regional government                            
+                                               C =  Non government                                 
+                                               Y =  Don't Know                                     
+                                               Z =  Missing                                        
+
+
+PAP50X             When was last Market Operation for rice?
+
+                   missing                                        245     76.09
+                   1. Enter date                                   77     23.91
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 21
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PAP50M  continued)
+
+PAP50M             When was last Market Operation for rice?
+
+                   missing                                        245     76.09
+                   01. JANUARY                                      7      2.17
+                   02. FEBRUARY                                     3      0.93
+                   03. MARCH                                        3      0.93
+                   04. APRIL                                        3      0.93
+                   06. JUNE                                         4      1.24
+                   07. JULY                                         1      0.31
+                   08. AUGUST                                       4      1.24
+                   09.  SEPTEMBER                                   7      2.17
+                   10. OCTOBER                                      7      2.17
+                   11. NOVEMBER                                    13      4.04
+                   12. DECEMBER                                    15      4.66
+                   98. DK                                          10      3.11
+                   total                                          322    100.00
+
+PAP50Y             When was last Market Operation for rice?
+
+                   min:                                       2007.00
+                   mean:                                      2007.22
+                   max:                                       2008.00
+                   #obs                                            77
+                   #miss:                                         245
+
+PAP53X             Maximum amount of rice a HH could buy
+
+                   missing                                        245     76.09
+                   1. Given                                        63     19.57
+                   6. No Maximum                                    6      1.86
+                   8. Don't Know                                    8      2.48
+                   total                                          322    100.00
+
+PAP53              Maximum amount of rice a HH could buy
+
+                   min:                                          2.00
+                   mean:                                        11.44
+                   max:                                         25.00
+                   #obs                                            63
+                   #miss:                                         259
+
+PAP54X             Price/kg paid by each household?
+
+                   missing                                        245     76.09
+                   1. Given                                        67     20.81
+                   8. Don't Know                                   10      3.11
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 22
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP54              Price/kg paid by each household?
+
+                   min:                                          0.00
+                   mean:                                      2513.43
+                   max:                                      16000.00
+                   #obs                                            67
+                   #miss:                                         255
+
+PAP55X             What was the market price/kg for rice?
+
+                   missing                                        245     76.09
+                   1. Given                                        71     22.05
+                   8. Don't Know                                    6      1.86
+                   total                                          322    100.00
+
+PAP55              What was the market price/kg for rice?
+
+                   min:                                       2000.00
+                   mean:                                      4316.90
+                   max:                                       6500.00
+                   #obs                                            71
+                   #miss:                                         251
+
+REASON             CHECKING BY EDITOR
+
+                   missing                                        322    100.00
+                   total                                          322    100.00
+
+RESULT             Result of interview
+
+                   1. Completed                                   313     97.20
+                   4. EA Duplicate                                  9      2.80
+                   total                                          322    100.00
+
+RESULT1            Result of visitor interview(1)
+
+                   1. Completed                                   305     94.72
+                   2. Partially Completed                          14      4.35
+                   4. EA Duplicate                                  3      0.93
+                   total                                          322    100.00
+
+RESULT2            Result of visitor interview(2)
+
+                   missing                                        308     95.65
+                   1. Completed                                    13      4.04
+                   2. Partially Completed                           1      0.31
+                   total                                          322    100.00
+
+RESULT3            Result of visitor interview(3)
+
+                   missing                                        321     99.69
+                   1. Completed                                     1      0.31
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 23
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+SUPVERIF           Checked by Supervisor (Verified)
+
+                   1. Yes                                          26      8.07
+                   3. No                                          296     91.93
+                   total                                          322    100.00
+
+SUP_EDIT           Checking by Supervisor :Checked
+
+                   1. Yes                                          43     13.35
+                   3. No                                          279     86.65
+                   total                                          322    100.00
+
+SUP_OBS            Checking by Supervisor :Observed
+
+                   1. Yes                                          40     12.42
+                   3. No                                          282     87.58
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 24
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_I                
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   PKK                                            948    100.00
+                   total                                          948    100.00
+
+COMMID07           2007 community ID
+
+
+I13X               Knows number of schools
+
+                   missing                                          9      0.95
+                   1. Givent                                      934     98.52
+                   6. None                                          5      0.53
+                   total                                          948    100.00
+
+I13                Number of schools used by the population
+
+                   min:                                          1.00
+                   mean:                                         3.81
+                   max:                                         23.00
+                   #obs                                           934
+                   #miss:                                          14
+
+IDW                IDW
+
+
+ITYPE              Type of school
+
+                   missing                                          9      0.95
+                   A. SD                                          313     33.02
+                   B. SMP                                         313     33.02
+                   C. SMU                                         313     33.02
+                   total                                          948    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 25
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_J                
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BKTYPE             Book Type
+
+
+COMMID07           2007 community ID
+
+
+IDW                IDW
+
+
+J26                How many [..] can be used by the people?
+
+                   min:                                          1.00
+                   mean:                                         3.78
+                   max:                                         46.00
+                   #obs                                         1,668
+                   #miss:                                         219
+
+J26X               Do you know how many can be used?   output
+
+                   missing                                          9      0.48
+                   1. Given                                     1,668     88.39
+                   6. NA                                          209     11.08
+                   8. Don't Know                                    1      0.05
+                   total                                        1,887    100.00
+
+J26TYPE            Community
+
+                   missing                                          9      0.48
+                   A. Health Centers(Puskesmas & Pustu)           313     16.59
+                   Aa. Posyandu                                   313     16.59
+                   Ab. Posyandu Lansia                            313     16.59
+                   B. Private health practitioner                 313     16.59
+                   C. Traditional health workers                  313     16.59
+                   D. Public or private hospital                  313     16.59
+                   total                                        1,887    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 26
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_J1               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   PKK                                          2,310    100.00
+                   total                                        2,310    100.00
+
+COMMID07           2007 community ID
+
+
+FASCODE            Facility Code
+
+
+IDW                IDW
+
+
+J25A               In [...] any mass immunization/vacation?
+
+                   missing                                         38      1.65
+                   1. Yes                                       1,376     59.57
+                   3. none                                        547     23.68
+                   8. Don't know                                  349     15.11
+                   total                                        2,310    100.00
+
+J25B               Types of mass immunization
+
+                   Variable J25B can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, J25B will have the value ACF.  If the       
+                   interviewee selected D and E, J25B will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: J25B      A1 =  Smallpox                                      
+                                               A2 =  Measles                                       
+                                               B =  BCG                                            
+                                               C =  Polio                                          
+                                               D =  DPT                                            
+                                               E =  Tetanus tox.                                   
+                                               F =  Hepatitis B                                    
+                                               V =  Other                                          
+                                               Z =  Missing                                        
+
+
+YEAR               Year of mass immunization
+
+                   min:                                       2000.00
+                   mean:                                      2003.50
+                   max:                                       2007.00
+                   #obs                                         2,272
+                   #miss:                                          38
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 27
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_KR               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   PKK                                            432    100.00
+                   total                                          432    100.00
+
+COMMID07           2007 community ID
+
+
+IDW                IDW
+
+
+KR02               Age of respondent
+
+                   min:                                         21.00
+                   mean:                                        41.88
+                   max:                                         73.00
+                   #obs                                           423
+                   #miss:                                           9
+
+KR03               Position in the women's group
+
+                   missing                                          9      2.08
+                   1. Head of PKK                                 167     38.66
+                   2. Organizer of Pkk                            191     44.21
+                   3. Cadre of PKK                                 58     13.43
+                   4. Ex organizer of PKK                           3      0.69
+                   5. Other                                         4      0.93
+                   total                                          432    100.00
+
+KR04               Length of tenure in position
+
+                   min:                                          0.00
+                   mean:                                         7.59
+                   max:                                         48.00
+                   #obs                                           423
+                   #miss:                                           9
+
+KR05               Highest level of education
+
+                   missing                                          9      2.08
+                   01. No school/Not yet in school                  2      0.46
+                   02. Elementary school                           38      8.80
+                   03. Junior High - General                       56     12.96
+                   04. Junior High - Vocational                    18      4.17
+                   05. Senior High - General                      163     37.73
+                   06. Senior High - Vocational                    60     13.89
+                   12. Adult Education B                            2      0.46
+                   60. Diploma 1,2,3                               30      6.94
+                   61. University S1                               49     11.34
+                   62. University S2                                2      0.46
+                   73. Madrasah Tsanawiyah                          2      0.46
+                   95. Other                                        1      0.23
+                   total                                          432    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 28
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_KR               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+KR06               Highest class completed
+
+                   missing                                          9      2.08
+                   00. DIDN'T COMPLETE 1ST CLASS AT THAT LE         5      1.16
+                   01. 1                                            1      0.23
+                   02. 2                                            6      1.39
+                   03. 3                                            9      2.08
+                   05. 5                                            2      0.46
+                   07. GRADUATED                                  399     92.36
+                   96. NO SCHOOL                                    1      0.23
+                   total                                          432    100.00
+
+KR07               Length of time lived in village
+
+                   min:                                          0.00
+                   mean:                                        26.52
+                   max:                                         73.00
+                   #obs                                           423
+                   #miss:                                           9
+
+KRTYPE             Type of respondent
+
+                   missing                                          9      2.08
+                   A. Respondent A                                313     72.45
+                   B. Respondent B                                 84     19.44
+                   C. Respondent C                                 26      6.02
+                   total                                          432    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 29
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_KSR              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BKTYPE             Book Type
+
+
+COMMID07           2007 community ID
+
+
+IDW                IDW
+
+
+KRS11B             Unit
+
+                   missing                                        786     83.09
+                   1. Kg                                           85      8.99
+                   2. Liter                                        75      7.93
+                   total                                          946    100.00
+
+KSR07A             Sale with price under the market price
+
+                   missing                                         10      1.06
+                   1. Yes                                         160     16.91
+                   3. No                                          776     82.03
+                   total                                          946    100.00
+
+KSR08A             Who distributed or sold
+
+                   missing                                        786     83.09
+                   A. Central government                           14      1.48
+                   AB                                              10      1.06
+                   AC                                               2      0.21
+                   B. Regional government                         104     10.99
+                   BC                                               2      0.21
+                   C. Non government                               23      2.43
+                   Y. Don't Know                                    5      0.53
+                   total                                          946    100.00
+
+KSR09              Past yr, in what months was [...] offered?
+
+                   Variable KSR09 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, KSR09 will have the value ACF.  If the       
+                   interviewee selected D and E, KSR09 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: KSR09     A =  JANUARY                                        
+                                               B =  FEBRUARY                                       
+                                               C =  MARCH                                          
+                                               D =  APRIL                                          
+                                               E =  MAY                                            
+                                               F =  JUNE                                           
+                                               G =  JULY                                           
+                                               H =  AUGUST                                         
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 30
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_KSR              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               I =   SEPTEMBER                                     
+                                               J =  OCTOBER                                        
+                                               K =  NOVEMBER                                       
+                                               L =  DECEMBER                                       
+
+
+KSR09A             Average amount of [...] received by HHs
+
+                   min:                                          1.00
+                   mean:                                        41.91
+                   max:                                        998.00
+                   #obs                                           160
+                   #miss:                                         786
+
+KSR11A             Last market operation, price per unit
+
+                   min:                                          0.00
+                   mean:                                     31356.20
+                   max:                                     999998.00
+                   #obs                                           160
+                   #miss:                                         786
+
+KSR11C             Last market operation, unit market price
+
+                   min:                                          0.00
+                   mean:                                     26229.34
+                   max:                                     999998.00
+                   #obs                                           160
+                   #miss:                                         786
+
+KSR11D             Unit
+
+                   missing                                        786     83.09
+                   1. Kg                                           87      9.20
+                   2. Liter                                        73      7.72
+                   total                                          946    100.00
+
+KSR12              To which groups was assistance available
+
+                   missing                                        786     83.09
+                   A. Low-income                                   51      5.39
+                   AB                                              20      2.11
+                   AV                                               1      0.11
+                   B. Everyone                                     85      8.99
+                   C. Disaster affected HH                          1      0.11
+                   V. Others                                        2      0.21
+                   total                                          946    100.00
+
+KSR2TYPE           Type of goods
+
+                   missing                                         10      1.06
+                   D. Sugar                                       312     32.98
+                   J. Cooking oil                                 312     32.98
+                   K. Kerosene                                    312     32.98
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 31
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_KSR              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          946    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 32
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_PAP2             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   PKK                                            364    100.00
+                   total                                          364    100.00
+
+COMMID07           2007 community ID
+
+
+IDW                IDW
+
+
+PAP2TYPE           Type
+
+                   missing                                        280     76.92
+                   A. Largest                                      42     11.54
+                   B. Smallest                                     42     11.54
+                   total                                          364    100.00
+
+PAP41              These HHs received the [..] portion
+
+                   missing                                        280     76.92
+                   01. Poorest                                     23      6.32
+                   02. poor                                        20      5.49
+                   03. Big family                                   4      1.10
+                   04. Only who can afford to buy                  19      5.22
+                   95. Other                                       18      4.95
+                   total                                          364    100.00
+
+PAP42              Total amount
+
+                   min:                                          2.00
+                   mean:                                         9.43
+                   max:                                         35.00
+                   #obs                                            84
+                   #miss:                                         280
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 33
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_PM               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   PKK                                          5,627    100.00
+                   total                                        5,627    100.00
+
+COMMID07           2007 community ID
+
+
+IDW                IDW
+
+
+PM02               Is community program/activity conducted
+
+                   missing                                          9      0.16
+                   1. It is presently conducted on a routin     2,620     46.56
+                   2. It has been conducted, but presently        450      8.00
+                   3. It has never been conducted               2,548     45.28
+                   total                                        5,627    100.00
+
+PM03AX             Year the [..] program began
+
+                   missing                                      2,558     45.46
+                   1. Givent                                    2,095     37.23
+                   8. Don't Know                                  974     17.31
+                   total                                        5,627    100.00
+
+PM03A              Year the [..] program began
+
+                   min:                                       1945.00
+                   mean:                                      1998.88
+                   max:                                       9998.00
+                   #obs                                         2,095
+                   #miss:                                       3,532
+
+PM03BX             When was this program ended
+
+                   missing                                      2,558     45.46
+                   1. Year given                                  262      4.66
+                   3. Still being conducted                     2,697     47.93
+                   8. Don't know                                  110      1.95
+                   total                                        5,627    100.00
+
+PM03B              Year the [..] program began
+
+                   min:                                       1975.00
+                   mean:                                      2001.61
+                   max:                                       2008.00
+                   #obs                                           262
+                   #miss:                                       5,365
+
+PM04A              Percent of people who are members
+
+                   missing                                      2,558     45.46
+                   1. 0-25 %                                      973     17.29
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 34
+book:    PKK  - DESA/KELURAHAN WOMEN’S GROUP (PKK)                                   
+module:  PKK_PM               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PM04A  continued)
+
+                   2. 25-75 %                                   1,439     25.57
+                   3. 75-100 %                                    657     11.68
+                   total                                        5,627    100.00
+
+PMTYPE             Kind of programs
+
+                   missing                                          9      0.16
+                   1. Village Coorperative                        313      5.56
+                   12a                                            312      5.54
+                   14. Solid Waste Management System              312      5.54
+                   15. Infrastructure Development Program f       312      5.54
+                   18. Religious Activities                       312      5.54
+                   19. Medical Herb Garden                        312      5.54
+                   2. Youth Group                                 313      5.56
+                   20. Child Development Program                  312      5.54
+                   21. Teen Development Program                   312      5.54
+                   22. Program for Elderly                        312      5.54
+                   23. Health fund                                312      5.54
+                   24. Family Group                               312      5.54
+                   25. Village saving                             312      5.54
+                   4. Village Mobile Library                      312      5.54
+                   5. Neighborhood Watch Program                  312      5.54
+                   6. Community public works                      312      5.54
+                   8a                                             312      5.54
+                   9. Village improvement program                 312      5.54
+                   total                                        5,627    100.00

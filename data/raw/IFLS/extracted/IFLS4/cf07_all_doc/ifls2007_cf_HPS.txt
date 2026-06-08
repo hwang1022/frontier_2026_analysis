@@ -1,0 +1,861 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       HPS                                            
+ T O P I C :     PRICES: MARKET                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       HPS
+ T O P I C :     Prices: Market
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      HPS                                                     328
+      HPS_H                                                 12480
+      HPS_HOUR                                                311
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       HPS
+ T O P I C :     Prices: Market
+
+--------------------------------------------------------------------------------
+NOTES ABOUT BOOK HPS                                                       
+--------------------                                                       
+Book HPS contains market prices from enumerator visit to a large local     
+market.                                                                    
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    HPS  - Prices: Market                                   
+module:  HPS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Book Type
+
+                   HPS                                            328    100.00
+                   total                                          328    100.00
+
+BEGHR1             Time interview began (hour)
+
+                   min:                                          5.00
+                   mean:                                         9.23
+                   max:                                         20.00
+                   #obs                                           328
+                   #miss:                                           0
+
+BEGHR2             Time interview began (minute)
+
+                   min:                                          0.00
+                   mean:                                        13.62
+                   max:                                         55.00
+                   #obs                                           328
+                   #miss:                                           0
+
+COMMID07           2007 community ID
+
+
+CP10               Was the interview interupted by ...
+
+                   A. Not applicable                               81     24.70
+                   AB                                               1      0.30
+                   B. Customer                                    230     70.12
+                   BC                                               2      0.61
+                   BD                                               5      1.52
+                   D. Others                                        9      2.74
+                   total                                          328    100.00
+
+CP11               Evaluation of the answers
+
+                   1. Very God                                     55     16.77
+                   2. Good                                        230     70.12
+                   3.                                              41     12.50
+                   4. Bad                                           2      0.61
+                   total                                          328    100.00
+
+CP12               Seriousness/attentivness of respondant
+
+                   1. Very God                                     60     18.29
+                   2. Good                                        224     68.29
+                   3.                                              40     12.20
+                   4. Bad                                           4      1.22
+                   total                                          328    100.00
+
+EDITOR             Code of Editor book Market Price
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    HPS  - Prices: Market                                   
+module:  HPS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+EDITORCK           Checking status
+
+                   1. Edited,no correction necessary              102     31.10
+                   2. Edited and corrected                        220     67.07
+                   3. Manually edited without CAFE                  5      1.52
+                   4. Edited,but not corrected                      1      0.30
+                   total                                          328    100.00
+
+ENDHR1             Time interview ended (hour)
+
+                   min:                                          5.00
+                   mean:                                        10.05
+                   max:                                         21.00
+                   #obs                                           328
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (minute)
+
+                   min:                                          0.00
+                   mean:                                        21.89
+                   max:                                         59.00
+                   #obs                                           328
+                   #miss:                                           0
+
+HPSCODE            Code name of desa/kelurahan book price
+
+
+IDIVWR             Code of Interviewer book Market Price
+
+
+IVWDAY1            Date of intreview (day of month)
+
+                   min:                                          1.00
+                   mean:                                        15.90
+                   max:                                         31.00
+                   #obs                                           328
+                   #miss:                                           0
+
+IVWMTH1            Date of interview (month)
+
+                   2. February                                     72     21.95
+                   3. March                                       116     35.37
+                   4. April                                        95     28.96
+                   5. May                                          44     13.41
+                   6. June                                          1      0.30
+                   total                                          328    100.00
+
+IVWYR1             Date of interview(Year)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                           328
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    HPS  - Prices: Market                                   
+module:  HPS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   12. North Sumatra                               27      8.23
+                   13. West Sumatra                                13      3.96
+                   16. South Sumatra                               12      3.66
+                   18. Lampung                                     11      3.35
+                   19. Bangka Belitung                              2      0.61
+                   31. Jakarta                                     39     11.89
+                   32. West Java                                   49     14.94
+                   33. Central Java                                36     10.98
+                   34. D.I. Yogyakarta                             24      7.32
+                   35. East Java                                   46     14.02
+                   36. Banten                                       8      2.44
+                   51. Bali                                        15      4.57
+                   52. West Nusa Tenggara                          16      4.88
+                   63. South Kalimantan                            14      4.27
+                   73. South Sulawesi                              16      4.88
+                   total                                          328    100.00
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   12. North Sumatra                               27      8.23
+                   13. West Sumatra                                13      3.96
+                   16. South Sumatra                               12      3.66
+                   18. Lampung                                     11      3.35
+                   19. Bangka Belitung                              2      0.61
+                   31. Jakarta                                     39     11.89
+                   32. West Java                                   49     14.94
+                   33. Central Java                                36     10.98
+                   34. D.I. Yogyakarta                             24      7.32
+                   35. East Java                                   46     14.02
+                   36. Banten                                       8      2.44
+                   51. Bali                                        15      4.57
+                   52. West Nusa Tenggara                          16      4.88
+                   63. South Kalimantan                            14      4.27
+                   73. South Sulawesi                              15      4.57
+                   76. West Sulawesi                                1      0.30
+                   total                                          328    100.00
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        34.26
+                   max:                                         78.00
+                   #obs                                           328
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    HPS  - Prices: Market                                   
+module:  HPS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        35.62
+                   max:                                         78.00
+                   #obs                                           328
+                   #miss:                                           0
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        90.98
+                   max:                                        730.00
+                   #obs                                           328
+                   #miss:                                           0
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        77.82
+                   max:                                        730.00
+                   #obs                                           328
+                   #miss:                                           0
+
+LK05               Urban/rural
+
+                   1. Urban                                       251     76.52
+                   2. Rural                                        77     23.48
+                   total                                          328    100.00
+
+LK15               Code of interviewer
+
+
+LK16               Code of editor
+
+
+LK17               Code of local supervisor
+
+
+LK19               Code of field coordinator
+
+
+NUMVIS             Number of visits
+
+                   min:                                          1.00
+                   mean:                                         1.05
+                   max:                                          2.00
+                   #obs                                           328
+                   #miss:                                           0
+
+REASON             Reason of FP3
+
+                   missing                                        327     99.70
+                   2. Respondent busy                               1      0.30
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    HPS  - Prices: Market                                   
+module:  HPS                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          328    100.00
+
+REC_TYPE           Record type
+
+
+RESULT             Interview result
+
+                   1. Completed                                   327     99.70
+                   2. Partially completed                           1      0.30
+                   total                                          328    100.00
+
+SUPVERIF           Monitoring by local supervisor
+
+                   1. Yes                                          10      3.05
+                   3. No                                          318     96.95
+                   total                                          328    100.00
+
+SUP_EDIT           Monitoring by local supervisor
+
+                   1. Yes                                          40     12.20
+                   3. No                                          288     87.80
+                   total                                          328    100.00
+
+SUP_OBS            Monitoring by local supervisor
+
+                   1. Yes                                          15      4.57
+                   3. No                                          313     95.43
+                   total                                          328    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    HPS  - Prices: Market                                   
+module:  HPS_H                
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+COMMID07           2007 community ID
+
+
+H01                Price per unit
+
+                   min:                                        100.00
+                   mean:                                     11027.82
+                   max:                                      99998.00
+                   #obs                                        11,699
+                   #miss:                                         781
+
+H02                Unit for H01
+
+                   missing                                      2,539     20.34
+                   1. Kg                                        4,303     34.48
+                   2. Litre                                       561      4.50
+                   3. Bottle                                      266      2.13
+                   4. Pieces                                      308      2.47
+                   11. Box                                        650      5.21
+                   12. Can                                        321      2.57
+                   13. Pack                                     1,371     10.99
+                   95. Others                                   2,159     17.30
+                   99. Missing                                      2      0.02
+                   total                                       12,480    100.00
+
+H03                How much contained in 1 unit
+
+                   min:                                          0.01
+                   mean:                                       166.03
+                   max:                                        998.00
+                   #obs                                         4,769
+                   #miss:                                       7,711
+
+H03A               Is it available for sale?
+
+                   1                                            9,150     73.32
+                   2                                            1,102      8.83
+                   3                                              346      2.77
+                   4                                               42      0.34
+                   5. Others                                    1,059      8.49
+                   6. Not Applicable                              295      2.36
+                   8. Can't sell                                  486      3.89
+                   total                                       12,480    100.00
+
+H04                In what units is it measured
+
+                   missing                                      7,711     61.79
+                   1. Kg                                        1,315     10.54
+                   2. Litre                                       331      2.65
+                   8. Gram                                      3,123     25.02
+                   total                                       12,480    100.00
+
+HPSCODE            Code name of desa/kelurahan book
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    HPS  - Prices: Market                                   
+module:  HPS_H                
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+HTYPE              Type of Product
+
+                   1. Rice:  high quality                         320      2.56
+                   2. Rice: average quality                       320      2.56
+                   3. Rice : low quality                          320      2.56
+                   4. Corn                                        320      2.56
+                   5. Cassava                                     320      2.56
+                   6. Tapioca                                     320      2.56
+                   7. Beef (good quality, boneless)               320      2.56
+                   8. Chicken (one chicken already cleaned)       320      2.56
+                   9. Goat (good quality, boneless)               320      2.56
+                   10.Fresh fish (whole)                          320      2.56
+                   11.Dried or salted fish                        320      2.56
+                   12.Wheat flour                                 320      2.56
+                   13.Cooking oil                                 320      2.56
+                   14.White sugar                                 320      2.56
+                   15.Salt                                        320      2.56
+                   16.Infant porridge                             320      2.56
+                   17.Infant formula                              320      2.56
+                   18.Sweetened condensed milk                    320      2.56
+                   19.Powdered Milk                               320      2.56
+                   20.Noodles                                     320      2.56
+                   21.Tofu                                        320      2.56
+                   22.Bean Curd                                   320      2.56
+                   23.Filtered clove cigarettes                   320      2.56
+                   24.Filtered cigarettes                         320      2.56
+                   25.Potato                                      320      2.56
+                   26.Kangkung (Water Spinach)                    320      2.56
+                   27.Spinach                                     320      2.56
+                   28.Cassava leaves                              320      2.56
+                   29.Bananas                                     320      2.56
+                   30.Papaya                                      320      2.56
+                   31.Bottled Drinking water                      320      2.56
+                   32.Kerosene                                    320      2.56
+                   35.Bath soap                                   320      2.56
+                   36.Cotton cloth                                320      2.56
+                   37.Women’s blouse                              320      2.56
+                   38.Men’s trousers                              320      2.56
+                   39.Women’s skirt                               320      2.56
+                   40.Plastic sandals (for children)              320      2.56
+                   41.Writing book                                320      2.56
+                   total                                       12,480    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    HPS  - Prices: Market                                   
+module:  HPS_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+CLOSHR_1            
+
+                   min:                                          8.00
+                   mean:                                        15.82
+                   max:                                         23.00
+                   #obs                                           278
+                   #miss:                                          33
+
+CLOSHR_2            
+
+                   min:                                          8.00
+                   mean:                                        15.84
+                   max:                                         23.00
+                   #obs                                           275
+                   #miss:                                          36
+
+CLOSHR_3            
+
+                   min:                                          8.00
+                   mean:                                        15.81
+                   max:                                         23.00
+                   #obs                                           277
+                   #miss:                                          34
+
+CLOSHR_4            
+
+                   min:                                          8.00
+                   mean:                                        15.71
+                   max:                                         23.00
+                   #obs                                           282
+                   #miss:                                          29
+
+CLOSHR_5            
+
+                   min:                                          8.00
+                   mean:                                        15.79
+                   max:                                         23.00
+                   #obs                                           277
+                   #miss:                                          34
+
+CLOSHR_6            
+
+                   min:                                          7.00
+                   mean:                                        15.75
+                   max:                                         23.00
+                   #obs                                           276
+                   #miss:                                          35
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    HPS  - Prices: Market                                   
+module:  HPS_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+CLOSHR_7            
+
+                   min:                                          7.00
+                   mean:                                        15.67
+                   max:                                         23.00
+                   #obs                                           281
+                   #miss:                                          30
+
+CLOSMNT1            
+
+                   min:                                          0.00
+                   mean:                                         6.02
+                   max:                                         59.00
+                   #obs                                           278
+                   #miss:                                          33
+
+CLOSMNT2            
+
+                   min:                                          0.00
+                   mean:                                         6.08
+                   max:                                         59.00
+                   #obs                                           275
+                   #miss:                                          36
+
+CLOSMNT3            
+
+                   min:                                          0.00
+                   mean:                                         6.20
+                   max:                                         59.00
+                   #obs                                           277
+                   #miss:                                          34
+
+CLOSMNT4            
+
+                   min:                                          0.00
+                   mean:                                         5.93
+                   max:                                         59.00
+                   #obs                                           282
+                   #miss:                                          29
+
+CLOSMNT5            
+
+                   min:                                          0.00
+                   mean:                                         6.26
+                   max:                                         59.00
+                   #obs                                           277
+                   #miss:                                          34
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    HPS  - Prices: Market                                   
+module:  HPS_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+CLOSMNT6            
+
+                   min:                                          0.00
+                   mean:                                         6.06
+                   max:                                         59.00
+                   #obs                                           276
+                   #miss:                                          35
+
+CLOSMNT7            
+
+                   min:                                          0.00
+                   mean:                                         5.85
+                   max:                                         59.00
+                   #obs                                           281
+                   #miss:                                          30
+
+COMMID07           2007 community ID
+
+
+HPSCODE            Code name of desa/kelurahan book
+
+
+OPENHR_1            
+
+                   min:                                          0.00
+                   mean:                                        14.57
+                   max:                                         96.00
+                   #obs                                           311
+                   #miss:                                           0
+
+OPENHR_2            
+
+                   min:                                          0.00
+                   mean:                                        15.44
+                   max:                                         96.00
+                   #obs                                           311
+                   #miss:                                           0
+
+OPENHR_3            
+
+                   min:                                          0.00
+                   mean:                                        14.83
+                   max:                                         96.00
+                   #obs                                           311
+                   #miss:                                           0
+
+OPENHR_4            
+
+                   min:                                          0.00
+                   mean:                                        13.36
+                   max:                                         96.00
+                   #obs                                           311
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    HPS  - Prices: Market                                   
+module:  HPS_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+OPENHR_5            
+
+                   min:                                          0.00
+                   mean:                                        14.86
+                   max:                                         96.00
+                   #obs                                           311
+                   #miss:                                           0
+
+OPENHR_6            
+
+                   min:                                          0.00
+                   mean:                                        15.08
+                   max:                                         96.00
+                   #obs                                           311
+                   #miss:                                           0
+
+OPENHR_7            
+
+                   min:                                          0.00
+                   mean:                                        13.67
+                   max:                                         96.00
+                   #obs                                           311
+                   #miss:                                           0
+
+OPENMNT1            
+
+                   min:                                          0.00
+                   mean:                                         3.71
+                   max:                                         45.00
+                   #obs                                           278
+                   #miss:                                          33
+
+OPENMNT2            
+
+                   min:                                          0.00
+                   mean:                                         3.53
+                   max:                                         45.00
+                   #obs                                           275
+                   #miss:                                          36
+
+OPENMNT3            
+
+                   min:                                          0.00
+                   mean:                                         3.66
+                   max:                                         45.00
+                   #obs                                           277
+                   #miss:                                          34
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    HPS  - Prices: Market                                   
+module:  HPS_HOUR             
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+OPENMNT4            
+
+                   min:                                          0.00
+                   mean:                                         3.76
+                   max:                                         45.00
+                   #obs                                           282
+                   #miss:                                          29
+
+OPENMNT5            
+
+                   min:                                          0.00
+                   mean:                                         3.61
+                   max:                                         45.00
+                   #obs                                           277
+                   #miss:                                          34
+
+OPENMNT6            
+
+                   min:                                          0.00
+                   mean:                                         3.84
+                   max:                                         45.00
+                   #obs                                           276
+                   #miss:                                          35
+
+OPENMNT7            
+
+                   min:                                          0.00
+                   mean:                                         3.56
+                   max:                                         45.00
+                   #obs                                           281
+                   #miss:                                          30

@@ -1,0 +1,2033 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       BK2                                            
+ T O P I C :     PERSON CHARACTERISTICS                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       BK2
+ T O P I C :     Person Characteristics
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      BK2                                                     322
+      BK2_KA3                                                 622
+      BK2_KA4                                                 967
+      BK2_LU1                                                3139
+      BK2_PL                                                 1261
+      BK2_PR2                                                 392
+      BK2_ST                                                 3452
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       BK2
+ T O P I C :     Person Characteristics
+
+--------------------------------------------------------------------------------
+  The variable VERSION identifies the release version of these data; it         
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+NOTES ABOUT BOOK 2                                                         
+------------------                                                         
+Book II provides a place to record statistical data about the              
+community.  Generally the statistical data is extracted from the           
+community's Statistical Monograph or from a copy of its PODES  (Census     
+of Village Potential) questionnaire.  If neither of these sources is       
+available, the  respondent is asked to estimate the answers, and the       
+fact that the  answer is an estimate is recorded in the questionnaire      
+booklet.   Book II also provides a protocol for the Community-Facility     
+Interviewers  to go to up to three markets or sales outlets and record     
+the prices  of various foods.                                              
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Type Book
+
+                   BK2                                            322    100.00
+                   total                                          322    100.00
+
+BEGHR1             Time interview began (hour)(1)
+
+                   min:                                          7.00
+                   mean:                                        11.46
+                   max:                                         23.00
+                   #obs                                           322
+                   #miss:                                           0
+
+BEGHR2             Time interview began (hour)(2)
+
+                   min:                                          7.00
+                   mean:                                        10.23
+                   max:                                         19.00
+                   #obs                                            56
+                   #miss:                                         266
+
+BEGHR3             Time interview began (hour)(3)
+
+                   min:                                          8.00
+                   mean:                                         9.60
+                   max:                                         11.00
+                   #obs                                             5
+                   #miss:                                         317
+
+BEGMIN1            Time interview began (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        19.89
+                   max:                                         58.00
+                   #obs                                           322
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        18.38
+                   max:                                         55.00
+                   #obs                                            56
+                   #miss:                                         266
+
+BEGMIN3            Time interview began (minute)(3)
+
+                   min:                                          0.00
+                   mean:                                         5.00
+                   max:                                         20.00
+                   #obs                                             5
+                   #miss:                                         317
+
+BK2TYPE            Type Book
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+COMMID07           2007 community ID
+
+
+CP1A               Number of questions with poor answers
+
+
+CP1B               Number of questions with poor answers
+
+
+CP1C               Number of questions with poor answers
+
+
+CP2A               Number of question that need conversion
+
+
+CP2B               Number of question that need conversion
+
+
+CP2C               Number of question that need conversion
+
+
+CP3A               Question with invalid secondary data
+
+
+CP3B               Question with invalid secondary data
+
+
+CP3C               Question with invalid secondary data
+
+
+CP4A               Other problems
+
+
+CP4B               Other problems
+
+
+CP4C               Other problems
+
+
+EDITOR             Editor code
+
+
+EDITORCK           EDITED STATUS BY EDITOR
+
+                   1. Reviewed, without error                      99     30.75
+                   2. Reviewed and corrected                      220     68.32
+                   3. Reviewed without corrected, explain..         2      0.62
+                   4. Did not review, explain .....                 1      0.31
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+ENDHR1             Time interview ended (hour)(1)
+
+                   min:                                          0.00
+                   mean:                                        12.31
+                   max:                                         23.00
+                   #obs                                           322
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)(2)
+
+                   min:                                          7.00
+                   mean:                                        10.96
+                   max:                                         19.00
+                   #obs                                            56
+                   #miss:                                         266
+
+ENDHR3             Time interview ended (hour)(3)
+
+                   min:                                          8.00
+                   mean:                                         9.80
+                   max:                                         11.00
+                   #obs                                             5
+                   #miss:                                         317
+
+ENDMIN1            Time interview ended (minute)(1)
+
+                   min:                                          0.00
+                   mean:                                        23.63
+                   max:                                         58.00
+                   #obs                                           322
+                   #miss:                                           0
+
+ENDMIN2            Time interview ended (minute)(2)
+
+                   min:                                          0.00
+                   mean:                                        20.36
+                   max:                                         57.00
+                   #obs                                            56
+                   #miss:                                         266
+
+ENDMIN3            Time interview ended (minute)(3)
+
+                   min:                                         10.00
+                   mean:                                        18.00
+                   max:                                         30.00
+                   #obs                                             5
+                   #miss:                                         317
+
+FP3_EA             EA Duplicate
+
+
+IDIVWR             Interviewer code
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IVWDAY1            Date of interview (day of month)(1)
+
+                   min:                                          1.00
+                   mean:                                        15.95
+                   max:                                         31.00
+                   #obs                                           322
+                   #miss:                                           0
+
+IVWDAY2            Date of interview (day of month)(2)
+
+                   min:                                          2.00
+                   mean:                                        16.29
+                   max:                                         31.00
+                   #obs                                            56
+                   #miss:                                         266
+
+IVWDAY3            Date of interview (day of month)(3)
+
+                   min:                                          4.00
+                   mean:                                        14.20
+                   max:                                         26.00
+                   #obs                                             5
+                   #miss:                                         317
+
+IVWMTH1            Date of interview (month)(1)
+
+                   2. February                                     77     23.91
+                   3. March                                       108     33.54
+                   4. April                                       100     31.06
+                   5. May                                          36     11.18
+                   6. June                                          1      0.31
+                   total                                          322    100.00
+
+IVWMTH2            Date of interview (month)(2)
+
+                   missing                                        266     82.61
+                   2. February                                     23      7.14
+                   3. March                                        11      3.42
+                   4. April                                        17      5.28
+                   5. May                                           5      1.55
+                   total                                          322    100.00
+
+IVWMTH3            Date of interview (month)(3)
+
+                   missing                                        317     98.45
+                   2. February                                      2      0.62
+                   3. March                                         1      0.31
+                   4. April                                         2      0.62
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IVWYR1             Date of interview(year)(1)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                           322
+                   #miss:                                           0
+
+IVWYR2             Date of interview(year)(2)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                            56
+                   #miss:                                         266
+
+IVWYR3             Date of interview(year)(3)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                             5
+                   #miss:                                         317
+
+LANGMAIN           Interview in what language?
+
+                   00. Indonesian                                 311     96.58
+                   01. Javanese                                     1      0.31
+                   02. Sundanese                                    8      2.48
+                   09. Minang                                       1      0.31
+                   14. Palembang                                    1      0.31
+                   total                                          322    100.00
+
+LANGOTHR           Other language used if any
+
+                   00. Indonesian                                  10      3.11
+                   01. Javanese                                    37     11.49
+                   02. Sundanese                                    6      1.86
+                   08. Sasak                                        2      0.62
+                   09. Minang                                      13      4.04
+                   10. Banjar                                       1      0.31
+                   14. Palembang                                    7      2.17
+                   96. NA                                         246     76.40
+                   total                                          322    100.00
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   12. North Sumatra                               27      8.39
+                   13. West Sumatra                                14      4.35
+                   16. South Sumatra                               12      3.73
+                   18. Lampung                                     11      3.42
+                   19. Bangka Belitung                              3      0.93
+                   31. Jakarta                                     40     12.42
+                   32. West Java                                   46     14.29
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(LK010700  continued)
+
+                   33. Central Java                                37     11.49
+                   34. D.I. Yogyakarta                             22      6.83
+                   35. East Java                                   45     13.98
+                   36. Banten                                       6      1.86
+                   51. Bali                                        14      4.35
+                   52. West Nusa Tenggara                          16      4.97
+                   63. South Kalimantan                            13      4.04
+                   73. South Sulawesi                              16      4.97
+                   total                                          322    100.00
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   12. North Sumatra                               27      8.39
+                   13. West Sumatra                                14      4.35
+                   16. South Sumatra                               12      3.73
+                   18. Lampung                                     11      3.42
+                   19. Bangka Belitung                              3      0.93
+                   31. Jakarta                                     40     12.42
+                   32. West Java                                   46     14.29
+                   33. Central Java                                37     11.49
+                   34. D.I. Yogyakarta                             22      6.83
+                   35. East Java                                   45     13.98
+                   36. Banten                                       6      1.86
+                   51. Bali                                        14      4.35
+                   52. West Nusa Tenggara                          16      4.97
+                   63. South Kalimantan                            13      4.04
+                   73. South Sulawesi                              15      4.66
+                   76. West Sulawesi                                1      0.31
+                   total                                          322    100.00
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        33.01
+                   max:                                         78.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        34.64
+                   max:                                         78.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        87.58
+                   max:                                        730.00
+                   #obs                                           322
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        75.57
+                   max:                                        730.00
+                   #obs                                           322
+                   #miss:                                           0
+
+LK05               Status of area: urban or rural
+
+                   1. Urban                                       202     62.73
+                   2. Rural                                       120     37.27
+                   total                                          322    100.00
+
+LK15               Interviewer code
+
+
+LK16               Editor code
+
+
+LK17               Local supervisor code
+
+
+LK19               Field coord. code
+
+
+NUMVIS             Number of visit
+
+                   min:                                          1.00
+                   mean:                                         1.19
+                   max:                                          3.00
+                   #obs                                           322
+                   #miss:                                           0
+
+OL1                IS VILLAGE AIR GENERALLY POLLUTED?
+
+                   missing                                          9      2.80
+                   1. Yes                                          56     17.39
+                   3. No                                          257     79.81
+                   total                                          322    100.00
+
+OL2                ARE THERE GARBAGES PILE ALONG THE ROADS?
+
+                   missing                                          9      2.80
+                   1. Yes                                          62     19.25
+                   3. No                                          251     77.95
+                   total                                          322    100.00
+
+OL22               IS THERE AN NEIGHBORHOOD SECURITY POST?
+
+                   missing                                          9      2.80
+                   1. Yes                                         238     73.91
+                   3. No                                           75     23.29
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          322    100.00
+
+OL23               SIGNS WITH PUBLIC FACILITY DIRECTIONS?
+
+                   missing                                          9      2.80
+                   1. Yes                                         241     74.84
+                   3. No                                           72     22.36
+                   total                                          322    100.00
+
+OL24               VILLAGE/TOWNSHIP HALL OR CONVENTION HALL
+
+                   missing                                          9      2.80
+                   1. Yes                                         263     81.68
+                   3. No                                           50     15.53
+                   total                                          322    100.00
+
+OL25               BOARDS WITH 10 ASPECTS OF FAMILY WELFARE
+
+                   missing                                          9      2.80
+                   1. Yes                                         177     54.97
+                   3. No                                          135     41.93
+                   9. Missing                                       1      0.31
+                   total                                          322    100.00
+
+OL26               SHOPS/BUILDINGS DAMAGED OR BURNED?
+
+                   missing                                          9      2.80
+                   1. Yes                                           8      2.48
+                   3. No                                          202     62.73
+                   6. No shopping district                        103     31.99
+                   total                                          322    100.00
+
+OL27               SHOPS CLOSED/GONE OUT OF BUSINESS?
+
+                   missing                                          9      2.80
+                   1. Yes                                          40     12.42
+                   3. No                                          172     53.42
+                   6. No shopping district                        101     31.37
+                   total                                          322    100.00
+
+OL3                EXPOSED CATTLE MANURE PILESP?
+
+                   missing                                          9      2.80
+                   1. Yes                                          35     10.87
+                   3. No                                          278     86.34
+                   total                                          322    100.00
+
+OL4                BLOCKED WATER DUCT OR OBSTRUCTED RIVER?
+
+                   missing                                          9      2.80
+                   1. Yes                                          91     28.26
+                   3. No                                          222     68.94
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+OL5                STANDING POOLS OF WATER? (NOT MARSHES)
+
+                   missing                                          9      2.80
+                   1. Yes                                          81     25.16
+                   3. No                                          232     72.05
+                   total                                          322    100.00
+
+OL6                CATTLE ROAMING AROUND IN THE SETTLEMENTS
+
+                   missing                                          9      2.80
+                   1. Yes                                          66     20.50
+                   3. No                                          247     76.71
+                   total                                          322    100.00
+
+OL7                ARE THE HOUSE YARDS SWEPT CLEAN?
+
+                   missing                                          9      2.80
+                   1. Yes                                         248     77.02
+                   3. No                                           65     20.19
+                   total                                          322    100.00
+
+OL8                GRASS IN PUBLIC SQUARES WELL CARED FOR?
+
+                   missing                                          9      2.80
+                   1. Yes                                         172     53.42
+                   3. No                                          141     43.79
+                   total                                          322    100.00
+
+OL9                MANY FLIES VISIBLE (NEAR FOOD VENDORS?
+
+                   missing                                          9      2.80
+                   1. Yes                                          56     17.39
+                   3. No                                          257     79.81
+                   total                                          322    100.00
+
+REASON             Reason for FP3
+
+                   missing                                        322    100.00
+                   total                                          322    100.00
+
+RESULT1            Code of result of research(1)
+
+                   Completed                                      261     81.06
+                   Partially completed                             57     17.70
+                   Refused                                          4      1.24
+                   total                                          322    100.00
+
+RESULT2            Code of result of research(2)
+
+                   missing                                        266     82.61
+                   Completed                                       51     15.84
+                   Partially completed                              5      1.55
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+RESULT3            Code of result of research(3)
+
+                   missing                                        317     98.45
+                   Completed                                        5      1.55
+                   total                                          322    100.00
+
+RESULTS            INTERVIEW RESULTS CODE
+
+                   1. Completed                                   313     97.20
+                   4. EA Duplicate                                  9      2.80
+                   total                                          322    100.00
+
+S01                Size of village/township
+
+                   min:                                          1.03
+                   mean:                                      1901.72
+                   max:                                      99999.99
+                   #obs                                           309
+                   #miss:                                          13
+
+S01A               5 years ago, is there forest cover?
+
+                   missing                                          9      2.80
+                   1. Yes                                          60     18.63
+                   3. No                                          253     78.57
+                   total                                          322    100.00
+
+S01X               Size of village/township
+
+                   missing                                          9      2.80
+                   1. Given                                       309     95.96
+                   8. Don't Know                                    4      1.24
+                   total                                          322    100.00
+
+S01B               5 years ago, is there farm land?
+
+                   missing                                          9      2.80
+                   1. Yes                                         215     66.77
+                   3. No                                           98     30.43
+                   total                                          322    100.00
+
+S02AX              5 years ago, what percentage was forest?
+
+                   missing                                        262     81.37
+                   1. Givent                                       60     18.63
+                   total                                          322    100.00
+
+S02A               5 years ago, what percentage was forest?
+
+                   min:                                          1.00
+                   mean:                                        31.22
+                   max:                                         95.00
+                   #obs                                            60
+                   #miss:                                         262
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+S02BX              5 years ago, what percentage was farms?
+
+                   missing                                        107     33.23
+                   1. Given                                       213     66.15
+                   8. Don't know                                    2      0.62
+                   total                                          322    100.00
+
+S02B               5 years ago, what percentage was farms?
+
+                   min:                                          1.00
+                   mean:                                        45.54
+                   max:                                         97.00
+                   #obs                                           213
+                   #miss:                                         109
+
+S16                Are people living along basin river
+
+                   missing                                          9      2.80
+                   1. Yes                                         111     34.47
+                   3. No                                          202     62.73
+                   total                                          322    100.00
+
+S19                Are there any slums here
+
+                   missing                                          9      2.80
+                   1. Yes                                         113     35.09
+                   3. No                                          200     62.11
+                   total                                          322    100.00
+
+S23                Are people under high voltage electric
+
+                   missing                                          9      2.80
+                   1. Yes                                          25      7.76
+                   3. No                                          288     89.44
+                   total                                          322    100.00
+
+S26                Past 5 yr, any new houses built?
+
+                   missing                                          9      2.80
+                   1. Yes                                         267     82.92
+                   3. No                                           46     14.29
+                   total                                          322    100.00
+
+S26A               Past 5 yr, building result from disaster
+
+                   min:                                          1.00
+                   mean:                                         2.57
+                   max:                                          3.00
+                   #obs                                           313
+                   #miss:                                           9
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S28                Past 5 yr, houses built by developers?
+
+                   missing                                          9      2.80
+                   1. Yes                                          71     22.05
+                   3. No                                          242     75.16
+                   total                                          322    100.00
+
+S30AX              able to answer S30A
+
+                   missing                                          9      2.80
+                   1.given                                        271     84.16
+                   3.not given                                      4      1.24
+                   6.NA                                            38     11.80
+                   total                                          322    100.00
+
+S30A               How many RT/RW/etc are in this village?
+
+                   min:                                          0.00
+                   mean:                                        46.85
+                   max:                                        240.00
+                   #obs                                           275
+                   #miss:                                          47
+
+S30BX              able to answer S30B
+
+                   missing                                          9      2.80
+                   1.given                                        259     80.43
+                   3.not given                                     12      3.73
+                   6.NA                                            42     13.04
+                   total                                          322    100.00
+
+S30B               How many RT/RW/etc are in this village?
+
+                   min:                                          0.00
+                   mean:                                        10.55
+                   max:                                        297.00
+                   #obs                                           271
+                   #miss:                                          51
+
+S31AX              able to answer S31A
+
+                   missing                                          9      2.80
+                   1.given                                        312     96.89
+                   8.don't know                                     1      0.31
+                   total                                          322    100.00
+
+S31A               Total population in this village
+
+                   min:                                        260.00
+                   mean:                                     11419.23
+                   max:                                     206000.00
+                   #obs                                           312
+                   #miss:                                          10
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 17
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S31BX              able to answer S31B
+
+                   missing                                          9      2.80
+                   1.given                                        308     95.65
+                   5.topcoded                                       1      0.31
+                   8.don't know                                     4      1.24
+                   total                                          322    100.00
+
+S31B               Male population in this village
+
+                   min:                                        152.00
+                   mean:                                      9005.62
+                   max:                                     998998.00
+                   #obs                                           308
+                   #miss:                                          14
+
+S31CX              able to answer S31C
+
+                   missing                                          9      2.80
+                   1.given                                        309     95.96
+                   8.don't know                                     4      1.24
+                   total                                          322    100.00
+
+S31C               Female population in this village
+
+                   min:                                        163.00
+                   mean:                                      9013.45
+                   max:                                     998998.00
+                   #obs                                           309
+                   #miss:                                          13
+
+S32X               able to answer S32
+
+                   missing                                          9      2.80
+                   1. Document:                                   275     85.40
+                   3. Estimate:                                    33     10.25
+                   8. Don't Know                                    5      1.55
+                   total                                          322    100.00
+
+S32                Number of households in this village
+
+                   min:                                         76.00
+                   mean:                                      2986.42
+                   max:                                      25208.00
+                   #obs                                           308
+                   #miss:                                          14
+
+S37B               Interviewer check: data source
+
+                   missing                                          9      2.80
+                   1. Document:                                   224     69.57
+                   3. Estimate:                                    89     27.64
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 18
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S37CAX             able to answer S37CA
+
+                   missing                                        233     72.36
+                   1.given                                         89     27.64
+                   total                                          322    100.00
+
+S37CA              How many poor households in this village
+
+                   min:                                         59.00
+                   mean:                                       525.24
+                   max:                                       1830.00
+                   #obs                                            89
+                   #miss:                                         233
+
+S37CBX             able to answer S37CB
+
+                   missing                                        233     72.36
+                   1.given                                         80     24.84
+                   8.don't know                                     9      2.80
+                   total                                          322    100.00
+
+S37CB              How many poor people in this village
+
+                   min:                                         98.00
+                   mean:                                     14222.99
+                   max:                                     998998.00
+                   #obs                                            80
+                   #miss:                                         242
+
+S37D               Source of data about poor households
+
+                   Variable S37D can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, S37D will have the value ACF.  If the       
+                   interviewee selected D and E, S37D will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: S37D      A =  BKKBN                                          
+                                               B =  BPS                                            
+                                               C =  Health Ministry                                
+                                               D =  Village                                        
+                                               E =  Local Goverment                                
+                                               V =  Others                                         
+                                               Z =  Missing                                        
+
+
+S40A               Major source of village income
+
+                   missing                                          9      2.80
+                   01. Agriculture (including forestry, hun       170     52.80
+                   02. Minning and quarrying                        3      0.93
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 19
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(S40A  continued)
+
+                   03. Industry                                    26      8.07
+                   05. Construction                                11      3.42
+                   06. Grossir, retail, restaurant and acco        55     17.08
+                   08. Financing, real estate, renting and          4      1.24
+                   09. Social service (including community         32      9.94
+                   95. Other, specify                              12      3.73
+                   total                                          322    100.00
+
+S40B               Second source of village income
+
+                   missing                                          9      2.80
+                   01. Agriculture (including forestry, hun        16      4.97
+                   02. Minning and quarrying                       12      3.73
+                   03. Industry                                    29      9.01
+                   04. Electricity, gasses and water                2      0.62
+                   05. Construction                                37     11.49
+                   06. Grossir, retail, restaurant and acco       148     45.96
+                   07. Transportation, storage and communic        10      3.11
+                   08. Financing, real estate, renting and          6      1.86
+                   09. Social service (including community         40     12.42
+                   95. Other, specify                              13      4.04
+                   total                                          322    100.00
+
+S40C               Third source of village income
+
+                   missing                                          9      2.80
+                   01. Agriculture (including forestry, hun        16      4.97
+                   02. Minning and quarrying                        3      0.93
+                   03. Industry                                    28      8.70
+                   05. Construction                                58     18.01
+                   06. Grossir, retail, restaurant and acco        65     20.19
+                   07. Transportation, storage and communic        44     13.66
+                   08. Financing, real estate, renting and         19      5.90
+                   09. Social service (including community         67     20.81
+                   95. Other, specify                              13      4.04
+                   total                                          322    100.00
+
+S45                Total value of APPKD and the like
+
+                   min:                                          0.00
+                   mean:                                    541788535
+                   max:                                    9999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S46A               Balance from previous year
+
+                   min:                                          0.00
+                   mean:                                   14071516.2
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 20
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S46B               Real Village income
+
+                   min:                                          0.00
+                   mean:                                   55065107.5
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S46C               Grants from Central Goverment
+
+                   min:                                          0.00
+                   mean:                                   34507485.0
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S46D               Grants from government DatiI (Province)
+
+                   min:                                          0.00
+                   mean:                                   91217174.0
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S46E               Grants from government DatiII(Kabupaten)
+
+                   min:                                          0.00
+                   mean:                                   97923194.9
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S46F               Third Party contributions
+
+                   min:                                          0.00
+                   mean:                                   12119863.3
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S46G               Village/township loan
+
+                   min:                                          0.00
+                   mean:                                   10210273.1
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 21
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S46H               KDP/UPP - PPK/P2KP
+
+                   min:                                          0.00
+                   mean:                                   55400877.0
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48A               Income from village vand
+
+                   min:                                          0.00
+                   mean:                                   19138223.2
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48B               Income from market
+
+                   min:                                          0.00
+                   mean:                                   10633263.4
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48C               Income from village facility
+
+                   min:                                          0.00
+                   mean:                                   10506154.9
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48D               Income from recreation sector
+
+                   min:                                          0.00
+                   mean:                                   9853357.80
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48E               Income from buildings
+
+                   min:                                          0.00
+                   mean:                                   10115738.0
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 22
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S48F               Income from other property
+
+                   min:                                          0.00
+                   mean:                                   9228319.97
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48G               Income from self-reliant efforts
+
+                   min:                                          0.00
+                   mean:                                   37307711.1
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48H               Income from peoples cooperation
+
+                   min:                                          0.00
+                   mean:                                   20778316.0
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48I               Income from occupation tax
+
+                   min:                                          0.00
+                   mean:                                   11158469.6
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48J               Income from administration charge
+
+                   min:                                          0.00
+                   mean:                                   12591058.0
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48K               Income from Peralihan Hak Tanah
+
+                   min:                                          0.00
+                   mean:                                   18103848.3
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 23
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S48L               Income from village bussines
+
+                   min:                                          0.00
+                   mean:                                   6643567.39
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48X               How much money did you take at 2007
+
+                   min:                                          0.00
+                   mean:                                   70921344.8
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S48V               Income from other, specify
+
+                   min:                                          0.00
+                   mean:                                   32008726.5
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S49A               From Self-reliant: received in money
+
+                   min:                                          0.00
+                   mean:                                   58798200.6
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S49B               From self-reliant: received in goods
+
+                   min:                                          0.00
+                   mean:                                   41509876.1
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S50A               How much routine expense of this village
+
+                   min:                                          0.00
+                   mean:                                    166205612
+                   max:                                     999999999
+                   #obs                                           313
+                   #miss:                                           9
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 24
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S50B               How much developing expense of this vill
+
+                   min:                                          0.00
+                   mean:                                    174812941
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S54A               Salary for head of village
+
+                   min:                                          0.00
+                   mean:                                   29024062.6
+                   max:                                     999999999
+                   #obs                                           313
+                   #miss:                                           9
+
+S54B               Salary for village secretary
+
+                   min:                                          0.00
+                   mean:                                   20091285.0
+                   max:                                     999999999
+                   #obs                                           313
+                   #miss:                                           9
+
+S54C               Salary for  kepala-kepala urusan
+
+                   min:                                          0.00
+                   mean:                                   39259489.6
+                   max:                                     999999999
+                   #obs                                           313
+                   #miss:                                           9
+
+S54D               Salary for dusun header
+
+                   min:                                          0.00
+                   mean:                                   26675226.6
+                   max:                                     999999999
+                   #obs                                           313
+                   #miss:                                           9
+
+S54E               Salary for BPD
+
+                   min:                                          0.00
+                   mean:                                   19644775.0
+                   max:                                     999999999
+                   #obs                                           313
+                   #miss:                                           9
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 25
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S55                Size of the village treasury land
+
+                   min:                                          0.00
+                   mean:                                        74.99
+                   max:                                       8449.00
+                   #obs                                           170
+                   #miss:                                         152
+
+S56                Amount generated by the treasury land
+
+                   min:                                          0.00
+                   mean:                                   55852933.1
+                   max:                                     999999998
+                   #obs                                           170
+                   #miss:                                         152
+
+S57A               Size of bengkok for: head of village
+
+                   min:                                          0.00
+                   mean:                                         2.46
+                   max:                                         16.72
+                   #obs                                           170
+                   #miss:                                         152
+
+S57B               Size of bengkok for: head of government
+
+                   min:                                          0.00
+                   mean:                                         0.85
+                   max:                                          5.15
+                   #obs                                           170
+                   #miss:                                         152
+
+S57C               Size of bengkok for: head of development
+
+                   min:                                          0.00
+                   mean:                                         0.69
+                   max:                                          5.15
+                   #obs                                           170
+                   #miss:                                         152
+
+S57D               Size of bengkok for: head of general
+
+                   min:                                          0.00
+                   mean:                                         0.64
+                   max:                                          5.15
+                   #obs                                           170
+                   #miss:                                         152
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 26
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S57E               Size of bengkok for: head of finance
+
+                   min:                                          0.00
+                   mean:                                         0.66
+                   max:                                          5.15
+                   #obs                                           170
+                   #miss:                                         152
+
+S57F               Size of bengkok for: head of welfare
+
+                   min:                                          0.00
+                   mean:                                         0.69
+                   max:                                          5.54
+                   #obs                                           170
+                   #miss:                                         152
+
+S57V               Size of bengkok for: head of other
+
+                   min:                                          0.00
+                   mean:                                       118.11
+                   max:                                      10000.00
+                   #obs                                           170
+                   #miss:                                         152
+
+S58                How many dusun (sub-village) are there?
+
+                   min:                                          0.00
+                   mean:                                         5.32
+                   max:                                         21.00
+                   #obs                                           170
+                   #miss:                                         152
+
+S59                Size of bengkok for each head of dusun?
+
+                   min:                                          0.00
+                   mean:                                         4.40
+                   max:                                        180.00
+                   #obs                                           170
+                   #miss:                                         152
+
+S60A               IDT fund for Village economic business
+
+                   min:                                          0.00
+                   mean:                                   65334644.8
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 27
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S60B               IDT fund for Physical programs
+
+                   min:                                          0.00
+                   mean:                                    105234767
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S60C               IDT fund for Social Programs
+
+                   min:                                          0.00
+                   mean:                                   70569468.3
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S60D               IDT fund for community care program
+
+                   min:                                          0.00
+                   mean:                                   70113846.9
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S60E               IDT fund for PKK
+
+                   min:                                          0.00
+                   mean:                                   65944916.7
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S60V               IDT fund for PKK
+
+                   min:                                          0.00
+                   mean:                                   65087103.0
+                   max:                                     999999998
+                   #obs                                           313
+                   #miss:                                           9
+
+S61                Ever gotten village infrastructure funds
+
+                   missing                                          9      2.80
+                   1. Yes                                          55     17.08
+                   3. No                                          258     80.12
+                   total                                          322    100.00
+
+S62AX              If yes, when?
+
+                   missing                                        267     82.92
+                   1. Yes                                          30      9.32
+                   3. No                                           25      7.76
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 28
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S62A               If yes, when?
+
+                   min:                                          0.00
+                   mean:                                    246783333
+                   max:                                     999999998
+                   #obs                                            30
+                   #miss:                                         292
+
+S62BX              If yes, when?
+
+                   missing                                        267     82.92
+                   1. Yes                                          25      7.76
+                   3. No                                           30      9.32
+                   total                                          322    100.00
+
+S62B               If yes, when?
+
+                   min:                                          0.00
+                   mean:                                    256194000
+                   max:                                     999999998
+                   #obs                                            25
+                   #miss:                                         297
+
+S62CX              If yes, when?
+
+                   missing                                        267     82.92
+                   1. Yes                                          14      4.35
+                   3. No                                           41     12.73
+                   total                                          322    100.00
+
+S62C               If yes, when?
+
+                   min:                                          0.00
+                   mean:                                    190035714
+                   max:                                     500000000
+                   #obs                                            14
+                   #miss:                                         308
+
+SUPVERIF           Verification by Local Supervisor
+
+                   1. Yes                                          29      9.01
+                   3. No                                          293     90.99
+                   total                                          322    100.00
+
+SUP_EDIT           Checking by supervisor
+
+                   1. Yes                                          57     17.70
+                   3. No                                          265     82.30
+                   total                                          322    100.00
+
+SUP_OBS            Observing by Local Supervisor
+
+                   1. Yes                                          49     15.22
+                   3. No                                          273     84.78
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 29
+book:    BK2  - Person Characteristics                                   
+module:  BK2                  
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   total                                          322    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 30
+book:    BK2  - Person Characteristics                                   
+module:  BK2_KA3              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BK2TYPE            Type Book
+
+
+COMMID07           2007 community ID
+
+
+IDW2               ID Number
+
+
+KA3TYPE            Purpose of Forest Cleaning
+
+                   missing                                        262     42.12
+                   A. Housing                                      60      9.65
+                   B. Cultivation                                  60      9.65
+                   C. Plantation                                   60      9.65
+                   D. Road/Infrastructure                          60      9.65
+                   E. Factory                                      60      9.65
+                   V. Other                                        60      9.65
+                   total                                          622    100.00
+
+S03A               Any clearing of forest for [..] past yr?
+
+                   missing                                        262     42.12
+                   1. Yes                                          56      9.00
+                   3. No                                          304     48.87
+                   total                                          622    100.00
+
+S04AX              Percentage of the forest cleared for [...]
+
+                   missing                                        566     91.00
+                   1. Given                                        54      8.68
+                   8. Don't Know                                    2      0.32
+                   total                                          622    100.00
+
+S04A               Percentage of the forest cleared for [...]
+
+                   min:                                          1.00
+                   mean:                                        14.98
+                   max:                                         63.00
+                   #obs                                            54
+                   #miss:                                         568
+
+S05A               Who grants permission for clearing?
+
+                   Variable S05A can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, S05A will have the value ACF.  If the       
+                   interviewee selected D and E, S05A will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: S05A      A =  Central government office                      
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 31
+book:    BK2  - Person Characteristics                                   
+module:  BK2_KA3              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               B =  Province Government office                     
+                                               C =  District Government office                     
+                                               D =  Dubdistrict government office                  
+                                               E =  Village office                                 
+                                               F =  Community leader                               
+                                               W =  No permission needed                           
+                                               V =  Other                                          
+
+
+S06A               Since 2000, increase/decrease clearing
+
+                   missing                                        566     91.00
+                   1. Increase                                     32      5.14
+                   2. No change                                    16      2.57
+                   3. Decrease                                      8      1.29
+                   total                                          622    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 32
+book:    BK2  - Person Characteristics                                   
+module:  BK2_KA4              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BK2TYPE            Type Book
+
+
+COMMID07           2007 community ID
+
+
+KA4TYPE            KA4TYPE
+
+                   missing                                        107     11.07
+                   A. Home                                        215     22.23
+                   D. Infrastructure                              215     22.23
+                   E. Factory                                     215     22.23
+                   V. Others                                      215     22.23
+                   total                                          967    100.00
+
+S03B               S03B
+
+                   missing                                        107     11.07
+                   1. Yes                                         165     17.06
+                   3. No                                          695     71.87
+                   total                                          967    100.00
+
+S04BX              S04BX
+
+                   missing                                        802     82.94
+                   1. Given                                       155     16.03
+                   8. Don't know                                   10      1.03
+                   total                                          967    100.00
+
+S04B               S04B
+
+                   min:                                          1.00
+                   mean:                                         5.34
+                   max:                                         40.00
+                   #obs                                           155
+                   #miss:                                         812
+
+S05B               S05B
+
+                   Variable S05B can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, S05B will have the value ACF.  If the       
+                   interviewee selected D and E, S05B will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: S05B      A =  Central government office                      
+                                               B =  Province Government office                     
+                                               C =  District Government office                     
+                                               D =  Dubdistrict government office                  
+                                               E =  Village office                                 
+                                               F =  Community leader                               
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 33
+book:    BK2  - Person Characteristics                                   
+module:  BK2_KA4              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               W =  No permission needed                           
+                                               V =  Other                                          
+
+
+S06B               S06B
+
+                   missing                                        802     82.94
+                   1. Increase                                    106     10.96
+                   2. No change                                    49      5.07
+                   3. Decrease                                     10      1.03
+                   total                                          967    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 34
+book:    BK2  - Person Characteristics                                   
+module:  BK2_LU1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BK2TYPE            Type Book
+
+
+COMMID07           2007 community ID
+
+
+S38TYPE            Type of employment
+
+                   missing                                          9      0.29
+                   01. Agriculture (including forestry, hun       313      9.97
+                   02. Minning and quarrying                      313      9.97
+                   03. Industry                                   313      9.97
+                   04. Electricity, gasses and water              313      9.97
+                   05. Construction                               313      9.97
+                   06. Grossir, retail, restaurant and acco       313      9.97
+                   07. Transportation, storage and communic       313      9.97
+                   08. Financing, real estate, renting and        313      9.97
+                   09. Social service (including community        313      9.97
+                   95. Others                                     313      9.97
+                   total                                        3,139    100.00
+
+S39                What are the village enterprises
+
+                   missing                                          9      0.29
+                   1. Yes                                       1,983     63.17
+                   3. No                                        1,147     36.54
+                   total                                        3,139    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 35
+book:    BK2  - Person Characteristics                                   
+module:  BK2_PL               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Type Book
+
+                   BK2                                          1,261    100.00
+                   total                                        1,261    100.00
+
+COMMID07           2007 community ID
+
+
+KA1TYPE            Polluted on ..
+
+                   missing                                          9      0.71
+                   1. Water                                       313     24.82
+                   2. Soil                                        313     24.82
+                   3. Air                                         313     24.82
+                   4. Sound                                       313     24.82
+                   total                                        1,261    100.00
+
+S08                Are there any polluted [..] last yr
+
+                   missing                                          9      0.71
+                   1. Yes                                         171     13.56
+                   3. No                                        1,081     85.73
+                   total                                        1,261    100.00
+
+S09                The source of polluted
+
+                   Variable S09 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, S09 will have the value ACF.  If the       
+                   interviewee selected D and E, S09 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: S09       A =  Household                                      
+                                               B =  Manufactory                                    
+                                               C =  Transportation                                 
+                                               D =  Business Center                                
+                                               V =  Other                                          
+
+
+S10A               Type of pollute
+
+                   Variable S10A can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, S10A will have the value ACF.  If the       
+                   interviewee selected D and E, S10A will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: S10A      A =  Solid                                          
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 36
+book:    BK2  - Person Characteristics                                   
+module:  BK2_PL               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                                               B =  Liquid                                         
+                                               C =  Gas                                            
+
+
+S11                The source of pollute [..]
+
+                   missing                                      1,090     86.44
+                   1. Inside of village                           117      9.28
+                   2. Outside of village                           19      1.51
+                   3. Both                                         35      2.78
+                   total                                        1,261    100.00
+
+S12                Any complaint to the head of village
+
+                   missing                                      1,090     86.44
+                   1. Yes                                          65      5.15
+                   3. No                                          106      8.41
+                   total                                        1,261    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 37
+book:    BK2  - Person Characteristics                                   
+module:  BK2_PR2              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             Type Book
+
+                   BK2                                            392    100.00
+                   total                                          392    100.00
+
+COMMID07           2007 community ID
+
+
+S37FA              Households
+
+                   min:                                          1.00
+                   mean:                                       644.64
+                   max:                                      17576.00
+                   #obs                                           296
+                   #miss:                                          96
+
+S37FB              People
+
+                   min:                                          1.00
+                   mean:                                    231278.63
+                   max:                                     999999.00
+                   #obs                                           296
+                   #miss:                                          96
+
+S37TYPE            Type of Data Source
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 38
+book:    BK2  - Person Characteristics                                   
+module:  BK2_ST               
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+BK2TYPE            Type Book
+
+
+COMMID07           2007 community ID
+
+
+S14A               Any land with this type of certificate?
+
+                   missing                                          9      0.26
+                   1. Yes                                       1,716     49.71
+                   3. No                                        1,726     50.00
+                   9. Missing                                       1      0.03
+                   total                                        3,452    100.00
+
+S1TYPE             TYPES OF LAND CERTIFICATE
+
+                   missing                                          9      0.26
+                   01. Certificate of right to use land (SH       313      9.07
+                   02. Certificate of right to use land for       313      9.07
+                   03. Certificate of right to use building       313      9.07
+                   04. Village land                               313      9.07
+                   04a. Bengkok land                              313      9.07
+                   04b. Titisara land                             313      9.07
+                   04c. "Pengangonan land"                        313      9.07
+                   05. Certificate through PRONA                  313      9.07
+                   06. Does not have certificate yet              313      9.07
+                   07. Letter C                                   313      9.07
+                   08. Patok D                                    313      9.07
+                   total                                        3,452    100.00

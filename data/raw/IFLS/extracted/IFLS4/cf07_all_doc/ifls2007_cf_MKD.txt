@@ -1,0 +1,2032 @@
+
+     ===================================================================
+
+         IIII     FFFFFFF     LLL          SSSSSS                44     
+          II       FF   F     LL          SS    SS              444     
+          II       FF         LL          SS     S             4444     
+          II       FF         LL          SSS                 44 44     
+          II       FFFFF      LL           SSSSS             44  44     
+          II       FF         LL            SSSSS           44   44     
+          II       FF         LL               SSS         44    44     
+          II       FF         LL          S     SS        44444444444   
+          II       FF         LL     L    SS    SS               44     
+         IIII     FFFF        LLLLLLLL     SSSSSS                44     
+
+     ===================================================================
+
+
+
+     I N D O N E S I A N    F A M I L Y    L I F E    S U R V E Y    7  
+
+       A survey of individuals, households, families, communities       
+          and facilities conducted in 13 provinces in Indonesia         
+                   between November 2007 and July 2008                  
+
+     ===================================================================
+
+                               Directed by                              
+
+                      John Strauss, RAND and USC                        
+
+                      Firman Witoelar, Survey Meter                     
+
+                       Bondan Sikoki, Survey Meter                      
+
+                                  and                                   
+
+                 Anna Marie Wattie, Univ. of Gadjah Mada                
+
+     ===================================================================
+
+     Financial support for the Indonesian Family Life Survey Wave 4 has 
+     been provided by the National Institute of Aging grant number 1R01 
+     AG026676 and the National Institute of Child and Human Development,
+     grant number 1R01 HD050764                                         
+
+     ===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+              Website: http://www.rand.org/FLS/IFLS                     
+          Send all questions to ifls-supp@rand.org                      
+
+
+                       Copyright (2009)                                 
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                               page 2  
+
+
+
+
+
+
+
+================================================================================
+
+          H   H   OOO    U   U    SS    EEEE   H   H   OOO   L     DDDD         
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S      E      H   H  O   O  L     D   D        
+          HHHHH  O   O   U   U    S     EEEE   HHHHH  O   O  L     D   D        
+          H   H  O   O   U   U     S    E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U      S   E      H   H  O   O  L     D   D        
+          H   H  O   O   U   U   S  S   E      H   H  O   O  L     D   D        
+          H   H   OOO     UUU     SS    EEEE   H   H   OOO   LLLL  DDDD         
+
+
+                    SS    U   U   RRR    V    V    EEEE   Y    Y                
+                   S  S   U   U   R  R   V    V    E      Y    Y                
+                   S      U   U   R  R   V    V    E       Y  Y                 
+                    S     U   U   RRR    V    V    EEE       Y                  
+                     S    U   U   R R     V  V     E         Y                  
+                      S   U   U   R  R    V  V     E         Y                  
+                   S  S   U   U   R  R     V       E         Y                  
+                    SS     UUU    R  R     V       EEEE      Y                  
+
+
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C      O   O   D   D   EEE    BBBB    O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   KK             
+           C      O   O   D   D   E      B   B   O   O   O   O   K K            
+           C   C  O   O   D   D   E      B   B   O   O   O   O   K  K           
+            CCC    OOO    DDDD    EEEE   BBBB     OOO     OOO    K   K          
+
+================================================================================
+
+ B O O K :       MKD                                            
+ T O P I C :     MINIKAMADES                                           
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+                               Prepared by                                      
+                Roald Euller, John Strauss, Firman Witolar                      
+                     Created on 30APR2014 at 13:07                           
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 3
+--------------------------------------------------------------------------------
+ B O O K :       MKD
+ T O P I C :     Minikamades
+
+--------------------------------------------------------------------------------
+
+DATA FILES                                                                    
+----------                                                                    
+  Data are available in SAS (9.2) export and STATA (8.0) formats.             
+  Data and electronic documentation are available on the IFLS website.        
+
+  The survey instrument contains multiple sections.  Where possible, sections 
+  have been merged together to form a single data module.  The modules are    
+  organized by level of observation.  The module names are listed below.  They
+  serve as the names of the SAS and STATA data files. The codebook is also    
+  organised by module.                                                        
+
+  The modules are:                                                            
+
+   --------------------------------------------------------------------------
+                                                             # of
+      Module    Description                                  recs
+   --------------------------------------------------------------------------
+      MKD_COV                                                3122
+      MKD_KM1                                                3067
+      MKD_KM2                                               30670
+      MKD_KM3                                               18402
+      MKD_KM4                                               24536
+      MKD_KM5                                               18402
+
+USER SUPPORT                                                                   
+------------                                                                   
+    These data should be used in conjunction with the Questionnaires and Users'
+    Manuals.  Check the IFLS web page for updates and answers to frequently    
+    asked questions.  Please send all questions to ifls-supp@rand.org.         
+
+USAGE NOTES                                                                    
+-----------                                                                    
+  READING THE DICTIONARY                                                       
+    For each variable in the dataset, the dictionary provides                  
+       Variable name : Typically the question number                           
+               Label : Describes variable                                      
+    Variable coding is described as follows:                                   
+               Value : Meaning of values for coded variables                   
+           Frequency : Frequency of each value                                 
+
+SPECIAL CODES                                                                  
+-------------                                                                  
+  The following values are reserved and have a special meaning:                
+      Numeric    Alphanumeric    Meaning                                       
+     5/95/995         V          Top coded/out of range                        
+     6/96/996         W          Not applicable                                
+     7/97/997         X          Refused to answer                             
+     8/98/998         Y          Don't know                                    
+     9/99/999         Z          Missing                                       
+
+DATASET VERSION                                                                
+---------------                                                                
+  The variable VERSION identifies the release version of these data; it         
+
+INDONESIAN FAMILY LIFE SURVEY 4: CODEBOOK                                       
+--------------------------------------------------------------------------------
+ H O U S E H O L D    S U R V E Y    C O D E B O O K                 page 4
+--------------------------------------------------------------------------------
+ B O O K :       MKD
+ T O P I C :     Minikamades
+
+--------------------------------------------------------------------------------
+  will be updated with each revision of the data and can be used to confirm     
+  that you are using the most recent version of the data.                       
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 5
+book:    MKD  - Minikamades                                   
+module:  MKD_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             minikamadas module
+
+                   MKD_COV                                      3,122    100.00
+                   total                                        3,122    100.00
+
+BEGHR1             Time interview began (hour)
+
+                   min:                                          4.00
+                   mean:                                        11.87
+                   max:                                         99.00
+                   #obs                                         3,122
+                   #miss:                                           0
+
+BEGHR2             Time interview began (hour)
+
+                   min:                                          0.00
+                   mean:                                        34.53
+                   max:                                         91.00
+                   #obs                                            49
+                   #miss:                                       3,073
+
+BEGHR3             Time interview began (hour)
+
+                   min:                                          1.00
+                   mean:                                        16.25
+                   max:                                         38.00
+                   #obs                                             4
+                   #miss:                                       3,118
+
+BEGMIN1            Time interview began (minute)
+
+                   min:                                          0.00
+                   mean:                                        21.61
+                   max:                                         99.00
+                   #obs                                         3,122
+                   #miss:                                           0
+
+BEGMIN2            Time interview began (minute)
+
+                   min:                                         70.00
+                   mean:                                        81.22
+                   max:                                         85.00
+                   #obs                                            49
+                   #miss:                                       3,073
+
+BEGMIN3            Time interview began (minute)
+
+                   min:                                          8.00
+                   mean:                                         8.00
+                   max:                                          8.00
+                   #obs                                             4
+                   #miss:                                       3,118
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 6
+book:    MKD  - Minikamades                                   
+module:  MKD_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+C1BKM              Interview of book Kamades
+
+                   1. Completed                                 3,067     98.24
+                   3. Not completed                                55      1.76
+                   total                                        3,122    100.00
+
+C2BKM              Reason of C1
+
+                   missing                                      3,067     98.24
+                   1. Resp. not at home/did not found               7      0.22
+                   3. Resp. refused                                48      1.54
+                   total                                        3,122    100.00
+
+C3BKM              Review by editor
+
+                   missing                                          2      0.06
+                   1. Data entered, no corrections necessar       415     13.29
+                   2. Data entered and corrected                2,179     69.80
+                   3. Data entered but not corrected, expla       515     16.50
+                   4. Manual edit, without cafe                    11      0.35
+                   total                                        3,122    100.00
+
+C4ABKM             Observed by local supervisor
+
+                   1. Yes                                         309      9.90
+                   3. No                                        2,813     90.10
+                   total                                        3,122    100.00
+
+C4BBKM             Edited by local supervisor
+
+                   1. Yes                                         245      7.85
+                   3. No                                        2,877     92.15
+                   total                                        3,122    100.00
+
+C4CBKM             Verivication by local supervisor
+
+                   1. Yes                                         229      7.34
+                   3. No                                        2,893     92.66
+                   total                                        3,122    100.00
+
+CDEDIT             Code of Editor
+
+
+CDIVWR             Code of Interviewer
+
+
+CK1                Interview in what language?
+
+                   0. Indonesian                                2,581     82.67
+                   1. Javanese                                    191      6.12
+                   2. Sundanese                                    76      2.43
+                   3. Balinese                                      4      0.13
+                   4. Batak                                         1      0.03
+                   7. Maduranese                                   15      0.48
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 7
+book:    MKD  - Minikamades                                   
+module:  MKD_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(CK1  continued)
+
+                   8. Sasak                                        10      0.32
+                   9. Minang                                       59      1.89
+                   10. Banjar                                      80      2.56
+                   14. Palembang                                   85      2.72
+                   17. Lahat                                        1      0.03
+                   18. Other South Sumatra                         13      0.42
+                   99. Missing                                      6      0.19
+                   total                                        3,122    100.00
+
+CK2                Other language used if any
+
+                   0. Indonesian                                  372     11.92
+                   1. Javanese                                    386     12.36
+                   2. Sundanese                                    29      0.93
+                   3. Balinese                                      1      0.03
+                   4. Batak                                         2      0.06
+                   6. Chinese                                       3      0.10
+                   7. Maduranese                                    8      0.26
+                   8. Sasak                                        25      0.80
+                   9. Minang                                       11      0.35
+                   10. Banjar                                      37      1.19
+                   14. Palembang                                   41      1.31
+                   18. Other South Sumatra                         12      0.38
+                   95. Other                                        2      0.06
+                   96. No other                                 2,192     70.21
+                   99. Missing                                      1      0.03
+                   total                                        3,122    100.00
+
+CP1A               Questions with doubtful answers
+
+
+CP1B               Questions with doubtful answers
+
+
+CP1C               Questions with doubful answers
+
+
+CP2A               Questions needing conversion of unit of measurement
+
+
+CP2B               Questions needing conversion of unit of measurement
+
+
+CP2C               Questions needing conversion of unit of measurement
+
+
+CP3A               Questions using secondary data source,data unclear
+
+
+CP3B               Questions using secondary data source,data unclear
+
+
+CP3C               Questions using secondary data source,data unclear
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 8
+book:    MKD  - Minikamades                                   
+module:  MKD_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+
+
+CP4A               Others problems
+
+
+CP4B               Others problems
+
+
+CP4C               Others problems
+
+
+ENDHR1             Time interview ended (hour)
+
+                   min:                                          6.00
+                   mean:                                        12.19
+                   max:                                         99.00
+                   #obs                                         3,122
+                   #miss:                                           0
+
+ENDHR2             Time interview ended (hour)
+
+                   min:                                          0.00
+                   mean:                                        31.90
+                   max:                                         91.00
+                   #obs                                            49
+                   #miss:                                       3,073
+
+ENDHR3             Time interview ended (hour)
+
+                   min:                                          0.00
+                   mean:                                         5.75
+                   max:                                         20.00
+                   #obs                                             4
+                   #miss:                                       3,118
+
+ENDMIN1            Time interview ended (minute)
+
+                   min:                                          0.00
+                   mean:                                        29.59
+                   max:                                         99.00
+                   #obs                                         3,122
+                   #miss:                                           0
+
+ENDMIN2            Time interview ended (minute)
+
+                   min:                                          0.00
+                   mean:                                        42.80
+                   max:                                         93.00
+                   #obs                                            49
+                   #miss:                                       3,073
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 9
+book:    MKD  - Minikamades                                   
+module:  MKD_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+ENDMIN3            Time interview ended (minute)
+
+                   min:                                          8.00
+                   mean:                                        10.50
+                   max:                                         14.00
+                   #obs                                             4
+                   #miss:                                       3,118
+
+IVWDAY1            Date of interview (day)
+
+                   min:                                          1.00
+                   mean:                                        16.08
+                   max:                                         99.00
+                   #obs                                         3,122
+                   #miss:                                           0
+
+IVWDAY2            Date of interview (day)
+
+                   min:                                          0.00
+                   mean:                                         1.12
+                   max:                                          3.00
+                   #obs                                            49
+                   #miss:                                       3,073
+
+IVWDAY3            Date of interview (day)
+
+                   min:                                          1.00
+                   mean:                                         1.22
+                   max:                                          3.00
+                   #obs                                            49
+                   #miss:                                       3,073
+
+IVWMTH1            Date of interview (month)
+
+                   1. January                                     343     10.99
+                   2. February                                    284      9.10
+                   3. March                                       332     10.63
+                   4. April                                       461     14.77
+                   5. May                                         866     27.74
+                   6. June                                        344     11.02
+                   7. July                                        292      9.35
+                   11. November                                    17      0.54
+                   12. December                                   182      5.83
+                   99. Missing                                      1      0.03
+                   total                                        3,122    100.00
+
+IVWMTH2            Date of interview (month)
+
+                   missing                                      3,075     98.49
+                   1. January                                       4      0.13
+                   2. February                                      4      0.13
+                   3. March                                         5      0.16
+                   4. April                                         9      0.29
+                   5. May                                           6      0.19
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 10
+book:    MKD  - Minikamades                                   
+module:  MKD_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(IVWMTH2  continued)
+
+                   6. June                                          9      0.29
+                   7. July                                          7      0.22
+                   8. August                                        2      0.06
+                   9. September                                     1      0.03
+                   total                                        3,122    100.00
+
+IVWMTH3            Date of interview (month)
+
+                   missing                                      3,118     99.87
+                   3. March                                         1      0.03
+                   4. April                                         1      0.03
+                   5. May                                           1      0.03
+                   7. July                                          1      0.03
+                   total                                        3,122    100.00
+
+IVWRES1            Result of interview
+
+                   1. Completed                                 3,029     97.02
+                   2. Partially completed                          35      1.12
+                   3. Not completed                                58      1.86
+                   total                                        3,122    100.00
+
+IVWRES2            Result of interview
+
+                   missing                                      3,104     99.42
+                   1. Completed                                     6      0.19
+                   2. Partially completed                           3      0.10
+                   3. Not completed                                 9      0.29
+                   total                                        3,122    100.00
+
+IVWRES3            Result of interview
+
+                   missing                                      3,118     99.87
+                   1. Completed                                     2      0.06
+                   2. Partially completed                           2      0.06
+                   total                                        3,122    100.00
+
+IVWYR1             Date of interview(year)
+
+                   min:                                          7.00
+                   mean:                                         7.94
+                   max:                                          8.00
+                   #obs                                         3,122
+                   #miss:                                           0
+
+IVWYR2             Date of interview(year)
+
+                   min:                                         10.00
+                   mean:                                        41.02
+                   max:                                         70.00
+                   #obs                                            49
+                   #miss:                                       3,073
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 11
+book:    MKD  - Minikamades                                   
+module:  MKD_COV              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IVWYR3             Date of interview(year)
+
+                   min:                                          3.00
+                   mean:                                         4.50
+                   max:                                          7.00
+                   #obs                                             4
+                   #miss:                                       3,118
+
+MKDID              KAMADES identification
+
+
+MKID07             Minikamades ID 2007
+
+
+NUMVIS             Number of visit/interviewer
+
+                   1                                            3,073     98.43
+                   2                                               45      1.44
+                   3                                                4      0.13
+                   total                                        3,122    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 12
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             minikamadas module
+
+                   MKD_KM1                                      3,067    100.00
+                   total                                        3,067    100.00
+
+A8                 What is the predominant type of road in this village?
+
+                   01. Asphalt or cement roads                  2,729     88.98
+                   02. Paved road (with stones, pebbles, et       258      8.41
+                   03. Dirt roads                                  68      2.22
+                   05. Rivers                                       4      0.13
+                   08. Sea                                          1      0.03
+                   95. Other                                        6      0.20
+                   99. Missing                                      1      0.03
+                   total                                        3,067    100.00
+
+A8A                In the last year, was the main road/water way able to be tra
+
+                   1. Yes                                       2,969     96.80
+                   3. No                                           97      3.16
+                   9. Missing                                       1      0.03
+                   total                                        3,067    100.00
+
+A9X                Do you know in the last year, how many months was the main r
+
+                   1. Given                                     3,046     99.32
+                   8. Don't know                                   19      0.62
+                   9. Missing                                       2      0.07
+                   total                                        3,067    100.00
+
+A9                 In the last year, how many months was the main road/water wa
+
+                   min:                                          0.00
+                   mean:                                        11.81
+                   max:                                         99.00
+                   #obs                                         3,046
+                   #miss:                                          21
+
+B1                 Is there any electricity available in this village?
+
+                   1. Yes                                       3,024     98.60
+                   3. No                                           41      1.34
+                   9. Missing                                       2      0.07
+                   total                                        3,067    100.00
+
+B1AX               Do you know what percent of households in this village use e
+
+                   missing                                         43      1.40
+                   1. Given                                     3,015     98.30
+                   8. Don't know                                    6      0.20
+                   9. Missing                                       3      0.10
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 13
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+B1A                What percent of households in this village use electricity
+
+                   min:                                          0.00
+                   mean:                                        92.65
+                   max:                                        998.00
+                   #obs                                         3,015
+                   #miss:                                          52
+
+C2A                What is the predominant water source for drinking and cookin
+
+                   missing                                         10      0.33
+                   1                                               14      0.46
+                   1A.Piped water directly to the house           844     27.52
+                   1B.Piped water from a hydrant/stand pipe        23      0.75
+                   1C.Piped water purchased from a vendor          55      1.79
+                   2. Pump water (electric/manual)              1,293     42.16
+                   3. Well water                                  536     17.48
+                   4. Spring water                                203      6.62
+                   5. Rain water                                   18      0.59
+                   6. River water                                  48      1.57
+                   7. Lake water                                    1      0.03
+                   8. Mineral/bottled water                         7      0.23
+                   8A.Other                                         4      0.13
+                   96.not applicable                                1      0.03
+                   99.missing                                      10      0.33
+                   total                                        3,067    100.00
+
+COMMID07           COMMID 2007
+
+
+D12B               In the last 12 months, have there been any fowls that died b
+
+                   1. Yes                                         425     13.86
+                   3. No                                        2,640     86.08
+                   9. Missing                                       2      0.07
+                   total                                        3,067    100.00
+
+D12F               In the last 12 months, have there been human victims of avia
+
+                   1. Yes                                          45      1.47
+                   3. No                                        3,017     98.37
+                   8                                                1      0.03
+                   9. Missing                                       4      0.13
+                   total                                        3,067    100.00
+
+D19AX              Do you know what is the current average harvesting wage of a
+
+                   1. Given                                     2,056     67.04
+                   6. NA                                          854     27.84
+                   8. Don't know                                  150      4.89
+                   9. Missing                                       7      0.23
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 14
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+D19A               What is the current average harvesting wage of adult male fa
+
+                   min:                                       2000.00
+                   mean:                                     25134.19
+                   max:                                      99995.00
+                   #obs                                         2,056
+                   #miss:                                       1,011
+
+D19BX              Do you know what is the current average harvesting wage of a
+
+                   1. Given                                     2,012     65.60
+                   6. NA                                          900     29.34
+                   8. Don't know                                  147      4.79
+                   9. Missing                                       8      0.26
+                   total                                        3,067    100.00
+
+D19B               What is the current average harvesting wage of adult female
+
+                   min:                                       2500.00
+                   mean:                                     21405.91
+                   max:                                      99995.00
+                   #obs                                         2,012
+                   #miss:                                       1,055
+
+D28                Are there any factories in either this village or the neighb
+
+                   1. Yes                                       1,728     56.34
+                   3. No                                        1,338     43.63
+                   9. Missing                                       1      0.03
+                   total                                        3,067    100.00
+
+D2A                What are the three main corps that were cultivied in this vi
+
+                   missing                                        554     18.06
+                   01. Cassava                                     77      2.51
+                   02. Sweet Potatoes                               4      0.13
+                   03. Peanuts                                      3      0.10
+                   04. Cashews and other nuts                       2      0.07
+                   05. Soybean                                      6      0.20
+                   06. Corn                                        69      2.25
+                   07. Chili                                        4      0.13
+                   08. Red Onion                                   11      0.36
+                   09. Coconut                                     39      1.27
+                   10. Bananas                                     19      0.62
+                   11. Spice                                        6      0.20
+                   12. Coffee                                      37      1.21
+                   13. Sugarcane                                   33      1.08
+                   14. Tobacco                                      8      0.26
+                   15. Rubber                                     103      3.36
+                   16. Wood                                        11      0.36
+                   22. Other vegetables                            77      2.51
+                   23. Other fruits                                51      1.66
+                   90. Rice                                     1,711     55.79
+                   95. Other                                      123      4.01
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 15
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(D2A  continued)
+
+                   96. No other crop                              118      3.85
+                   99. Missing                                      1      0.03
+                   total                                        3,067    100.00
+
+D2B                What are the three main corps that were cultivied in this vi
+
+                   missing                                        554     18.06
+                   01. Cassava                                    181      5.90
+                   02. Sweet Potatoes                              38      1.24
+                   03. Peanuts                                    119      3.88
+                   04. Cashews and other nuts                      52      1.70
+                   05. Soybean                                    123      4.01
+                   06. Corn                                       485     15.81
+                   07. Chili                                       59      1.92
+                   08. Red Onion                                   26      0.85
+                   09. Coconut                                     78      2.54
+                   10. Bananas                                     54      1.76
+                   11. Spice                                       19      0.62
+                   12. Coffee                                      37      1.21
+                   13. Sugarcane                                   79      2.58
+                   14. Tobacco                                     41      1.34
+                   15. Rubber                                     101      3.29
+                   16. Wood                                        14      0.46
+                   22. Other vegetables                           179      5.84
+                   23. Other fruits                                87      2.84
+                   90. Rice                                       177      5.77
+                   95. Other                                       77      2.51
+                   96. No other crop                              485     15.81
+                   99. Missing                                      2      0.07
+                   total                                        3,067    100.00
+
+D2X                Are there any main corps
+
+                   1. Yes                                       2,513     81.94
+                   6. Not applicable                              548     17.87
+                   9. Missing                                       6      0.20
+                   total                                        3,067    100.00
+
+D2C                What are the three main corps that were cultivied in this vi
+
+                   missing                                        554     18.06
+                   01. Cassava                                    163      5.31
+                   02. Sweet Potatoes                              55      1.79
+                   03. Peanuts                                    125      4.08
+                   04. Cashews and other nuts                      61      1.99
+                   05. Soybean                                    108      3.52
+                   06. Corn                                       277      9.03
+                   07. Chili                                       95      3.10
+                   08. Red Onion                                   13      0.42
+                   09. Coconut                                     70      2.28
+                   10. Bananas                                     72      2.35
+                   11. Spice                                       11      0.36
+                   12. Coffee                                      18      0.59
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 16
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(D2C  continued)
+
+                   13. Sugarcane                                   48      1.57
+                   14. Tobacco                                     34      1.11
+                   15. Rubber                                      16      0.52
+                   16. Wood                                         8      0.26
+                   22. Other vegetables                           208      6.78
+                   23. Other fruits                               103      3.36
+                   90. Rice                                        87      2.84
+                   95. Other                                       97      3.16
+                   96. No other crop                              839     27.36
+                   99. Missing                                      5      0.16
+                   total                                        3,067    100.00
+
+D31AX              Do you know what is the current daily wage of adult male non
+
+                   missing                                      1,339     43.66
+                   1. Given                                     1,586     51.71
+                   6. NA                                           18      0.59
+                   8. Don't know                                  124      4.04
+                   total                                        3,067    100.00
+
+D31A               What is the current daily wage of adult male non farm labor?
+
+                   min:                                       3000.00
+                   mean:                                     31806.51
+                   max:                                      99995.00
+                   #obs                                         1,586
+                   #miss:                                       1,481
+
+D31BX              Do you know what is the current daily wage of adult female n
+
+                   missing                                      1,339     43.66
+                   1. Given                                     1,284     41.87
+                   6. NA                                          307     10.01
+                   8. Don't know                                  137      4.47
+                   total                                        3,067    100.00
+
+D31B               What is the current daily wage of adult female non farm labo
+
+                   min:                                       3000.00
+                   mean:                                     26894.22
+                   max:                                      99995.00
+                   #obs                                         1,284
+                   #miss:                                       1,783
+
+I13AX              Do you know how many SD can be used by the people from this
+
+                   1. Given                                     3,053     99.54
+                   6. NA                                            2      0.07
+                   8. Don't know                                    7      0.23
+                   9. Missing                                       5      0.16
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 17
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+D4                 How many harvest in the last 12 month in this village
+
+                   min:                                          0.00
+                   mean:                                       213.58
+                   max:                                        999.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+I13BX              Do you know how many SMP can be used by the people from this
+
+                   1. Given                                     2,909     94.85
+                   6. NA                                          123      4.01
+                   8. Don't know                                   30      0.98
+                   9. Missing                                       5      0.16
+                   total                                        3,067    100.00
+
+I13CX              Do you know how many SMU can be used by the people from this
+
+                   1. Given                                     2,793     91.07
+                   6. NA                                          218      7.11
+                   8. Don't know                                   51      1.66
+                   9. Missing                                       5      0.16
+                   total                                        3,067    100.00
+
+I31A               How many SD can be used by the people from this village
+
+                   min:                                          0.00
+                   mean:                                         4.99
+                   max:                                         41.00
+                   #obs                                         3,053
+                   #miss:                                          14
+
+I31B               How many SMP can be used by the people from this village
+
+                   min:                                          0.00
+                   mean:                                         2.80
+                   max:                                         30.00
+                   #obs                                         2,909
+                   #miss:                                         158
+
+I31C               How many SMU can be used by the people from this village
+
+                   min:                                          0.00
+                   mean:                                         2.68
+                   max:                                         37.00
+                   #obs                                         2,793
+                   #miss:                                         274
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 18
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IR2                Age of responden
+
+                   min:                                          1.00
+                   mean:                                        43.53
+                   max:                                         99.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+IR3                Interviewer check sex of responden
+
+                   1. Male                                      2,654     86.53
+                   3. Female                                      413     13.47
+                   total                                        3,067    100.00
+
+IR3A               Highest level of education
+
+                   1. Unschooled                                    2      0.07
+                   2. Grade school                                105      3.42
+                   3. General jr. high                            299      9.75
+                   4. Vocational jr. high                          51      1.66
+                   5. General sr. high (SLA)                    1,087     35.44
+                   6. Vocational sr. high (SMK)                   343     11.18
+                   11. Education A                                  2      0.07
+                   12. Education B                                 13      0.42
+                   14. Moslem School (Pesantren)                    2      0.07
+                   15. Education C                                 15      0.49
+                   60. Diploma (D1,D2,D3)                         212      6.91
+                   61. University S1                              840     27.39
+                   62. University S2                               61      1.99
+                   63. University S3                                1      0.03
+                   73. Madrasah Tsanawiyah                          9      0.29
+                   74. Madrasah Aliyah                             23      0.75
+                   95. Other, specify                               1      0.03
+                   99. Missing                                      1      0.03
+                   total                                        3,067    100.00
+
+IR4                Highest grade completed
+
+                   0. Did not finish 1st grade                     24      0.78
+                   1                                               36      1.17
+                   2                                               49      1.60
+                   3                                               34      1.11
+                   4                                               12      0.39
+                   5                                                8      0.26
+                   6                                                2      0.07
+                   7. Graduated                                 2,898     94.49
+                   96. No school                                    2      0.07
+                   98. Don't know                                   1      0.03
+                   99. Missing                                      1      0.03
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 19
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+IR5X               Stay in this village
+
+                   1. Enter year/month                          2,357     76.85
+                   6. Not stay in this village                    706     23.02
+                   9. Missing                                       4      0.13
+                   total                                        3,067    100.00
+
+IR5MTH             stay in this village (month)
+
+                   missing                                        710     23.15
+                   0                                            1,211     39.48
+                   1. January                                      46      1.50
+                   2. February                                     71      2.31
+                   3. March                                        61      1.99
+                   4. April                                        49      1.60
+                   5. May                                          38      1.24
+                   6. June                                         74      2.41
+                   7. July                                         27      0.88
+                   8. August                                       31      1.01
+                   9. September                                    30      0.98
+                   10. October                                     30      0.98
+                   11. November                                    16      0.52
+                   98. DK                                         635     20.70
+                   99. Missing                                     38      1.24
+                   total                                        3,067    100.00
+
+IR5YR              Stay in this village (year)
+
+                   min:                                          0.00
+                   mean:                                        33.83
+                   max:                                         99.00
+                   #obs                                         2,357
+                   #miss:                                         710
+
+J10A               Is there a village midwife located in this village
+
+                   1. Yes                                       2,445     79.72
+                   3. No                                          622     20.28
+                   total                                        3,067    100.00
+
+J10BX              Do you know how many village midwife are located in this vil
+
+                   missing                                        622     20.28
+                   1. Given                                     2,411     78.61
+                   8. Don't know                                   31      1.01
+                   9. Missing                                       3      0.10
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 20
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+J10B               How many village midwives are located in this village?
+
+                   min:                                          0.00
+                   mean:                                         1.60
+                   max:                                         61.00
+                   #obs                                         2,411
+                   #miss:                                         656
+
+LK01               Code of province
+
+                   min:                                         12.00
+                   mean:                                        34.54
+                   max:                                         99.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+LK010700           Prov 2007 in 2000 BPS code
+
+                   missing                                          1      0.03
+                   12. North Sumatra                              219      7.14
+                   13. West Sumatra                               145      4.73
+                   14. Riau                                        68      2.22
+                   16. South Sumatra                              133      4.34
+                   18. Lampung                                    112      3.65
+                   19. Bangka Belitung                             11      0.36
+                   31. Jakarta                                    148      4.83
+                   32. West Java                                  546     17.80
+                   33. Central Java                               393     12.81
+                   34. D.I. Yogyakarta                            105      3.42
+                   35. East Java                                  460     15.00
+                   36. Banten                                     165      5.38
+                   51. Bali                                       103      3.36
+                   52. West Nusa Tenggara                         146      4.76
+                   61. West Kalimantan                              1      0.03
+                   62. Central Kalimantan                          11      0.36
+                   63. South Kalimantan                           143      4.66
+                   64. East Kalimantan                             22      0.72
+                   73. South Sulawesi                             135      4.40
+                   total                                        3,067    100.00
+
+LK010707           Prov 2007 in 2007 BPS code
+
+                   missing                                          1      0.03
+                   12. North Sumatra                              219      7.14
+                   13. West Sumatra                               145      4.73
+                   14. Riau                                        52      1.70
+                   16. South Sumatra                              133      4.34
+                   18. Lampung                                    112      3.65
+                   19. Bangka Belitung                             11      0.36
+                   21                                              16      0.52
+                   31. Jakarta                                    148      4.83
+                   32. West Java                                  546     17.80
+                   33. Central Java                               393     12.81
+                   34. D.I. Yogyakarta                            105      3.42
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 21
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(LK010707  continued)
+
+                   35. East Java                                  460     15.00
+                   36. Banten                                     165      5.38
+                   51. Bali                                       103      3.36
+                   52. West Nusa Tenggara                         146      4.76
+                   61. West Kalimantan                              1      0.03
+                   62. Central Kalimantan                          11      0.36
+                   63. South Kalimantan                           143      4.66
+                   64. East Kalimantan                             22      0.72
+                   73. South Sulawesi                             127      4.14
+                   76. West Sulawesi                                8      0.26
+                   total                                        3,067    100.00
+
+LK02               Code of kabupaten/kotamadya
+
+                   min:                                          1.00
+                   mean:                                        30.40
+                   max:                                         99.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+LK020700           Kab 2007 in 2000 BPS code
+
+                   min:                                          1.00
+                   mean:                                        27.04
+                   max:                                         78.00
+                   #obs                                         3,066
+                   #miss:                                           1
+
+LK020707           Kab 2007 in 2007 BPS code
+
+                   min:                                          1.00
+                   mean:                                        28.22
+                   max:                                         79.00
+                   #obs                                         3,066
+                   #miss:                                           1
+
+LK03               Code of kecamatan
+
+                   min:                                         10.00
+                   mean:                                       176.22
+                   max:                                        999.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+LK030700           Kec 2007 in 2000 BPS code
+
+                   min:                                         10.00
+                   mean:                                        93.82
+                   max:                                        740.00
+                   #obs                                         3,066
+                   #miss:                                           1
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 22
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+LK030707           Kec 2007 in 2007 BPS code
+
+                   min:                                         10.00
+                   mean:                                        85.13
+                   max:                                        740.00
+                   #obs                                         3,066
+                   #miss:                                           1
+
+LK05               Urban/rural
+
+                   1. Urban                                     1,832     59.73
+                   2. Rural                                     1,235     40.27
+                   total                                        3,067    100.00
+
+LK15               Code of interviewer
+
+
+LK16               Code of editor
+
+
+LK17               Code of local supervisor
+
+
+LK19               Code of field coordinator
+
+
+MKDID              KAMADES identification
+
+
+MKID07             Minikamades ID 2007
+
+
+PAP20              Did you have Health Card Program in this village in the last
+
+                   1. Yes                                       1,558     50.80
+                   3. No                                        1,508     49.17
+                   9. Missing                                       1      0.03
+                   total                                        3,067    100.00
+
+PAP21              Form which facilities is someone who has a Health Card able
+
+
+PAP24              Did you have ASKESKIN in this village in the last 12 months
+
+                   1. Yes                                       2,781     90.67
+                   3. No                                          285      9.29
+                   9. Missing                                       1      0.03
+                   total                                        3,067    100.00
+
+PAP25              From which facilities is someone who has ASKESKIN able to ob
+
+                   Variable PAP25 can have multiple responses.  Users were asked to select 
+                   all applicable responses from a list of all possible responses.  These were  
+                   concatenated together into a single character string variable which appears  
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 23
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+                   in this public use file.  For example, if the interviewee selected responses 
+                   A, C, and F from the list, PAP25 will have the value ACF.  If the       
+                   interviewee selected D and E, PAP25 will have the value DE.  Use the key
+                   below to correctly interpret these values.                                   
+
+
+                   key for variable: PAP25     A. Puskesmas              
+                                               B. Puskesmas Pembantu     
+                                               C. Village Midwife        
+                                               D. Private Practice       
+                                               E. Public Hospital        
+                                               F. Private Hospital       
+
+
+PAP28              Was there RASKIN program in the last 12 months
+
+                   1. Yes                                       3,034     98.92
+                   3. No                                           32      1.04
+                   9. Missing                                       1      0.03
+                   total                                        3,067    100.00
+
+PAP31X             Do you know in the last 12 months was the percentage of hous
+
+                   missing                                         32      1.04
+                   1. Given                                     2,945     96.02
+                   8. Don't know                                   88      2.87
+                   9. Missing                                       2      0.07
+                   total                                        3,067    100.00
+
+PAP31              In the last 12 months was the percentage of households that
+
+                   min:                                          1.00
+                   mean:                                        32.79
+                   max:                                        999.00
+                   #obs                                         2,945
+                   #miss:                                         122
+
+PAP32X             Do you know when was the last time RASKIN rice was distribut
+
+                   missing                                         32      1.04
+                   1. Given                                     3,030     98.79
+                   6. NA                                            3      0.10
+                   9. Missing                                       2      0.07
+                   total                                        3,067    100.00
+
+PAP32M             When was the last time RASKIN rice was distributed in the la
+
+                   missing                                         37      1.21
+                   1. January                                     131      4.27
+                   2. February                                    305      9.94
+                   3. March                                       423     13.79
+                   4. April                                       560     18.26
+                   5. May                                         604     19.69
+                   6. June                                        245      7.99
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 24
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PAP32M  continued)
+
+                   7. July                                        127      4.14
+                   8. August                                       17      0.55
+                   9. September                                    19      0.62
+                   10. October                                     50      1.63
+                   11. November                                   239      7.79
+                   12. December                                   283      9.23
+                   98. DK                                          26      0.85
+                   99. Missing                                      1      0.03
+                   total                                        3,067    100.00
+
+PAP32Y             When was the last time RASKIN rice was distributed in the la
+
+                   min:                                       2006.00
+                   mean:                                      2010.42
+                   max:                                       9999.00
+                   #obs                                         3,030
+                   #miss:                                          37
+
+PAP36X             Do you know what was the average amount of rice received by
+
+                   missing                                         37      1.21
+                   1. Given                                     3,000     97.82
+                   8. Don't know                                   28      0.91
+                   9. Missing                                       2      0.07
+                   total                                        3,067    100.00
+
+PAP36              What was the average amount of rice received by all RASKIN h
+
+                   min:                                          1.00
+                   mean:                                        11.41
+                   max:                                         99.00
+                   #obs                                         3,000
+                   #miss:                                          67
+
+PAP38X             Do you know what was the maret price of each kilogram of the
+
+                   missing                                         37      1.21
+                   1. Given                                     2,909     94.85
+                   8. Don't know                                  118      3.85
+                   9. Missing                                       3      0.10
+                   total                                        3,067    100.00
+
+PAP38              What was the maret price of each kilogram of the rice in tha
+
+                   min:                                          0.00
+                   mean:                                      4178.09
+                   max:                                      87500.00
+                   #obs                                         2,909
+                   #miss:                                         158
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 25
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP46              Was there market operation for rice in the last 12 months
+
+                   1. Yes                                         636     20.74
+                   3. No                                        2,428     79.17
+                   9. Missing                                       3      0.10
+                   total                                        3,067    100.00
+
+PAP49X             Do you know in the last 12 months was the percentage of hous
+
+                   missing                                      2,428     79.17
+                   1. Given                                       547     17.84
+                   8. Don't know                                   85      2.77
+                   9. Missing                                       7      0.23
+                   total                                        3,067    100.00
+
+PAP49              In the last 12 months was the percentage of households that
+
+                   min:                                          0.00
+                   mean:                                        49.25
+                   max:                                        998.00
+                   #obs                                           547
+                   #miss:                                       2,520
+
+PAP50X             Do you know when was the last time market operation for rice
+
+                   missing                                      2,428     79.17
+                   1. Given                                       635     20.70
+                   9. Missing                                       4      0.13
+                   total                                        3,067    100.00
+
+PAP50M             When was the last time market operation for rice was conduct
+
+                   missing                                      2,432     79.30
+                   1. January                                      80      2.61
+                   2. February                                     36      1.17
+                   3. March                                        25      0.82
+                   4. April                                        33      1.08
+                   5. May                                          17      0.55
+                   6. June                                         38      1.24
+                   7. July                                         25      0.82
+                   8. August                                       27      0.88
+                   9. September                                    40      1.30
+                   10. October                                     43      1.40
+                   11. November                                    37      1.21
+                   12. December                                   174      5.67
+                   98. DK                                          60      1.96
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 26
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP50Y             When was the last time market operation for rice was conduct
+
+                   min:                                       2006.00
+                   mean:                                      2019.80
+                   max:                                       9998.00
+                   #obs                                           635
+                   #miss:                                       2,432
+
+PAP54X             Do you know the price per KG of rice paid each household in
+
+                   missing                                      2,428     79.17
+                   1. Given                                       561     18.29
+                   8. Don't know                                   72      2.35
+                   9. Missing                                       6      0.20
+                   total                                        3,067    100.00
+
+PAP54              The price per KG of rice paid each household in the market o
+
+                   min:                                          0.00
+                   mean:                                      2433.05
+                   max:                                      99999.00
+                   #obs                                           561
+                   #miss:                                       2,506
+
+PAP55X             Do you the price of reice per KG at that time?
+
+                   missing                                      2,428     79.17
+                   1. Given                                       596     19.43
+                   8. Don't know                                   38      1.24
+                   9. Missing                                       5      0.16
+                   total                                        3,067    100.00
+
+PAP55              The price of reice per KG at that time?
+
+                   min:                                          0.00
+                   mean:                                      4429.57
+                   max:                                      15000.00
+                   #obs                                           596
+                   #miss:                                       2,471
+
+PAP56              Was there PKPS BBM-SLT (UCT) program in the last 12 months?
+
+                   1. Yes                                       3,014     98.27
+                   3. No                                           51      1.66
+                   8. Don't Know                                    1      0.03
+                   9. Missing                                       1      0.03
+                   total                                        3,067    100.00
+
+PAP56AX            Year 2007
+
+                   missing                                         53      1.73
+                   1. Yes                                          92      3.00
+                   3. No                                        2,899     94.52
+                   9. Missing                                      23      0.75
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 27
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PAP56AX  continued)
+
+                   total                                        3,067    100.00
+
+PAP56A             Year 2007
+
+                   min:                                          0.00
+                   mean:                                         2.07
+                   max:                                         13.00
+                   #obs                                            92
+                   #miss:                                       2,975
+
+PAP56BX            Year 2006
+
+                   missing                                         53      1.73
+                   1. Yes                                       2,192     71.47
+                   3. No                                          820     26.74
+                   9. Missing                                       2      0.07
+                   total                                        3,067    100.00
+
+PAP56B             Year 2006
+
+                   min:                                          1.00
+                   mean:                                         2.73
+                   max:                                         98.00
+                   #obs                                         2,192
+                   #miss:                                         875
+
+PAP56CX            Year 2005
+
+                   missing                                         53      1.73
+                   1. Yes                                       2,246     73.23
+                   3. No                                          764     24.91
+                   9. Missing                                       4      0.13
+                   total                                        3,067    100.00
+
+PAP56C             Year 2005
+
+                   min:                                          0.00
+                   mean:                                         2.54
+                   max:                                         99.00
+                   #obs                                         2,246
+                   #miss:                                         821
+
+PAP58M             When was the last time household in this village received th
+
+                   missing                                         16      0.52
+                   1. January                                      33      1.08
+                   2. February                                     33      1.08
+                   3. March                                        87      2.84
+                   4. April                                        44      1.43
+                   5. May                                         117      3.81
+                   6. June                                        114      3.72
+                   7. July                                         63      2.05
+                   8. August                                       34      1.11
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 28
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(PAP58M  continued)
+
+                   9. September                                   140      4.56
+                   10. October                                    280      9.13
+                   11. November                                    85      2.77
+                   12. December                                   656     21.39
+                   98. DK                                       1,346     43.89
+                   99. Missing                                     19      0.62
+                   total                                        3,067    100.00
+
+PAP58Y             When was the last time household in this village received th
+
+                   min:                                       1996.00
+                   mean:                                      2131.68
+                   max:                                       9999.00
+                   #obs                                         3,051
+                   #miss:                                          16
+
+PAP59              How many percent household in this village received the SLT
+
+                   min:                                          0.00
+                   mean:                                        79.80
+                   max:                                        999.00
+                   #obs                                         3,051
+                   #miss:                                          16
+
+PAP60              How many rupiah did each household at the last time receive
+
+                   min:                                          0.00
+                   mean:                                    315353.66
+                   max:                                     999999.00
+                   #obs                                         3,051
+                   #miss:                                          16
+
+PAP63              Was there Keluarga Harapan Program in the last 12 months?
+
+                   1. Yes                                         239      7.79
+                   3. No                                        2,827     92.17
+                   9. Missing                                       1      0.03
+                   total                                        3,067    100.00
+
+PAP65              Do you understand the procedure for household to be eligible
+
+                   missing                                      2,828     92.21
+                   1. Yes                                         191      6.23
+                   3. No                                           48      1.57
+                   total                                        3,067    100.00
+
+PAP78              Did you have KDP (PPK) program in your village since 2000?
+
+                   1. Yes                                       1,159     37.79
+                   3. No                                        1,907     62.18
+                   9. Missing                                       1      0.03
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 29
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP79              Did you have UPP (P2KP) program in your village since 2000?
+
+                   missing                                         29      0.95
+                   1. Yes                                       1,425     46.46
+                   3. No                                        1,611     52.53
+                   9. Missing                                       2      0.07
+                   total                                        3,067    100.00
+
+PAP7A8MT           When did the KDP (PPK) program first conducted in this villa
+
+                   missing                                      1,908     62.21
+                   1. January                                      42      1.37
+                   2. February                                     37      1.21
+                   3. March                                        37      1.21
+                   4. April                                        31      1.01
+                   5. May                                          29      0.95
+                   6. June                                         48      1.57
+                   7. July                                         50      1.63
+                   8. August                                       35      1.14
+                   9. September                                    38      1.24
+                   10. October                                     30      0.98
+                   11. November                                    25      0.82
+                   12. December                                    35      1.14
+                   98. DK                                         721     23.51
+                   99. Missing                                      1      0.03
+                   total                                        3,067    100.00
+
+PAP7A8YR           When did the KDP (PPK) program first conducted in this villa
+
+                   min:                                       1956.00
+                   mean:                                      2327.52
+                   max:                                       9999.00
+                   #obs                                         1,159
+                   #miss:                                       1,908
+
+PAP7A9MT           When did the UPP (P2KP) program first conducted in this vill
+
+                   missing                                      1,642     53.54
+                   1. January                                      67      2.18
+                   2. February                                     69      2.25
+                   3. March                                        68      2.22
+                   4. April                                        49      1.60
+                   5. May                                          42      1.37
+                   6. June                                         48      1.57
+                   7. July                                         41      1.34
+                   8. August                                       34      1.11
+                   9. September                                    35      1.14
+                   10. October                                     34      1.11
+                   11. November                                    24      0.78
+                   12. December                                    55      1.79
+                   98. DK                                         856     27.91
+                   99. Missing                                      3      0.10
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 30
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+PAP7A9YR           When did the UPP (P2KP) program first conducted in this vill
+
+                   min:                                       1989.00
+                   mean:                                      2200.74
+                   max:                                       9999.00
+                   #obs                                         1,425
+                   #miss:                                       1,642
+
+S1                 What is the area of this village
+
+                   min:                                          0.00
+                   mean:                                      5162.79
+                   max:                                      99999.99
+                   #obs                                         3,067
+                   #miss:                                           0
+
+S31A               What is the Total population of this village
+
+                   min:                                          0.00
+                   mean:                                     15989.42
+                   max:                                     999998.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+S31B               What is the Total male population of this village
+
+                   min:                                          0.00
+                   mean:                                     41019.96
+                   max:                                     999999.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+S31C               What is the Total female population of this village
+
+                   min:                                          0.00
+                   mean:                                     41002.56
+                   max:                                     999999.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+S40A               The first
+
+                   min:                                          0.00
+                   mean:                                         3.52
+                   max:                                         99.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 31
+book:    MKD  - Minikamades                                   
+module:  MKD_KM1              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+S40B               The second
+
+                   min:                                          1.00
+                   mean:                                         5.87
+                   max:                                         99.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+S40C               The third
+
+                   min:                                          1.00
+                   mean:                                         7.33
+                   max:                                         99.00
+                   #obs                                         3,067
+                   #miss:                                           0
+
+SW01               If you consider a scale of 1 to 6, where 1 represents the vi
+
+                   1                                               47      1.53
+                   2                                              353     11.51
+                   3                                            1,776     57.91
+                   4                                              799     26.05
+                   5                                               45      1.47
+                   6                                               24      0.78
+                   8. Don't know                                   16      0.52
+                   9. Missing                                       7      0.23
+                   total                                        3,067    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 32
+book:    MKD  - Minikamades                                   
+module:  MKD_KM2              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             minikamadas module
+
+                   MKD_KM2                                     30,670    100.00
+                   total                                       30,670    100.00
+
+MKDID              KAMADES identification
+
+
+MKID07             Minikamades ID 2007
+
+
+S38                Type of employment
+
+                   01. Farming                                  3,067     10.00
+                   02. Mining and quarrying                     3,067     10.00
+                   03. Industry                                 3,067     10.00
+                   04. Electricity, gas and water               3,067     10.00
+                   05. Construction                             3,067     10.00
+                   06. Large trade, retail trade, restauran     3,067     10.00
+                   07. Transportation, warehousing, communi     3,067     10.00
+                   08. Finance, insurance, leasing              3,067     10.00
+                   09. Social services                          3,067     10.00
+                   95. Other                                    3,067     10.00
+                   total                                       30,670    100.00
+
+S39                Is the [..] main source of income of the people in this vill
+
+                   1. Yes                                      20,203     65.87
+                   3. No                                       10,442     34.05
+                   9. Missing                                      25      0.08
+                   total                                       30,670    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 33
+book:    MKD  - Minikamades                                   
+module:  MKD_KM3              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             minikamadas module
+
+                   MKD_KM3                                     18,402    100.00
+                   total                                       18,402    100.00
+
+J26X               Do you know how many [..] can be used by the people from thi
+
+                   1. Given facilities                         14,102     76.63
+                   3. None                                      4,110     22.33
+                   8. Don't know                                  183      0.99
+                   9. Missing                                       7      0.04
+                   total                                       18,402    100.00
+
+J26                How many [..] can be used by the people from this village/to
+
+                   min:                                          1.00
+                   mean:                                         4.63
+                   max:                                         99.00
+                   #obs                                        14,102
+                   #miss:                                       4,300
+
+JTYPE              Type of health facility
+
+                   A.Health Center (Puskesmas)                  3,067     16.67
+                   Aa.Posyandu                                  3,067     16.67
+                   Ab.Posyandu Lansai                           3,067     16.67
+                   B.Private practitioner                       3,067     16.67
+                   C.Traditional practitioner                   3,067     16.67
+                   D.Public/Private hospital                    3,067     16.67
+                   total                                       18,402    100.00
+
+MKDID              KAMADES identification
+
+
+MKID07             Minikamades ID 2007
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 34
+book:    MKD  - Minikamades                                   
+module:  MKD_KM4              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             minikamadas module
+
+                   MKD_KM4                                     24,536    100.00
+                   total                                       24,536    100.00
+
+F01                Were there any natural disasters in this village in the last
+
+                   1. Yes                                       1,681      6.85
+                   3. No                                       22,855     93.15
+                   total                                       24,536    100.00
+
+F02                How many times has [..] disaster occured in this village?
+
+                   min:                                          1.00
+                   mean:                                         3.70
+                   max:                                         99.00
+                   #obs                                         1,681
+                   #miss:                                      22,855
+
+F03M               When was the most severe [..] disaster occured (month)
+
+                   missing                                     22,855     93.15
+                   1. January                                     104      0.42
+                   2. February                                    209      0.85
+                   3. March                                       139      0.57
+                   4. April                                        68      0.28
+                   5. May                                         172      0.70
+                   6. June                                         70      0.29
+                   7. July                                         65      0.26
+                   8. August                                       66      0.27
+                   9. September                                   110      0.45
+                   10. October                                     64      0.26
+                   11. November                                    76      0.31
+                   12. December                                   132      0.54
+                   98. DK                                         404      1.65
+                   99. Missing                                      2      0.01
+                   total                                       24,536    100.00
+
+F03Y               When was the most severe [..] disaster occured (year)
+
+                   min:                                       2002.00
+                   mean:                                      2039.39
+                   max:                                       9999.00
+                   #obs                                         1,681
+                   #miss:                                      22,855
+
+FTYPE              type of disaster
+
+                   A.flood                                      3,067     12.50
+                   B.earthquake                                 3,067     12.50
+                   C.landslide                                  3,067     12.50
+                   D.volcano                                    3,067     12.50
+                   E.tsunami                                    3,067     12.50
+                   F.drought                                    3,067     12.50
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 35
+book:    MKD  - Minikamades                                   
+module:  MKD_KM4              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+(FTYPE  continued)
+
+                   G.forest fire                                3,067     12.50
+                   H.other fire                                 3,067     12.50
+                   total                                       24,536    100.00
+
+MKDID              KAMADES identification
+
+
+MKID07             Minikamades ID 2007
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 36
+book:    MKD  - Minikamades                                   
+module:  MKD_KM5              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+MODULE             minikamadas module
+
+                   MKD_KM5                                     18,402    100.00
+                   total                                       18,402    100.00
+
+H01                What is the price per unit (see H02) now?
+
+                   min:                                          5.00
+                   mean:                                      9145.46
+                   max:                                      99999.00
+                   #obs                                        18,198
+                   #miss:                                         204
+
+H02                Unit for H01
+
+                   missing                                        204      1.11
+                   1. Kg                                       10,516     57.15
+                   2. Liter                                     4,171     22.67
+                   13. Packs                                    3,029     16.46
+                   95. Others                                     469      2.55
+                   99. Missing                                     13      0.07
+                   total                                       18,402    100.00
+
+H03                How much is contained in one unit?
+
+                   min:                                          0.05
+                   mean:                                        28.31
+                   max:                                        999.99
+                   #obs                                         3,511
+                   #miss:                                      14,891
+
+H03A               Is [..] available for sale?
+
+                   1                                           12,012     65.28
+                   2                                            2,154     11.71
+                   3                                              225      1.22
+                   4                                               42      0.23
+                   5. Others                                    3,732     20.28
+                   6. No Stock                                    127      0.69
+                   8. Not Sold                                     77      0.42
+                   9. Missing                                      33      0.18
+                   total                                       18,402    100.00
+
+H04                In what units is the quantity measured?
+
+                   missing                                     14,891     80.92
+                   1. Kg                                        3,466     18.83
+                   2. Liter                                        29      0.16
+                   8. Gram                                          3      0.02
+                   9. Missing                                      13      0.07
+                   total                                       18,402    100.00
+
+------------------------------------------------------------------------------------
+IFLS4 HOUSEHOLD SURVEY CODEBOOK                                            page 37
+book:    MKD  - Minikamades                                   
+module:  MKD_KM5              
+------------------------------------------------------------------------------------
+variable name      value                                    frequency     percent   
+------------------------------------------------------------------------------------
+
+HPJ3TYPE           Food Type
+
+                   1. Rice: Average Quality                     3,067     16.67
+                   2. Cooking Oil                               3,067     16.67
+                   4. Kerosene                                  3,067     16.67
+                   5. Granulated Sugar                          3,067     16.67
+                   6. Fresh Chicken                             3,067     16.67
+                   7. Filtered Clove (kretek) Cigarette         3,067     16.67
+                   total                                       18,402    100.00
+
+MKDID              KAMADES identification
+
+
+MKID07             Minikamades ID 2007

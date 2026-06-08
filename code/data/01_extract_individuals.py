@@ -10,6 +10,7 @@ Output: data/generated/01_individuals.parquet
 import pandas as pd
 import numpy as np
 from pathlib import Path
+from decimal import Decimal, InvalidOperation
 
 from config import GENERATED_DATA, RAW_IFLS_EXTRACTED
 from _stata import read_stata_df
@@ -20,7 +21,7 @@ from log import log
 IFLS4 = {
     "wave": "IFLS4",
     "file": Path(RAW_IFLS_EXTRACTED) / "IFLS4" / "hh07" / "bk_sc.dta",
-    "geo_columns_07": {
+    "geo_columns": {
         "hhid": "hhid07",
         "province_code": "sc010707",
         "kabupaten_code": "sc020707",
@@ -45,43 +46,54 @@ IFLS5 = {
 }
 
 
+def clean_gadm_code(value: object) -> str:
+    """Return canonical integer-code strings, preserving comma-separated mappings."""
+    if pd.isna(value):
+        raise ValueError("gadm_fullcode cannot be missing")
+
+    def clean_part(part: str) -> str:
+        part = part.strip()
+        try:
+            numeric = Decimal(part)
+        except InvalidOperation:
+            raise ValueError(f"invalid GADM code component: {part}") from None
+        if numeric != numeric.to_integral_value():
+            raise ValueError(f"non-integer GADM code component: {part}")
+        return str(int(numeric))
+
+    return ",".join(clean_part(part) for part in str(value).split(","))
+
+
 def parse_geo_codes_ifls5() -> pd.DataFrame:
     """
     Extract household geography from a wave's screening file.
     Rename and standardize
-
-    HW Notes:
-    Import: bk_sc.dta
-    Export: returns household level dataframe
-    Data Desc: Household level (hhid07, unique in IFLS 4) province, kabupaten and kecamatan code
     """
     cfg = IFLS5
     screening_dataset = read_stata_df(
-        cfg["file"],
+        cfg["file"],  # ty:ignore[invalid-argument-type]
         convert_categoricals=False,
     )
-
-    # Rename location columns to province_code, kabupaten_code, and kecamatan_code
-    rename_dict = {v: k for k, v in cfg["geo_columns"].items()}
+    # Reverse the dict so mapping works
+    rename_dict = {v: k for k, v in cfg["geo_columns"].items()}  # ty:ignore[unresolved-attribute]
     screening_dataset = screening_dataset.rename(columns=rename_dict)
-    screening_dataset = screening_dataset[cfg["geo_columns"].keys()].copy()
+    screening_dataset = screening_dataset[cfg["geo_columns"].keys()].copy()  # ty:ignore[unresolved-attribute]
 
-    # Convert province_code, kabupaten_code, and kecamatan_code from float to int
+    # We want one per household, not per interviewee
     screening_dataset["province_code"] = screening_dataset.province_code.astype(int)
     screening_dataset["kabupaten_code"] = screening_dataset.kabupaten_code.astype(int)
     screening_dataset["kecamatan_code"] = screening_dataset.kecamatan_code.astype(int)
-
     # Generate combined code for easy matching with GAMD boundary data.
     # The code is province (2 digits) + kabupaten (2 digits) + kecamatan (3 digits)
     screening_dataset["gadm_fullcode"] = (
         screening_dataset.province_code.astype(str).str.zfill(2)
         + screening_dataset.kabupaten_code.astype(str).str.zfill(2)
         + screening_dataset.kecamatan_code.astype(str).str.zfill(3)
-    ).astype(int)
+    ).map(clean_gadm_code)
     screening_dataset["wave"] = "IFLS5"
     # Below is an indicator column to flag remapping complication when converting IFLS4 Admin codes to 5
     # Not relevant for IFLS5 so set to 0
-    screening_dataset["multiple_kec_remap"] = 0
+    screening_dataset["kecamatan_code_map"] = "not_applicable"
     return screening_dataset[
         [
             "hhid",
@@ -90,24 +102,12 @@ def parse_geo_codes_ifls5() -> pd.DataFrame:
             "gadm_fullcode",
             "kecamatan_code",
             "wave",
-            "multiple_kec_remap",
+            "kecamatan_code_map",
         ]
     ]
 
 
 def generate_mapping_data(original_col: str) -> pd.DataFrame:
-    """
-    HW Notes: Sample usage
-    generate_mapping_data("kecid00")
-          kecid00       gadm_fullcode_2014
-    0     1101010                  1101010
-    1     1101020  1101020,1101021,1101022
-    2     1101030  1101031,1101032,1101030
-    3     1101040                  1101040
-    4     1101050          1101051,1101050
-    ...       ...                      ...
-    An old kecid might have multiple corresponding new 2014 kecid
-    """
     mapping = read_stata_df(
         Path(RAW_IFLS_EXTRACTED)
         / "IFLS5"
@@ -115,7 +115,7 @@ def generate_mapping_data(original_col: str) -> pd.DataFrame:
         / "IFLS5_BPS_2014_codes"
         / "kec_9899000714.dta"
     )
-
+    # Do the same for 2000 codes
     mapping = mapping[[original_col, "kecid14"]].copy()
     mapping = mapping.dropna(subset=[original_col, "kecid14"])
     mapping = mapping.drop_duplicates(subset=[original_col, "kecid14"])
@@ -131,6 +131,26 @@ def generate_mapping_data(original_col: str) -> pd.DataFrame:
     return mapping
 
 
+def unique_bps_mapping() -> pd.DataFrame:
+    mapping = read_stata_df(
+        Path(RAW_IFLS_EXTRACTED)
+        / "IFLS5"
+        / "IFLS5_all_doc"
+        / "IFLS5_BPS_2014_codes"
+        / "kec_9899000714.dta"
+    )
+    mapping = mapping[["kecid07", "kecid14"]].copy()
+    # Count the number of times kecio07 appears; do the same for kecid14
+    mapping["count_07"] = mapping.groupby("kecid07")["kecid07"].transform("count")
+    mapping["count_14"] = mapping.groupby("kecid14")["kecid14"].transform("count")
+    # Filter to only rows where both counts are 1, meaning it's a unique mapping
+    mapping = mapping[(mapping["count_07"] == 1) & (mapping["count_14"] == 1)]
+    mapping = mapping[["kecid07", "kecid14"]].copy()
+    mapping["kecid07"] = mapping.kecid07.astype(int)
+    mapping["kecid14"] = mapping.kecid14.astype(int)
+    return mapping
+
+
 def parse_geo_codes_ifls4() -> pd.DataFrame:
     """
     Extract household geography from a wave's screening file.
@@ -141,24 +161,23 @@ def parse_geo_codes_ifls4() -> pd.DataFrame:
     """
     cfg = IFLS4
     screening_dataset = read_stata_df(
-        cfg["file"],
+        cfg["file"],  # ty:ignore[invalid-argument-type]
         convert_categoricals=False,
     )
-
-    # Rename location columns to province_code, kabupaten_code, and kecamatan_code both 00 and 07 versions
-    rename_dict_07 = {v: k for k, v in cfg["geo_columns_07"].items()}
-    screening_dataset = screening_dataset.rename(columns=rename_dict_07)
-
-    rename_dict_00 = {v: k for k, v in cfg["geo_columns_00"].items()}
+    # Reverse the dict so mapping works
+    rename_dict = {v: k for k, v in cfg["geo_columns"].items()}  # ty:ignore[unresolved-attribute]
+    screening_dataset = screening_dataset.rename(columns=rename_dict)
+    # Rename 2000 codes as well since mapping dict doesn't have all the 2007 codes
+    rename_dict_00 = {v: k for k, v in cfg["geo_columns_00"].items()}  # ty:ignore[unresolved-attribute]
     screening_dataset = screening_dataset.rename(columns=rename_dict_00)
     screening_dataset = screening_dataset[
-        list(rename_dict_07.values()) + list(rename_dict_00.values())
+        list(rename_dict.values()) + list(rename_dict_00.values())
     ].copy()
 
+    # We want one per household, not per interviewee
     screening_dataset["province_code"] = screening_dataset.province_code.astype(int)
     screening_dataset["kabupaten_code"] = screening_dataset.kabupaten_code.astype(int)
     screening_dataset["kecamatan_code"] = screening_dataset.kecamatan_code.astype(int)
-
     # Generate combined code for easy matching with GAMD boundary data.
     # The code is province (2 digits) + kabupaten (2 digits) + kecamatan (3 digits)
     screening_dataset["gadm_fullcode_07"] = (
@@ -167,47 +186,192 @@ def parse_geo_codes_ifls4() -> pd.DataFrame:
         + screening_dataset.kecamatan_code.astype(str).str.zfill(3)
     ).astype(int)
 
-    screening_dataset["gadm_fullcode_00"] = (
-        screening_dataset.province_code_00.astype(int).astype(str).str.zfill(2)
-        + screening_dataset.kabupaten_code_00.astype(int).astype(str).str.zfill(2)
-        + screening_dataset.kecamatan_code_00.astype(int).astype(str).str.zfill(3)
+    screening_dataset = screening_dataset.merge(
+        unique_bps_mapping(),
+        left_on=["gadm_fullcode_07"],
+        right_on=["kecid07"],
+        how="left",
+        validate="many_to_one",
+        indicator="bps_mapping",
+    )
+
+    screening_dataset["bps_mapping"] = screening_dataset.bps_mapping.map(
+        {"both": "unique", "left_only": "no_2014_match", "right_only": "no_2007_match"}
+    )
+    # For the good matches, no further work is needed
+    good_matches = screening_dataset[screening_dataset.bps_mapping == "unique"]
+    good_matches["gadm_fullcode"] = good_matches.kecid14
+
+    bad_matches = screening_dataset[screening_dataset.bps_mapping != "unique"]
+    bad_matches = bad_matches.drop(columns=["kecid07", "kecid14"])
+    log(
+        f"{len(good_matches)} rows with unique BPS mapping, {len(bad_matches)} rows with non-unique or missing BPS mapping",
+        "INFO",
+    )
+
+    # For the bad matches, let us first see if they moved and if they didn't, we can find them based on their IFLS5 code tos ave us the work
+    household_mapping = read_stata_df(
+        Path(RAW_IFLS_EXTRACTED) / "IFLS5" / "hh14" / "htrack.dta",
+        convert_categoricals=False,
+    )
+
+    # Standardize the column names for geo codes (exclude hhid to keep hhid14 intact)
+    # We use IFLS5 geo codes since we are using IFLS5 household tracking
+    geo_rename = {
+        v: k
+        for k, v in IFLS5["geo_columns"].items()  # ty:ignore[unresolved-attribute]
+        if k != "hhid"
+    }
+    household_mapping = household_mapping.rename(columns=geo_rename)
+    household_mapping = household_mapping.dropna(
+        subset=["province_code", "kabupaten_code", "kecamatan_code"]
+    ).copy()
+    household_mapping["kecid14"] = (
+        household_mapping.province_code.astype(int).astype(str).str.zfill(2)
+        + household_mapping.kabupaten_code.astype(int).astype(str).str.zfill(2)
+        + household_mapping.kecamatan_code.astype(int).astype(str).str.zfill(3)
+    ).astype(int)
+    household_mapping = household_mapping[
+        ["hhid07", "hhid14", "kecid14", "mover14"]
+    ].copy()
+    # Keep only those who haven't moved or moved within a kecamatan
+    household_mapping = household_mapping[household_mapping.mover14 <= 2].copy()
+    # Keep only households that existed in 2007 IFLS4
+    household_mapping = household_mapping[household_mapping.hhid07.notna()].copy()
+    # Drop duplicate hhid07 (household splits) to ensure 1:1 merge
+    # Note: we have already restricted to non-movers so it is immaterial which household we draw the mapping
+    # code from
+    household_mapping = household_mapping.drop_duplicates(
+        subset=["hhid07"], keep="first"
+    )
+
+    bad_matches = bad_matches.merge(
+        household_mapping,
+        left_on="hhid",
+        right_on="hhid07",
+        how="left",
+        validate="1:1",
+        indicator="household_mapping",
+    )
+    # Drop new households, we don't care about them
+    bad_matches = bad_matches[bad_matches.household_mapping != "right_only"].copy()
+    bad_matches["household_mapping"] = bad_matches.household_mapping.map(
+        {
+            "both": "mapped",
+            "left_only": "no_ifls5_match",
+        }
+    )
+    old_household_matches = bad_matches[
+        bad_matches.household_mapping == "mapped"
+    ].copy()
+    old_household_matches["gadm_fullcode"] = old_household_matches.kecid14
+    old_household_matches["bps_mapping"] = "unique"
+    good_matches = pd.concat([good_matches, old_household_matches], ignore_index=True)
+
+    # Let us do a "voting" approach where we derive a mappign based on our data
+    # Basically, for each kecid07, we pick the most common kecid14 amongst the good matches
+    # And use that to assign a good match
+
+    bad_matches = bad_matches[bad_matches.household_mapping == "no_ifls5_match"].copy()
+    log(
+        f"{len(old_household_matches)} bad matches resolved by household tracking, {len(bad_matches)} bad matches with no IFLS5 household match",
+        "INFO",
+    )
+
+    # Final matching strategy is to use 2014 codes derived from our good matches. Here, we use voting
+    # to determine best match
+    good_match_mapping = (
+        good_matches.groupby("gadm_fullcode_07")["gadm_fullcode"]
+        .agg(lambda x: x.mode().iloc[0])
+        .reset_index()
+        .assign(vote_kecid14=lambda df: df.gadm_fullcode)
+        .filter(items=["gadm_fullcode_07", "vote_kecid14"])
+        .copy()
+    )
+    assert good_match_mapping.vote_kecid14.is_unique, (
+        "vote_kecid14 should be unique in good match mapping"
+    )
+    assert good_match_mapping.vote_kecid14.isna().sum() == 0, (
+        "gadm_fullcode should not have nulls in good match mapping"
+    )
+
+    bad_matches = bad_matches.merge(
+        good_match_mapping,
+        on="gadm_fullcode_07",
+        how="left",
+        validate="m:1",
+        indicator="good_match_mapping",
+    )
+    bad_matches["good_match_mapping"] = bad_matches.good_match_mapping.map(
+        {
+            "both": "good_match_found",
+            "left_only": "no_good_match",
+            "right_only": "no_2007_match",
+        }
+    )
+    bad_matches = bad_matches[bad_matches.good_match_mapping != "no_2007_match"].copy()
+
+    success_count = (bad_matches.good_match_mapping == "good_match_found").sum()
+    failure_count = (bad_matches.good_match_mapping == "no_good_match").sum()
+    log(
+        f"{success_count} bad matches resolved by voting for most common mappign, {failure_count} bad matches with no good match mapping",
+    )
+    vote_matches = bad_matches[
+        bad_matches.good_match_mapping == "good_match_found"
+    ].copy()
+    vote_matches["gadm_fullcode"] = vote_matches.vote_kecid14
+    vote_matches["bps_mapping"] = "voting_based"
+    good_matches = pd.concat([good_matches, vote_matches], ignore_index=True)
+
+    bad_matches = bad_matches[bad_matches.good_match_mapping == "no_good_match"].copy()
+
+    log(
+        f"{len(bad_matches)} bad matches remain after household tracking and voting. First kecamatan code will be selected arbitrarily for these households",
+        "INFO",
+    )
+
+    bad_matches["gadm_fullcode_00"] = (
+        bad_matches.province_code_00.astype(int).astype(str).str.zfill(2)
+        + bad_matches.kabupaten_code_00.astype(int).astype(str).str.zfill(2)
+        + bad_matches.kecamatan_code_00.astype(int).astype(str).str.zfill(3)
     ).astype(int)
 
     mapping_00 = generate_mapping_data(original_col="kecid00")
     mapping_07 = generate_mapping_data(original_col="kecid07")
 
-    screening_dataset["wave"] = "IFLS4"
+    bad_matches["wave"] = "IFLS4"
 
-
-    # For each household locate the 2014 (list of) code from 07 code
-    screening_dataset = screening_dataset.merge(
+    bad_matches = bad_matches.merge(
         mapping_07,
         left_on=["gadm_fullcode_07"],
         right_on=["kecid07"],
         how="left",
         validate="many_to_one",
     )
-    screening_dataset["gadm_fullcode_07_2014"] = screening_dataset.gadm_fullcode_2014
-    screening_dataset.drop(columns=["kecid07", "gadm_fullcode_2014"], inplace=True)
+    # gadm_fullcode_2014 is the kecamaten code for 2014; it may be a comma separated value if one 2007 kecamatan is matched with many 2014 ones
+    bad_matches["gadm_fullcode_07_2014"] = bad_matches.gadm_fullcode_2014
+    bad_matches.drop(columns=["kecid07", "gadm_fullcode_2014"], inplace=True)
 
-    # For each household locate the 2014 (list of) code from 00 code
-    screening_dataset = screening_dataset.merge(
+    bad_matches = bad_matches.merge(
         mapping_00,
         left_on=["gadm_fullcode_00"],
         right_on=["kecid00"],
         how="left",
         validate="many_to_one",
     )
-
-    # Generate final 2014 (list of) code. Prioritize code matched from 07, use 00 if no 07
-    screening_dataset["gadm_fullcode"] = screening_dataset.gadm_fullcode_07_2014.fillna(
-        screening_dataset.gadm_fullcode_2014
+    bad_matches["gadm_fullcode"] = bad_matches.gadm_fullcode_07_2014.fillna(
+        bad_matches.gadm_fullcode_2014
     )
-
+    # Randomly pick the first code in cases of multiple mapping; we will flag these cases in the end for sensitivity analysis
+    bad_matches["gadm_fullcode"] = bad_matches.gadm_fullcode.apply(
+        lambda x: int(x.split(",")[0]) if isinstance(x, str) else x
+    )
+    bad_matches["bps_mapping"] = "select_first"
     # Multiple map indicates that a single 2007 district was mapping to many 2014 ones; detect by checking for comma
-    screening_dataset["multiple_kec_remap"] = screening_dataset.gadm_fullcode.apply(
-        lambda x: 1 if isinstance(x, str) and "," in x else 0
-    )
+
+    screening_dataset = pd.concat([good_matches, bad_matches], ignore_index=True)
+    screening_dataset["kecamatan_code_map"] = screening_dataset.bps_mapping
+
     screening_dataset = screening_dataset[
         [
             "gadm_fullcode",
@@ -216,14 +380,13 @@ def parse_geo_codes_ifls4() -> pd.DataFrame:
             "province_code",
             "kabupaten_code",
             "kecamatan_code",
-            "multiple_kec_remap",
+            "kecamatan_code_map",
         ]
     ].copy()
-
-    # Confirm that all household have a (list of) corresponding 2014 geo code
-    num_no_2014_code = screening_dataset["gadm_fullcode"].isna().sum()
-    assert num_no_2014_code == 0
-
+    screening_dataset["wave"] = "IFLS4"
+    screening_dataset["gadm_fullcode"] = screening_dataset.gadm_fullcode.map(
+        clean_gadm_code
+    )
     return screening_dataset
 
 
@@ -369,6 +532,7 @@ def main() -> None:
     out = survey_both.merge(
         geo_both, on=["hhid", "wave"], how="left", validate="many_to_one"
     )
+
     # Validate against schema
     out = INDIVIDUALS_SCHEMA.validate(out)
     out.to_parquet(GENERATED_DATA / "01_individuals.parquet", index=False)
